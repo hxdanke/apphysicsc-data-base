@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# local runtime artefacts
+exports/*
+!exports/.gitkeep
+ingest/
+tools/
+*.log
+
+# secrets
+.env
+
+# download leftovers
+web/vendor/katex.tar.gz
+web/vendor/*.tar.gz
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

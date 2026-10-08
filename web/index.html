@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AP Physics C: Mechanics — Question Bank</title>
+<link rel="stylesheet" href="/vendor/katex/katex.min.css" />
+<link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">AP&nbsp;C</span>
+    <div class="brand-text">
+      <strong>AP Physics C: Mechanics</strong>
+      <span>Question Bank</span>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-view="browse">Browse</button>
+    <button class="tab" data-view="compose">Compose</button>
+    <button class="tab" data-view="import">Import</button>
+  </nav>
+  <div class="topbar-right">
+    <span id="engine-badge" class="badge" title="LaTeX engine detected on the server">…</span>
+    <span id="bank-badge" class="badge badge-soft">…</span>
+  </div>
+</header>
+
+<main class="layout">
+  <!-- ============ BROWSE ============ -->
+  <section class="view active" id="view-browse">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <input id="search" class="input" type="search" placeholder="Search stem, choices, id…" />
+      </div>
+      <div class="sidebar-filters">
+        <label class="chk"><input type="checkbox" id="f-review" /> needs review</label>
+        <label class="chk"><input type="checkbox" id="f-untagged" /> no difficulty</label>
+      </div>
+      <div id="tree" class="tree"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head">
+        <h2 id="list-title">All questions</h2>
+        <span id="list-count" class="muted"></span>
+      </div>
+      <div id="qlist" class="qlist"></div>
+    </div>
+
+    <div class="detailpane" id="detail">
+      <div class="empty">
+        <p>Select a question to preview it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPOSE ============ -->
+  <section class="view" id="view-compose">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong>Paper</strong></div>
+      <div class="pane-block">
+        <label class="lbl">Title</label>
+        <input id="c-title" class="input" value="AP Physics C: Mechanics Practice Set" />
+        <label class="lbl">Subtitle</label>
+        <input id="c-subtitle" class="input" placeholder="e.g. Unit 3 quiz — 2026-2027" />
+        <label class="lbl">Instructions (LaTeX)</label>
+        <textarea id="c-instructions" class="input" rows="3"
+          placeholder="Answer all questions. Show your work."></textarea>
+      </div>
+      <div class="pane-block">
+        <label class="chk"><input type="checkbox" id="c-answers" /> include answers</label>
+        <label class="chk"><input type="checkbox" id="c-solutions" /> include solutions</label>
+        <label class="chk"><input type="checkbox" id="c-group" checked /> group by topic</label>
+      </div>
+      <div class="pane-block">
+        <label class="lbl">File name</label>
+        <input id="c-filename" class="input" value="practice-set" />
+        <div class="btn-row">
+          <button class="btn" id="c-tex">LaTeX source</button>
+          <button class="btn btn-primary" id="c-pdf">Compile PDF</button>
+        </div>
+      </div>
+      <div class="pane-block">
+        <div class="btn-row">
+          <button class="btn btn-ghost" id="c-clear">Clear</button>
+          <button class="btn btn-ghost" id="c-addtopic">Add current topic</button>
+        </div>
+      </div>
+      <div id="c-status" class="status"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head">
+        <h2>Selected <span id="c-count" class="pill">0</span></h2>
+        <span class="muted">drag to reorder · click × to remove</span>
+      </div>
+      <div id="c-list" class="qlist"></div>
+    </div>
+
+    <div class="detailpane" id="c-preview">
+      <div class="empty"><p>Nothing selected yet.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ IMPORT ============ -->
+  <section class="view" id="view-import">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong>Import PDF</strong></div>
+      <div class="pane-block">
+        <p class="muted small">
+          Upload an exercise-book PDF. The server extracts text, figures and the
+          unit/topic structure into LaTeX drafts — you review them before anything
+          enters the bank.
+        </p>
+        <input type="file" id="i-file" accept="application/pdf" class="input" />
+        <label class="lbl">Document id</label>
+        <input id="i-docid" class="input" placeholder="e.g. EB3" />
+        <label class="lbl">Figure DPI</label>
+        <input id="i-dpi" class="input" type="number" value="300" min="72" max="600" />
+        <button class="btn btn-primary" id="i-upload">Extract</button>
+      </div>
+      <div class="pane-block">
+        <div class="sidebar-head"><strong>Jobs</strong></div>
+        <div id="i-jobs" class="jobs"></div>
+      </div>
+      <div id="i-status" class="status"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head">
+        <h2 id="i-title">Draft</h2>
+        <div class="btn-row" id="i-actions" style="display:none">
+          <button class="btn" id="i-polish">AI polish</button>
+          <button class="btn btn-primary" id="i-commit">Commit to bank</button>
+        </div>
+      </div>
+      <div id="i-list" class="qlist"></div>
+    </div>
+
+    <div class="detailpane" id="i-preview">
+      <div class="empty"><p>Pick a draft question to inspect its LaTeX.</p></div>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast"></div>
+
+<script src="/vendor/katex/katex.min.js" defer></script>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
