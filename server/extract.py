@@ -317,12 +317,24 @@ def line_to_latex(line: Line) -> str:
 # Figures
 # --------------------------------------------------------------------------------------
 
+def _is_blank_region(page, clip, dpi: int = 40) -> bool:
+    """True when a clip contains nothing but (nearly) uniform white."""
+    pix = page.get_pixmap(clip=clip, dpi=dpi, colorspace=pymupdf.csGray)
+    data = pix.samples
+    if not data:
+        return True
+    dark = sum(1 for b in data if b < 205)
+    return dark / len(data) < 0.002
+
+
 def _extract_figure(doc, page, bbox, out_path, dpi=300) -> bool:
     x0, y0, x1, y1 = bbox
     if x1 - x0 < 16 or y1 - y0 < 10:      # hairlines / ornaments, not real figures
         return False
     clip = pymupdf.Rect(x0, y0, x1, y1)
     clip = clip & page.rect
+    if clip.is_empty or _is_blank_region(page, clip):
+        return False                          # spacer graphics carry no information
     pix = page.get_pixmap(clip=clip, dpi=dpi, colorspace=pymupdf.csRGB)
     if pix.width < 4 or pix.height < 4:
         return False

@@ -13,6 +13,7 @@ from . import bank as bank_mod
 ROOT = bank_mod.ROOT
 TEMPLATE_DIR = os.path.join(ROOT, "templates")
 MEDIA_DIR = bank_mod.MEDIA_DIR
+DATA_DIR = bank_mod.DATA_DIR
 
 ENGINES = ["tectonic", "xelatex", "lualatex", "pdflatex"]
 
@@ -26,7 +27,7 @@ PREAMBLE = r"""\documentclass[11pt,letterpaper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
-\graphicspath{{%(media)s/}}
+\graphicspath{{%(data)s/}{%(media)s/}}
 \setlength{\parindent}{0pt}
 \pagestyle{fancy}
 \fancyhf{}
@@ -51,6 +52,15 @@ RE_IMG = re.compile(r"\\includegraphics\s*(?:\[[^\]]*\])?\s*\{([^{}]*)\}")
 
 def _esc(s: str) -> str:
     return s.replace("\\", "\\\\").replace("%", "\\%")
+
+
+def _paths(title: str, subtitle: str) -> dict:
+    return {
+        "data": DATA_DIR.replace("\\", "/"),
+        "media": MEDIA_DIR.replace("\\", "/"),
+        "title": _esc(title),
+        "subtitle": _esc(subtitle),
+    }
 
 
 def question_body(q: dict, show_answer: bool = False, show_solution: bool = False,
@@ -92,8 +102,7 @@ def question_body(q: dict, show_answer: bool = False, show_solution: bool = Fals
 def build_document(questions: list, title: str = "AP Physics C: Mechanics Practice Set",
                    subtitle: str = "", show_answer: bool = False, show_solution: bool = False,
                    group_by_topic: bool = True, instructions: str = "") -> str:
-    media = MEDIA_DIR.replace("\\", "/")
-    out = [PREAMBLE % {"media": media, "title": _esc(title), "subtitle": _esc(subtitle)}]
+    out = [PREAMBLE % _paths(title, subtitle)]
     if instructions:
         out.append(instructions + "\n")
 
@@ -133,8 +142,7 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
 
 def question_tex(q: dict, show_answer: bool = True, show_solution: bool = True) -> str:
     """A standalone, compilable document for one question (used by the preview pane)."""
-    media = MEDIA_DIR.replace("\\", "/")
-    head = PREAMBLE % {"media": media, "title": _esc(q.get("id", "Question")), "subtitle": ""}
+    head = PREAMBLE % _paths(q.get("id", "Question"), "")
     body = question_body(q, show_answer, show_solution)
     return head + body + POSTAMBLE
 

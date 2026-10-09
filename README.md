@@ -119,6 +119,18 @@ fetches packages on demand. Drop it into `tools/` or put it on your `PATH`.
 
 ---
 
+## Syncing to GitHub
+
+The repository is initialised and committed locally on `main`:
+
+```bash
+git remote add origin git@github.com:<you>/ap-physics-c-mechanics-question-bank.git
+git push -u origin main
+```
+
+(The bundled GitHub connector has read-only scope here and cannot create repositories,
+so the remote has to be added by hand — or push with a PAT that has `repo` scope.)
+
 ## Known limitations (v0.1)
 
 * **No answer key.** Exercise Book 3 has none, so `answer` / `solution` are empty; the

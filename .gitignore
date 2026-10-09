@@ -23,3 +23,6 @@ web/vendor/*.tar.gz
 .idea/
 .DS_Store
 Thumbs.db
+
+# WorkBuddy session data & project memory notes (local only)
+.workbuddy/

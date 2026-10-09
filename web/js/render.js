@@ -17,11 +17,42 @@ function katex(src, display) {
   if (typeof window.katex === "undefined") {
     return `<code class="raw">${escapeHtml(src)}</code>`;
   }
-  try {
-    return window.katex.renderToString(src, { displayMode: display, throwOnError: false });
-  } catch (err) {
-    return `<code class="raw">${escapeHtml(src)}</code>`;
+  // PDF-extracted math often has a formula split across two $...$ runs with a
+  // missing delimiter between them. Glue such neighbours back together.
+  let out = "";
+  for (const piece of mergeAdjacentMath(src)) {
+    if (piece.math) {
+      let html;
+      try {
+        html = window.katex.renderToString(piece.text, {
+          displayMode: display, throwOnError: false,
+        });
+      } catch (err) {
+        html = `<code class="raw">${escapeHtml(piece.text)}</code>`;
+      }
+      out += html;
+    } else {
+      out += escapeHtml(piece.text);
+    }
   }
+  return out;
+}
+
+const MERGE_RE = /(?:\$[^$]+\$)+/g;
+
+function mergeAdjacentMath(src) {
+  const parts = [];
+  let last = 0;
+  let m;
+  MERGE_RE.lastIndex = 0;
+  while ((m = MERGE_RE.exec(src)) !== null) {
+    if (m.index > last) parts.push({ math: false, text: src.slice(last, m.index) });
+    const body = m[0].split("$").filter(Boolean).join("\\ ");
+    parts.push({ math: true, text: body });
+    last = MERGE_RE.lastIndex;
+  }
+  if (last < src.length) parts.push({ math: false, text: src.slice(last) });
+  return parts;
 }
 
 /** Render a TeX fragment: inline $...$, display \[...\], images, plain text. */
@@ -55,8 +86,15 @@ function renderText(chunk) {
     if (ch === "$") {
       const end = chunk.indexOf("$", i + 1);
       if (end > i + 1) {
-        out += katex(chunk.slice(i + 1, end), false);
-        i = end + 1;
+        // collect every maths run that is directly adjacent, then render once
+        let j = end + 1;
+        while (chunk[j] === "$") {
+          const e2 = chunk.indexOf("$", j + 1);
+          if (e2 <= j + 1) break;
+          j = e2 + 1;
+        }
+        out += katex(chunk.slice(i + 1, j).replace(/\$/g, ""), false);
+        i = j;
         continue;
       }
     }
