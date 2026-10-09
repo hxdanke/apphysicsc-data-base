@@ -86,6 +86,11 @@ TEXT_ESCAPES = {
 
 UNIT_TOKEN = re.compile(r"(\\mathrm\{[^{}]*\})")
 FUNC_NAMES = {"sin", "cos", "tan", "cot", "sec", "csc", "ln", "log", "exp", "max", "min"}
+# Connecting words that sit between two formulas ("... m/s and v_y = ...").  They
+# are italic-free prose, but the surrounding maths would otherwise swallow them.
+PROSE_WORDS = {"and", "or", "where", "if", "then", "when", "at", "is", "the", "with",
+               "for", "from", "to", "in", "of", "a", "an", "given", "by", "so", "as",
+               "are", "was", "be", "that", "which", "while", "than", "between"}
 RE_SQRT_EMPTY = re.compile(r"\\sqrt\{\}\s*([0-9A-Za-z]+)")
 
 
@@ -104,6 +109,57 @@ def _sub_outside_mathrm(pat, rep, text: str) -> str:
     )
 
 
+# Units written flush against a number ("2s", "5\u03bcm") lose the separating
+# space because the PDF stores the gap as kerning, not as a real space.  The
+# printed book always has a thin space there, so put one back.
+RE_NUM_UNIT = re.compile(r"(?<=[0-9])(?=\\mathrm\{|(?<![A-Za-z])[a-zA-Z](?![a-zA-Z]))")
+
+
+RE_NUM_MATHML = re.compile(r"(?<=[0-9])(?=\\mathrm\{)")
+RE_MATHML_NUM = re.compile(r"(\\mathrm\{[^{}]*\})(?=[0-9(])")
+# ``(4t - 5)\mathrm{m/s}`` / ``6\mathrm{m/s}`` -- a value immediately followed by a
+# unit needs the thin space the printed book shows.
+RE_CLOSE_MATHML = re.compile(r"(?<=[)\]])(?=\\mathrm\{)")
+# a bracket opening right onto a unit is never a value+unit pair, leave it alone
+
+
+def _space_num_unit(latex: str) -> str:
+    """Thin space between a number and the unit that follows (or precedes) it."""
+    out = []
+    for part in UNIT_TOKEN.split(latex):
+        if part.startswith("\\mathrm{"):
+            out.append(part)
+        else:
+            out.append(re.sub(r"(?<=[0-9])(?=(?:[a-zA-Z])(?![a-zA-Z]))", r"\\ ", part))
+    joined = "".join(out)
+    joined = RE_NUM_MATHML.sub(r"\\ ", joined)
+    joined = RE_CLOSE_MATHML.sub(r"\\ ", joined)
+    joined = RE_MATHML_NUM.sub(r"\1\\ ", joined)
+    # an ordinary space in maths mode renders as nothing
+    return re.sub(r"(?<=[0-9)\]])\s+(?=\\mathrm\{)", r"\\ ", joined)
+
+
+# ``\Deltat`` / ``\alphar`` -- a Greek macro with the next letter glued on by the
+# kerning.  The engine would treat the whole run as one undefined command.
+_GLUE_ROOTS = ("Delta", "Omega", "Theta", "Lambda", "Sigma", "alpha", "beta",
+               "gamma", "delta", "epsilon", "theta", "lambda", "omega", "sigma",
+               "phi", "mu", "pi", "rho", "tau")
+_GLUE_TAILS = tuple("xyztrhsvp" + "EVKLMABRFT" + "012")
+_GLUE_NAMES = sorted({r + t for r in _GLUE_ROOTS for t in _GLUE_TAILS},
+                     key=len, reverse=True)
+RE_GLUED = re.compile(r"\\(" + "|".join(_GLUE_NAMES) + r")(?![A-Za-z])")
+
+
+def _split_glued_macros(latex: str) -> str:
+    def sub(m):
+        name = m.group(1)
+        for root in sorted(_GLUE_ROOTS, key=len, reverse=True):
+            if name.startswith(root) and name != root:
+                return "\\" + root + " " + name[len(root):]
+        return m.group(0)
+    return RE_GLUED.sub(sub, latex)
+
+
 def _apply_units(latex: str) -> str:
     out = []
     for part in UNIT_TOKEN.split(latex):
@@ -113,7 +169,7 @@ def _apply_units(latex: str) -> str:
         for pat, rep in UNIT_PATTERNS:
             part = _sub_outside_mathrm(pat, rep, part)
         out.append(_word_units(part))
-    return "".join(out)
+    return _space_num_unit("".join(out))
 
 
 def _merge_combining(spans: list) -> list:
@@ -188,6 +244,10 @@ class Line:
     y1: float
     spans: list
     page: int
+    # filled in by _mark_fractions(): this line carries a stacked fraction
+    frac_num: str = ""      # numerator, sitting on the line above
+    den_x1: float = 0.0     # right edge of the numerator -> splits the denominator
+    skip: bool = False      # the numerator line itself is consumed by the fraction
 
     @property
     def text(self) -> str:
@@ -215,10 +275,91 @@ def _span_scripts(spans: list) -> list[int]:
     return out
 
 
+RE_LABEL_SPAN = re.compile(r"^\s*(\([A-E]\)|[A-E])\s*$")
+
+
+def _mark_fractions(lines: list) -> None:
+    """Join stacked fractions back together.
+
+    A fraction is typeset with the numerator on a line of its own, raised above
+    the line that starts with the denominator; the bar itself is nowhere to be
+    found in the drawing list, so the two lines only reveal themselves by
+    overlapping vertically while the upper one is a very short token.
+    """
+    for a in lines:
+        t = a.text.strip()
+        if not t or len(t) > 4:
+            continue
+        if RE_CHOICE.match(t) or RE_QNUM.match(t) or RE_ROWLABEL.match(t):
+            continue
+        if not re.fullmatch(r"[0-9A-Za-z]+|\\\w+", t):
+            continue
+        best = None
+        for b in lines:
+            if b is a or b.y0 <= a.y0 or a.y1 <= b.y0:
+                continue
+            if b.y0 - a.y0 > 9:            # too far below to be stacked
+                continue
+            if b.x1 < a.x0 or b.x0 > a.x1:  # no horizontal overlap
+                continue
+            if best is None or (b.y0 - a.y0) < (best.y0 - a.y0):
+                best = b
+        if best is None or best.frac_num:
+            continue
+        best.frac_num = t
+        best.den_x1 = a.x1 + 0.3
+        a.skip = True
+
+
+def _split_fraction(line: Line) -> tuple[list, list, list]:
+    """(label spans, denominator spans, remaining spans) for a stacked fraction."""
+    label, den, rest = [], [], []
+    started = False
+    for s in line.spans:
+        if not started and RE_LABEL_SPAN.match(s["text"]):
+            label.append(s)
+            continue
+        started = True
+        if s["bbox"][0] < line.den_x1:
+            den.append(s)
+        else:
+            rest.append(s)
+    if not den and rest:
+        den.append(rest.pop(0))
+    return label, den, rest
+
+
+def _latex_of_spans(spans: list, page: int, fallback: Line) -> str:
+    if not spans:
+        return ""
+    return line_to_latex(Line(min(s["bbox"][0] for s in spans),
+                             min(s["bbox"][1] for s in spans),
+                             max(s["bbox"][2] for s in spans),
+                             max(s["bbox"][3] for s in spans),
+                             spans, page))
+
+
+def _attach_fraction(frac: str, latex: str) -> str:
+    """Put `\frac{..}{..}` inside the maths run it belongs to."""
+    if not frac:
+        return latex
+    if latex.startswith("$"):
+        return "$" + frac + "\\ " + latex[1:]
+    return f"${frac}$ {latex}"
+
+
+def _prose_word(c: dict) -> bool:
+    """True for a short English connector that must not be absorbed into maths."""
+    return (not c["math"]) and c["t"].strip().lower().strip(".,;:") in PROSE_WORDS
+
+
 def _is_math(text: str, italic: bool, script: int) -> bool:
     if script != 0:
         return True
     if italic:
+        # an italic connector is just book typography, not a formula
+        if text.strip().lower().strip(".,;:") in PROSE_WORDS:
+            return False
         return True
     s = text.strip()
     if not s:
@@ -226,6 +367,11 @@ def _is_math(text: str, italic: bool, script: int) -> bool:
     if s.startswith("\\"):            # \theta, \vec{A}, \Delta ... from unicode
         return True
     if len(s) > 12 and not italic:    # long upright runs are prose, not formulas
+        return False
+    # ``m/s and`` -- a unit glued to an English connector by the kerning: the
+    # connector wins, otherwise it is rendered as maths and "and" turns italic.
+    # Checked before the symbol test because "/" is a maths character.
+    if re.search(r"(?<![A-Za-z])(?:and|or|where|the|is|at|to|of|by|for|from)(?![A-Za-z])", s):
         return False
     if s in OPERATORS:
         return True
@@ -266,8 +412,16 @@ def line_to_latex(line: Line) -> str:
             continue
         conv.append({"t": t, "math": _is_math(t, italic, sc), "ws": not raw.strip(), "raw": raw})
 
+    # wipe out a connector sitting between two formulas, else "and" is rendered
+    # as an italic product of a, n and d
+    for i, c in enumerate(conv):
+        if _prose_word(c):
+            c["math"] = False
+
     for i, c in enumerate(conv):
         if c["ws"]:
+            # a space only counts as maths when both neighbours are maths.  A
+            # connector has already been demoted, so it breaks the run cleanly.
             prev = next((conv[j]["math"] for j in range(i - 1, -1, -1) if not conv[j]["ws"]), False)
             nxt = next((conv[j]["math"] for j in range(i + 1, len(conv)) if not conv[j]["ws"]), False)
             c["math"] = prev and nxt
@@ -300,6 +454,7 @@ def line_to_latex(line: Line) -> str:
     for kind, body in pieces:
         if kind == "math":
             body = RE_SQRT_EMPTY.sub(lambda m: "\\sqrt{" + m.group(1) + "}", body)
+            body = _split_glued_macros(body)
             body = _apply_units(body)
             body = body.strip()
             if body.endswith("\\"):
@@ -319,7 +474,7 @@ def line_to_latex(line: Line) -> str:
 
 def _is_blank_region(page, clip, dpi: int = 40) -> bool:
     """True when a clip contains nothing but (nearly) uniform white."""
-    pix = page.get_pixmap(clip=clip, dpi=dpi, colorspace=pymupdf.csGray)
+    pix = page.get_pixmap(clip=clip, dpi=dpi, colorspace=pymupdf.csGRAY)
     data = pix.samples
     if not data:
         return True
@@ -466,11 +621,13 @@ def extract_pdf(
                     spans=spans, page=pno,
                 ))
 
+        _mark_fractions(lines)
+
         # --- reading order: cluster items into visual rows, then sort by x -----------
         raw_items = []
         for ln in lines:
             t = ln.text
-            if _is_chrome(t, ln.y0, ln.y1, page.rect.height):
+            if ln.skip or _is_chrome(t, ln.y0, ln.y1, page.rect.height):
                 continue
             raw_items.append({"y0": ln.y0, "y1": ln.y1, "x": ln.x0, "kind": 0, "obj": ln})
         for im in page.get_image_info():
@@ -535,6 +692,18 @@ def extract_pdf(
                 continue
 
             ln: Line = item["obj"]
+
+            # a stacked fraction: pull numerator + denominator out of the line
+            frac_prefix = ""
+            if ln.frac_num:
+                label_spans, den_spans, rest_spans = _split_fraction(ln)
+                num = convert_unicode(ln.frac_num).strip().strip("$")
+                den = _latex_of_spans(den_spans, pno, ln).strip().strip("$")
+                if num and den:
+                    frac_prefix = rf"\frac{{{num}}}{{{den}}}"
+                    ln = Line(ln.x0, ln.y0, ln.x1, ln.y1,
+                              label_spans + rest_spans, pno)
+
             raw = ln.text
             if not raw.strip():
                 continue
@@ -585,9 +754,11 @@ def extract_pdf(
 
             m = RE_CHOICE.match(raw)
             if m:
-                cur.choices.append({"label": m.group(1), "text": line_to_latex(
-                    Line(ln.x0, ln.y0, ln.x1, ln.y1,
-                         [{"text": m.group(2), "flags": 4, "bbox": ln.spans[-1]["bbox"]}], pno))})
+                cur.choices.append({"label": m.group(1), "text": _attach_fraction(
+                    frac_prefix, line_to_latex(
+                        Line(ln.x0, ln.y0, ln.x1, ln.y1,
+                             [{"text": m.group(2), "flags": 4,
+                               "bbox": ln.spans[-1]["bbox"]}], pno)))})
                 cur_choice = len(cur.choices) - 1
                 continue
 
@@ -598,7 +769,7 @@ def extract_pdf(
                 row_label_idx.append(cur_choice)
                 continue
 
-            latex = line_to_latex(ln)
+            latex = _attach_fraction(frac_prefix, line_to_latex(ln))
             if not latex:
                 continue
             if cur_choice is not None:

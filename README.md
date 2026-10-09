@@ -21,10 +21,12 @@ python -m uvicorn server.main:app --host 127.0.0.1 --port 8765
 
 Open <http://127.0.0.1:8765>.
 
-Reseed the bank from a PDF at any time:
+Reseed the bank from a PDF at any time, then repair the extracted LaTeX:
 
 ```bash
 python scripts/seed_from_pdf.py "path/to/book.pdf" --doc-id EB3 --dpi 300 --replace
+python scripts/normalize_bank.py            # dry run: report what would change
+python scripts/normalize_bank.py --apply    # rewrite data/bank.json (keeps a .bak)
 ```
 
 ---
@@ -45,6 +47,13 @@ then:
 * **Compile PDF** — runs a TeX engine on the server and downloads the PDF.
 
 Figures are referenced with `\includegraphics`, `\graphicspath` is set automatically.
+
+The generated PDF follows the printed book's house style: A4, **Times New Roman 11pt**
+(maths in Cambria Math), no cover title — the paper opens straight on question 1. Unit
+headings are 18pt bold and topic headings 14pt bold; the running head carries the page
+number on the outer edge and the current unit on the inner edge, and the footer reads
+`WHBC 2026-2027`. Short multiple-choice options are set inline on one line, exactly as
+in the book. These are set in `_HEAD` / `_FONTS_XE` in `server/latex.py`.
 
 ### 3. Import (扩充题库)
 Upload a PDF → the server extracts text, sub/superscripts, figures (rendered at the
@@ -121,15 +130,12 @@ fetches packages on demand. Drop it into `tools/` or put it on your `PATH`.
 
 ## Syncing to GitHub
 
-The repository is initialised and committed locally on `main`:
+Work is committed locally on `main`; pushing is done by hand:
 
 ```bash
-git remote add origin git@github.com:<you>/ap-physics-c-mechanics-question-bank.git
+git remote add origin git@github.com:<you>/apphysicsc-data-base.git   # once
 git push -u origin main
 ```
-
-(The bundled GitHub connector has read-only scope here and cannot create repositories,
-so the remote has to be added by hand — or push with a PAT that has `repo` scope.)
 
 ## Known limitations (v0.1)
 
@@ -137,8 +143,17 @@ so the remote has to be added by hand — or push with a PAT that has `repo` sco
   UI surfaces them but there is nothing to show yet.
 * **Deterministic conversion is typographic, not semantic.** Stacked fractions
   (`\frac{a}{b}`), radicals spanning several spans and a handful of table-layout
-  questions come out rough. **35 questions are flagged `needs_review`** — filter by
+  questions come out rough. **A few questions are flagged `needs_review`** — filter by
   that flag and fix or AI-polish them.
+* **Three option cells are still garbled.** Stacked formulas whose fraction bar *and*
+  base are both missing from the PDF text layer cannot be reconstructed:
+  `EB3-U1-1.5-Q9 D`, `EB3-U5-5.1-Q2 D`, `EB3-U6-6.5-Q3 D`. Everything else renders — the
+  KaTeX error count across 1 829 bank fields is 3, down from 90.
+* **LaTeX is hardened before export.** `server/latex.py` (`tex_safe`) and
+  `scripts/texfix.py` repair the extraction artefacts that also break a real TeX engine:
+  cascaded scripts (`v^{0}^{t}^{cos}`), glued macro names (`\Deltat`), units detached
+  from their value, stray braces and unpaired `$`. Without this a single bad question
+  aborts the whole 112-page export.
 * Figures are captured from the page at the chosen DPI; a figure that the book places
   *above* the question referring to it is re-attached by a heuristic, which can
   occasionally be off by one.
@@ -158,5 +173,8 @@ server/
   ingest.py    upload -> draft -> review -> commit pipeline
   main.py      FastAPI app
 web/           vanilla ES-module SPA + vendored KaTeX (no build step)
-scripts/       offline seeding / maintenance
+scripts/
+  seed_from_pdf.py    extract a book into data/bank.json
+  texfix.py           LaTeX repair rules (shared by the extractor and the normaliser)
+  normalize_bank.py   run texfix over the whole bank, in place
 ```
