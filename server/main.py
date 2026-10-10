@@ -334,6 +334,18 @@ def serve_file(path: str):
 # static
 # --------------------------------------------------------------------------------------
 
+class NoCacheStatic(StaticFiles):
+    """StaticFiles that forbids caching, so a code change is picked up on the
+    next page load instead of serving a stale JS/CSS module from disk cache.
+    Without this, the SPA's ES modules can stay cached after an edit and the
+    UI silently shows the old version."""
+
+    async def get_response(self, path: str, scope):
+        resp = await super().get_response(path, scope)
+        resp.headers["Cache-Control"] = "no-cache"
+        return resp
+
+
 app.mount("/media", StaticFiles(directory=bank_mod.MEDIA_DIR, check_dir=False), name="media")
 if os.path.isdir(WEB_DIR):
-    app.mount("/", StaticFiles(directory=WEB_DIR, html=True), name="web")
+    app.mount("/", NoCacheStatic(directory=WEB_DIR, html=True), name="web")

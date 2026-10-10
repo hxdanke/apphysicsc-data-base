@@ -82,6 +82,27 @@ export function parseWhole(text) {
   };
 }
 
+/** Strict client-side LaTeX gate (mirrors the single-formula editor).
+ *  KaTeX's throwOnError rejects things TeX would silently auto-recover from
+ *  (e.g. an unbalanced brace), which the server's tectonic build would still
+ *  report as ok:true.  Returns {ok:true} or {ok:false, error}. */
+function checkFieldLatex(field, value) {
+  if (!window.katex) return { ok: true };
+  const src = field === "choices"
+    ? (value || []).map(c => c.text || "").join("\n")
+    : (value || "");
+  for (const r of extractMathRuns(src)) {
+    try {
+      window.katex.renderToString(r.body, {
+        displayMode: !!r.display, throwOnError: true, strict: "ignore",
+      });
+    } catch (err) {
+      return { ok: false, error: String(err.message || err) };
+    }
+  }
+  return { ok: true };
+}
+
 function fieldOf(fieldKey) {
   // "choice:3" -> ("choices", 3); "stem" -> ("stem", -1)
   if (fieldKey.startsWith("choice:")) {
@@ -97,6 +118,12 @@ async function validateWhole(qid, parsed) {
     ["answer", parsed.answer],
     ["solution", parsed.solution],
   ];
+  // 1) strict client-side gate: catches brace/syntax errors TeX auto-recovers from
+  for (const [field, value] of fields) {
+    const c = checkFieldLatex(field, value);
+    if (!c.ok) return { ok: false, field, log: "LaTeX error: " + c.error };
+  }
+  // 2) server compile gate: true TeX build through the real engine
   for (const [field, value] of fields) {
     try {
       const res = await api.validate(qid, field, value);
