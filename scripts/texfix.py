@@ -92,6 +92,17 @@ RE_UNIT_BETWEEN = re.compile(
     r"(?=[\s,.;:?)\]]|\$)")
 
 
+# ``the equations a$_{x} = ...`` -- the base letter was classified as prose and
+# left outside the maths run, so the quantity prints upright.  A lone letter
+# immediately in front of a subscripted run is always that run's base: move the
+# delimiter so the whole thing becomes one formula again.
+RE_STRAY_BASE = re.compile(r"(?<![A-Za-z\\{])([A-Za-z])\$_\{")
+
+
+def fix_stray_bases(s: str) -> str:
+    return RE_STRAY_BASE.sub(r"$\1_{", s)
+
+
 def merge_math_runs(s: str) -> str:
     prev = None
     while prev != s:
@@ -287,12 +298,33 @@ def fix_stacked_fractions(body: str) -> str:
 RE_MATH_RUN = re.compile(r"\$([^$]*)\$")
 
 
+# --------------------------------------------------------------------------- #
+# 6. subscript shape: one letter = quantity (italic), longer = label (upright)
+# --------------------------------------------------------------------------- #
+
+RE_SUB_GROUP = re.compile(r"_\{([^{}$\\]*)\}")
+
+
+def upright_subscripts(body: str) -> str:
+    """``a_{avg}`` -> ``a_{\\mathrm{avg}}``; a lone ``v_{x}`` stays italic."""
+    def sub(m):
+        inner = m.group(1).strip()
+        if not inner or "\\" in inner:      # \perp, \circ ... need maths mode
+            return m.group(0)
+        core = inner.replace(" ", "")
+        if len(core) <= 1 or core.isdigit():
+            return m.group(0)
+        return "_{\\mathrm{" + inner + "}}"
+    return RE_SUB_GROUP.sub(sub, body)
+
+
 def repair(text: str) -> str:
     if not text:
         return text
     s = _fix_backslashes(text)
     # units first: merge_math_runs would otherwise swallow the "$^{2}$" run
     s = pull_units_into_math(s)
+    s = fix_stray_bases(s)
     s = merge_math_runs(s)
     s = fix_empty_sqrt(s)
 
@@ -300,6 +332,7 @@ def repair(text: str) -> str:
         body = fix_stacked_fractions(m.group(1))
         body = fix_empty_superscripts(body)
         body = collapse_cascades(body)
+        body = upright_subscripts(body)
         return "$" + body + "$"
 
     s = RE_MATH_RUN.sub(fix_run, s)
@@ -318,7 +351,11 @@ RE_DOUBLE_SPACE_CMD = re.compile(r"(\\ )\s*\\ (?=\\?[a-zA-Z])")
 RE_TRAIL_SPACE = re.compile(r"\\ \s*(?=[,;.!?)]|\$)")
 # In maths an ordinary space renders as nothing, so ``(t - 6) \mathrm{m/s}``
 # would print the unit glued to the bracket.  Promote such a space to ``\ ``.
-RE_SPACE_BEFORE_UNIT = re.compile(r"(?<=[0-9)\]])\s+(?=\\mathrm\{)")
+RE_SPACE_BEFORE_UNIT = re.compile(r"(?<=[0-9)\]}])\s+(?=\\mathrm\{)")
+# ``\mathrm{m/s} 45^{\circ}`` -- same story on the other side of the unit; the
+# lookbehind keeps an existing ``\ `` (backslash + space) from being doubled.
+RE_UNIT_BEFORE_NUM = re.compile(
+    r"(\\mathrm\{[^{}]*\}(?:\s*\^\{[^{}]*\})?)(?<!\\)[ \t]+(?=[0-9(])")
 
 # A few formulas are stacked so tightly in the source PDF that the extractor can
 # only recover a chain of superscripts with no base ("v^{0}^{t}^{cos}").  Real
@@ -415,6 +452,7 @@ def fix_delimiters(s: str) -> str:
 def tidy_spacing(s: str) -> str:
     out = clean_orphan_scripts(s)
     out = RE_SPACE_BEFORE_UNIT.sub(r"\\ ", out)
+    out = RE_UNIT_BEFORE_NUM.sub(r"\1\\ ", out)
     out = RE_DOUBLE_SPACE_CMD.sub(r"\1", out)
     out = RE_TRAIL_SPACE.sub("", out)
     return out

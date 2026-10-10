@@ -14,6 +14,7 @@
   --radius: 10px;
   --shadow: 0 1px 2px rgba(20, 30, 50, .06), 0 4px 14px rgba(20, 30, 50, .05);
   --mono: "SFMono-Regular", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --book: "Times New Roman", Times, "Liberation Serif", serif;
 }
 
 * { box-sizing: border-box; }
@@ -158,8 +159,9 @@ textarea.input { resize: vertical; }
 .tag-review { background: #fdf3e3; color: var(--warn); }
 .tag-ans { background: var(--accent-soft); color: var(--accent); }
 .qcard-body {
-  font-size: 12.5px; color: #46505f; display: -webkit-box; -webkit-line-clamp: 3;
+  font-size: 13px; color: #46505f; display: -webkit-box; -webkit-line-clamp: 3;
   -webkit-box-orient: vertical; overflow: hidden;
+  font-family: var(--book);
 }
 .qcard-remove {
   position: absolute; top: 6px; right: 6px; border: 0; background: transparent;
@@ -179,9 +181,12 @@ textarea.input { resize: vertical; }
 }
 .qpaper-head h3 { margin: 0; font-size: 15px; }
 .qpaper-head .muted { font-size: 12px; }
-.qstem { font-size: 15px; line-height: 1.75; }
+.qstem { font-size: 16px; line-height: 1.75; font-family: var(--book); }
 .choices { margin: 14px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.choices li { display: flex; gap: 9px; align-items: flex-start; font-size: 14.5px; line-height: 1.7; }
+.choices li {
+  display: flex; gap: 9px; align-items: flex-start; font-size: 15px; line-height: 1.7;
+  font-family: var(--book);
+}
 .choice-label {
   flex: 0 0 22px; height: 22px; border-radius: 6px; background: var(--line-soft);
   color: var(--muted); display: grid; place-items: center; font-size: 12px; font-weight: 700;
@@ -189,9 +194,12 @@ textarea.input { resize: vertical; }
 .qfig { display: block; max-width: 100%; margin: 12px auto; border: 1px solid var(--line-soft); border-radius: 8px; background: #fff; }
 .answer-box {
   margin-top: 18px; padding: 10px 14px; background: var(--accent-soft);
-  border-radius: 9px; font-size: 13.5px; color: #1c47a8;
+  border-radius: 9px; font-size: 14px; color: #1c47a8; font-family: var(--book);
 }
-.solution-box { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 14px; }
+.solution-box {
+  margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line);
+  font-size: 14px; font-family: var(--book);
+}
 
 .qmeta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 16px; }
 .qactions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
@@ -202,6 +210,29 @@ textarea.input { resize: vertical; }
   white-space: pre-wrap; word-break: break-word; overflow-x: auto; max-height: 340px;
 }
 .empty { display: grid; place-items: center; height: 100%; color: var(--muted); font-size: 13px; }
+
+/* ---------------- maths (KaTeX) ----------------
+   The bank is typeset in Times New Roman.  A base rule on .katex covers every
+   ordinary atom (digits, units, operators); the classes below are the ones
+   KaTeX gives an explicit font-family of its own.  font-style / font-weight
+   are left to KaTeX, so a quantity stays italic and a unit stays upright --
+   only the typeface changes.  Stretchy symbols (integral, radical, sigma)
+   keep their KaTeX font, which is what supplies the sizes they need. */
+.katex,
+.katex .mathnormal,
+.katex .mathit,
+.katex .mathrm,
+.katex .mathbf,
+.katex .boldsymbol,
+.katex .mainrm,
+.katex .textrm {
+  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+}
+/* a raw snippet that KaTeX could not parse: keep it readable, not mono-tiny */
+.raw {
+  font-family: var(--book); font-style: italic; color: var(--danger);
+  background: #fdecea; padding: 0 3px; border-radius: 3px;
+}
 
 /* ---------------- import ---------------- */
 .jobs { display: flex; flex-direction: column; gap: 6px; }

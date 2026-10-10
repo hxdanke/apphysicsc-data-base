@@ -10,8 +10,6 @@ export function init(ctx) {
     list: document.getElementById("c-list"),
     count: document.getElementById("c-count"),
     preview: document.getElementById("c-preview"),
-    title: document.getElementById("c-title"),
-    subtitle: document.getElementById("c-subtitle"),
     instructions: document.getElementById("c-instructions"),
     answers: document.getElementById("c-answers"),
     solutions: document.getElementById("c-solutions"),
@@ -48,8 +46,6 @@ async function addCurrentTopic() {
 function options() {
   return {
     ids: selection.map(q => q.id),
-    title: els.title.value || "Practice Set",
-    subtitle: els.subtitle.value || "",
     instructions: els.instructions.value || "",
     show_answer: els.answers.checked,
     show_solution: els.solutions.checked,
@@ -122,9 +118,9 @@ function render() {
 function preview(q) {
   const choices = (q.choices || []).map(c =>
     `<li><span class="choice-label">${c.label}</span><span>${renderLatex(c.text)}</span></li>`).join("");
+  // the preview mirrors the printed page: the question itself, nothing else
   els.preview.innerHTML = `
     <div class="qpaper">
-      <div class="qpaper-head"><h3>${q.id}</h3><span class="muted">${q.topic || ""}</span></div>
       <div class="qstem">${renderLatex(q.stem)}</div>
       ${choices ? `<ul class="choices">${choices}</ul>` : ""}
       ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${q.answer}</div>` : ""}

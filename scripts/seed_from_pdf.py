@@ -13,8 +13,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+
 from server import bank as bank_mod          # noqa: E402
 from server import extract as extract_mod    # noqa: E402
+from texfix import repair                    # noqa: E402
 
 
 def main() -> int:
@@ -43,6 +46,11 @@ def main() -> int:
     for q in questions:
         for im in q["images"]:
             im["rel"] = "media/" + im["file"]
+        # same repairs the web UI applies after an upload: split glued macros,
+        # rebuild stacked fractions, keep quantities italic and units upright
+        q["stem"] = repair(q.get("stem") or "")
+        for c in q.get("choices") or []:
+            c["text"] = repair(c.get("text") or "")
 
     if args.dry_run:
         for q in questions[:3]:

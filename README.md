@@ -48,12 +48,18 @@ then:
 
 Figures are referenced with `\includegraphics`, `\graphicspath` is set automatically.
 
-The generated PDF follows the printed book's house style: A4, **Times New Roman 11pt**
-(maths in Cambria Math), no cover title — the paper opens straight on question 1. Unit
-headings are 18pt bold and topic headings 14pt bold; the running head carries the page
-number on the outer edge and the current unit on the inner edge, and the footer reads
-`WHBC 2026-2027`. Short multiple-choice options are set inline on one line, exactly as
-in the book. These are set in `_HEAD` / `_FONTS_XE` in `server/latex.py`.
+A practice set is **the questions and nothing else**. The generated PDF is A4,
+**Times New Roman 11pt** throughout: the typeface is mapped onto the maths alphabets as
+well, so quantities are set in Times New Roman *Italic*, units and multi-letter labels
+upright (`a_{x}` italic, `a_{\mathrm{avg}}` upright); only the symbols Times New Roman
+has no glyph for — integral, radical, sigma — come from Cambria Math. There is no cover
+title, no unit or topic heading, no page number, no running head or foot, and no
+provenance line under a question; the numbering runs straight through from 1. Short
+multiple-choice options are set inline on one line, long ones (or ones carrying a
+figure) as a list. These are set in `_HEAD` / `_FONTS_XE` in `server/latex.py`.
+
+The browser renders the same data with KaTeX, and `web/css/app.css` pins the same
+typeface there, so what you preview is what the PDF prints.
 
 ### 3. Import (扩充题库)
 Upload a PDF → the server extracts text, sub/superscripts, figures (rendered at the
@@ -152,8 +158,10 @@ git push -u origin main
 * **LaTeX is hardened before export.** `server/latex.py` (`tex_safe`) and
   `scripts/texfix.py` repair the extraction artefacts that also break a real TeX engine:
   cascaded scripts (`v^{0}^{t}^{cos}`), glued macro names (`\Deltat`), units detached
-  from their value, stray braces and unpaired `$`. Without this a single bad question
-  aborts the whole 112-page export.
+  from their value (`4 m/s 45°`, not `4 m/s45°`), a base letter the extractor left
+  outside the maths run (`a$x$` -> `$a_{x}$`), multi-letter subscripts set upright,
+  stray braces and unpaired `$`. Without this a single bad question aborts the whole
+  export. `seed_from_pdf.py` runs the same repairs, so a re-import needs no extra step.
 * Figures are captured from the page at the chosen DPI; a figure that the book places
   *above* the question referring to it is re-attached by a heuristic, which can
   occasionally be off by one.

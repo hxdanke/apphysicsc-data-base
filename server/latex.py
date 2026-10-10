@@ -20,61 +20,42 @@ ENGINES = ["tectonic", "xelatex", "lualatex", "pdflatex"]
 # --------------------------------------------------------------------------------------
 # preamble
 #
-# The house style is copied from the printed WHBC exercise book (measured from
-# the PDF):  A4, Times New Roman 11pt body, no \maketitle -- a practice set
-# starts straight away on question 1.  Running head = page number (bold 11pt)
-# on the outer edge with the current unit on the inner edge; footer =
-# "WHBC 2026-2027" at 8pt on the outer edge.  Unit titles are 18pt bold and
-# topic titles 14pt bold; multiple-choice options are set inline on one line.
+# A practice set is the questions and nothing else: A4, Times New Roman 11pt,
+# no cover title, no unit or topic heading, no page number, no running head or
+# foot and no provenance line under a question.  Short multiple-choice options
+# are set inline on one line, as in the printed book.
 # --------------------------------------------------------------------------------------
 
-_HEAD = r"""\documentclass[11pt,a4paper,twoside]{article}
-\usepackage[left=0.69in,right=0.65in,top=0.86in,bottom=1.06in,headheight=14pt,headsep=14pt,footskip=26pt]{geometry}
+_HEAD = r"""\documentclass[11pt,a4paper]{article}
+\usepackage[left=0.72in,right=0.72in,top=0.70in,bottom=0.80in]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[inline]{enumitem}
-\usepackage{fancyhdr}
-\usepackage{titlesec}
 @@FONTS@@\graphicspath{{@@DATA@@/}{@@MEDIA@@/}}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LO,RE]{\fontsize{11}{13}\selectfont\textbf{\thepage}}
-\fancyhead[LE,RO]{\fontsize{11}{13}\selectfont\textbf{\leftmark}}
-\fancyfoot[LO,RE]{\fontsize{8}{10}\selectfont WHBC 2026-2027}
-\fancyfoot[LE,RO]{\fontsize{8}{10}\selectfont @@TITLE@@}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\fancypagestyle{unitfirst}{%
-  \fancyhf{}%
-  \fancyhead[LO,RE]{\fontsize{11}{13}\selectfont\textbf{\thepage}}%
-  \fancyfoot[LO,RE]{\fontsize{8}{10}\selectfont WHBC 2026-2027}%
-  \fancyfoot[LE,RO]{\fontsize{8}{10}\selectfont @@TITLE@@}%
-  \renewcommand{\headrulewidth}{0pt}%
-  \renewcommand{\footrulewidth}{0pt}}
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \fancyhead[LO,RE]{\fontsize{11}{13}\selectfont\textbf{\thepage}}%
-  \fancyfoot[LO,RE]{\fontsize{8}{10}\selectfont WHBC 2026-2027}%
-  \fancyfoot[LE,RO]{\fontsize{8}{10}\selectfont @@TITLE@@}}
+\pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 % math pulled from the PDF carries literal spaces; keep them visible
 \AtBeginDocument{\setlength{\mathsurround}{0pt}}
 \thinmuskip=4mu \medmuskip=5mu plus 2mu minus 2mu \thickmuskip=7mu plus 3mu
-\newcommand{\bankmark}[1]{\markboth{#1}{#1}}
-\titleformat{\section}{\fontsize{18}{22}\selectfont\bfseries}{}{0em}{}
-\titleformat{\subsection}{\fontsize{14}{17}\selectfont\bfseries}{}{0em}{}
-\titlespacing*{\section}{0pt}{2pt}{8pt}
-\titlespacing*{\subsection}{0pt}{0pt}{6pt}
 \newcommand{\fig}[2][0.5]{\begin{center}\includegraphics[width=#1\linewidth]{#2}\end{center}}
 \begin{document}
-\bankmark{}
 """
 
+# Times New Roman everywhere it exists: text, quantities (italic), units and
+# multi-letter labels (upright), digits and the ordinary ASCII operators.  Only
+# the symbols Times New Roman has no glyph for (integral, radical, sigma, ...)
+# come from a real maths font, which supplies the sizes and spacing they need.
 _FONTS_XE = r"""\usepackage{fontspec}
 \usepackage{unicode-math}
 \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
-\IfFontExistsTF{Cambria Math}{\setmathfont{Cambria Math}}{}
+\IfFontExistsTF{TeX Gyre Termes Math}{\setmathfont{TeX Gyre Termes Math}}{%
+  \IfFontExistsTF{Cambria Math}{\setmathfont{Cambria Math}}{}}
+\IfFontExistsTF{Times New Roman}{%
+  \setmathfont{Times New Roman}[range=up/{latin,Latin,greek,Greek,num}]%
+  \setmathfont{Times New Roman Italic}[range=it/{latin,Latin,greek,Greek}]%
+  \setmathfont{Times New Roman}[range={"0028-"0029,"002B-"002F,"003A-"003E,"005B,"005D,"007C,"2212}]%
+}{}
 """
 
 _FONTS_PDF = r"""\usepackage[T1]{fontenc}
@@ -84,20 +65,16 @@ _FONTS_PDF = r"""\usepackage[T1]{fontenc}
 POSTAMBLE = r"\end{document}" + "\n"
 
 
-def _preamble(title: str, subtitle: str, xe: bool = True) -> str:
-    """Full preamble; `xe` picks the fontspec route (tectonic/xelatex/lualatex)."""
-    body = (_HEAD
+def _preamble(title: str = "", subtitle: str = "", xe: bool = True) -> str:
+    """Full preamble; `xe` picks the fontspec route (tectonic/xelatex/lualatex).
+
+    `title` and `subtitle` are accepted for backwards compatibility but are no
+    longer typeset: a practice set is the questions and nothing else.
+    """
+    return (_HEAD
             .replace("@@FONTS@@", _FONTS_XE if xe else _FONTS_PDF)
             .replace("@@DATA@@", DATA_DIR.replace("\\", "/"))
-            .replace("@@MEDIA@@", MEDIA_DIR.replace("\\", "/"))
-            .replace("@@TITLE@@", _esc(title)))
-    if subtitle:
-        body = body.replace(
-            r"\begin{document}",
-            r"\fancyfoot[C]{\fontsize{8}{10}\selectfont " + _esc(subtitle) + "}\n\\begin{document}",
-            1,
-        )
-    return body
+            .replace("@@MEDIA@@", MEDIA_DIR.replace("\\", "/")))
 
 # --------------------------------------------------------------------------------------
 # TeX command vocabulary
@@ -201,12 +178,22 @@ ITEMS_CHOICE_GRID = (r"\begin{enumerate}[label=(\Alph*),labelwidth=1.35em,labels
                      r"itemsep=1pt,topsep=2pt]")
 
 
-def _unit_title(questions: list, unit) -> str:
-    """Best-effort look-up of a unit's title from the questions themselves."""
-    for q in questions:
-        if q.get("unit") == unit and (q.get("unit_title") or "").strip():
-            return q["unit_title"].strip()
-    return ""
+# Physics convention, and the one the user asked for: a one-letter subscript is
+# a quantity and stays italic (v_{x}), anything longer is a label and is
+# upright (a_{avg}, P_{AB}, v_{rot,S}).  Digits are upright already.
+RE_SUB_GROUP = re.compile(r"_\{([^{}$\\]*)\}")
+
+
+def upright_subscripts(body: str) -> str:
+    def sub(m):
+        inner = m.group(1).strip()
+        if not inner or "\\" in inner:
+            return m.group(0)
+        core = inner.replace(" ", "")
+        if len(core) <= 1 or core.isdigit():
+            return m.group(0)
+        return "_{\\mathrm{" + inner + "}}"
+    return RE_SUB_GROUP.sub(sub, body)
 
 
 RE_TRAIL_IMG = re.compile(r"(?:\s*\\includegraphics\s*(?:\[[^\]]*\])?\s*\{[^{}]*\})\s*$")
@@ -450,13 +437,28 @@ RE_MATH_SPAN = re.compile(r"\$([^$]*)\$")
 RE_MATH_DOLLAR = re.compile(r"\$")
 
 
+# An ordinary space is invisible in maths, so a unit that the PDF printed next
+# to a number ("4 m/s 45°") would come out glued ("4 m/s45°").  Promote the
+# space to an explicit one on both sides of an upright unit.
+RE_SPACE_BEFORE_UNIT = re.compile(r"(?<=[0-9)\]}])\s+(?=\\mathrm\{)")
+RE_UNIT_BEFORE_NUM = re.compile(
+    r"(\\mathrm\{[^{}]*\}(?:\s*\^\{[^{}]*\})?)(?<!\\)[ \t]+(?=[0-9(])")
+
+
+def _space_units(body: str) -> str:
+    body = RE_SPACE_BEFORE_UNIT.sub(r"\\ ", body)
+    return RE_UNIT_BEFORE_NUM.sub(r"\1\\ ", body)
+
+
 def _safe_math_body(body: str) -> str:
     body = RE_MATH_DOLLAR.sub(" ", body)   # an inner $ would close the run early
     body = split_glued_macros(body)
     body = collapse_alternating(body)
     body = collapse_script_runs(body)
+    body = upright_subscripts(body)
     body = demote_extra_scripts(body)
     body = balance_braces(body)
+    body = _space_units(body)
     body = re.sub(r"\s{2,}", " ", body)
     return body.strip()
 
@@ -578,12 +580,6 @@ def question_body(q: dict, show_answer: bool = False, show_solution: bool = Fals
     if show_solution and (q.get("solution") or "").strip():
         lines.append("\\paragraph*{Solution.} " + tex_safe(q["solution"].strip()))
         lines.append("")
-    if q.get("source"):
-        src = q["source"]
-        bits = [str(src.get("doc", ""))]
-        if src.get("book_page"):
-            bits.append(f"p.{src['book_page']}")
-        lines.append("\\begin{flushright}\\tiny " + ", ".join(bits) + "\\end{flushright}")
     return "\n".join(lines)
 
 
@@ -594,6 +590,8 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
     if instructions:
         out.append(instructions + "\n")
 
+    # grouping only fixes the order; with no printed headings the numbering has
+    # to run straight through from 1, so there is a single list either way
     if group_by_topic:
         groups: dict = {}
         order: list = []
@@ -603,32 +601,17 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
                 groups[key] = []
                 order.append(key)
             groups[key].append(q)
-        last_unit = None
+        ordered: list = []
         for key in sorted(order):
-            groups[key].sort(key=lambda x: x.get("number", 0))
-            unit, topic, ttitle = key
-            if unit != last_unit:
-                utitle = _unit_title(questions, unit)
-                uhead = f"Unit {unit}" + (f" {utitle}" if utitle else "")
-                out.append(f"\\section*{{{uhead}}}")
-                out.append(f"\\bankmark{{{uhead}}}")
-                # the printed book shows no running head on a unit's opening page
-                out.append("\\thispagestyle{unitfirst}")
-                last_unit = unit
-            if topic or ttitle:
-                sub = " ".join(x for x in (topic, ttitle) if x)
-                out.append(f"\\subsection*{{{sub}}}")
-            out.append(ITEMS_BEGIN)
-            for q in groups[key]:
-                out.append("  \\item " + question_body(
-                    q, show_answer, show_solution).replace("\n", "\n  "))
-            out.append("\\end{enumerate}\n")
+            ordered.extend(sorted(groups[key], key=lambda x: x.get("number", 0)))
     else:
-        out.append(ITEMS_BEGIN)
-        for q in questions:
-            out.append("  \\item " + question_body(
-                q, show_answer, show_solution).replace("\n", "\n  "))
-        out.append("\\end{enumerate}\n")
+        ordered = list(questions)
+
+    out.append(ITEMS_BEGIN)
+    for q in ordered:
+        out.append("  \\item " + question_body(
+            q, show_answer, show_solution).replace("\n", "\n  "))
+    out.append("\\end{enumerate}\n")
 
     out.append(POSTAMBLE)
     return "\n".join(out)
