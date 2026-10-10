@@ -136,16 +136,71 @@ function escapeBraces(s) {
   return String(s).replace(/</g, "&lt;");
 }
 
+function escapeHtml(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;");
+}
+
 function select(q, card) {
   state.current = q;
   [...els.list.children].forEach(c => c.classList.remove("active"));
   if (card) card.classList.add("active");
-  renderDetail(q);
+  try {
+    renderDetail(q);
+  } catch (err) {
+    // Never leave the pane on the previous question: say what failed and let the
+    // user fall back to the raw LaTeX.
+    console.error("preview failed for", q.id, err);
+    els.detail.innerHTML = `
+      <div class="qpaper">
+        <div class="qpaper-head"><h3>Question ${q.number || ""}</h3>
+          <span class="muted">${q.id}</span></div>
+        <p class="muted">This question could not be rendered: ${escapeHtml(err.message)}</p>
+        <div class="qactions">
+          <button class="btn" data-act="retry">Retry</button>
+          <button class="btn btn-primary" data-act="edit">Edit LaTeX</button>
+        </div>
+      </div>`;
+    const r = els.detail.querySelector('[data-act="retry"]');
+    if (r) r.onclick = () => select(q, card);
+    const e = els.detail.querySelector('[data-act="edit"]');
+    if (e) e.onclick = () => openWholeEditor(q, (parsed) => {
+      q.stem = parsed.stem; q.choices = parsed.choices;
+      q.answer = parsed.answer; q.solution = parsed.solution;
+      select(q, card); reload();
+    });
+  }
+}
+
+function renderChoices(q) {
+  const choices = q.choices || [];
+  if (q.choice_layout === "table" && choices.length && choices[0].text2 !== undefined) {
+    // number of data columns = widest row (text, text2, text3, ...)
+    const ncol = Math.max(2, ...choices.map(c => {
+      let n = 1;
+      for (const k of ["text2", "text3", "text4"]) if (c[k] !== undefined) n++;
+      return n;
+    }));
+    const headers = (q.table_headers && q.table_headers.length) ? q.table_headers : [];
+    const headCells = Array.from({ length: ncol },
+      (_, i) => `<th>${escapeHtml(headers[i] || "")}</th>`).join("");
+    const rows = choices.map(c => {
+      const cells = [];
+      for (const k of ["text", "text2", "text3", "text4"]) {
+        if (k === "text" || c[k] !== undefined) {
+          cells.push(`<td>${renderLatex(c[k], "choice-" + k)}</td>`);
+        }
+      }
+      return `<tr><td class="choice-label">(${c.label})</td>${cells.join("")}</tr>`;
+    }).join("");
+    return `<table class="choice-table"><thead><tr><th></th>${headCells}</tr></thead><tbody>${rows}</tbody></table>`;
+  }
+  return `<ul class="choices">` + choices.map((c, ci) =>
+    `<li><span class="choice-label">${c.label}</span><span>${renderLatex(c.text, "choice:" + ci)}</span></li>`).join("") + `</ul>`;
 }
 
 function renderDetail(q) {
-  const choices = (q.choices || []).map((c, ci) =>
-    `<li><span class="choice-label">${c.label}</span><span>${renderLatex(c.text, "choice:" + ci)}</span></li>`).join("");
+  const choices = renderChoices(q);
   const meta = [];
   if (q.topic) meta.push(`<span class="tag">${q.topic} ${q.topic_title || ""}</span>`);
   if (q.qtype) meta.push(`<span class="tag">${q.qtype}</span>`);
@@ -159,7 +214,7 @@ function renderDetail(q) {
         <span class="muted">${q.id}</span>
       </div>
       <div class="qstem">${renderLatex(q.stem, "stem")}</div>
-      ${choices ? `<ul class="choices">${choices}</ul>` : ""}
+      ${choices}
       ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${renderLatex(q.answer, "answer")}</div>` : ""}
       ${q.solution ? `<div class="solution-box"><strong>Solution.</strong> ${renderLatex(q.solution, "solution")}</div>` : ""}
       <div class="qmeta">${meta.join("")}</div>

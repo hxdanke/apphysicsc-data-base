@@ -120,11 +120,10 @@ def _sub_outside_mathrm(pat, rep, text: str) -> str:
 
 
 # Units written flush against a number ("2s", "5\u03bcm") lose the separating
-# space because the PDF stores the gap as kerning, not as a real space.  The
-# printed book always has a thin space there, so put one back.
-RE_NUM_UNIT = re.compile(r"(?<=[0-9])(?=\\mathrm\{|(?<![A-Za-z])[a-zA-Z](?![a-zA-Z]))")
-
-
+# space because the PDF stores the gap as kerning, not as a real space.  Every
+# real unit is normalised to ``\mathrm{...}`` by ``_word_units``, so the spacing
+# is handled by the ``\mathrm`` rules below -- a bare letter after a digit is
+# always an implicit product (``5t``), never a unit.
 RE_NUM_MATHML = re.compile(r"(?<=[0-9])(?=\\mathrm\{)")
 RE_MATHML_NUM = re.compile(r"(\\mathrm\{[^{}]*\})(?=[0-9(])")
 # ``(4t - 5)\mathrm{m/s}`` / ``6\mathrm{m/s}`` -- a value immediately followed by a
@@ -134,15 +133,15 @@ RE_CLOSE_MATHML = re.compile(r"(?<=[)\]])(?=\\mathrm\{)")
 
 
 def _space_num_unit(latex: str) -> str:
-    """Thin space between a number and the unit that follows (or precedes) it."""
-    out = []
-    for part in UNIT_TOKEN.split(latex):
-        if part.startswith("\\mathrm{"):
-            out.append(part)
-        else:
-            out.append(re.sub(r"(?<=[0-9])(?=(?:[a-zA-Z])(?![a-zA-Z]))", r"\\ ", part))
-    joined = "".join(out)
-    joined = RE_NUM_MATHML.sub(r"\\ ", joined)
+    """Thin space between a number and the unit that follows (or precedes) it.
+
+    Only real units need this, and ``_word_units`` has already turned every one
+    of them into ``\\mathrm{...}`` by the time we get here.  We must *not* add a
+    space before a bare letter: in this book ``5t``, ``2F_0``, ``3R`` ... are
+    implicit products (the letter is a physics quantity), and an explicit ``\\ ``
+    there renders as ``5 t`` -- visibly wrong.
+    """
+    joined = RE_NUM_MATHML.sub(r"\\ ", latex)
     joined = RE_CLOSE_MATHML.sub(r"\\ ", joined)
     joined = RE_MATHML_NUM.sub(r"\1\\ ", joined)
     # an ordinary space in maths mode renders as nothing

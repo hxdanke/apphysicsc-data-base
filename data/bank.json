@@ -10,7 +10,7 @@
    "topic_title": "Scalars and Vectors",
    "number": 1,
    "qtype": "mcq",
-   "stem": "The $x-$ and $y$-components of an acceleration vector are given by the equations $a_{x}\\ = (t\\ -\\ 6)\\ \\mathrm{m/s}^{2}$ and $a_{y}\\ = (4\\ t\\ -\\ 5)\\ \\mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t\\ =\\ 2\\ \\mathrm{s}$?",
+   "stem": "The $x-$ and $y$-components of an acceleration vector are given by the equations $a_{x}\\ = (t\\ -\\ 6)\\ \\mathrm{m/s}^{2}$ and $a_{y}\\ = (4t\\ -\\ 5)\\ \\mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t\\ =\\ 2\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -50,7 +50,7 @@
    "topic_title": "Scalars and Vectors",
    "number": 2,
    "qtype": "mcq",
-   "stem": "The components of a velocity vector are given by the functions $v_{x}\\ = (2\\ t\\ -\\ 2)\\ \\mathrm{m/s}$ and $v_{y}\\ = (t\\ -\\ 7)\\ \\mathrm{m/s}$ , where $t$ is the time in seconds. What are the magnitude and direction of the velocity vector at $t\\ =\\ 3\\ \\mathrm{s}$?",
+   "stem": "The components of a velocity vector are given by the functions $v_{x}\\ = (2t\\ -\\ 2)\\ \\mathrm{m/s}$ and $v_{y}\\ = (t\\ -\\ 7)\\ \\mathrm{m/s}$ , where $t$ is the time in seconds. What are the magnitude and direction of the velocity vector at $t\\ =\\ 3\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -423,7 +423,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 1,
    "qtype": "mcq",
-   "stem": "The position of an object moving along the $x$-axis is described by $x(t) =\\ 5\\ t^{2}\\ -\\ t^{3}$ where $x$ is in meters and $t$ is time in seconds. What is the average velocity of the object during the time interval from $t\\ =\\ 1\\ \\mathrm{s}$ to $t\\ =\\ 3\\ \\mathrm{s}$?",
+   "stem": "The position of an object moving along the $x$-axis is described by $x(t) =\\ 5t^{2}\\ -\\ t^{3}$ where $x$ is in meters and $t$ is time in seconds. What is the average velocity of the object during the time interval from $t\\ =\\ 1\\ \\mathrm{s}$ to $t\\ =\\ 3\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -509,7 +509,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 3,
    "qtype": "mcq",
-   "stem": "The position of an object moving along the $x$-axis is given by the equation $x(t) =\\ t^{2}\\ -\\ 6\\ t\\ +\\ 9,$ where $x$ is in meters and $t$ is time in seconds. Does the object's direction of motion change and what reasoning supports that claim?",
+   "stem": "The position of an object moving along the $x$-axis is given by the equation $x(t) =\\ t^{2}\\ -\\ 6t\\ +\\ 9,$ where $x$ is in meters and $t$ is time in seconds. Does the object's direction of motion change and what reasoning supports that claim?",
    "choices": [
     {
      "label": "A",
@@ -604,7 +604,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 5,
    "qtype": "mcq",
-   "stem": "An object's position as a function of time is modeled by the equation $x\\ =\\ 0.5\\ t^{3}\\ +\\ 2$ where $x$ is in meters and $t$ is in seconds. What is the acceleration of the object at $t\\ =\\ 3\\ \\mathrm{s}$?",
+   "stem": "An object's position as a function of time is modeled by the equation $x\\ =\\ 0.5t^{3}\\ +\\ 2$ where $x$ is in meters and $t$ is in seconds. What is the acceleration of the object at $t\\ =\\ 3\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -644,7 +644,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 6,
    "qtype": "mcq",
-   "stem": "A cart's position as a function of time is $x\\ =\\ 10\\ t^{3/2}\\ +\\ t$, where $x$ is in centimeters and $t$ is time in seconds. What is the cart's velocity at $t\\ =\\ 4\\ \\mathrm{s}$?",
+   "stem": "A cart's position as a function of time is $x\\ =\\ 10t^{3/2}\\ +\\ t$, where $x$ is in centimeters and $t$ is time in seconds. What is the cart's velocity at $t\\ =\\ 4\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -684,7 +684,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 7,
    "qtype": "mcq",
-   "stem": "Two objects, Object $1$ and Object $2,$ have velocities $\\vec{v}_{1}\\ = (3\\ t^{2}\\hat{i} +\\ 5\\ t\\hat{j})\\ \\mathrm{m/s}$ and $\\vec{v}_{2}\\ = (5\\ t^{2}\\hat{i} -\\ 3\\ t\\hat{j})\\ \\mathrm{m/s}$ , respectively, where $t$ is time in seconds. Which of the following correctly indicates the relationship between the magnitudes of the acceleration $a_{1}$ of Object $1$ at $t\\ =\\ 1\\ \\mathrm{s}$ and the acceleration $a_{2}$ of Object $2$ at $t\\ =\\ 1\\ \\mathrm{s}$?",
+   "stem": "Two objects, Object $1$ and Object $2,$ have velocities $\\vec{v}_{1}\\ = (3t^{2}\\hat{i} +\\ 5t\\hat{j})\\ \\mathrm{m/s}$ and $\\vec{v}_{2}\\ = (5t^{2}\\hat{i} -\\ 3t\\hat{j})\\ \\mathrm{m/s}$ , respectively, where $t$ is time in seconds. Which of the following correctly indicates the relationship between the magnitudes of the acceleration $a_{1}$ of Object $1$ at $t\\ =\\ 1\\ \\mathrm{s}$ and the acceleration $a_{2}$ of Object $2$ at $t\\ =\\ 1\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -724,7 +724,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 8,
    "qtype": "mcq",
-   "stem": "An object moves in one dimension along the $x$-axis. At time $t\\ =\\ 0,$ the object is located at position $x\\ =\\ 1\\ \\mathrm{m}$ and has a velocity $v\\ =\\ 1\\ \\mathrm{m/s}.$ The object's acceleration varies as \\textit{a}$= 3\\ t$, where \\textit{a} is in $\\mathrm{m/s}^{2}$ and $t$ is time in seconds. A student incorrectly derives the equation for the object's position as $x\\ =\\ t^{3}/2\\ +\\ 1,$ where $x$ is in meters. Which of the following describes a possible error that could have resulted in the incorrect equation?",
+   "stem": "An object moves in one dimension along the $x$-axis. At time $t\\ =\\ 0,$ the object is located at position $x\\ =\\ 1\\ \\mathrm{m}$ and has a velocity $v\\ =\\ 1\\ \\mathrm{m/s}.$ The object's acceleration varies as \\textit{a}$= 3t$, where \\textit{a} is in $\\mathrm{m/s}^{2}$ and $t$ is time in seconds. A student incorrectly derives the equation for the object's position as $x\\ =\\ t^{3}/2\\ +\\ 1,$ where $x$ is in meters. Which of the following describes a possible error that could have resulted in the incorrect equation?",
    "choices": [
     {
      "label": "A",
@@ -736,7 +736,7 @@
     },
     {
      "label": "C",
-     "text": "The student's equation does not substitute \\textit{a}$= 3\\ t$ in the $at^{2}/2$ term."
+     "text": "The student's equation does not substitute \\textit{a}$= 3t$ in the $at^{2}/2$ term."
     },
     {
      "label": "D",
@@ -764,7 +764,7 @@
    "topic_title": "Representing Motion",
    "number": 1,
    "qtype": "mcq",
-   "stem": "Students testing two different toy cars on a straight track determine that, starting from rest, Car A reaches a velocity $v_{A}$ in a displacement of $x_{A}$ and Car B reaches a velocity of $2\\ v_{A}$ in a displacement of $2\\ x_{A}$ . The motion of each car can be modeled with constant acceleration. If the acceleration of Car A is $a_{A}$, what is the acceleration of Car B?",
+   "stem": "Students testing two different toy cars on a straight track determine that, starting from rest, Car A reaches a velocity $v_{A}$ in a displacement of $x_{A}$ and Car B reaches a velocity of $2v_{A}$ in a displacement of $2x_{A}$ . The motion of each car can be modeled with constant acceleration. If the acceleration of Car A is $a_{A}$, what is the acceleration of Car B?",
    "choices": [
     {
      "label": "A",
@@ -776,11 +776,11 @@
     },
     {
      "label": "C",
-     "text": "$2\\ a_{A}$"
+     "text": "$2a_{A}$"
     },
     {
      "label": "D",
-     "text": "$4\\ a_{A}$"
+     "text": "$4a_{A}$"
     }
    ],
    "answer": "",
@@ -862,11 +862,11 @@
     },
     {
      "label": "C",
-     "text": "$4\\ t_{P}$"
+     "text": "$4t_{P}$"
     },
     {
      "label": "D",
-     "text": "$16\\ t_{P}$"
+     "text": "$16t_{P}$"
     }
    ],
    "answer": "",
@@ -890,7 +890,7 @@
    "topic_title": "Representing Motion",
    "number": 4,
    "qtype": "mcq",
-   "stem": "At time $t\\ =\\ 0$ an object is thrown vertically upward. It then returns to its initial position at $t\\ =\\ t_{f}$. What is the speed of the object at $t\\ =\\ 2\\ t_{f}/3?$",
+   "stem": "At time $t\\ =\\ 0$ an object is thrown vertically upward. It then returns to its initial position at $t\\ =\\ t_{f}$. What is the speed of the object at $t\\ =\\ 2t_{f}/3?$",
    "choices": [
     {
      "label": "A",
@@ -942,11 +942,11 @@
     },
     {
      "label": "C",
-     "text": "$2\\Delta x/3\\ t$"
+     "text": "$2\\Delta x/3t$"
     },
     {
      "label": "D",
-     "text": "$\\Delta x/2\\ t$"
+     "text": "$\\Delta x/2t$"
     }
    ],
    "answer": "",
@@ -974,11 +974,11 @@
    "choices": [
     {
      "label": "A",
-     "text": "$9\\ d$"
+     "text": "$9d$"
     },
     {
      "label": "B",
-     "text": "$3\\ d$"
+     "text": "$3d$"
     },
     {
      "label": "C",
@@ -1154,11 +1154,11 @@
     },
     {
      "label": "C",
-     "text": "$4\\ t^{2}\\ +\\ 6\\ t$"
+     "text": "$4t^{2}\\ +\\ 6t$"
     },
     {
      "label": "D",
-     "text": "$\\frac{1}{3} t3 + 6\\ t$"
+     "text": "$\\frac{1}{3} t3 + 6t$"
     }
    ],
    "answer": "",
@@ -1670,7 +1670,7 @@
    "topic_title": "Motion in Two or Three Dimensions",
    "number": 3,
    "qtype": "mcq",
-   "stem": "Object $1$ is launched at an initial speed $v_{0}$ at an angle $\\theta$ above the horizontal and reaches a maximum height of $y_{1}$. Object $2$ is launched at an initial speed $2\\ v_{0}$ at the same angle $\\theta$, reaching a maximum height of $y_{2}$. What is the relationship between $y_{1}$ and $y_{2}$?",
+   "stem": "Object $1$ is launched at an initial speed $v_{0}$ at an angle $\\theta$ above the horizontal and reaches a maximum height of $y_{1}$. Object $2$ is launched at an initial speed $2v_{0}$ at the same angle $\\theta$, reaching a maximum height of $y_{2}$. What is the relationship between $y_{1}$ and $y_{2}$?",
    "choices": [
     {
      "label": "A",
@@ -1682,11 +1682,11 @@
     },
     {
      "label": "C",
-     "text": "$y_{2}\\ =\\ 2\\ y_{1}$"
+     "text": "$y_{2}\\ =\\ 2y_{1}$"
     },
     {
      "label": "D",
-     "text": "$y_{2}\\ =\\ 4\\ y_{1}$"
+     "text": "$y_{2}\\ =\\ 4y_{1}$"
     }
    ],
    "answer": "",
@@ -1856,15 +1856,15 @@
     },
     {
      "label": "B",
-     "text": "$2\\ v$"
+     "text": "$2v$"
     },
     {
      "label": "C",
-     "text": "$4\\ v \\sin \\theta$"
+     "text": "$4v \\sin \\theta$"
     },
     {
      "label": "D",
-     "text": "$4\\ v$"
+     "text": "$4v$"
     }
    ],
    "answer": "",
@@ -1904,7 +1904,7 @@
     },
     {
      "label": "D",
-     "text": "$\\vec{r} = (- \\frac{1}{2} gt2 + v0\\ t$ cos$\\theta 0)\\hat{i} + (H - v0\\ t$ sin$\\theta 0 - \\frac{1}{2} gt2) \\hat{j}$"
+     "text": "$\\vec{r} = (- \\frac{1}{2} gt2 + v0t$ cos$\\theta 0)\\hat{i} + (H - v0t$ sin$\\theta 0 - \\frac{1}{2} gt2) \\hat{j}$"
     }
    ],
    "answer": "",
@@ -2292,15 +2292,15 @@
     },
     {
      "label": "B",
-     "text": "$M\\ <\\ \\mathrm{m}_{C}\\ <\\ 2\\ M$"
+     "text": "$M\\ <\\ \\mathrm{m}_{C}\\ <\\ 2M$"
     },
     {
      "label": "C",
-     "text": "$\\mathrm{m}_{C}\\ =\\ 2\\ M$"
+     "text": "$\\mathrm{m}_{C}\\ =\\ 2M$"
     },
     {
      "label": "D",
-     "text": "$\\mathrm{m}_{C}\\ >\\ 2\\ M$"
+     "text": "$\\mathrm{m}_{C}\\ >\\ 2M$"
     }
    ],
    "answer": "",
@@ -3859,7 +3859,7 @@
    "topic_title": "Newton’s Second Law",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_25_q4_1.png}\n\nA hanging block of mass $M$ is connected to an identical block of mass $M$ on a horizontal surface with negligible friction by a light cord over an ideal pulley, as shown. When the blocks are released, the magnitude of the acceleration of each block is \\textit{a}. If the block on the surface is replaced with a block of mass $5\\ M$, what will be the magnitude of the acceleration of each block after the blocks are released?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_25_q4_1.png}\n\nA hanging block of mass $M$ is connected to an identical block of mass $M$ on a horizontal surface with negligible friction by a light cord over an ideal pulley, as shown. When the blocks are released, the magnitude of the acceleration of each block is \\textit{a}. If the block on the surface is replaced with a block of mass $5M$, what will be the magnitude of the acceleration of each block after the blocks are released?",
    "choices": [
     {
      "label": "A",
@@ -3917,11 +3917,11 @@
     },
     {
      "label": "C",
-     "text": "$5\\ a_{0}$"
+     "text": "$5a_{0}$"
     },
     {
      "label": "D",
-     "text": "$7\\ a_{0}$"
+     "text": "$7a_{0}$"
     }
    ],
    "answer": "",
@@ -3951,23 +3951,23 @@
    "topic_title": "Newton’s Second Law",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q6_1.png}\n\nTwo horizontal forces cause an object to move with an acceleration \\textit{a} to the right. The force $F_{\\mathrm{L}}$ is exerted to the left, with magnitude $F$, and the force $F_{R}$ is exerted to the right, with magnitude $3\\ F$. What would the magnitude of $F_{R}$ need to be to cause the object to move with an acceleration of $4$\\textit{a} to the right while $F_{\\mathrm{L}}$ remains unchanged?",
+   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q6_1.png}\n\nTwo horizontal forces cause an object to move with an acceleration \\textit{a} to the right. The force $F_{\\mathrm{L}}$ is exerted to the left, with magnitude $F$, and the force $F_{R}$ is exerted to the right, with magnitude $3F$. What would the magnitude of $F_{R}$ need to be to cause the object to move with an acceleration of $4$\\textit{a} to the right while $F_{\\mathrm{L}}$ remains unchanged?",
    "choices": [
     {
      "label": "A",
-     "text": "$7\\ F$"
+     "text": "$7F$"
     },
     {
      "label": "B",
-     "text": "$8\\ F$"
+     "text": "$8F$"
     },
     {
      "label": "C",
-     "text": "$9\\ F$"
+     "text": "$9F$"
     },
     {
      "label": "D",
-     "text": "$12\\ F$"
+     "text": "$12F$"
     }
    ],
    "answer": "",
@@ -4135,7 +4135,7 @@
    "topic_title": "Gravitational Force",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.39\\linewidth]{media/u2_26_q1_1.png}\n\nA sphere of radius $R$ and uniformly distributed mass $M$ is concentric with a thin spherical shell of radius $3\\ R$ and uniformly distributed mass $M$. What is the gravitational field strength at a location P that is a distance $2\\ R$ from the sphere's center?",
+   "stem": "\\includegraphics[width=0.39\\linewidth]{media/u2_26_q1_1.png}\n\nA sphere of radius $R$ and uniformly distributed mass $M$ is concentric with a thin spherical shell of radius $3R$ and uniformly distributed mass $M$. What is the gravitational field strength at a location P that is a distance $2R$ from the sphere's center?",
    "choices": [
     {
      "label": "A",
@@ -4221,7 +4221,7 @@
    "topic_title": "Gravitational Force",
    "number": 3,
    "qtype": "mcq",
-   "stem": "A rocket of initial mass $\\mathrm{m}$ is on the surface of a planet of radius $R$ and mass $M$. The rocket is then launched into a circular orbit. When the rocket has reached its orbit, it is a distance $2\\ R$ above the planet's surface and the rocket's mass is $\\mathrm{m}/5.$ What is the ratio of the gravitational field experienced by the rocket in orbit to the gravitational field on the surface of the planet?",
+   "stem": "A rocket of initial mass $\\mathrm{m}$ is on the surface of a planet of radius $R$ and mass $M$. The rocket is then launched into a circular orbit. When the rocket has reached its orbit, it is a distance $2R$ above the planet's surface and the rocket's mass is $\\mathrm{m}/5.$ What is the ratio of the gravitational field experienced by the rocket in orbit to the gravitational field on the surface of the planet?",
    "choices": [
     {
      "label": "A",
@@ -4387,7 +4387,7 @@
    "topic_title": "Gravitational Force",
    "number": 7,
    "qtype": "mcq",
-   "stem": "Two satellites orbit Earth at different altitudes. Satellite $1$ has mass $\\mathrm{m}$ and orbits at a distance $d$ from Earth's center. Satellite $2$ has mass $2\\ \\mathrm{m}$ and orbits at a distance $2\\ d$ from Earth's center. What is the ratio of the gravitational force exerted by Earth on Satellite $1$ to the gravitational force exerted by Earth on Satellite 2?",
+   "stem": "Two satellites orbit Earth at different altitudes. Satellite $1$ has mass $\\mathrm{m}$ and orbits at a distance $d$ from Earth's center. Satellite $2$ has mass $2\\ \\mathrm{m}$ and orbits at a distance $2d$ from Earth's center. What is the ratio of the gravitational force exerted by Earth on Satellite $1$ to the gravitational force exerted by Earth on Satellite 2?",
    "choices": [
     {
      "label": "A",
@@ -4473,7 +4473,7 @@
    "topic_title": "Gravitational Force",
    "number": 9,
    "qtype": "mcq",
-   "stem": "Asteroid S is spherical in shape with a mass $M$ and radius $R$. Asteroid T, also spherical, has a mass $3\\ M$ and radius $3\\ R$. A small space probe of mass $\\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{S}$ at the surface of Asteroid S. A different space probe of mass $2\\ \\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{T}$ at the surface of Asteroid T. What is $\\mathrm{g}_{T}$ in terms of $\\mathrm{g}_{S}$?",
+   "stem": "Asteroid S is spherical in shape with a mass $M$ and radius $R$. Asteroid T, also spherical, has a mass $3M$ and radius $3R$. A small space probe of mass $\\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{S}$ at the surface of Asteroid S. A different space probe of mass $2\\ \\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{T}$ at the surface of Asteroid T. What is $\\mathrm{g}_{T}$ in terms of $\\mathrm{g}_{S}$?",
    "choices": [
     {
      "label": "A",
@@ -4891,7 +4891,7 @@
    "topic_title": "Spring Forces",
    "number": 1,
    "qtype": "mcq",
-   "stem": "Two springs are each fixed in place at one end and lie on a horizontal surface, with negligible friction between the surface and either spring. One of the springs has spring constant $k_{1}$. When a force $F_{1}$ is exerted on the free end of the spring, the spring compresses a distance $d_{1}$. If the second spring has spring constant $3\\ k_{1}$ and a force $2\\ F_{1}$ is exerted on its free end, how far does the second spring compress?",
+   "stem": "Two springs are each fixed in place at one end and lie on a horizontal surface, with negligible friction between the surface and either spring. One of the springs has spring constant $k_{1}$. When a force $F_{1}$ is exerted on the free end of the spring, the spring compresses a distance $d_{1}$. If the second spring has spring constant $3k_{1}$ and a force $2F_{1}$ is exerted on its free end, how far does the second spring compress?",
    "choices": [
     {
      "label": "A",
@@ -4899,15 +4899,15 @@
     },
     {
      "label": "B",
-     "text": "$2\\ d_{1}/3$"
+     "text": "$2d_{1}/3$"
     },
     {
      "label": "C",
-     "text": "$3\\ d_{1}/2$"
+     "text": "$3d_{1}/2$"
     },
     {
      "label": "D",
-     "text": "$6\\ d_{1}$"
+     "text": "$6d_{1}$"
     }
    ],
    "answer": "",
@@ -4931,7 +4931,7 @@
    "topic_title": "Spring Forces",
    "number": 2,
    "qtype": "mcq",
-   "stem": "When a block of mass $M$ is hung vertically from a spring, the spring is stretched by a distance $D$ compared to its unstretched length. If a second identical spring is connected in series with the first spring and a larger block of mass $2\\ M$ is then hung vertically from the two-spring combination, by how much is the combination stretched compared to its unstretched length? D",
+   "stem": "When a block of mass $M$ is hung vertically from a spring, the spring is stretched by a distance $D$ compared to its unstretched length. If a second identical spring is connected in series with the first spring and a larger block of mass $2M$ is then hung vertically from the two-spring combination, by how much is the combination stretched compared to its unstretched length? D",
    "choices": [
     {
      "label": "A",
@@ -4943,11 +4943,11 @@
     },
     {
      "label": "C",
-     "text": "$2\\ D$"
+     "text": "$2D$"
     },
     {
      "label": "D",
-     "text": "$4\\ D$"
+     "text": "$4D$"
     }
    ],
    "answer": "",
@@ -5019,15 +5019,15 @@
     },
     {
      "label": "B",
-     "text": "$2\\ k_{2}/3$"
+     "text": "$2k_{2}/3$"
     },
     {
      "label": "C",
-     "text": "$3\\ k_{2}/2$"
+     "text": "$3k_{2}/2$"
     },
     {
      "label": "D",
-     "text": "$3\\ k_{2}$"
+     "text": "$3k_{2}$"
     }
    ],
    "answer": "",
@@ -5459,7 +5459,7 @@
    "topic_title": "Resistive Forces",
    "number": 5,
    "qtype": "mcq",
-   "stem": "An object is dropped from rest at $t\\ =\\ 0$ near Earth's surface and experiences a resistive force of magnitude $kv$, where $v$ is the speed of the object and $k$ is a constant which depends on a variety of factors. The object reaches a speed of $0.5\\ v_{T}$ at $t\\ =\\ t_{\\mathrm{0.5}}$, where $v_{T}$ is the object's terminal velocity. If another object has the same mass but a greater value of $k$, what changes would occur to the terminal speed, $v_{T}$, and the time it takes to get to half the terminal speed, $t_{\\mathrm{0.5}}$? $v_{T} t_{\\mathrm{0.5}}$",
+   "stem": "An object is dropped from rest at $t\\ =\\ 0$ near Earth's surface and experiences a resistive force of magnitude $kv$, where $v$ is the speed of the object and $k$ is a constant which depends on a variety of factors. The object reaches a speed of $0.5v_{T}$ at $t\\ =\\ t_{\\mathrm{0.5}}$, where $v_{T}$ is the object's terminal velocity. If another object has the same mass but a greater value of $k$, what changes would occur to the terminal speed, $v_{T}$, and the time it takes to get to half the terminal speed, $t_{\\mathrm{0.5}}$? $v_{T} t_{\\mathrm{0.5}}$",
    "choices": [
     {
      "label": "A",
@@ -5668,7 +5668,7 @@
    "topic_title": "Circular Motion",
    "number": 1,
    "qtype": "mcq",
-   "stem": "Two identical blocks slide along two different vertical loops of radii $r_{0}$ and $2\\ r_{0}$. At the top of each loop, the blocks have the minimum velocity required to remain in contact with their respective loops. What is the ratio of the centripetal acceleration of the block in the smaller loop to the centripetal acceleration of the block in the larger loop?",
+   "stem": "Two identical blocks slide along two different vertical loops of radii $r_{0}$ and $2r_{0}$. At the top of each loop, the blocks have the minimum velocity required to remain in contact with their respective loops. What is the ratio of the centripetal acceleration of the block in the smaller loop to the centripetal acceleration of the block in the larger loop?",
    "choices": [
     {
      "label": "A",
@@ -5888,7 +5888,7 @@
     },
     {
      "label": "B",
-     "text": "$\\sqrt{2 } 2\\ y^{1}$"
+     "text": "$\\sqrt{2 } 2y^{1}$"
     },
     {
      "label": "C",
@@ -5896,7 +5896,7 @@
     },
     {
      "label": "D",
-     "text": "$2\\ y_{1}$"
+     "text": "$2y_{1}$"
     }
    ],
    "answer": "",
@@ -6362,7 +6362,7 @@
    "topic_title": "Translational Kinetic Energy",
    "number": 8,
    "qtype": "mcq",
-   "stem": "Two identical blocks, Block A and Block B, slide across a horizontal surface. Block A has a speed $v$, and a kinetic energy $K_{A}$. Block B has a speed $2\\ v$ and a kinetic energy $K_{B}$. Which of the following gives the ratio $K_{A}$ : $K_{B}$ and a correct justification?",
+   "stem": "Two identical blocks, Block A and Block B, slide across a horizontal surface. Block A has a speed $v$, and a kinetic energy $K_{A}$. Block B has a speed $2v$ and a kinetic energy $K_{B}$. Which of the following gives the ratio $K_{A}$ : $K_{B}$ and a correct justification?",
    "choices": [
     {
      "label": "A",
@@ -6488,7 +6488,7 @@
    "topic_title": "Work",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A force $F$ is exerted on an object which is initially at rest. The force varies with position $x$ and can be described by the equation $\\vec{F} = (Ax\\ -\\ B)\\hat{i}$, where $A$ and $B$ are constants with appropriate units. After moving a distance $D_{0}$, the block again comes to rest. An identical object, also initially at rest, experiences a force $2\\ F$. The second object comes to rest again after moving a distance $D_{1}$. Which of the following correctly describes the relationship between $D_{0}$ and $D_{1}$?",
+   "stem": "A force $F$ is exerted on an object which is initially at rest. The force varies with position $x$ and can be described by the equation $\\vec{F} = (Ax\\ -\\ B)\\hat{i}$, where $A$ and $B$ are constants with appropriate units. After moving a distance $D_{0}$, the block again comes to rest. An identical object, also initially at rest, experiences a force $2F$. The second object comes to rest again after moving a distance $D_{1}$. Which of the following correctly describes the relationship between $D_{0}$ and $D_{1}$?",
    "choices": [
     {
      "label": "A",
@@ -6500,11 +6500,11 @@
     },
     {
      "label": "C",
-     "text": "$D_{0} = 2\\ D_{1}$"
+     "text": "$D_{0} = 2D_{1}$"
     },
     {
      "label": "D",
-     "text": "$D_{0} = 4\\ D_{1}$"
+     "text": "$D_{0} = 4D_{1}$"
     }
    ],
    "answer": "",
@@ -6654,7 +6654,7 @@
    "topic_title": "Work",
    "number": 6,
    "qtype": "mcq",
-   "stem": "A block of mass $\\mathrm{m}$ slides with an initial velocity $v_{0}$ along a rough surface where the coefficient of kinetic friction between the block and the surface is $\\mu$. The box comes to rest after sliding a distance $d_{0}$. A new block of unknown mass slides with an initial velocity $2\\ v_{0}$ of across a surface where the coefficient of kinetic friction between the new block and the surface is $\\mu/2.$ Which of the following expressions represents the distance the new block slides before coming to rest in terms of $d_{0}$?",
+   "stem": "A block of mass $\\mathrm{m}$ slides with an initial velocity $v_{0}$ along a rough surface where the coefficient of kinetic friction between the block and the surface is $\\mu$. The box comes to rest after sliding a distance $d_{0}$. A new block of unknown mass slides with an initial velocity $2v_{0}$ of across a surface where the coefficient of kinetic friction between the new block and the surface is $\\mu/2.$ Which of the following expressions represents the distance the new block slides before coming to rest in terms of $d_{0}$?",
    "choices": [
     {
      "label": "A",
@@ -6662,15 +6662,15 @@
     },
     {
      "label": "B",
-     "text": "$2\\ d_{0}$"
+     "text": "$2d_{0}$"
     },
     {
      "label": "C",
-     "text": "$4\\ d_{0}$"
+     "text": "$4d_{0}$"
     },
     {
      "label": "D",
-     "text": "$8\\ d_{0}$"
+     "text": "$8d_{0}$"
     }
    ],
    "answer": "",
@@ -6780,7 +6780,7 @@
    "topic_title": "Work",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_32_q9_1.png}\n\nA block of mass $\\mathrm{m}$, initially at rest, experiences a position-dependent force given by the expression $\\vec{F} = (3\\ x)\\hat{i} + (-2\\ x^{2})\\hat{j}$, where $x$ is the position of the block. The block slides along a horizontal surface, as shown in the diagram, where friction between the block and the surface is negligible. Which expression correctly represents the kinetic energy of the block after it has undergone a horizontal displacement of magnitude $D$?",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_32_q9_1.png}\n\nA block of mass $\\mathrm{m}$, initially at rest, experiences a position-dependent force given by the expression $\\vec{F} = (3x)\\hat{i} + (-2x^{2})\\hat{j}$, where $x$ is the position of the block. The block slides along a horizontal surface, as shown in the diagram, where friction between the block and the surface is negligible. Which expression correctly represents the kinetic energy of the block after it has undergone a horizontal displacement of magnitude $D$?",
    "choices": [
     {
      "label": "A",
@@ -6792,7 +6792,7 @@
     },
     {
      "label": "C",
-     "text": "$K\\ =\\ 3\\ D^{2}$"
+     "text": "$K\\ =\\ 3D^{2}$"
     },
     {
      "label": "D",
@@ -6826,7 +6826,7 @@
    "topic_title": "Potential Energy",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.58\\linewidth]{media/u3_33_q1_1.png}\n\nAn object in space is placed between two planets as shown. Planet A has a mass $\\mathrm{m}$ and the distance from the center of Planet A to the object is $d$. Planet B has a mass $2\\ \\mathrm{m}$ and the distance from the center of Planet B to the object is $2\\ d$. Upon releasing the object from rest, where will the object move and how will the potential energy of the two-planet-object system change?",
+   "stem": "\\includegraphics[width=0.58\\linewidth]{media/u3_33_q1_1.png}\n\nAn object in space is placed between two planets as shown. Planet A has a mass $\\mathrm{m}$ and the distance from the center of Planet A to the object is $d$. Planet B has a mass $2\\ \\mathrm{m}$ and the distance from the center of Planet B to the object is $2d$. Upon releasing the object from rest, where will the object move and how will the potential energy of the two-planet-object system change?",
    "choices": [
     {
      "label": "A",
@@ -6958,7 +6958,7 @@
    "topic_title": "Potential Energy",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.89\\linewidth]{media/u3_33_q4_1.png}\n\nOne end of an unstretched spring is attached to a wall. When the spring is at its equilibrium length the right end is at position $x\\ =\\ 0.$ A student pulls the right end of the spring until the right end of the spring is at position $x = 2$\\textit{a}, as shown in the figures. The magnitude of the force exerted by the spring on the student as a function of position $x$ of the right end of the spring is $F(x) =\\ 6\\ x^{2}\\ -\\ 2\\ x$. Which of the following expressions correctly indicates the change in potential energy of the spring during the time that the free end of the spring moves from $x =$\\textit{a} to $x = 2$\\textit{a}?",
+   "stem": "\\includegraphics[width=0.89\\linewidth]{media/u3_33_q4_1.png}\n\nOne end of an unstretched spring is attached to a wall. When the spring is at its equilibrium length the right end is at position $x\\ =\\ 0.$ A student pulls the right end of the spring until the right end of the spring is at position $x = 2$\\textit{a}, as shown in the figures. The magnitude of the force exerted by the spring on the student as a function of position $x$ of the right end of the spring is $F(x) =\\ 6x^{2}\\ -\\ 2x$. Which of the following expressions correctly indicates the change in potential energy of the spring during the time that the free end of the spring moves from $x =$\\textit{a} to $x = 2$\\textit{a}?",
    "choices": [
     {
      "label": "A",
@@ -6966,15 +6966,15 @@
     },
     {
      "label": "B",
-     "text": "$2\\ a^{3}\\ -\\ a^{2}$"
+     "text": "$2a^{3}\\ -\\ a^{2}$"
     },
     {
      "label": "C",
-     "text": "$14\\ a^{3}\\ -\\ 3\\ a^{2}$"
+     "text": "$14a^{3}\\ -\\ 3a^{2}$"
     },
     {
      "label": "D",
-     "text": "$42\\ a^{3}\\ -\\ 6\\ a^{2}$"
+     "text": "$42a^{3}\\ -\\ 6a^{2}$"
     }
    ],
    "answer": "",
@@ -7393,7 +7393,7 @@
     },
     {
      "label": "C",
-     "text": "$\\sqrt{3 } 2\\ d$"
+     "text": "$\\sqrt{3 } 2d$"
     },
     {
      "label": "D",
@@ -8174,7 +8174,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$2\\ p_{0}$"
+     "text": "$2p_{0}$"
     },
     {
      "label": "B",
@@ -8210,7 +8210,7 @@
    "topic_title": "Linear Momentum",
    "number": 3,
    "qtype": "mcq",
-   "stem": "The kinetic energy of a moving object changes from $K_{0}$ to $4\\ K_{0}$. By what factor does the magnitude of the object's momentum change?",
+   "stem": "The kinetic energy of a moving object changes from $K_{0}$ to $4K_{0}$. By what factor does the magnitude of the object's momentum change?",
    "choices": [
     {
      "label": "A",
@@ -8352,7 +8352,7 @@
     },
     {
      "label": "D",
-     "text": "$2\\ p_{0}$"
+     "text": "$2p_{0}$"
     }
    ],
    "answer": "",
@@ -8562,23 +8562,23 @@
    "topic_title": "Change in Momentum and Impulse",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.68\\linewidth]{media/u4_42_q2_1.png}\n\nObject $1$ of mass $\\mathrm{m}_{1}$ and Object $2$ of mass $\\mathrm{m}_{2}$ move along the $x$-axis toward each other with speeds $v_{1\\ i}$ and $v_{2\\ i}$ , respectively. The objects collide and then move away from each other with speeds $v_{1\\ f}$ and $v_{2\\ f}$ , respectively, as shown in the figure. There are no external forces acting on the two-object system. What is the magnitude of the impulse exerted on Object $1$ by Object $2$ during the collision?",
+   "stem": "\\includegraphics[width=0.68\\linewidth]{media/u4_42_q2_1.png}\n\nObject $1$ of mass $\\mathrm{m}_{1}$ and Object $2$ of mass $\\mathrm{m}_{2}$ move along the $x$-axis toward each other with speeds $v_{1i}$ and $v_{2i}$ , respectively. The objects collide and then move away from each other with speeds $v_{1f}$ and $v_{2f}$ , respectively, as shown in the figure. There are no external forces acting on the two-object system. What is the magnitude of the impulse exerted on Object $1$ by Object $2$ during the collision?",
    "choices": [
     {
      "label": "A",
-     "text": "$\\mathrm{m}_{1}|v_{1\\ f}\\ -\\ v_{1\\ i}|$"
+     "text": "$\\mathrm{m}_{1}|v_{1f}\\ -\\ v_{1i}|$"
     },
     {
      "label": "B",
-     "text": "$\\mathrm{m}_{1}(v_{1\\ f}\\ +\\ v_{1\\ i})$"
+     "text": "$\\mathrm{m}_{1}(v_{1f}\\ +\\ v_{1i})$"
     },
     {
      "label": "C",
-     "text": "$\\mathrm{m}_{1}|v_{2\\ f}\\ -\\ v_{2\\ i}|$"
+     "text": "$\\mathrm{m}_{1}|v_{2f}\\ -\\ v_{2i}|$"
     },
     {
      "label": "D",
-     "text": "$\\mathrm{m}_{1}(v_{2\\ f}\\ +\\ v_{2\\ i})$"
+     "text": "$\\mathrm{m}_{1}(v_{2f}\\ +\\ v_{2i})$"
     }
    ],
    "answer": "",
@@ -9036,7 +9036,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.69\\linewidth]{media/u4_43_q3_1.png}\n\nA block of mass $\\mathrm{m}_{1}$ moves with initial speed $v_{1\\ i}$ on a horizontal surface toward a stationary block of mass $\\mathrm{m}_{2}$ , as shown in the figure labeled ``Before Collision.'' Friction between the blocks and the horizontal surface is negligible. Three possible outcomes labeled P, Q, and R, are also shown. Rank the two-block system's final center of mass speeds $v_{\\mathrm{Pcm}}$, $v_{\\mathrm{Qcm}}$, and $v_{\\mathrm{Rcm}}$ after the three collision outcomes.",
+   "stem": "\\includegraphics[width=0.69\\linewidth]{media/u4_43_q3_1.png}\n\nA block of mass $\\mathrm{m}_{1}$ moves with initial speed $v_{1i}$ on a horizontal surface toward a stationary block of mass $\\mathrm{m}_{2}$ , as shown in the figure labeled ``Before Collision.'' Friction between the blocks and the horizontal surface is negligible. Three possible outcomes labeled P, Q, and R, are also shown. Rank the two-block system's final center of mass speeds $v_{\\mathrm{Pcm}}$, $v_{\\mathrm{Qcm}}$, and $v_{\\mathrm{Rcm}}$ after the three collision outcomes.",
    "choices": [
     {
      "label": "A",
@@ -9090,7 +9090,7 @@
     },
     {
      "label": "B",
-     "text": "$2\\ v_{0}/3$"
+     "text": "$2v_{0}/3$"
     },
     {
      "label": "C",
@@ -9264,11 +9264,11 @@
    "choices": [
     {
      "label": "A",
-     "text": "$4\\ v(t\\ -\\ t_{1})$"
+     "text": "$4v(t\\ -\\ t_{1})$"
     },
     {
      "label": "B",
-     "text": "$D\\ +\\ 4\\ v(t\\ -\\ t_{1})$"
+     "text": "$D\\ +\\ 4v(t\\ -\\ t_{1})$"
     },
     {
      "label": "C",
@@ -9815,7 +9815,7 @@
    "topic_title": "Rotational Kinematics",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A long bar rotates about an axis that is perpendicular to the bar and located at its center. The angular velocity of the bar in $\\mathrm{rad/s}$ is given by $\\omega(t) =\\ 4\\ t^{2}\\ +\\ 1$ , where $t$ is the time in seconds. Which of the following approaches could be used to find the average angular velocity of the bar in the time interval $1\\ \\leq\\ t\\ \\leq$ 3?",
+   "stem": "A long bar rotates about an axis that is perpendicular to the bar and located at its center. The angular velocity of the bar in $\\mathrm{rad/s}$ is given by $\\omega(t) =\\ 4t^{2}\\ +\\ 1$ , where $t$ is the time in seconds. Which of the following approaches could be used to find the average angular velocity of the bar in the time interval $1\\ \\leq\\ t\\ \\leq$ 3?",
    "choices": [
     {
      "label": "A",
@@ -10086,7 +10086,7 @@
     },
     {
      "label": "D",
-     "text": "$\\theta\\ =\\ 2\\ A\\ +\\ 2Bt\\ +\\ 2Ct^{2}$"
+     "text": "$\\theta\\ =\\ 2A\\ +\\ 2Bt\\ +\\ 2Ct^{2}$"
     }
    ],
    "answer": "",
@@ -10110,7 +10110,7 @@
    "topic_title": "Rotational Kinematics",
    "number": 9,
    "qtype": "mcq",
-   "stem": "The angular position of a rotating object is given by $\\theta\\ =\\ 2\\ t^{2}\\ -\\ 5\\ t\\ +\\ 4,$ where $t$ is time in seconds and $\\theta$ is the angular position in radians. What is the object's angular velocity at $t\\ =\\ 2\\ \\mathrm{s}$?",
+   "stem": "The angular position of a rotating object is given by $\\theta\\ =\\ 2t^{2}\\ -\\ 5t\\ +\\ 4,$ where $t$ is time in seconds and $\\theta$ is the angular position in radians. What is the object's angular velocity at $t\\ =\\ 2\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -10230,7 +10230,7 @@
    "topic_title": "Connecting Linear and Rotational Motion",
    "number": 3,
    "qtype": "mcq",
-   "stem": "Two wheels, Wheel A and Wheel B, are each rotating about an axis through their centers with angular velocities that are constant. Wheel A has a radius $r_{0}$ and rotates one revolution in a time interval $\\Delta t$. Wheel B has a radius of $2\\ r_{0}$ and rotates one revolution in a time interval $2\\Delta t$. Which of the following correctly describes the linear speed $v_{A}$ of a point located on the edge of Wheel A and the linear speed $v_{B}$ of a point located halfway between the center and the edge of Wheel B?",
+   "stem": "Two wheels, Wheel A and Wheel B, are each rotating about an axis through their centers with angular velocities that are constant. Wheel A has a radius $r_{0}$ and rotates one revolution in a time interval $\\Delta t$. Wheel B has a radius of $2r_{0}$ and rotates one revolution in a time interval $2\\Delta t$. Which of the following correctly describes the linear speed $v_{A}$ of a point located on the edge of Wheel A and the linear speed $v_{B}$ of a point located halfway between the center and the edge of Wheel B?",
    "choices": [
     {
      "label": "A",
@@ -10364,7 +10364,7 @@
     },
     {
      "label": "B",
-     "text": "$12\\ r_{0}At^{2}$"
+     "text": "$12r_{0}At^{2}$"
     },
     {
      "label": "C",
@@ -10727,23 +10727,23 @@
    "topic_title": "Torque",
    "number": 5,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u5_53_q5_1.png}\n\nTwo pulley wheels are rigidly connected so that they can rotate together around a common center, as shown in the figure. The wheels have radii $r_{0}$ and $2\\ r_{0}$, and strings wrapped around each wheel are pulled by two students. One student pulls downward on the smaller wheel's string with a force of magnitude $F_{0}$ exerted a vertical distance $\\mathrm{L}_{0}$ below the wheels' center. The other student pulls downward on the larger wheel's string with a force of magnitude $2\\ F_{0}$ exerted a distance $2\\ \\mathrm{L}_{0}$ below the wheels' center. The students make the correct claim that the force $2\\ F_{0}$ results in a greater torque with respect to the wheels' center. Which of the following provides all the evidence needed to justify the students' claim, without listing any unnecessary evidence?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u5_53_q5_1.png}\n\nTwo pulley wheels are rigidly connected so that they can rotate together around a common center, as shown in the figure. The wheels have radii $r_{0}$ and $2r_{0}$, and strings wrapped around each wheel are pulled by two students. One student pulls downward on the smaller wheel's string with a force of magnitude $F_{0}$ exerted a vertical distance $\\mathrm{L}_{0}$ below the wheels' center. The other student pulls downward on the larger wheel's string with a force of magnitude $2F_{0}$ exerted a distance $2\\ \\mathrm{L}_{0}$ below the wheels' center. The students make the correct claim that the force $2F_{0}$ results in a greater torque with respect to the wheels' center. Which of the following provides all the evidence needed to justify the students' claim, without listing any unnecessary evidence?",
    "choices": [
     {
      "label": "A",
-     "text": "$2\\ F_{0}\\ >\\ F_{0}$"
+     "text": "$2F_{0}\\ >\\ F_{0}$"
     },
     {
      "label": "B",
-     "text": "$2\\ F_{0}\\ >\\ F_{0}$ and $2\\ r_{0}\\ >\\ r_{0}$"
+     "text": "$2F_{0}\\ >\\ F_{0}$ and $2r_{0}\\ >\\ r_{0}$"
     },
     {
      "label": "C",
-     "text": "$2\\ F_{0}\\ >\\ F_{0}$ and $2\\ \\mathrm{L}_{0}\\ >\\ \\mathrm{L}_{0}$"
+     "text": "$2F_{0}\\ >\\ F_{0}$ and $2\\ \\mathrm{L}_{0}\\ >\\ \\mathrm{L}_{0}$"
     },
     {
      "label": "D",
-     "text": "$2\\ F_{0}\\ >\\ F_{0}$, $2\\ r_{0}\\ >\\ r_{0}$ , and $2\\ \\mathrm{L}_{0}\\ >\\ \\mathrm{L}_{0}$"
+     "text": "$2F_{0}\\ >\\ F_{0}$, $2r_{0}\\ >\\ r_{0}$ , and $2\\ \\mathrm{L}_{0}\\ >\\ \\mathrm{L}_{0}$"
     }
    ],
    "answer": "",
@@ -10819,7 +10819,7 @@
    "topic_title": "Torque",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u5_53_q7_1.png}\n\nA board can pivot about a hinge at its right end, as shown in the figure. Three upward forces of different magnitudes are exerted on the board at different locations as indicated. With respect to the pivot, which of the following correctly ranks the magnitudes of the torques $\\tau_{1}$, $\\tau_{2}$, and $\\tau_{3}$ resulting from the forces $F_{0}$, $2\\ F_{0}$, and $3\\ F_{0}$, respectively?",
+   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u5_53_q7_1.png}\n\nA board can pivot about a hinge at its right end, as shown in the figure. Three upward forces of different magnitudes are exerted on the board at different locations as indicated. With respect to the pivot, which of the following correctly ranks the magnitudes of the torques $\\tau_{1}$, $\\tau_{2}$, and $\\tau_{3}$ resulting from the forces $F_{0}$, $2F_{0}$, and $3F_{0}$, respectively?",
    "choices": [
     {
      "label": "A",
@@ -11181,7 +11181,7 @@
    "topic_title": "Rotational Inertia",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u5_54_q6_1.png}\n\nThe figure shows three uniform disks, each with the same mass $\\mathrm{m}_{0}$ but having different radii, that are each free to rotate about axes directed out of the plane of the figure. Disk X has radius $r_{0}$ and is connected by a rod of negligible mass to a point on a rotation axis that is a distance $3\\ r_{0}$ from the disk's center. Disk Y has radius $2\\ r_{0}$ and can rotate about an axis at the top edge of the disk. Disk Z has radius $4\\ r_{0}$ and can rotate about an axis through its center. The rotational inertia about the center of mass for any uniform disk of mass $\\mathrm{m}$ and radius $r$ is $I\\ =\\ mr^{2}/2.$ Rank the disks' rotational inertias $I_{X}$, $I_{Y}$, and $I_{Z}$ about their respective rotation axes.",
+   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u5_54_q6_1.png}\n\nThe figure shows three uniform disks, each with the same mass $\\mathrm{m}_{0}$ but having different radii, that are each free to rotate about axes directed out of the plane of the figure. Disk X has radius $r_{0}$ and is connected by a rod of negligible mass to a point on a rotation axis that is a distance $3r_{0}$ from the disk's center. Disk Y has radius $2r_{0}$ and can rotate about an axis at the top edge of the disk. Disk Z has radius $4r_{0}$ and can rotate about an axis through its center. The rotational inertia about the center of mass for any uniform disk of mass $\\mathrm{m}$ and radius $r$ is $I\\ =\\ mr^{2}/2.$ Rank the disks' rotational inertias $I_{X}$, $I_{Y}$, and $I_{Z}$ about their respective rotation axes.",
    "choices": [
     {
      "label": "A",
@@ -11227,7 +11227,7 @@
    "topic_title": "Rotational Inertia",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u5_54_q7_1.png}\n\nThe figures show three different systems, each consisting of two massive spheres connected by rods of negligible mass and a rotation axis that is perpendicular to the plane of the figure. In System $1,$ each sphere has mass $2\\ M_{0}$ and is a distance $D_{0}$ from the axis of rotation at Point $P_{1}$. In Systems $2$ and $3,$ each sphere has mass $M_{0}$ and is a distance $2\\ D_{0}$ from the axis of rotation at Point $P_{2}$ and Point $P_{3}$, respectively. The sizes of all spheres are small compared to $D_{0}$. How do the rotational inertias $I_{1}$, $I_{2}$, and $I_{3}$ of the three systems compare?",
+   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u5_54_q7_1.png}\n\nThe figures show three different systems, each consisting of two massive spheres connected by rods of negligible mass and a rotation axis that is perpendicular to the plane of the figure. In System $1,$ each sphere has mass $2M_{0}$ and is a distance $D_{0}$ from the axis of rotation at Point $P_{1}$. In Systems $2$ and $3,$ each sphere has mass $M_{0}$ and is a distance $2D_{0}$ from the axis of rotation at Point $P_{2}$ and Point $P_{3}$, respectively. The sizes of all spheres are small compared to $D_{0}$. How do the rotational inertias $I_{1}$, $I_{2}$, and $I_{3}$ of the three systems compare?",
    "choices": [
     {
      "label": "A",
@@ -11323,19 +11323,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$3\\ I_{0}$"
+     "text": "$3I_{0}$"
     },
     {
      "label": "B",
-     "text": "$5\\ I_{0}$"
+     "text": "$5I_{0}$"
     },
     {
      "label": "C",
-     "text": "$9\\ I_{0}$"
+     "text": "$9I_{0}$"
     },
     {
      "label": "D",
-     "text": "$27\\ I_{0}$"
+     "text": "$27I_{0}$"
     }
    ],
    "answer": "",
@@ -11411,7 +11411,7 @@
    "topic_title": "Rotational Equilibrium and Newton’s First Law in Rotational Form",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.43\\linewidth]{media/u5_55_q2_1.png}\n\nA piece of hanging art consists of two diamond-shaped objects hung from a long uniform rod of mass $M_{0}$ and length $\\mathrm{L}_{0}$, as shown in the figure. The diamond shapes have masses $M_{0}$ and $3\\ M_{0}$. The rod is suspended from a vertical cord located a distance $\\mathrm{L}_{0}/4$ from its left end. The larger diamond shape is suspended from the left end of the rod, and the smaller diamond shape of mass $M_{0}$ is to be placed at a location such that the diamonds-rod system will be in rotational equilibrium with the rod horizontal. If the smaller diamond's location is a distance $x$ to the right of the rod's center, which of the following equations is appropriate for determining $x$?",
+   "stem": "\\includegraphics[width=0.43\\linewidth]{media/u5_55_q2_1.png}\n\nA piece of hanging art consists of two diamond-shaped objects hung from a long uniform rod of mass $M_{0}$ and length $\\mathrm{L}_{0}$, as shown in the figure. The diamond shapes have masses $M_{0}$ and $3M_{0}$. The rod is suspended from a vertical cord located a distance $\\mathrm{L}_{0}/4$ from its left end. The larger diamond shape is suspended from the left end of the rod, and the smaller diamond shape of mass $M_{0}$ is to be placed at a location such that the diamonds-rod system will be in rotational equilibrium with the rod horizontal. If the smaller diamond's location is a distance $x$ to the right of the rod's center, which of the following equations is appropriate for determining $x$?",
    "choices": [
     {
      "label": "A",
@@ -11419,7 +11419,7 @@
     },
     {
      "label": "B",
-     "text": "$3\\ M0\\ \\mathrm{g} \\frac{L_{0}}{4} - M0\\ \\mathrm{g}\\ (x + \\frac{L_{0}}{4} ) = 0$"
+     "text": "$3M0\\ \\mathrm{g} \\frac{L_{0}}{4} - M0\\ \\mathrm{g}\\ (x + \\frac{L_{0}}{4} ) = 0$"
     },
     {
      "label": "C",
@@ -11427,7 +11427,7 @@
     },
     {
      "label": "D",
-     "text": "$3\\ M0\\ \\mathrm{g} \\frac{L_{0}}{4} -\\ M_{0}\\mathrm{g}\\ \\mathrm{L} \\frac{0}{4} - M0\\ \\mathrm{g}\\ (x + \\frac{L_{0}}{4} ) =0$"
+     "text": "$3M0\\ \\mathrm{g} \\frac{L_{0}}{4} -\\ M_{0}\\mathrm{g}\\ \\mathrm{L} \\frac{0}{4} - M0\\ \\mathrm{g}\\ (x + \\frac{L_{0}}{4} ) =0$"
     }
    ],
    "answer": "",
@@ -11501,15 +11501,15 @@
    "choices": [
     {
      "label": "A",
-     "text": "$3\\ M_{0}/20$"
+     "text": "$3M_{0}/20$"
     },
     {
      "label": "B",
-     "text": "$3\\ M_{0}/10$"
+     "text": "$3M_{0}/10$"
     },
     {
      "label": "C",
-     "text": "$3\\ M_{0}/8$"
+     "text": "$3M_{0}/8$"
     },
     {
      "label": "D",
@@ -11931,7 +11931,7 @@
    "topic_title": "Newton’s Second Law in Rotational Form",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u5_56_q4_1.png}\n\nTwo concentric disks of different radii are rigidly attached, as shown in the figure. Each disk has a string wrapped around it, and the two downward forces shown are exerted on the strings. The resulting angular acceleration has a magnitude $\\alpha_{0}$ . If the force $F_{0}$ exerted on the larger disk's string is replaced with a downward force of magnitude $3\\ F_{0}$, what is the magnitude of the resulting angular acceleration?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u5_56_q4_1.png}\n\nTwo concentric disks of different radii are rigidly attached, as shown in the figure. Each disk has a string wrapped around it, and the two downward forces shown are exerted on the strings. The resulting angular acceleration has a magnitude $\\alpha_{0}$ . If the force $F_{0}$ exerted on the larger disk's string is replaced with a downward force of magnitude $3F_{0}$, what is the magnitude of the resulting angular acceleration?",
    "choices": [
     {
      "label": "A",
@@ -12475,7 +12475,7 @@
     },
     {
      "label": "D",
-     "text": "It cannot be determined which disk has the most total kinetic energy without more information on $\\omega_{A}$, $v_{B}$, and the radius of the disks.  Object Name Radius Rotational Inertia Translational Speed Angular Speed Hoop $r_{0} I_{0} v_{0} \\omega_{0}$ Disk $1 r_{0} \\frac{1}{2} I0 v_{0} \\omega_{0}$ Disk $2 \\frac{1}{2} r0 \\frac{1}{8} I0 2\\ v_{0} \\omega_{0}$"
+     "text": "It cannot be determined which disk has the most total kinetic energy without more information on $\\omega_{A}$, $v_{B}$, and the radius of the disks.  Object Name Radius Rotational Inertia Translational Speed Angular Speed Hoop $r_{0} I_{0} v_{0} \\omega_{0}$ Disk $1 r_{0} \\frac{1}{2} I0 v_{0} \\omega_{0}$ Disk $2 \\frac{1}{2} r0 \\frac{1}{8} I0 2v_{0} \\omega_{0}$"
     }
    ],
    "answer": "",
@@ -12545,7 +12545,7 @@
    "topic_title": "Rotational Kinetic Energy",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u6_61_q9_1.png}\n\nThree hoops are each rotating about their respective centers, which are fixed in place, as shown in the figure. The mass, radius, and angular speed of each hoop are as follows. Hoop $1$ has mass $\\mathrm{m}_{0}$, radius $r_{0}$, and angular speed $\\omega_{0}$. Hoop $2$ has mass $\\mathrm{m}_{0}$, radius $r_{0}/2,$ and angular speed $4\\omega_{0}$. Hoop $3$ has mass $2\\ \\mathrm{m}_{0}$, radius $2\\ r_{0}$, and angular speed $\\omega_{0}/2.$ How do the total kinetic energies $K_{1}$, $K_{2}$, and $K_{3}$ of the three hoops compare to one another?",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u6_61_q9_1.png}\n\nThree hoops are each rotating about their respective centers, which are fixed in place, as shown in the figure. The mass, radius, and angular speed of each hoop are as follows. Hoop $1$ has mass $\\mathrm{m}_{0}$, radius $r_{0}$, and angular speed $\\omega_{0}$. Hoop $2$ has mass $\\mathrm{m}_{0}$, radius $r_{0}/2,$ and angular speed $4\\omega_{0}$. Hoop $3$ has mass $2\\ \\mathrm{m}_{0}$, radius $2r_{0}$, and angular speed $\\omega_{0}/2.$ How do the total kinetic energies $K_{1}$, $K_{2}$, and $K_{3}$ of the three hoops compare to one another?",
    "choices": [
     {
      "label": "A",
@@ -12763,7 +12763,7 @@
    "topic_title": "Torque and Work",
    "number": 5,
    "qtype": "mcq",
-   "stem": "A wheel is spinning freely on an axle passing through its center. A constant torque is exerted on the wheel, increasing the wheel's rotational kinetic energy from $2\\ K_{0}$ to $3\\ K_{0}$ as the wheel rotates through $1.5$ revolutions. What is the magnitude of the torque?",
+   "stem": "A wheel is spinning freely on an axle passing through its center. A constant torque is exerted on the wheel, increasing the wheel's rotational kinetic energy from $2K_{0}$ to $3K_{0}$ as the wheel rotates through $1.5$ revolutions. What is the magnitude of the torque?",
    "choices": [
     {
      "label": "A",
@@ -13263,7 +13263,7 @@
     },
     {
      "label": "C",
-     "text": "$2\\ I_{A}\\omega_{0}$"
+     "text": "$2I_{A}\\omega_{0}$"
     },
     {
      "label": "D",
@@ -14021,7 +14021,7 @@
    "topic_title": "Rolling",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.50\\linewidth]{media/u6_65_q6_1.png}\n\nAt one time, bicycles were commonly made with unequal wheel sizes. The bicycle shown in the figure has wheels with radii $3\\ r_{0}$ and $r_{0}$ and is moving along a road with a translational speed $v_{0}$. The rotational inertias of the large and small wheels are $81\\ I_{0}$ and $I_{0}$, respectively, about the axes passing through their respective centers. If the small wheel has a rotational kinetic energy $K_{\\mathrm{rot,S}}$, what is the rotational kinetic energy of the large wheel?",
+   "stem": "\\includegraphics[width=0.50\\linewidth]{media/u6_65_q6_1.png}\n\nAt one time, bicycles were commonly made with unequal wheel sizes. The bicycle shown in the figure has wheels with radii $3r_{0}$ and $r_{0}$ and is moving along a road with a translational speed $v_{0}$. The rotational inertias of the large and small wheels are $81I_{0}$ and $I_{0}$, respectively, about the axes passing through their respective centers. If the small wheel has a rotational kinetic energy $K_{\\mathrm{rot,S}}$, what is the rotational kinetic energy of the large wheel?",
    "choices": [
     {
      "label": "A",
@@ -14029,15 +14029,15 @@
     },
     {
      "label": "B",
-     "text": "$3\\ K_{\\mathrm{rot,S}}$"
+     "text": "$3K_{\\mathrm{rot,S}}$"
     },
     {
      "label": "C",
-     "text": "$9\\ K_{\\mathrm{rot,S}}$"
+     "text": "$9K_{\\mathrm{rot,S}}$"
     },
     {
      "label": "D",
-     "text": "$81\\ K_{\\mathrm{rot,S}}$"
+     "text": "$81K_{\\mathrm{rot,S}}$"
     }
    ],
    "answer": "",
@@ -14279,7 +14279,7 @@
    "topic_title": "Motion of Orbiting Satellites",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_66_q3_1.png}\n\nA small asteroid of mass $\\mathrm{m}_{0}$ is orbiting a star in an elliptical orbit. The asteroid has a kinetic energy of $K_{A}$ at Point A, which is a distance $D$ from the center of the star. What is the asteroid's translational speed at Point B, which is a distance of $2\\ D$ from the center of the star?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_66_q3_1.png}\n\nA small asteroid of mass $\\mathrm{m}_{0}$ is orbiting a star in an elliptical orbit. The asteroid has a kinetic energy of $K_{A}$ at Point A, which is a distance $D$ from the center of the star. What is the asteroid's translational speed at Point B, which is a distance of $2D$ from the center of the star?",
    "choices": [
     {
      "label": "A",
@@ -14383,11 +14383,11 @@
     },
     {
      "label": "C",
-     "text": "$2\\ U_{X}$"
+     "text": "$2U_{X}$"
     },
     {
      "label": "D",
-     "text": "$4\\ U_{X}$"
+     "text": "$4U_{X}$"
     }
    ],
    "answer": "",
@@ -15120,7 +15120,7 @@
    "topic_title": "Frequency and Period of SHM",
    "number": 4,
    "qtype": "mcq",
-   "stem": "A pendulum has a period of $T_{E}$ on Earth, where the acceleration due to gravity is $\\mathrm{g}_{E}$. On a distant planet, where the acceleration due to gravity is $\\mathrm{g}_{P}$, an identical pendulum has a period of $2\\ T_{E}$. What is $\\mathrm{g}_{P}$ in terms of $\\mathrm{g}_{E}$?",
+   "stem": "A pendulum has a period of $T_{E}$ on Earth, where the acceleration due to gravity is $\\mathrm{g}_{E}$. On a distant planet, where the acceleration due to gravity is $\\mathrm{g}_{P}$, an identical pendulum has a period of $2T_{E}$. What is $\\mathrm{g}_{P}$ in terms of $\\mathrm{g}_{E}$?",
    "choices": [
     {
      "label": "A",
@@ -15376,11 +15376,11 @@
     },
     {
      "label": "C",
-     "text": "$k_{Y} = 2\\ k_{X}$"
+     "text": "$k_{Y} = 2k_{X}$"
     },
     {
      "label": "D",
-     "text": "$k_{Y}\\ =\\ 4\\ k_{X}$"
+     "text": "$k_{Y}\\ =\\ 4k_{X}$"
     }
    ],
    "answer": "",
@@ -15938,7 +15938,7 @@
    "topic_title": "Energy of Simple Harmonic Oscillators",
    "number": 4,
    "qtype": "mcq",
-   "stem": "A block of mass $M_{1}$ is on a horizontal surface and attached to one end of a spring, while the other end of the spring is fixed in place. The block oscillates on the spring with an amplitude $A_{1}$ as it moves with negligible friction on the horizontal surface, and the block-spring system has total mechanical energy $E_{1}$ and maximum kinetic energy $K_{1}$. The block is replaced with a second block that has mass $M_{1}/2,$ and the second block is then made to oscillate on the same spring with an amplitude $2\\ A_{1}$ . What are the total mechanical energy and maximum kinetic energy of the second block-spring system? Total Mechanical Energy Maximum Kinetic Energy",
+   "stem": "A block of mass $M_{1}$ is on a horizontal surface and attached to one end of a spring, while the other end of the spring is fixed in place. The block oscillates on the spring with an amplitude $A_{1}$ as it moves with negligible friction on the horizontal surface, and the block-spring system has total mechanical energy $E_{1}$ and maximum kinetic energy $K_{1}$. The block is replaced with a second block that has mass $M_{1}/2,$ and the second block is then made to oscillate on the same spring with an amplitude $2A_{1}$ . What are the total mechanical energy and maximum kinetic energy of the second block-spring system? Total Mechanical Energy Maximum Kinetic Energy",
    "choices": [
     {
      "label": "A",
@@ -16119,7 +16119,7 @@
    "topic_title": "Energy of Simple Harmonic Oscillators",
    "number": 8,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u7_74_q8_1.png}\n\nA small rock moves vertically inside a tunnel through a spherical moon that has a uniform density and no atmosphere, as shown in the figure. Inside the tunnel the gravitational force on the rock is proportional to its distance from the moon's center, and the rock undergoes simple harmonic motion after being released from rest at the moon's surface. The rock's kinetic energy is $K_{C}$ when it is passing through the center of the moon. When the rock's kinetic energy is $2\\ K_{C}/3,$ is the rock closer to the surface or closer to the center of the moon? What evidence supports the claim?",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u7_74_q8_1.png}\n\nA small rock moves vertically inside a tunnel through a spherical moon that has a uniform density and no atmosphere, as shown in the figure. Inside the tunnel the gravitational force on the rock is proportional to its distance from the moon's center, and the rock undergoes simple harmonic motion after being released from rest at the moon's surface. The rock's kinetic energy is $K_{C}$ when it is passing through the center of the moon. When the rock's kinetic energy is $2K_{C}/3,$ is the rock closer to the surface or closer to the center of the moon? What evidence supports the claim?",
    "choices": [
     {
      "label": "A",
@@ -16181,7 +16181,7 @@
     },
     {
      "label": "D",
-     "text": "$2\\ v_{\\mathrm{max,X}}$"
+     "text": "$2v_{\\mathrm{max,X}}$"
     }
    ],
    "answer": "",
@@ -16285,7 +16285,7 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.49\\linewidth]{media/u7_75_q3_1.png}\n\nA physical pendulum is constructed from a hollow hoop, a small sphere, and a rod of negligible mass, as shown in the figure. The small sphere has mass $5\\ M_{0}$ and is attached to the top of the hoop, which has mass $M_{0}$ and radius $R_{0}\\ =\\ 0.080\\ \\mathrm{m}$. The rod has length $R_{0}/2$ and connects the hoop-sphere system to a pivot about which the pendulum can rotate. What is the period of small-angle oscillations for the pendulum?",
+   "stem": "\\includegraphics[width=0.49\\linewidth]{media/u7_75_q3_1.png}\n\nA physical pendulum is constructed from a hollow hoop, a small sphere, and a rod of negligible mass, as shown in the figure. The small sphere has mass $5M_{0}$ and is attached to the top of the hoop, which has mass $M_{0}$ and radius $R_{0}\\ =\\ 0.080\\ \\mathrm{m}$. The rod has length $R_{0}/2$ and connects the hoop-sphere system to a pivot about which the pendulum can rotate. What is the period of small-angle oscillations for the pendulum?",
    "choices": [
     {
      "label": "A",
@@ -16331,7 +16331,7 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.29\\linewidth]{media/u7_75_q4_1.png}\n\nA physical pendulum is made from two small spheres attached to a stiff wire of negligible mass and length $\\mathrm{L}_{0}$, as shown in the figure. One sphere has mass $M_{0}$ and is at the bottom end of the wire, and the other sphere has mass $2\\ M_{0}$ and is at the midpoint of the wire. If the pendulum makes small-angle oscillations, which of the following differential equations describes the pendulum's motion? The pendulum angle $\\theta$ is taken relative to the vertical.",
+   "stem": "\\includegraphics[width=0.29\\linewidth]{media/u7_75_q4_1.png}\n\nA physical pendulum is made from two small spheres attached to a stiff wire of negligible mass and length $\\mathrm{L}_{0}$, as shown in the figure. One sphere has mass $M_{0}$ and is at the bottom end of the wire, and the other sphere has mass $2M_{0}$ and is at the midpoint of the wire. If the pendulum makes small-angle oscillations, which of the following differential equations describes the pendulum's motion? The pendulum angle $\\theta$ is taken relative to the vertical.",
    "choices": [
     {
      "label": "A",
@@ -16481,7 +16481,7 @@
     },
     {
      "label": "C",
-     "text": "Increasing the mass of the rod to $2\\ M_{R}$."
+     "text": "Increasing the mass of the rod to $2M_{R}$."
     },
     {
      "label": "D",
