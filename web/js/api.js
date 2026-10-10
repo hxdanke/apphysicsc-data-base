@@ -32,6 +32,9 @@ export const api = {
   patch: (id, body) => request("/api/questions/" + encodeURIComponent(id), {
     method: "PATCH", headers: JSON_HEADERS, body: JSON.stringify(body),
   }),
+  validate: (id, field, value) => request("/api/questions/" + encodeURIComponent(id) + "/validate", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ field, value }),
+  }),
   remove: (id) => request("/api/questions/" + encodeURIComponent(id), { method: "DELETE" }),
 
   exportTex: (body) => request("/api/export/latex", {

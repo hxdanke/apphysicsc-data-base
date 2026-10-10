@@ -262,3 +262,122 @@ textarea.input { resize: vertical; }
   .view.active { grid-template-columns: 220px 1fr; }
   .view.active .detailpane { display: none; }
 }
+
+/* ------------------------------------------------------------------ */
+/* clickable formulas                                                  */
+/* ------------------------------------------------------------------ */
+.math {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background .12s, outline-color .12s;
+  outline: 1px solid transparent;
+}
+.math:hover {
+  background: var(--accent-soft);
+  outline-color: var(--accent);
+}
+.math:focus-visible {
+  outline: 2px solid var(--accent);
+}
+.math .katex { pointer-events: none; }   /* let the wrapper catch the click */
+
+/* ------------------------------------------------------------------ */
+/* single-formula popover                                             */
+/* ------------------------------------------------------------------ */
+.math-popup {
+  position: fixed;
+  z-index: 120;
+  width: 380px;
+  max-width: 92vw;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(20, 30, 50, .18);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mp-head {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; color: var(--muted); font-weight: 600;
+}
+.mp-head .mp-x {
+  border: 0; background: none; font-size: 20px; line-height: 1;
+  color: var(--muted); cursor: pointer;
+}
+.mp-head .mp-x:hover { color: var(--text); }
+.mp-area {
+  width: 100%; min-height: 64px; resize: vertical;
+  font: 13px/1.45 var(--mono);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 8px 9px; color: var(--text); background: var(--panel-2);
+}
+.mp-area:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.mp-preview {
+  min-height: 30px; padding: 8px 9px;
+  border: 1px dashed var(--line); border-radius: 8px;
+  background: var(--panel-2); overflow-x: auto;
+}
+.mp-preview.bad { border-color: var(--danger); }
+.mp-status { font-size: 12px; color: var(--danger); min-height: 1em; word-break: break-word; }
+.mp-status.err { color: var(--danger); }
+
+/* ------------------------------------------------------------------ */
+/* full-screen whole-question LaTeX editor                            */
+/* ------------------------------------------------------------------ */
+.qedit-backdrop {
+  position: fixed; inset: 0; z-index: 110;
+  background: rgba(20, 28, 40, .42);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.qedit-modal {
+  width: min(880px, 96vw); height: min(90vh, 880px);
+  background: var(--panel); border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(20, 30, 50, .28);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.qedit-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px; border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.qedit-head .muted { font-weight: 400; }
+.qedit-x {
+  margin-left: auto; border: 0; background: none; cursor: pointer;
+  font-size: 24px; line-height: 1; color: var(--muted);
+}
+.qedit-x:hover { color: var(--text); }
+.qedit-hint {
+  padding: 10px 16px; font-size: 12px; color: var(--muted);
+  border-bottom: 1px solid var(--line-soft); background: var(--panel-2);
+}
+.qedit-hint code {
+  font: 11.5px/1.4 var(--mono); background: #eef1f5;
+  padding: 1px 5px; border-radius: 4px; color: var(--text);
+}
+.qedit-area {
+  flex: 1; width: 100%; resize: none; border: 0;
+  padding: 16px; font: 13.5px/1.6 var(--mono);
+  color: var(--text); background: #fcfcfd; tab-size: 2; outline: none;
+}
+.qedit-status {
+  padding: 8px 16px; font-size: 12.5px; color: var(--muted);
+  border-top: 1px solid var(--line-soft); min-height: 18px;
+  word-break: break-word;
+}
+.qedit-status.err { color: var(--danger); }
+.qedit-foot {
+  display: flex; justify-content: flex-end; gap: 10px;
+  padding: 12px 16px; border-top: 1px solid var(--line);
+  background: var(--panel-2);
+}
+
+/* confirm (unsaved changes) */
+.qedit-backdrop.confirm { background: rgba(20, 28, 40, .5); }
+.qedit-confirm {
+  width: min(420px, 92vw); background: var(--panel);
+  border-radius: 12px; padding: 18px; box-shadow: 0 18px 60px rgba(20, 30, 50, .28);
+}
+.qedit-confirm p { margin: 0 0 14px; font-size: 14px; }

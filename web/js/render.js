@@ -13,12 +13,17 @@ function escapeHtml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+function escapeAttr(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;")
+              .replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function katexReady() {
   return typeof window !== "undefined" && typeof window.katex !== "undefined"
     && typeof window.katex.renderToString === "function";
 }
 
-/** Render one maths expression (source *without* $ delimiters). */
+/** Render one maths expression (source *without* delimiters). */
 function renderMath(src, display) {
   const tex = String(src).trim();
   if (!tex) return "";
@@ -38,88 +43,132 @@ function renderMath(src, display) {
   }
 }
 
-/** Render a TeX fragment: inline $...$, display \[...\], images, plain text. */
-export function renderLatex(src) {
-  if (!src) return "";
-  src = String(src);
-  let out = "";
-  let last = 0;
-  let m;
+/**
+ * Locate every maths run in a TeX fragment, with its boundaries, body and the
+ * delimiter kind that opened it.  `$$`/`\[`/`\(` are display; single `$` inline.
+ *
+ * The result drives both rendering (so each formula can carry a data-idx) and
+ * the single-formula editor (which replaces the body by index).
+ */
+export function extractMathRuns(src) {
+  const runs = [];
+  let i = 0;
+  while (i < src.length) {
+    const ch = src[i];
 
-  IMG_RE.lastIndex = 0;
-  while ((m = IMG_RE.exec(src)) !== null) {
-    if (m.index > last) out += renderText(src.slice(last, m.index));
-    const opts = m[1] || "";
-    const wm = opts.match(WIDTH_RE);
-    const pct = wm ? Math.min(100, Math.round(parseFloat(wm[1]) * 100)) : null;
-    out += `<img class="qfig" loading="lazy" src="${resolveMedia(m[2])}"` +
-           (pct ? ` style="width:${pct}%"` : "") +
-           ` alt="figure" />`;
-    last = IMG_RE.lastIndex;
+    if (ch === "$" && src[i + 1] === "$") {
+      const end = src.indexOf("$$", i + 2);
+      if (end > i + 1) {
+        runs.push({ start: i, end: end + 2, body: src.slice(i + 2, end),
+                    delim: "$$", display: true });
+        i = end + 2;
+        continue;
+      }
+    }
+    if (ch === "\\" && src[i + 1] === "[") {
+      const end = src.indexOf("\\]", i + 2);
+      if (end > i) {
+        runs.push({ start: i, end: end + 2, body: src.slice(i + 2, end),
+                    delim: "\\[", display: true });
+        i = end + 2;
+        continue;
+      }
+    }
+    if (ch === "\\" && src[i + 1] === "(") {
+      const end = src.indexOf("\\)", i + 2);
+      if (end > i) {
+        runs.push({ start: i, end: end + 2, body: src.slice(i + 2, end),
+                    delim: "\\(", display: false });
+        i = end + 2;
+        continue;
+      }
+    }
+    if (ch === "$") {
+      const end = src.indexOf("$", i + 1);
+      if (end > i + 1) {
+        runs.push({ start: i, end: end + 1, body: src.slice(i + 1, end),
+                    delim: "$", display: false });
+        i = end + 1;
+        continue;
+      }
+    }
+    i += 1;
   }
-  if (last < src.length) out += renderText(src.slice(last));
-  return out;
+  return runs;
 }
 
 /**
- * Walk a text chunk, handing every maths run to KaTeX and escaping the rest.
- *
- * The PDF extractor often splits one formula into several neighbouring
- * $..$ runs (`$A(\sin\theta -$$ \cos\theta)$`), so adjacent runs are glued
- * back together before rendering.
+ * Replace the body of the idx-th maths run (0-based) with `newBody`, keeping the
+ * surrounding delimiters.  Returns null when the index is out of range.
  */
-function renderText(chunk) {
-  let out = "";
-  let i = 0;
-  while (i < chunk.length) {
-    const ch = chunk[i];
+export function replaceMathRun(src, idx, newBody) {
+  const runs = extractMathRuns(src);
+  if (idx < 0 || idx >= runs.length) return null;
+  const r = runs[idx];
+  let open, close;
+  if (r.delim === "$$") { open = "$$"; close = "$$"; }
+  else if (r.delim === "\\[") { open = "\\["; close = "\\]"; }
+  else if (r.delim === "\\(") { open = "\\("; close = "\\)"; }
+  else { open = "$"; close = "$"; }
+  return src.slice(0, r.start) + open + newBody + close + src.slice(r.end);
+}
 
-    // display maths: $$...$$  or  \[...\]
-    if (ch === "$" && chunk[i + 1] === "$") {
-      const end = chunk.indexOf("$$", i + 2);
-      if (end > i + 1) {
-        out += renderMath(chunk.slice(i + 2, end), true);
-        i = end + 2;
-        continue;
-      }
-    }
-    if (ch === "\\" && chunk[i + 1] === "[") {
-      const end = chunk.indexOf("\\]", i + 2);
-      if (end > i) {
-        out += renderMath(chunk.slice(i + 2, end), true);
-        i = end + 2;
-        continue;
-      }
-    }
-    if (ch === "\\" && chunk[i + 1] === "(") {
-      const end = chunk.indexOf("\\)", i + 2);
-      if (end > i) {
-        out += renderMath(chunk.slice(i + 2, end), false);
-        i = end + 2;
-        continue;
-      }
-    }
+/** Render a TeX fragment: inline $...$, display, images, plain text. */
+export function renderLatex(src, fieldKey = "") {
+  if (!src) return "";
+  src = String(src);
 
-    // inline maths: one or more adjacent $...$ runs
-    if (ch === "$") {
-      const bodies = [];
-      let j = i;
-      while (chunk[j] === "$") {
-        const end = chunk.indexOf("$", j + 1);
-        if (end <= j + 1) break;
-        bodies.push(chunk.slice(j + 1, end));
-        j = end + 1;
-      }
-      if (bodies.length) {
-        out += renderMath(bodies.join(" "), false);
-        i = j;
-        continue;
-      }
-    }
-
-    out += escapeHtml(ch);
-    i += 1;
+  // Split into image / text chunks so \includegraphics stays intact.
+  const chunks = [];
+  let last = 0;
+  IMG_RE.lastIndex = 0;
+  let m;
+  while ((m = IMG_RE.exec(src)) !== null) {
+    if (m.index > last) chunks.push({ type: "text", text: src.slice(last, m.index) });
+    const opts = m[1] || "";
+    const wm = opts.match(WIDTH_RE);
+    const pct = wm ? Math.min(100, Math.round(parseFloat(wm[1]) * 100)) : null;
+    chunks.push({ type: "img", src: m[2], pct });
+    last = IMG_RE.lastIndex;
   }
+  if (last < src.length) chunks.push({ type: "text", text: src.slice(last) });
+
+  let html = "";
+  for (const c of chunks) {
+    if (c.type === "img") {
+      html += `<img class="qfig" loading="lazy" src="${resolveMedia(c.src)}"` +
+              (c.pct ? ` style="width:${c.pct}%"` : "") + ` alt="figure" />`;
+    } else {
+      html += renderTextRuns(c.text, fieldKey);
+    }
+  }
+  return html;
+}
+
+/**
+ * Render a text chunk, handing every maths run to KaTeX and wrapping it in a
+ * clickable span that carries the raw source (for the single-formula editor).
+ * `idxState` keeps a running index across the whole field so the editor can
+ * address a formula by its position.
+ */
+function renderTextRuns(chunk, fieldKey) {
+  const runs = extractMathRuns(chunk);
+  if (!runs.length) return escapeHtml(chunk);
+
+  let out = "";
+  let last = 0;
+  let idx = 0;
+  for (const r of runs) {
+    if (r.start > last) out += escapeHtml(chunk.slice(last, r.start));
+    const html = renderMath(r.body, r.display);
+    out += `<span class="math" data-field="${escapeAttr(fieldKey)}" ` +
+           `data-idx="${idx}" data-tex="${escapeAttr(r.body)}" ` +
+           `data-display="${r.display ? 1 : 0}" tabindex="0" ` +
+           `title="Click to edit formula">${html}</span>`;
+    idx += 1;
+    last = r.end;
+  }
+  if (last < chunk.length) out += escapeHtml(chunk.slice(last));
   return out;
 }
 

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import os
 import sys
-from typing import Optional
+from typing import Any, Optional
 
 from fastapi import FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
@@ -104,6 +104,72 @@ class PatchBody(BaseModel):
     topic: Optional[str] = None
     unit: Optional[int] = None
     needs_review: Optional[bool] = None
+
+
+class ValidateBody(BaseModel):
+    field: str
+    value: Any
+
+
+_EDITABLE_FIELDS = {"stem", "choices", "answer", "solution"}
+
+
+def _tail(log: str, n: int = 1600) -> str:
+    if not log:
+        return ""
+    return log if len(log) <= n else "...\n" + log[-n:]
+
+
+# tectonic still emits a PDF when it hits a non-fatal error, so "a PDF was
+# produced" is not enough.  These markers are genuine TeX/LaTeX errors in the
+# controlled preamble we use, and mean the edit must not be kept.
+def _log_has_errors(log: str) -> bool:
+    """Return True when `log` contains a genuine TeX/LaTeX build error.
+
+    tectonic still emits a PDF when it hits a non-fatal error, so "a PDF was
+    produced" is not enough on its own.  tectonic reports real errors as
+    "error: <file>:<line>: <msg>"; other engines prefix them with "! ".
+    """
+    if not log:
+        return False
+    for line in log.splitlines():
+        s = line.strip()
+        if s.startswith("error:"):
+            return True
+        if s.startswith("!") and any(m in s for m in (
+            "Undefined control sequence", "LaTeX Error", "Emergency stop",
+            "Missing $ inserted", "Missing } inserted", "Extra }, or forgotten",
+            "Too many }", "File ended", "Runaway argument", "Illegal unit",
+            "Improper alphabetic", "Undefined sequence",
+        )):
+            return True
+    return any(m in log for m in (
+        "Undefined control sequence", "LaTeX Error:", "Emergency stop",
+        "Missing $ inserted", "Runaway argument",
+    ))
+
+
+@app.post("/api/questions/{qid}/validate")
+def validate_question(qid: str, body: ValidateBody):
+    """Compile a draft of the question with one field replaced.
+
+    Returns {"ok": bool, "log": str}.  Nothing is saved -- this only checks that
+    the edited LaTeX still builds through the real TeX engine.
+    """
+    if body.field not in _EDITABLE_FIELDS:
+        raise HTTPException(400, f"cannot validate field '{body.field}'")
+    bank = bank_mod.load_bank()
+    item = next((q for q in bank["questions"] if q["id"] == qid), None)
+    if item is None:
+        raise HTTPException(404, "question not found")
+    import copy
+    draft = copy.deepcopy(item)
+    draft[body.field] = body.value
+    tex = latex_mod.question_tex(draft)
+    res = latex_mod.compile_pdf(tex)
+    if not res.get("ok") or _log_has_errors(res.get("log", "")):
+        return {"ok": False, "log": _tail(res.get("log", ""))}
+    return {"ok": True, "log": ""}
 
 
 @app.patch("/api/questions/{qid}")

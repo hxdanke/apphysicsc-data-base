@@ -1,5 +1,6 @@
 import { api } from "./api.js";
 import { renderLatex, plainPreview } from "./render.js";
+import { openWholeEditor, openMathPopup } from "./edit.js";
 
 const state = {
   taxonomy: null,
@@ -25,6 +26,8 @@ export function init(ctx) {
     fUntagged: document.getElementById("f-untagged"),
   };
   state.onSelect = ctx.onSelect;
+
+  els.detail.addEventListener("click", onDetailClick);
 
   els.search.addEventListener("input", debounce(() => {
     state.query = els.search.value.trim();
@@ -141,8 +144,8 @@ function select(q, card) {
 }
 
 function renderDetail(q) {
-  const choices = (q.choices || []).map(c =>
-    `<li><span class="choice-label">${c.label}</span><span>${renderLatex(c.text)}</span></li>`).join("");
+  const choices = (q.choices || []).map((c, ci) =>
+    `<li><span class="choice-label">${c.label}</span><span>${renderLatex(c.text, "choice:" + ci)}</span></li>`).join("");
   const meta = [];
   if (q.topic) meta.push(`<span class="tag">${q.topic} ${q.topic_title || ""}</span>`);
   if (q.qtype) meta.push(`<span class="tag">${q.qtype}</span>`);
@@ -155,13 +158,14 @@ function renderDetail(q) {
         <h3>Question ${q.number || ""}</h3>
         <span class="muted">${q.id}</span>
       </div>
-      <div class="qstem">${renderLatex(q.stem)}</div>
+      <div class="qstem">${renderLatex(q.stem, "stem")}</div>
       ${choices ? `<ul class="choices">${choices}</ul>` : ""}
-      ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${q.answer}</div>` : ""}
-      ${q.solution ? `<div class="solution-box"><strong>Solution.</strong> ${renderLatex(q.solution)}</div>` : ""}
+      ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${renderLatex(q.answer, "answer")}</div>` : ""}
+      ${q.solution ? `<div class="solution-box"><strong>Solution.</strong> ${renderLatex(q.solution, "solution")}</div>` : ""}
       <div class="qmeta">${meta.join("")}</div>
       <div class="qactions">
         <button class="btn" data-act="add">Add to paper</button>
+        <button class="btn btn-primary" data-act="edit">Edit LaTeX</button>
         <button class="btn" data-act="tex">View LaTeX</button>
         <button class="btn" data-act="toggle-review">${q.needs_review ? "Clear review flag" : "Flag for review"}</button>
       </div>
@@ -171,6 +175,16 @@ function renderDetail(q) {
   els.detail.querySelector('[data-act="add"]').onclick = () => {
     state.onSelect(q);
     toast(`${q.id} added to the paper`);
+  };
+  els.detail.querySelector('[data-act="edit"]').onclick = () => {
+    openWholeEditor(q, (parsed) => {
+      q.stem = parsed.stem;
+      q.choices = parsed.choices;
+      q.answer = parsed.answer;
+      q.solution = parsed.solution;
+      renderDetail(q);
+      reload();
+    });
   };
   els.detail.querySelector('[data-act="toggle-review"]').onclick = async () => {
     await api.patch(q.id, { needs_review: !q.needs_review });
@@ -185,6 +199,31 @@ function renderDetail(q) {
     slot.innerHTML = `<pre class="texbox">${escapeBraces(tex)}</pre>`;
     slot.dataset.open = "1";
   };
+}
+
+/** PATCH one field and refresh the in-memory question + previews. */
+async function commitField(field, value) {
+  const q = state.current;
+  await api.patch(q.id, { [field]: value });
+  if (field === "choices") q.choices = value;
+  else q[field] = value;
+  renderDetail(q);
+  reload();
+}
+
+/** Open the single-formula popover when a rendered formula is clicked. */
+function onDetailClick(e) {
+  const span = e.target.closest(".math");
+  if (!span || !els.detail.contains(span)) return;
+  const fieldKey = span.dataset.field || "";
+  const idx = parseInt(span.dataset.idx || "0", 10);
+  openMathPopup({
+    q: state.current,
+    fieldKey,
+    idx,
+    anchorEl: span,
+    commit: commitField,
+  });
 }
 
 export function currentContext() {

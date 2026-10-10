@@ -690,6 +690,10 @@ def compile_pdf(tex_source: str, workdir: str | None = None, jobname: str = "doc
 
     pdf_path = os.path.join(tmp, jobname + ".pdf")
     log = (proc.stdout or "") + (proc.stderr or "")
+    # Keep the whole log (capped) -- tectonic reports genuine errors well before
+    # the trailing font warnings, so a tail-only view hides them.
+    if len(log) > 40000:
+        log = log[:6000] + "\n... (truncated) ...\n" + log[-14000:]
     if os.path.exists(pdf_path):
-        return {"ok": True, "pdf": pdf_path, "engine": os.path.basename(engine), "log": log[-6000:]}
-    return {"ok": False, "pdf": None, "engine": os.path.basename(engine), "log": log[-6000:]}
+        return {"ok": True, "pdf": pdf_path, "engine": os.path.basename(engine), "log": log}
+    return {"ok": False, "pdf": None, "engine": os.path.basename(engine), "log": log}
