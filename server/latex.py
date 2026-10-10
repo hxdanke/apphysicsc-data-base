@@ -171,6 +171,26 @@ INLINE_CHOICE_MAX = 34
 ITEMS_BEGIN = (r"\begin{enumerate}[leftmargin=1cm,labelwidth=0.85cm,labelsep=0.35em,"
                r"align=right,itemsep=8pt,parsep=0pt,topsep=2pt]")
 
+
+def _items_begin(resume: bool = False) -> str:
+    """Open the question list.
+
+    ``resume`` continues the counter after a figure that had to be typeset
+    *outside* the list, so the numbering still runs 1, 2, 3, ... straight
+    through (see ``build_document``).
+    """
+    opts = "resume," if resume else ""
+    return (r"\begin{enumerate}[" + opts +
+            r"leftmargin=1cm,labelwidth=0.85cm,labelsep=0.35em,"
+            r"align=right,itemsep=8pt,parsep=0pt,topsep=2pt]")
+
+
+# A figure printed *above* a question opens its stem.  The image has to be set
+# on its own line above the item, otherwise the number would land on the
+# image's line instead of on the stem line (the rule the user asked us to keep).
+RE_LEADING_IMG = re.compile(
+    r"^\s*(\\includegraphics\s*(?:\[[^\]]*\])?\s*\{[^{}]*\})\s*\n*\s*")
+
 # option text is one logical column; a figure that belongs to an option sits in
 # a second column (2in) so it does not push the paragraph spacing around
 ITEMS_CHOICE_GRID = (r"\begin{enumerate}[label=(\Alph*),labelwidth=1.35em,labelsep=0.45em,"
@@ -237,6 +257,67 @@ def _choice_label(lab: str) -> str:
     """Normalise an option label to the printed form, e.g. ``B`` -> ``(B)``."""
     m = re.search(r"[A-Za-z]", lab or "")
     return f"({m.group(0)})" if m else "(?)"
+
+
+def _cells_of(c: dict) -> list:
+    """The data cells of a table-layout choice: ``text``, ``text2``, ``text3`` ..."""
+    out = [(c.get("text") or "").strip()]
+    for k in ("text2", "text3", "text4", "text5"):
+        if k in c:
+            out.append((c.get(k) or "").strip())
+    return out
+
+
+def _tex_plain(s: str) -> str:
+    """Rough visible length of a LaTeX fragment (used to size table columns)."""
+    s = re.sub(r"\$[^$]*\$", lambda m: m.group(0)[1:-1], s or "")
+    s = re.sub(r"\\[a-zA-Z]+\s*", "", s)
+    s = re.sub(r"[{}\\$]", "", s)
+    return s
+
+
+def _choices_table_latex(choices: list, headers: list) -> str:
+    """Render choices as a small LaTeX table (e.g. Magnitude | Direction).
+
+    Short cells (the usual case -- ``ncol`` narrow columns) are set with ``l``
+    columns so the table hugs its content.  When a cell is long -- a whole
+    sentence, as in the "Before P / After P" justification tables -- ``l`` would
+    run off the page, so every data column becomes a fixed-width paragraph
+    column and the table is centred.
+    """
+    headers = headers or []
+    ncells = max((len(_cells_of(c)) for c in choices), default=2)
+    ncol = 1 + max(2, len(headers), ncells)          # label column + data columns
+
+    # how wide is the widest text in any data column?
+    data_texts = []
+    for c in choices:
+        data_texts += [x for x in _cells_of(c)[1:]]
+    data_texts += [str(h) for h in headers]
+    widest = max((len(_tex_plain(t)) for t in data_texts), default=0)
+    wide = widest > 26
+
+    if wide:
+        # text block is ~491.6pt wide; leave ~1.2cm for the label column
+        lab = "1.2cm"
+        avail = 491.6 - 34                      # 1.2cm in pt
+        each = max(2.0, avail / max(1, ncol - 1) / 28.45)   # cm per data col
+        spec = "l" + "p{%.2fcm}" % each * (ncol - 1)
+    else:
+        spec = "l" * ncol
+
+    head_cells = [""] + [tex_safe(str(h)) for h in headers]
+    head_cells = (head_cells + [""] * ncol)[:ncol]
+    rows = [head_cells]
+    for c in choices:
+        cells = [f"({c.get('label', '')})"] + [tex_safe(x) for x in _cells_of(c)]
+        cells = (cells + [""] * ncol)[:ncol]
+        rows.append(cells)
+
+    body = " \\\\\n".join(" & ".join(r) for r in rows)
+    tab = ("\\begin{tabular}{" + spec + "}\n\\hline\n" + body +
+           " \\\\\n\\hline\n\\end{tabular}")
+    return "\\begin{center}\n" + tab + "\n\\end{center}" if wide else tab
 
 
 # --------------------------------------------------------------------------------------
@@ -567,7 +648,9 @@ def question_body(q: dict, show_answer: bool = False, show_solution: bool = Fals
         lines.append("")
     choices = q.get("choices") or []
     if choices:
-        if indent_choices:
+        if q.get("choice_layout") == "table" and all("text2" in c for c in choices):
+            lines.append(_choices_table_latex(choices, q.get("table_headers") or []))
+        elif indent_choices:
             lines.append(_choices_latex(choices))
         else:
             for c in choices:
@@ -607,11 +690,31 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
     else:
         ordered = list(questions)
 
-    out.append(ITEMS_BEGIN)
+    # A question whose stem opens with a figure gets that figure set on its own
+    # line *above* the item; the list is closed for the figure and resumed
+    # afterwards, so the number stays on the first line of the stem.
+    list_open = False
+    opened_before = False
     for q in ordered:
-        out.append("  \\item " + question_body(
-            q, show_answer, show_solution).replace("\n", "\n  "))
-    out.append("\\end{enumerate}\n")
+        stem = q.get("stem") or ""
+        m = RE_LEADING_IMG.match(stem)
+        if m:
+            if list_open:
+                out.append("\\end{enumerate}\n")
+                list_open = False
+            out.append("\\noindent\\hspace*{1cm}" + m.group(1).strip() + "\n\n")
+            q2 = dict(q)
+            q2["stem"] = stem[m.end():]
+            body = question_body(q2, show_answer, show_solution)
+        else:
+            body = question_body(q, show_answer, show_solution)
+        if not list_open:
+            out.append(_items_begin(resume=opened_before) + "\n")
+            list_open = True
+            opened_before = True
+        out.append("  \\item " + body.replace("\n", "\n  "))
+    if list_open:
+        out.append("\\end{enumerate}\n")
 
     out.append(POSTAMBLE)
     return "\n".join(out)

@@ -1,0 +1,805 @@
+[
+ {
+  "id": "EB3-U1-1.1-Q2",
+  "page": 7,
+  "headers": [
+   "Magnitude",
+   "Direction"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "4 m/s",
+     "45° courterclockwise from the +x-direction"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "4 m/s",
+     "45° clockwise from the +x-direction"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "4√2 m/s",
+     "45° courterclockwise from the +x-direction"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "4√2 m/s",
+     "45° clockwise from the +x-direction"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U1-1.2-Q4",
+  "page": 10,
+  "headers": [
+   "Velocities",
+   "Accelerations"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Same direction",
+     "Same direction"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Same direction",
+     "Opposite directions"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Opposite directions",
+     "Same direction"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Opposite directions",
+     "Opposite directions"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U2-2.3-Q8",
+  "page": 29,
+  "headers": [
+   "Both blocks in motion",
+   "After hanging block stops"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Th = Ts > 0",
+     "Th = Ts = 0"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Th = Ts > 0",
+     "Ts > Th = 0"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Th > Ts > 0",
+     "Th = Ts = 0"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Th > Ts > 0",
+     "Ts > Th = 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U2-2.4-Q1",
+  "page": 30,
+  "headers": [
+   "Constant velocity, because the",
+   "Increasing velocity, because the"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Constant velocity, because the horizontal forces are balanced.",
+     "Constant velocity because the object horizontal forces are now unbalanced."
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Decreasing velocity because the horizontal forces are balanced.",
+     "Increasing velocity, because the does not have any force of friction exerted on it to reduce its velocity."
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Decreasing velocity because the force of kinetic friction. tension is not greater than the",
+     "Constant velocity because the object horizontal forces are now unbalanced."
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "force of kinetic friction. tension is not greater than the",
+     "does not have any force of friction exerted on it to reduce its velocity."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U2-2.9-Q1",
+  "page": 43,
+  "headers": [
+   "Initial Acceleration",
+   "Terminal Speed"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "a0,A = a0,B",
+     "vT,A = vT,B"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "a0,A = a0,B",
+     "vT,A < vT,B"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "a0,A < a0,B",
+     "vT,A = vT,B"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "a0,A < a0,B",
+     "vT,A < vT,B"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U2-2.9-Q3",
+  "page": 44,
+  "headers": [
+   "Acceleration",
+   "Resistive Force"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Decreasing",
+     "Decreasing"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Decreasing",
+     "Increasing"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Increasing",
+     "Decreasing"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Increasing",
+     "Increasing"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U2-2.9-Q5",
+  "page": 44,
+  "headers": [
+   "vT",
+   "t0.5"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Decreases",
+     "Decreases"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Decreases",
+     "No change"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Increases",
+     "Decreases"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Increases",
+     "No change"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U3-3.4-Q3",
+  "page": 59,
+  "headers": [
+   "Final velocities",
+   "Final energies"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "vA = vB",
+     "EA > EB"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "vA = vB",
+     "EA < EB"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "vA > vB",
+     "EA = EB"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "vA > vB",
+     "EA = EB"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U3-3.4-Q5",
+  "page": 60,
+  "headers": [
+   "Speed of ship",
+   "Potential energy of system"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Less",
+     "Less"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Less",
+     "Same"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Greater",
+     "Less"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Greater",
+     "Same"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U3-3.5-Q5",
+  "page": 64,
+  "headers": [
+   "Work",
+   "Time"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "W2 = W1",
+     "t2 > t1"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "W2 > W1",
+     "t2 = t1"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "W2 = W1",
+     "t2 = t1"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "W2 > W1",
+     "t2 > t1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U3-3.5-Q7",
+  "page": 65,
+  "headers": [
+   "Ppull",
+   "Pnorm"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Increases",
+     "Decreases"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Increases",
+     "Remains the same"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Remains the same",
+     "Decreases"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Remains the same",
+     "Remains the same"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U4-4.2-Q3",
+  "page": 69,
+  "headers": [
+   "Maximum of Fh",
+   "Duration of collision",
+   "Area under graph"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Increases",
+     "Decreases",
+     "Increases"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Decreases",
+     "Increases",
+     "Remains the same"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Increases",
+     "Decreases",
+     "Remains the same"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Decreases",
+     "Remains the same",
+     "Decreases"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U4-4.2-Q4",
+  "page": 69,
+  "headers": [
+   "Work",
+   "Impulse"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "W1 < W2",
+     "J1 < J2"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "W1 < W2",
+     "J1 > J2"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "W1 > W2",
+     "J1 < J2"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "W1 > W2",
+     "J1 > J2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U4-4.3-Q2",
+  "page": 72,
+  "headers": [
+   "mass speeds",
+   "exerted on Block B"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "v1 = v2",
+     "J1 > J2"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "v1 = v2",
+     "J1 = J2"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "v1 > v2",
+     "J1 > J2"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "v1 > v2",
+     "J1 = J2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U4-4.3-Q9",
+  "page": 75,
+  "headers": [
+   "vx",
+   "vy"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "v0(1  cos θ)",
+     "v0 sin θ"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "v0 cos θ",
+     "v0 sin θ"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "v0",
+     "v0"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "0",
+     "0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U5-5.1-Q7",
+  "page": 80,
+  "headers": [
+   "Angular displacement",
+   "Angular acceleration"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Increasing at a decreasing rate",
+     "Negative and increasing in magnitude"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Increasing at a decreasing rate",
+     "Maximum at t = 0 and decreasing to zero"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Negative and increasing in magnitude",
+     "Negative and increasing in magnitude"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Negative and increasing in magnitude",
+     "Maximum at t = 0 and decreasing to zero"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U5-5.2-Q8",
+  "page": 82,
+  "headers": [
+   "Angular speed",
+   "Magnitude of angular acceleration"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "The same for both objects",
+     "The same for both objects"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "The same for both objects",
+     "Greater for the carrot"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Greater for the carrot",
+     "The same for both objects"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Greater for the carrot",
+     "Greater for the carrot"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U7-7.1-Q4",
+  "page": 122,
+  "headers": [
+   "Equilibrium Position",
+   "Linear Restoring Force"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Both scenarios",
+     "Neither scenario"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Both scenarios",
+     "Scenario 2 only"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Scenario 2 only",
+     "Neither scenario"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Scenario 2 only",
+     "Scenario 2 only"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U7-7.3-Q1",
+  "page": 128,
+  "headers": [
+   "Period",
+   "Maximum Speed"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "Less than T0",
+     "Less than v0"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "Less than T0",
+     "Equal to v0"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "Equal to T0",
+     "Less than v0"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "Equal to T0",
+     "Equal to v0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U7-7.4-Q1",
+  "page": 131,
+  "headers": [
+   "A1",
+   "vmax,1"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "A1 2",
+     "vmax,1 2"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "2",
+     "vmax,1 √2"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "A1",
+     "vmax,1 2"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "A1",
+     "√2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "EB3-U7-7.4-Q4",
+  "page": 132,
+  "headers": [
+   "Total Mechanical Energy",
+   "Maximum Kinetic Energy"
+  ],
+  "rows": [
+   {
+    "label": "A",
+    "cells": [
+     "2E1",
+     "K1"
+    ]
+   },
+   {
+    "label": "B",
+    "cells": [
+     "2E1",
+     "2K1"
+    ]
+   },
+   {
+    "label": "C",
+    "cells": [
+     "4E1",
+     "2K1"
+    ]
+   },
+   {
+    "label": "D",
+    "cells": [
+     "4E1",
+     "4K1"
+    ]
+   }
+  ]
+ }
+]

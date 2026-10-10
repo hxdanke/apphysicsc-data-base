@@ -26,3 +26,12 @@ Thumbs.db
 
 # WorkBuddy session data & project memory notes (local only)
 .workbuddy/
+
+# build / verification intermediates and reversible backups
+outputs/
+data/bank.backup-*.json
+data/_media_backup_*/
+data/_media_orphans_*/
+scripts/figure_analysis.json
+scripts/*.bak
+server/*.bak
