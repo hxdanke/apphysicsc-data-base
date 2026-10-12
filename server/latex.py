@@ -295,9 +295,10 @@ TABLE_GAP = "9pt"
 def _choices_table_latex(choices: list, headers: list) -> str:
     """Render choices as a small LaTeX table (e.g. Magnitude | Direction).
 
-    Borders follow the printed book exactly: a single vertical rule between the
-    label column and the first data column, and a single horizontal rule between
-    the header row and the first option row -- no outer frame, no other rules.
+    Borders: a single vertical rule between the label column and the first data
+    column, and a single horizontal rule between the header row and the first
+    option row that runs the full width of the table (it also underlines the
+    empty top-left cell).  No outer frame, no other rules.
 
     Short cells are set with ``l`` columns so the table hugs its content, exactly
     as the printed book does.  Only when the columns together would run past the
@@ -357,8 +358,9 @@ def _choices_table_latex(choices: list, headers: list) -> str:
     for i, r in enumerate(rows):
         body_lines.append(" & ".join(r) + " \\\\")
         if i == 0:
-            # horizontal rule only under the header row, spanning the data columns
-            body_lines.append("\\cline{2-%d}" % ncol)
+            # horizontal rule under the header row, spanning every column --
+            # including the empty top-left cell of the label column
+            body_lines.append("\\cline{1-%d}" % ncol)
     tab = ("\\begin{tabular}{" + spec + "}\n" + "\n".join(body_lines) +
            "\n\\end{tabular}")
     # A table hangs below the stem like just another paragraph line: the printed

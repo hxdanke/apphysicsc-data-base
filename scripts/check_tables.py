@@ -4,9 +4,9 @@ For each ``choice_layout == "table"`` question we render it alone, then check:
 
 * the table does not run past the right margin;
 * the gap between the stem and the table is close to one paragraph's worth;
-* the table carries exactly the two rules the printed book uses -- one vertical
-  rule between the label column and the first data column, one horizontal rule
-  under the header row -- and no outer frame.
+* the table carries exactly the two rules we want -- one vertical rule between
+  the label column and the first data column, and one horizontal rule under the
+  header row that reaches across the label column too -- with no outer frame.
 
 Usage:
     python scripts/check_tables.py
@@ -94,13 +94,21 @@ def audit_one(q) -> dict:
     band = [l for l in lines if table_top is not None and l[0] >= table_top - 3]
     tx1 = max((l[3] for l in band), default=0)
 
+    # The horizontal rule must reach across the label column: it starts at or
+    # left of the vertical rule, i.e. it also underlines the empty top-left cell.
+    label_x = min((l[2] for l in band), default=None)
+    vx = min((r[0] for r in v), default=None)
+    hx0 = min((r[0] for r in h), default=None)
+    reaches_label = (vx is not None and hx0 is not None and hx0 <= vx + 1)
+
     return {
         "id": q["id"],
         "gap": gap,
         "right": tx1,
         "overflow": tx1 > RIGHT_MARGIN + 1,
         "n_v": len(v), "n_h": len(h),
-        "rules_ok": len(v) >= 1 and len(h) == 1,
+        "rules_ok": len(v) >= 1 and len(h) == 1 and reaches_label,
+        "hx0": hx0, "vx": vx, "label_x": label_x,
     }
 
 
@@ -119,15 +127,17 @@ def main():
         if r["overflow"]:
             flags.append("OVERFLOW")
         if not r["rules_ok"]:
-            flags.append(f"RULES v={r['n_v']} h={r['n_h']}")
+            flags.append(f"RULES v={r['n_v']} h={r['n_h']} "
+                         f"hx0={r['hx0']} vx={r['vx']}")
         if r["gap"] is not None and not (7 <= r["gap"] <= 16):
             flags.append(f"GAP={r['gap']:.1f}")
         gtxt = f"{r['gap']:5.1f}" if r["gap"] is not None else "  n/a"
+        hx0 = f"{r['hx0']:6.1f}" if r["hx0"] is not None else "   n/a"
         status = "  ".join(flags) if flags else "ok"
         if flags:
             bad += 1
         print(f"  {r['id']:18} gap={gtxt}  right={r['right']:6.1f}  "
-              f"v={r['n_v']} h={r['n_h']}   {status}")
+              f"hx0={hx0} vx={r['vx']:6.1f}  v={r['n_v']} h={r['n_h']}   {status}")
     print(f"\n{len(tables) - bad}/{len(tables)} clean")
     return 0 if bad == 0 else 1
 
