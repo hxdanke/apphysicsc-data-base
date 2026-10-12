@@ -276,35 +276,74 @@ def _tex_plain(s: str) -> str:
     return s
 
 
+# The text block is A4 (595.3pt) minus the two 0.72in margins, and a question
+# item sits inside an enumerate whose ``leftmargin`` of 1cm shrinks what a table
+# can use.  Both are needed to decide when a table has to fall back to fixed
+# paragraph columns instead of hugging its content.
+TEXT_WIDTH = 595.3 - 2 * 0.72 * 72        # 491.6pt
+ITEM_INDENT = 1.0 * 28.45                 # the enumerate leftmargin, in pt
+
+
+# A table hangs below the stem like just another paragraph line: the printed
+# book leaves one normal paragraph gap there and starts the table at the text
+# margin.  ``\par`` already supplies the baseline skip of an ordinary line, so
+# only a small extra nudge is needed -- the extra white space that a ``center``
+# environment (or a blank source line) would add is what made the gap too wide.
+TABLE_GAP = "9pt"
+
+
 def _choices_table_latex(choices: list, headers: list) -> str:
     """Render choices as a small LaTeX table (e.g. Magnitude | Direction).
 
-    Short cells (the usual case -- ``ncol`` narrow columns) are set with ``l``
-    columns so the table hugs its content.  When a cell is long -- a whole
-    sentence, as in the "Before P / After P" justification tables -- ``l`` would
-    run off the page, so every data column becomes a fixed-width paragraph
-    column and the table is centred.
+    Borders follow the printed book exactly: a single vertical rule between the
+    label column and the first data column, and a single horizontal rule between
+    the header row and the first option row -- no outer frame, no other rules.
+
+    Short cells are set with ``l`` columns so the table hugs its content, exactly
+    as the printed book does.  Only when the columns together would run past the
+    right margin -- as in the long "Before P / After P" justification tables --
+    does every data column become a fixed-width paragraph column and the table
+    get centred.
     """
     headers = headers or []
     ncells = max((len(_cells_of(c)) for c in choices), default=2)
     ncol = 1 + max(2, len(headers), ncells)          # label column + data columns
 
-    # how wide is the widest text in any data column?
-    data_texts = []
+    # Natural-width columns (``l``) are what the printed book uses: the table
+    # hugs its content and ``Direction`` sits right after ``Magnitude``.  That is
+    # only safe while the whole table fits the text block, so estimate the width
+    # of each data column and fall back to fixed-width paragraph columns only
+    # when the sum would run past the right margin.
+    # 0.5 em per character is a good average for mixed Times text at 11pt
+    def _wid(x):
+        return 0.5 * 11.0 * len(_tex_plain(x))
+
+    natural = [0.0] * ncol                          # per column, incl. the label one
+    natural[0] = 22.0
+    for i, h in enumerate(headers):
+        if i + 1 < ncol:
+            natural[i + 1] = max(natural[i + 1], _wid(str(h)))
     for c in choices:
-        data_texts += [x for x in _cells_of(c)[1:]]
-    data_texts += [str(h) for h in headers]
-    widest = max((len(_tex_plain(t)) for t in data_texts), default=0)
-    wide = widest > 26
+        for i, x in enumerate(_cells_of(c)):
+            if i + 1 < ncol:
+                natural[i + 1] = max(natural[i + 1], _wid(x))
+    # two \tabcolsep (6pt each) per column keep neighbouring cells apart
+    est_total = sum(natural) + 12.0 * ncol
+    wide = est_total > TEXT_WIDTH - ITEM_INDENT
 
     if wide:
-        # text block is ~491.6pt wide; leave ~1.2cm for the label column
-        lab = "1.2cm"
-        avail = 491.6 - 34                      # 1.2cm in pt
+        # Fit the data columns into the text block as seen from inside the
+        # enumerate item (the ``leftmargin`` shrinks the available width).  Budget
+        # for the label column and for two \tabcolsep (6pt each) of padding per
+        # column -- forgetting either is what used to push the widest tables past
+        # the margin.
+        avail = TEXT_WIDTH - ITEM_INDENT - 22.0 - 12.0 * ncol
         each = max(2.0, avail / max(1, ncol - 1) / 28.45)   # cm per data col
-        spec = "l" + "p{%.2fcm}" % each * (ncol - 1)
+        cols = ["l"] + ["p{%.2fcm}" % each] * (ncol - 1)
     else:
-        spec = "l" * ncol
+        cols = ["l"] * ncol
+    # vertical rule only between column 1 and column 2
+    spec = cols[0] + "|" + "".join(cols[1:])
 
     head_cells = [""] + [tex_safe(str(h)) for h in headers]
     head_cells = (head_cells + [""] * ncol)[:ncol]
@@ -314,10 +353,23 @@ def _choices_table_latex(choices: list, headers: list) -> str:
         cells = (cells + [""] * ncol)[:ncol]
         rows.append(cells)
 
-    body = " \\\\\n".join(" & ".join(r) for r in rows)
-    tab = ("\\begin{tabular}{" + spec + "}\n\\hline\n" + body +
-           " \\\\\n\\hline\n\\end{tabular}")
-    return "\\begin{center}\n" + tab + "\n\\end{center}" if wide else tab
+    body_lines = []
+    for i, r in enumerate(rows):
+        body_lines.append(" & ".join(r) + " \\\\")
+        if i == 0:
+            # horizontal rule only under the header row, spanning the data columns
+            body_lines.append("\\cline{2-%d}" % ncol)
+    tab = ("\\begin{tabular}{" + spec + "}\n" + "\n".join(body_lines) +
+           "\n\\end{tabular}")
+    # A table hangs below the stem like just another paragraph line: the printed
+    # book leaves one normal paragraph gap there and starts the table at the text
+    # margin.  Only a genuinely over-wide table is centred, and since ``center``
+    # brings its own \topsep on top of our nudge, that extra space is cancelled
+    # back out so both kinds of table sit the same distance below the stem.
+    if wide:
+        return ("\\par\\nobreak\\vspace{%s}\\vspace{-10pt}\n\\begin{center}\n"
+                % TABLE_GAP + tab + "\n\\end{center}\\vspace{2pt}")
+    return ("\\par\\nobreak\\vspace{%s}\n" % TABLE_GAP + tab + "\n\\par\\vspace{2pt}")
 
 
 # --------------------------------------------------------------------------------------
@@ -597,7 +649,22 @@ def tex_safe(text: str) -> str:
             # the enclosing environment.  Braces belonging to a command argument
             # (\includegraphics{...}) are left alone.
             out.append(_drop_stray_braces(body))
-    return "".join(out)
+    return _tighten_punct("".join(out))
+
+
+# ``$ ... $ ,`` -- a space between a closing maths delimiter and the punctuation
+# is a legal line-break point in TeX, so the comma can end up alone on the next
+# line.  Drop that space: punctuation must hug the word/formula before it.
+RE_PUNCT_AFTER_MATH = re.compile(r"(\$)\s+([,.;:!?\)\]])")
+
+
+def _tighten_punct(text: str) -> str:
+    """Glue closing punctuation to the maths run it follows."""
+    prev = None
+    while prev != text:
+        prev = text
+        text = RE_PUNCT_AFTER_MATH.sub(r"\1\2", text)
+    return text
 
 
 # ``\command{...}`` -- the braces here are structural, everything else is noise
@@ -643,12 +710,18 @@ def question_body(q: dict, show_answer: bool = False, show_solution: bool = Fals
     """LaTeX snippet for a single question."""
     lines = []
     stem = tex_safe((q.get("stem") or "").strip())
+    choices = q.get("choices") or []
+    is_table = (q.get("choice_layout") == "table"
+                and bool(choices) and all("text2" in c for c in choices))
     if stem:
         lines.append(stem)
-        lines.append("")
-    choices = q.get("choices") or []
+        # A table supplies its own leading (``\par\vspace{2pt}``); an extra
+        # paragraph break on top of that is what made the stem->table gap too
+        # wide, so only ordinary choices get the blank line.
+        if not is_table:
+            lines.append("")
     if choices:
-        if q.get("choice_layout") == "table" and all("text2" in c for c in choices):
+        if is_table:
             lines.append(_choices_table_latex(choices, q.get("table_headers") or []))
         elif indent_choices:
             lines.append(_choices_latex(choices))
