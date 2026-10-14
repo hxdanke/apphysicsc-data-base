@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+# The reference project relies on pytest's default discovery and must be run as
+# `python -m pytest` so the repository root lands on sys.path.  Declaring it here
+# makes that guaranteed rather than a convention someone has to remember.
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

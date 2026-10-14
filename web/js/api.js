@@ -1,7 +1,23 @@
 const JSON_HEADERS = {"Content-Type": "application/json"};
 
+// All tabs in one browser profile share the session cookie.  Sending the account
+// we *think* we are lets the backend reject a stale tab before it writes, so one
+// teacher's work can never land on another teacher's account.
+let expectedUserId = null;
+
+export function setExpectedUserId(id) {
+  expectedUserId = id == null ? null : Number(id);
+}
+
+function withGuard(options = {}) {
+  if (!expectedUserId) return options;
+  const headers = new Headers(options.headers || {});
+  headers.set("X-QB-Expected-User-Id", String(expectedUserId));
+  return { ...options, headers };
+}
+
 async function request(url, options = {}) {
-  const res = await fetch(url, options);
+  const res = await fetch(url, withGuard(options));
   if (!res.ok) {
     let detail = res.statusText;
     try {
@@ -68,4 +84,63 @@ export const api = {
                                         { method: "POST" }),
   ingestCommit: (job) => request(`/api/ingest/${job}/commit`, { method: "POST" }),
   ingestDelete: (job) => request("/api/ingest/" + job, { method: "DELETE" }),
+
+  // ---- accounts ----
+  session: () => request("/api/session"),
+  login: (username, password) => request("/api/session", {
+    method: "POST", headers: JSON_HEADERS,
+    body: JSON.stringify({ username, password }),
+  }),
+  logout: () => request("/api/logout", { method: "POST", headers: JSON_HEADERS, body: "{}" }),
+  changePassword: (current_password, new_password) => request("/api/profile/password", {
+    method: "POST", headers: JSON_HEADERS,
+    body: JSON.stringify({ current_password, new_password }),
+  }),
+  users: () => request("/api/users"),
+  saveUser: (body) => request("/api/users", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+  }),
+  activity: (params = {}) => {
+    const qs = new URLSearchParams();
+    for (const [k, v] of Object.entries(params)) {
+      if (v !== "" && v != null) qs.set(k, v);
+    }
+    return request("/api/activity?" + qs.toString());
+  },
+
+  // ---- saved papers ----
+  drafts: () => request("/api/paper-drafts"),
+  saveDraft: (body) => request("/api/paper-drafts", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+  }),
+  deleteDraft: (id) => request("/api/paper-drafts/delete", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ id }),
+  }),
+
+  // ---- sharing ----
+  sharing: () => request("/api/paper-sharing"),
+  saveFolder: (body) => request("/api/paper-folders", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+  }),
+  archiveFolder: (id) => request("/api/paper-folders/archive", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ id }),
+  }),
+  publish: (body) => request("/api/paper-publications", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+  }),
+  withdraw: (publication_id) => request("/api/paper-publications/withdraw", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ publication_id }),
+  }),
+  copyShared: (publication_id, name, revision_id) =>
+    request("/api/paper-publications/copy", {
+      method: "POST", headers: JSON_HEADERS,
+      body: JSON.stringify({ publication_id, name, revision_id }),
+    }),
+  subscribe: (publication_id, follow) => request("/api/paper-subscriptions", {
+    method: "POST", headers: JSON_HEADERS,
+    body: JSON.stringify({ publication_id, follow }),
+  }),
+  readNotifications: (ids = []) => request("/api/paper-notifications/read", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ notification_ids: ids }),
+  }),
 };

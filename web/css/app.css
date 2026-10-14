@@ -389,3 +389,95 @@ textarea.input { resize: vertical; }
   border-radius: 12px; padding: 18px; box-shadow: 0 18px 60px rgba(20, 30, 50, .28);
 }
 .qedit-confirm p { margin: 0 0 14px; font-size: 14px; }
+
+/* ==================================================================================
+   accounts, saved papers and sharing
+   ================================================================================== */
+
+.login-backdrop {
+  position: fixed; inset: 0; z-index: 60;
+  background: rgba(20, 28, 40, .55);
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+}
+.login-card {
+  width: min(380px, 92vw); background: var(--panel);
+  border-radius: 12px; padding: 22px;
+  box-shadow: 0 18px 60px rgba(20, 30, 50, .32);
+}
+.login-card.wide { width: min(560px, 94vw); }
+.login-card h2 { margin: 0 0 14px; font-size: 17px; }
+.login-card .input { width: 100%; margin-bottom: 10px; }
+.login-brand {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+}
+.login-error {
+  margin: 0 0 12px; padding: 8px 10px; border-radius: 6px;
+  background: #fdecec; color: var(--danger); font-size: 12.5px;
+}
+.login-submit { width: 100%; }
+.login-hint { margin: 12px 0 0; line-height: 1.5; }
+.login-hint code {
+  background: var(--panel-2); padding: 1px 5px; border-radius: 4px;
+}
+
+/* account chip in the top bar */
+.user-chip {
+  display: flex; align-items: center; gap: 8px;
+  background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 12px 4px 4px; cursor: pointer;
+  font: inherit; color: inherit;
+}
+.user-chip:hover { background: var(--panel-2); }
+.user-chip .avatar {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 600;
+}
+.user-chip-text { display: flex; flex-direction: column; line-height: 1.15; }
+.user-chip-text strong { font-size: 12.5px; }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+.badge-notify { border-color: var(--accent); color: var(--accent); }
+
+/* My Papers */
+.papers { padding: 14px; overflow: auto; }
+.paper-group { margin-bottom: 22px; }
+.paper-group-head {
+  font-size: 12px; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); margin: 0 0 10px; display: flex; align-items: center; gap: 8px;
+}
+.paper-empty { margin: 0 0 8px; }
+.paper-card {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 14px; margin-bottom: 10px; background: var(--panel);
+}
+.paper-card.active { border-color: var(--accent); }
+.paper-card-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.paper-update {
+  margin: 0 0 8px; font-size: 12px; color: var(--accent);
+}
+.btn.danger { color: var(--danger); }
+
+.share-options {
+  max-height: 150px; overflow: auto;
+  border: 1px solid var(--line-soft); border-radius: 6px;
+  padding: 8px 10px; margin-bottom: 10px;
+  display: flex; flex-direction: column; gap: 5px;
+}
+
+/* notifications + activity */
+.notif-list, .activity { padding: 0; margin: 0; list-style: none; }
+.notif-list li {
+  display: flex; gap: 8px; align-items: baseline;
+  padding: 7px 0; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
+  flex-wrap: wrap;
+}
+.notif-list li.unread { font-weight: 600; }
+.activity { padding: 12px; overflow: auto; }
+.activity-row {
+  display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap;
+  padding: 7px 0; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
+}

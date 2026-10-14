@@ -2,17 +2,30 @@ import { api } from "./api.js";
 import * as browse from "./browse.js";
 import * as compose from "./compose.js";
 import * as importView from "./import.js";
+import * as papersView from "./papers.js";
+import * as usersView from "./users.js";
+import * as session from "./session.js";
 
 function switchView(name) {
   document.querySelectorAll(".tab").forEach(t =>
     t.classList.toggle("active", t.dataset.view === name));
   document.querySelectorAll(".view").forEach(v =>
     v.classList.toggle("active", v.id === "view-" + name));
+  if (name === "papers") papersView.refresh();
+  if (name === "users") usersView.refresh();
 }
 
 async function boot() {
   document.querySelectorAll(".tab").forEach(t =>
     t.addEventListener("click", () => switchView(t.dataset.view)));
+
+  // The account decides which tabs exist, so resolve it before anything else.
+  const user = await session.initSession({ onChanged: () => location.reload() });
+  session.installAccountMenu();
+  const admin = session.isAdmin();
+  document.querySelectorAll(".admin-only").forEach(el => { el.hidden = !admin; });
+  const signOut = document.getElementById("sign-out");
+  if (signOut) signOut.hidden = !user;
 
   let refreshTreeFn = () => {};
   await browse.init({
@@ -21,6 +34,8 @@ async function boot() {
 
   await compose.init({});
   await importView.init({});
+  await papersView.init();
+  if (admin) await usersView.init();
 
   // keep the browse context available for "add current topic"
   const origReload = browse.reload;

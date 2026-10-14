@@ -6,9 +6,10 @@ import os
 import sys
 from typing import Any, Optional
 
-from fastapi import FastAPI, File, HTTPException, Query, UploadFile
+from fastapi import Depends, FastAPI, File, HTTPException, Query, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.exceptions import HTTPException as StarletteHTTPException
 from pydantic import BaseModel
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -20,9 +21,23 @@ except Exception:  # pragma: no cover - dotenv is optional
     pass
 
 from server import ai as ai_mod          # noqa: E402
+from server import appapi as appapi_mod  # noqa: E402
+from server import appdb as appdb_mod    # noqa: E402
+from server import auth as auth_mod      # noqa: E402
 from server import bank as bank_mod      # noqa: E402
 from server import ingest as ingest_mod  # noqa: E402
 from server import latex as latex_mod    # noqa: E402
+
+
+def _record_activity(request, user, action, entity_id, summary, metadata=None):
+    """Append one row to the activity log; never let logging break a request."""
+    try:
+        appdb_mod.record_activity(
+            auth_mod.app_db_path(), user=user, action=action,
+            entity_type="paper", entity_id=entity_id, summary=summary,
+            metadata=metadata or {})
+    except Exception:  # noqa: BLE001 - logging must never fail a request
+        pass
 
 ROOT = bank_mod.ROOT
 WEB_DIR = os.path.join(ROOT, "web")
@@ -30,6 +45,40 @@ EXPORT_DIR = bank_mod.EXPORT_DIR
 os.makedirs(EXPORT_DIR, exist_ok=True)
 
 app = FastAPI(title="AP Physics C Mechanics Question Bank", version="0.1.0")
+
+
+@app.middleware("http")
+async def require_session_for_api(request, call_next):
+    """Protect every API route except sign-in, the health probe and logout.
+
+    The single-page app itself stays public so the sign-in screen can load.
+    """
+    path = request.url.path
+    if path.startswith("/api/") and path not in auth_mod.PUBLIC_API_PATHS \
+            and auth_mod.login_required():
+        if auth_mod.user_for_request(request) is None:
+            from fastapi.responses import JSONResponse
+            return JSONResponse({"error": "Login required"}, status_code=401)
+    return await call_next(request)
+
+
+app.include_router(appapi_mod.router)
+
+
+@app.exception_handler(StarletteHTTPException)
+async def flat_http_errors(request, exc):
+    """Return errors as a flat ``{"error": ..., "code": ...}`` body.
+
+    FastAPI would otherwise wrap a structured detail in ``{"detail": {...}}``,
+    which makes the browser unwrap two shapes.  One flat shape keeps the UI
+    simple and gives every failure the same contract.
+    """
+    detail = exc.detail
+    if isinstance(detail, dict):
+        body = detail
+    else:
+        body = {"error": str(detail)}
+    return JSONResponse(body, status_code=exc.status_code)
 
 
 # --------------------------------------------------------------------------------------
@@ -244,7 +293,8 @@ def export_latex_file(body: ExportBody):
 
 
 @app.post("/api/export/pdf")
-def export_pdf(body: ExportBody):
+def export_pdf(body: ExportBody, request: Request,
+               user: dict = Depends(auth_mod.current_user)):
     qs = _collect(body.ids)
     if not qs:
         raise HTTPException(400, "no questions selected")
@@ -252,11 +302,22 @@ def export_pdf(body: ExportBody):
         qs, body.title, body.subtitle, body.show_answer, body.show_solution,
         body.group_by_topic, body.instructions)
     res = latex_mod.compile_pdf(tex, jobname=body.filename)
-    if not res["ok"]:
-        return JSONResponse({"ok": False, "log": res["log"]}, status_code=501)
+    failed = not res["ok"] or _log_has_errors(res.get("log", ""))
+    if failed:
+        _record_activity(request, user, "export.failed", body.filename,
+                         f"PDF build failed for {len(qs)} question(s)")
+        return JSONResponse({"ok": False, "log": _tail(res.get("log", ""))},
+                            status_code=501)
     out = os.path.join(EXPORT_DIR, body.filename + ".pdf")
     with open(res["pdf"], "rb") as src, open(out, "wb") as dst:
         dst.write(src.read())
+    # Remember who produced this file so /api/file can keep it private to them.
+    appdb_mod.register_generated_files(
+        auth_mod.app_db_path(), user_id=int(user["id"]),
+        paths=[os.path.relpath(out, ROOT).replace("\\", "/")])
+    _record_activity(request, user, "export", body.filename,
+                     f"Built PDF with {len(qs)} question(s)",
+                     {"count": len(qs), "title": body.title})
     return FileResponse(out, filename=body.filename + ".pdf",
                         media_type="application/pdf")
 
@@ -319,14 +380,27 @@ def ingest_delete(job: str):
 
 
 @app.get("/api/file")
-def serve_file(path: str):
-    """Serve a figure by repo-relative path (draft media lives under ingest/)."""
+def serve_file(path: str, request: Request,
+               user: dict = Depends(auth_mod.current_user)):
+    """Serve a figure, or one of my own generated exports.
+
+    Bank figures are shared by everyone, but a PDF another teacher built is not:
+    knowing its URL must not be enough to download it.
+    """
     rel = path.lstrip("/").replace("..", "")
     full = os.path.normpath(os.path.join(ROOT, rel))
     if not full.startswith(ROOT):
         raise HTTPException(403, "outside repository")
     if not os.path.exists(full):
         raise HTTPException(404, "file not found")
+
+    exports_root = os.path.normpath(EXPORT_DIR)
+    if os.path.normpath(os.path.commonpath([full, exports_root])) == exports_root:
+        rel_path = os.path.relpath(full, ROOT).replace("\\", "/")
+        if user.get("role") != "admin" and not appdb_mod.generated_file_owned_by(
+                auth_mod.app_db_path(), user_id=int(user["id"]), path=rel_path):
+            # Deliberately 404: do not confirm that the file exists.
+            raise HTTPException(404, "file not found")
     return FileResponse(full)
 
 

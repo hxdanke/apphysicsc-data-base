@@ -21,6 +21,25 @@ python -m uvicorn server.main:app --host 127.0.0.1 --port 8765
 
 Open <http://127.0.0.1:8765>.
 
+### Sign-in
+
+On first run an `admin` account is created automatically with the password
+`admin` — **change it under Account right away** (or set `QB_ADMIN_PASSWORD`
+before the first start). Admins create the teacher accounts under the **Users**
+tab.
+
+Set `QB_REQUIRE_LOGIN=0` to run without sign-in (a private, one-person
+install); everything is then attributed to the admin account, so saved papers
+still have an owner.
+
+```bash
+# optional configuration
+export QB_APP_DB=data/app.sqlite      # where accounts and saved papers live
+export QB_REQUIRE_LOGIN=1             # 0 disables sign-in
+export QB_ADMIN_USERNAME=admin
+export QB_ADMIN_PASSWORD=...
+```
+
 Reseed the bank from a PDF at any time, then repair the extracted LaTeX:
 
 ```bash
@@ -61,7 +80,31 @@ figure) as a list. These are set in `_HEAD` / `_FONTS_XE` in `server/latex.py`.
 The browser renders the same data with KaTeX, and `web/css/app.css` pins the same
 typeface there, so what you preview is what the PDF prints.
 
-### 3. Import (扩充题库)
+### 3. My Papers (保存与共享试卷)
+
+A selection lives only in the browser tab until you save it. **My Papers** stores
+it under your account: the ordered question ids plus the export options, so
+reopening a paper restores Compose exactly as you left it.
+
+* **Save selection** — captures what Compose is currently showing.
+* **Open** — loads a saved paper back into Compose.
+* **Share** — publish it to a sharing group and/or individual colleagues.
+
+Sharing is deliberately one-directional and frozen at publish time:
+
+* each publish writes an **immutable revision**; editing your own copy afterwards
+  never changes what a colleague already received;
+* re-publishing unchanged content is rejected instead of producing a duplicate
+  version;
+* recipients can read, build and **Save a copy**, but never edit the owner's draft;
+* private book-keeping (`question_exclusions`) is stripped before publishing.
+
+### 4. Users (管理员)
+
+Admins create teacher accounts, reset passwords, disable accounts and read the
+activity log. At least one active admin is always required.
+
+### 5. Import (扩充题库)
 Upload a PDF → the server extracts text, sub/superscripts, figures (rendered at the
 chosen DPI) and the unit/topic structure → you get a **draft** to review → optional
 **AI polish** → **commit** to the bank.
@@ -81,9 +124,14 @@ data/
   bank.json        # every question (git-friendly, diffable)
   taxonomy.json    # 7 units / 41 topics (AP Physics C: Mechanics CED order)
   media/*.png      # figures referenced by the LaTeX bodies
+  app.sqlite       # accounts, saved papers, sharing, activity log (gitignored)
 ingest/<job>/      # drafts from the import UI (gitignored)
 exports/           # generated .tex / .pdf (gitignored)
 ```
+
+Question **content** stays in `bank.json`; `app.sqlite` is server-owned live
+state and is never edited by hand. Keeping them apart means reseeding the bank
+never touches who can sign in or which papers teachers saved.
 
 A question looks like this (trimmed):
 
@@ -133,6 +181,19 @@ Recommended: [tectonic](https://tectonic-typesetting.github.io/) — a single bi
 fetches packages on demand. Drop it into `tools/` or put it on your `PATH`.
 
 ---
+
+## Tests
+
+```bash
+python -m pytest
+```
+
+The suite covers the account layer (password hashing, sessions, expiry, activity
+log), the paper layer (draft ownership, version conflicts, append-only
+revisions, notifications) and the HTTP surface end to end (routes locked until
+sign-in, cross-teacher isolation, stale-tab rejection). Database tests each build
+a throw-away SQLite file in a temporary directory, so they never touch
+`data/app.sqlite`.
 
 ## Syncing to GitHub
 

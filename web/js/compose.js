@@ -54,6 +54,42 @@ function options() {
   };
 }
 
+// ---- saved-paper plumbing -----------------------------------------------------------
+// My Papers needs to capture exactly what Compose is showing and restore it later.
+
+export function exportOptions() {
+  return {
+    instructions: els.instructions.value || "",
+    show_answer: els.answers.checked,
+    show_solution: els.solutions.checked,
+    group_by_topic: els.group.checked,
+    filename: (els.filename.value || "practice-set").replace(/[^\w.-]+/g, "_"),
+  };
+}
+
+export function applyOptions(opts = {}) {
+  if (opts.instructions != null) els.instructions.value = opts.instructions;
+  if (opts.show_answer != null) els.answers.checked = !!opts.show_answer;
+  if (opts.show_solution != null) els.solutions.checked = !!opts.show_solution;
+  if (opts.group_by_topic != null) els.group.checked = !!opts.group_by_topic;
+  if (opts.filename) els.filename.value = opts.filename;
+}
+
+export function selectionIds() {
+  return selection.map(q => q.id);
+}
+
+export function hasSelection() {
+  return selection.length > 0;
+}
+
+/** Replace the basket with `questions` (already resolved objects), in order. */
+export function setSelection(questions) {
+  selection.length = 0;
+  for (const q of questions || []) if (q) selection.push(q);
+  render();
+}
+
 async function download(asPdf) {
   if (!selection.length) { setStatus("Nothing selected.", true); return; }
   const opts = options();

@@ -4,3 +4,11 @@ uvicorn[standard]>=0.27
 python-multipart>=0.0.9
 python-dotenv>=1.0
 pymupdf>=1.24
+
+# Application state (accounts, saved papers, sharing) lives in SQLite, which is
+# part of the standard library -- no extra package needed.
+
+# Test runner used by the verification suite.  Run it as `python -m pytest`.
+pytest>=8.0
+# Needed by fastapi.testclient for the end-to-end HTTP tests.
+httpx>=0.27

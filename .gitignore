@@ -11,6 +11,12 @@ ingest/
 tools/
 *.log
 
+# application state: accounts, saved papers, activity log (server-owned, never
+# hand-edited, and it must never be pushed)
+data/app.sqlite
+data/app.sqlite-wal
+data/app.sqlite-shm
+
 # secrets
 .env
 

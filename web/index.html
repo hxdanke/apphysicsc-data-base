@@ -19,11 +19,15 @@
   <nav class="tabs" id="tabs">
     <button class="tab active" data-view="browse">Browse</button>
     <button class="tab" data-view="compose">Compose</button>
+    <button class="tab" data-view="papers">My Papers</button>
     <button class="tab" data-view="import">Import</button>
+    <button class="tab admin-only" data-view="users" hidden>Users</button>
   </nav>
   <div class="topbar-right">
     <span id="engine-badge" class="badge" title="LaTeX engine detected on the server">…</span>
     <span id="bank-badge" class="badge badge-soft">…</span>
+    <button class="user-chip" id="user-chip" hidden title="Account"></button>
+    <button class="btn btn-ghost btn-sm" id="sign-out" hidden>Sign out</button>
   </div>
 </header>
 
@@ -100,6 +104,84 @@
     </div>
   </section>
 
+  <!-- ============ MY PAPERS ============ -->
+  <section class="view" id="view-papers">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong>Saved paper</strong></div>
+      <div class="pane-block">
+        <label class="lbl">Name</label>
+        <input id="p-name" class="input" placeholder="Unit 1 quiz" />
+        <div class="btn-row">
+          <button class="btn btn-primary" id="p-save">Save selection</button>
+        </div>
+        <p class="muted small">
+          Saves the questions currently in Compose, together with the export
+          options, under your account.
+        </p>
+      </div>
+      <div class="pane-block">
+        <div class="btn-row">
+          <button class="btn btn-ghost" id="p-bell">Notifications</button>
+        </div>
+      </div>
+      <div id="p-status" class="status"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head">
+        <h2 id="p-title">Papers</h2>
+        <span class="muted">open a paper to load it into Compose</span>
+      </div>
+      <div id="p-list" class="papers"></div>
+    </div>
+
+    <div class="detailpane">
+      <div class="empty">
+        <p>Sharing lets colleagues read, build and copy a paper.</p>
+        <p class="muted small">
+          Each publish is a fixed snapshot: editing your own copy afterwards
+          does not change what they already received.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USERS (admin) ============ -->
+  <section class="view" id="view-users">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong>Account</strong></div>
+      <div class="pane-block">
+        <label class="lbl">Username</label>
+        <input id="u-username" class="input" placeholder="msli" />
+        <label class="lbl">Display name</label>
+        <input id="u-display" class="input" placeholder="Ms Li" />
+        <label class="lbl">Role</label>
+        <select id="u-role" class="input">
+          <option value="teacher">teacher</option>
+          <option value="admin">admin</option>
+          <option value="student">student</option>
+        </select>
+        <label class="lbl">Password</label>
+        <input id="u-password" class="input" type="password" placeholder="min 8 characters" />
+        <label class="chk"><input type="checkbox" id="u-active" checked /> active</label>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="u-create">Create account</button>
+        </div>
+      </div>
+      <div id="u-status" class="status"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head"><h2>Teachers</h2></div>
+      <div id="u-list" class="qlist"></div>
+    </div>
+
+    <div class="detailpane">
+      <div class="listpane-head"><h3>Recent activity</h3></div>
+      <div id="u-activity" class="activity"></div>
+    </div>
+  </section>
+
   <!-- ============ IMPORT ============ -->
   <section class="view" id="view-import">
     <aside class="sidebar">
@@ -142,6 +224,7 @@
 </main>
 
 <div id="edit-root"></div>
+<div id="login-root" hidden></div>
 <div id="toast" class="toast"></div>
 
 <script src="/vendor/katex/katex.min.js" defer></script>
