@@ -1,0 +1,171 @@
+{
+  "course": "AP Physics 2",
+  "units": [
+    {
+      "id": 1,
+      "title": "Fluids: Pressure and Forces",
+      "topics": [
+        {
+          "id": "1.1",
+          "title": "Density"
+        },
+        {
+          "id": "1.2",
+          "title": "Pressure"
+        },
+        {
+          "id": "1.3",
+          "title": "Fluids and Free-Body Diagrams"
+        },
+        {
+          "id": "1.4",
+          "title": "Buoyancy"
+        },
+        {
+          "id": "1.5",
+          "title": "Fluid Dynamics"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Thermodynamics",
+      "topics": [
+        {
+          "id": "2.1",
+          "title": "Systems and Fundamental Particles"
+        },
+        {
+          "id": "2.2",
+          "title": "Internal Energy and Energy Transfer"
+        },
+        {
+          "id": "2.3",
+          "title": "The First Law of Thermodynamics"
+        },
+        {
+          "id": "2.4",
+          "title": "Thermodynamic Processes"
+        },
+        {
+          "id": "2.5",
+          "title": "The Second Law of Thermodynamics"
+        },
+        {
+          "id": "2.6",
+          "title": "Ideal Gases and Kinetic Theory"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Electric Charge, Field, and Potential",
+      "topics": [
+        {
+          "id": "3.1",
+          "title": "Electric Charge"
+        },
+        {
+          "id": "3.2",
+          "title": "Coulomb's Law and Electric Field"
+        },
+        {
+          "id": "3.3",
+          "title": "Electric Flux and Gauss's Law"
+        },
+        {
+          "id": "3.4",
+          "title": "Electric Potential"
+        },
+        {
+          "id": "3.5",
+          "title": "Capacitors"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Electric Circuits",
+      "topics": [
+        {
+          "id": "4.1",
+          "title": "Current, Resistance, and EMF"
+        },
+        {
+          "id": "4.2",
+          "title": "Resistive Circuits"
+        },
+        {
+          "id": "4.3",
+          "title": "RC Circuits"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Magnetism and Electromagnetism",
+      "topics": [
+        {
+          "id": "5.1",
+          "title": "Magnetic Fields and Forces"
+        },
+        {
+          "id": "5.2",
+          "title": "Sources of Magnetic Fields"
+        },
+        {
+          "id": "5.3",
+          "title": "Electromagnetic Induction"
+        },
+        {
+          "id": "5.4",
+          "title": "Inductance and LC Circuits"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Geometric and Physical Optics",
+      "topics": [
+        {
+          "id": "6.1",
+          "title": "Waves and Interference"
+        },
+        {
+          "id": "6.2",
+          "title": "Reflection and Refraction"
+        },
+        {
+          "id": "6.3",
+          "title": "Images from Lenses and Mirrors"
+        },
+        {
+          "id": "6.4",
+          "title": "Interference and Diffraction"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Quantum, Atomic, and Nuclear Physics",
+      "topics": [
+        {
+          "id": "7.1",
+          "title": "Wave-Particle Duality"
+        },
+        {
+          "id": "7.2",
+          "title": "Atomic Energy Levels and Spectra"
+        },
+        {
+          "id": "7.3",
+          "title": "Nuclear Physics and Radioactivity"
+        },
+        {
+          "id": "7.4",
+          "title": "Mass-Energy Equivalence"
+        }
+      ]
+    }
+  ]
+}

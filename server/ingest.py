@@ -18,6 +18,7 @@ import uuid
 
 from . import ai as ai_mod
 from . import bank as bank_mod
+from . import courses as courses_mod
 from . import extract as extract_mod
 
 INGEST_DIR = os.path.join(bank_mod.ROOT, "ingest")
@@ -51,7 +52,8 @@ def list_jobs() -> list:
     return jobs
 
 
-def start(pdf_path: str, doc_id: str | None = None, dpi: int = 300) -> dict:
+def start(pdf_path: str, doc_id: str | None = None, dpi: int = 300,
+          course_id: str | None = None) -> dict:
     os.makedirs(INGEST_DIR, exist_ok=True)
     job = uuid.uuid4().hex[:12]
     d = _job_dir(job)
@@ -69,6 +71,8 @@ def start(pdf_path: str, doc_id: str | None = None, dpi: int = 300) -> dict:
     meta = {
         "job": job,
         "doc_id": doc_id,
+        # Which bank this draft will be committed into.
+        "course": courses_mod.get(course_id).id,
         "filename": os.path.basename(pdf_path),
         "created": time.strftime("%Y-%m-%d %H:%M:%S"),
         "count": len(questions),
@@ -111,7 +115,7 @@ def polish(job: str, limit: int | None = None) -> dict:
     return {"ok": True, "count": len(qs)}
 
 
-def commit(job: str, replace_source: bool = True) -> dict:
+def commit(job: str, replace_source: bool = True, course_id: str | None = None) -> dict:
     meta = read_meta(job)
     if not meta:
         return {"ok": False, "error": "unknown job"}
@@ -121,6 +125,9 @@ def commit(job: str, replace_source: bool = True) -> dict:
     qs = load_questions(job)
     if not qs:
         return {"ok": False, "error": "nothing to commit"}
+
+    course = courses_mod.get(course_id or meta.get("course"))
+    course_id = course.id
 
     # move figures into the shared media folder
     src_media = os.path.join(bank_mod.ROOT, meta["media"])
@@ -152,13 +159,16 @@ def commit(job: str, replace_source: bool = True) -> dict:
             if q.get("stem"):
                 q["stem"] = re_include_path(q["stem"], im["file"])
 
-    bank = bank_mod.load_bank()
-    written = bank_mod.upsert(bank, qs, replace_source=meta["doc_id"] if replace_source else None)
+    bank = bank_mod.load_bank(course_id)
+    written = bank_mod.upsert(bank, qs,
+                              replace_source=meta["doc_id"] if replace_source else None,
+                              course_id=course_id)
     meta["committed"] = True
     meta["stage"] = "committed"
     meta["committed_count"] = written
+    meta["course"] = course_id
     _write_meta(job, meta)
-    return {"ok": True, "count": written, "figures": moved}
+    return {"ok": True, "count": written, "figures": moved, "course": course_id}
 
 
 import re  # noqa: E402  (kept at the bottom so the helper reads naturally next to commit)

@@ -1,6 +1,9 @@
 import { api } from "./api.js";
 import { renderLatex, plainPreview } from "./render.js";
 import { openWholeEditor, openMathPopup } from "./edit.js";
+import * as courses from "./courses.js";
+import * as author from "./author.js";
+import { toast as sessionToast } from "./session.js";
 
 const state = {
   taxonomy: null,
@@ -121,6 +124,8 @@ function renderList() {
     if (q.answer) tags.push(`<span class="tag tag-ans">${q.answer}</span>`);
     if (q.difficulty) tags.push(`<span class="tag">${q.difficulty}</span>`);
     if (q.needs_review) tags.push(`<span class="tag tag-review">review</span>`);
+    const extras = q.additional_topics || [];
+    if (extras.length) tags.push(`<span class="tag tag-extra">+${extras.length} block</span>`);
     card.innerHTML =
       `<div class="qcard-top">
          <span class="qcard-id">${q.id}</span>
@@ -203,6 +208,9 @@ function renderDetail(q) {
   const choices = renderChoices(q);
   const meta = [];
   if (q.topic) meta.push(`<span class="tag">${q.topic} ${q.topic_title || ""}</span>`);
+  for (const extra of q.additional_topics || []) {
+    meta.push(`<span class="tag tag-extra">+${extra}</span>`);
+  }
   if (q.qtype) meta.push(`<span class="tag">${q.qtype}</span>`);
   if (q.source && q.source.doc) meta.push(`<span class="tag">${q.source.doc}` +
     (q.source.book_page ? ` p.${q.source.book_page}` : "") + `</span>`);
@@ -220,9 +228,11 @@ function renderDetail(q) {
       <div class="qmeta">${meta.join("")}</div>
       <div class="qactions">
         <button class="btn" data-act="add">Add to paper</button>
-        <button class="btn btn-primary" data-act="edit">Edit LaTeX</button>
+        <button class="btn" data-act="edit">Edit LaTeX</button>
+        <button class="btn" data-act="topics">Knowledge blocks</button>
         <button class="btn" data-act="tex">View LaTeX</button>
         <button class="btn" data-act="toggle-review">${q.needs_review ? "Clear review flag" : "Flag for review"}</button>
+        <button class="btn danger" data-act="delete">Delete</button>
       </div>
       <div id="tex-slot"></div>
     </div>`;
@@ -241,6 +251,15 @@ function renderDetail(q) {
       reload();
     });
   };
+  els.detail.querySelector('[data-act="topics"]').onclick = () => {
+    courses.openTopicEditor(q, (saved) => {
+      Object.assign(q, saved);
+      renderDetail(q);
+      reload();
+      sessionToast(`${q.id} knowledge blocks updated`);
+    });
+  };
+  els.detail.querySelector('[data-act="delete"]').onclick = () => removeQuestion(q);
   els.detail.querySelector('[data-act="toggle-review"]').onclick = async () => {
     await api.patch(q.id, { needs_review: !q.needs_review });
     q.needs_review = !q.needs_review;
@@ -264,6 +283,28 @@ async function commitField(field, value) {
   else q[field] = value;
   renderDetail(q);
   reload();
+}
+
+/**
+ * Deleting asks first, because it is the one action a teacher cannot undo from
+ * this screen.  The question goes to the recycle bin, not to nowhere.
+ */
+async function removeQuestion(q) {
+  const ok = confirm(
+    `Delete ${q.id}?\n\nIt moves to the Recycle Bin and is kept for 30 days, ` +
+    `where you can restore it.`);
+  if (!ok) return;
+  try {
+    await api.remove(q.id);
+    state.current = null;
+    await reload();
+    els.detail.innerHTML =
+      `<div class="empty"><p>${q.id} moved to the Recycle Bin.</p></div>`;
+    toast(`${q.id} moved to the Recycle Bin`);
+    window.dispatchEvent(new CustomEvent("bank:changed"));
+  } catch (err) {
+    toast(String(err.message || err), true);
+  }
 }
 
 /** Open the single-formula popover when a rendered formula is clicked. */

@@ -10,16 +10,16 @@
 <body>
 <header class="topbar">
   <div class="brand">
-    <span class="brand-mark">AP&nbsp;C</span>
-    <div class="brand-text">
-      <strong>AP Physics C: Mechanics</strong>
-      <span>Question Bank</span>
-    </div>
+    <span class="brand-mark">AP</span>
+    <!-- the course name is the switcher: one dropdown, four separate banks -->
+    <div class="course-switch" id="course-switch"></div>
   </div>
   <nav class="tabs" id="tabs">
     <button class="tab active" data-view="browse">Browse</button>
     <button class="tab" data-view="compose">Compose</button>
     <button class="tab" data-view="papers">My Papers</button>
+    <button class="tab" data-view="author">New question</button>
+    <button class="tab" data-view="recycle">Recycle Bin</button>
     <button class="tab" data-view="import">Import</button>
     <button class="tab admin-only" data-view="users" hidden>Users</button>
   </nav>
@@ -179,6 +179,74 @@
     <div class="detailpane">
       <div class="listpane-head"><h3>Recent activity</h3></div>
       <div id="u-activity" class="activity"></div>
+    </div>
+  </section>
+
+  <!-- ============ NEW QUESTION ============ -->
+  <section class="view" id="view-author">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong id="a-title">New question</strong></div>
+      <div class="pane-block">
+        <div class="btn-row">
+          <button class="btn" id="a-add-text">+ text block</button>
+          <button class="btn" id="a-add-image">+ image block</button>
+        </div>
+        <p class="muted small">
+          Build the stem from blocks — text and figures in any order. An image
+          block with no figure shows a placeholder until you upload one.
+        </p>
+      </div>
+      <div class="pane-block">
+        <label class="lbl">Answer</label>
+        <input id="a-answer" class="input" placeholder="e.g. B" />
+        <label class="lbl">Solution (LaTeX, optional)</label>
+        <textarea id="a-solution" class="input" rows="3"></textarea>
+      </div>
+      <div class="pane-block">
+        <div class="btn-row">
+          <button class="btn btn-primary" id="a-save">Save to bank</button>
+          <button class="btn btn-ghost" id="a-reset">New</button>
+        </div>
+      </div>
+      <div id="a-status" class="status"></div>
+    </aside>
+
+    <div class="listpane">
+      <div class="listpane-head">
+        <h2>Stem blocks</h2>
+        <span class="muted">drag-free ordering with ↑ ↓</span>
+      </div>
+      <div id="a-blocks" class="blocks"></div>
+      <div class="listpane-head"><h3>Options</h3></div>
+      <div id="a-choices" class="choices-edit"></div>
+    </div>
+
+    <div class="detailpane">
+      <div class="listpane-head">
+        <h3>Knowledge blocks</h3>
+        <span class="muted">first tick = primary</span>
+      </div>
+      <div id="a-topics" class="topic-picker"></div>
+      <div class="listpane-head"><h3>Preview</h3></div>
+      <div id="a-preview" class="preview-slot"></div>
+    </div>
+  </section>
+
+  <!-- ============ RECYCLE BIN ============ -->
+  <section class="view" id="view-recycle">
+    <aside class="sidebar">
+      <div class="sidebar-head"><strong>Recycle Bin</strong></div>
+      <div class="pane-block">
+        <p id="r-meta" class="muted small"></p>
+        <button class="btn btn-ghost danger" id="r-empty">Empty the bin</button>
+      </div>
+    </aside>
+    <div class="listpane">
+      <div class="listpane-head"><h2>Deleted questions</h2></div>
+      <div id="r-list" class="qlist"></div>
+    </div>
+    <div class="detailpane" id="r-detail">
+      <div class="empty"><p>Select a deleted question.</p></div>
     </div>
   </section>
 

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "course": "AP Physics 1",
+  "questions": [
+    {
+      "id": "AP1-U1-1.3-Q1",
+      "unit": 1,
+      "unit_title": "Kinematics",
+      "topic": "1.3",
+      "topic_title": "Motion in Two Dimensions",
+      "additional_topics": [],
+      "number": 1,
+      "qtype": "mcq",
+      "stem": "A ball is launched horizontally at $12\\ \\mathrm{m/s}$ from a cliff $45\\ \\mathrm{m}$ above the ground. Air resistance is negligible. How far from the base of the cliff does it land?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "$18\\ \\mathrm{m}$"
+        },
+        {
+          "label": "B",
+          "text": "$36\\ \\mathrm{m}$"
+        },
+        {
+          "label": "C",
+          "text": "$54\\ \\mathrm{m}$"
+        },
+        {
+          "label": "D",
+          "text": "$90\\ \\mathrm{m}$"
+        }
+      ],
+      "answer": "B",
+      "solution": "The vertical fall sets the time: $t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{\\dfrac{2(45)}{10}} = 3\\ \\mathrm{s}$. The horizontal distance is then $x = v_{x}t = (12)(3) = 36\\ \\mathrm{m}$.",
+      "stem_blocks": [
+        {
+          "type": "text",
+          "text": "A ball is launched horizontally at $12\\ \\mathrm{m/s}$ from a cliff $45\\ \\mathrm{m}$ above the ground. Air resistance is negligible. How far from the base of the cliff does it land?"
+        }
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "projectile",
+        "sample"
+      ],
+      "source": {
+        "doc": "SAMPLE"
+      },
+      "images": [],
+      "layout": "inline",
+      "needs_review": false
+    }
+  ]
+}

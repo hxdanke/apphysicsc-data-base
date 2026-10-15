@@ -1,0 +1,103 @@
+{
+  "course": "AP Physics C: Electricity and Magnetism",
+  "units": [
+    {
+      "id": 1,
+      "title": "Electrostatics",
+      "topics": [
+        {
+          "id": "1.1",
+          "title": "Charge Distributions"
+        },
+        {
+          "id": "1.2",
+          "title": "Electric Fields"
+        },
+        {
+          "id": "1.3",
+          "title": "Electric Flux and Gauss's Law"
+        },
+        {
+          "id": "1.4",
+          "title": "Electric Potential"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Conductors, Capacitors, Dielectrics",
+      "topics": [
+        {
+          "id": "2.1",
+          "title": "Electrostatics with Conductors"
+        },
+        {
+          "id": "2.2",
+          "title": "Capacitors"
+        },
+        {
+          "id": "2.3",
+          "title": "Dielectrics"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Electric Circuits",
+      "topics": [
+        {
+          "id": "3.1",
+          "title": "Current, Resistance, and EMF"
+        },
+        {
+          "id": "3.2",
+          "title": "Resistive Circuits"
+        },
+        {
+          "id": "3.3",
+          "title": "RC Circuits"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Magnetic Fields",
+      "topics": [
+        {
+          "id": "4.1",
+          "title": "Magnetic Fields and Forces"
+        },
+        {
+          "id": "4.2",
+          "title": "Sources of Magnetic Fields"
+        },
+        {
+          "id": "4.3",
+          "title": "Magnetic Flux"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Electromagnetic Induction",
+      "topics": [
+        {
+          "id": "5.1",
+          "title": "Faraday's Law and Lenz's Law"
+        },
+        {
+          "id": "5.2",
+          "title": "Inductance"
+        },
+        {
+          "id": "5.3",
+          "title": "LC and RLC Circuits"
+        },
+        {
+          "id": "5.4",
+          "title": "Maxwell's Equations"
+        }
+      ]
+    }
+  ]
+}

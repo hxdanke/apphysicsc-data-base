@@ -75,6 +75,12 @@ export function applyOptions(opts = {}) {
   if (opts.filename) els.filename.value = opts.filename;
 }
 
+/** Empty the basket -- used when the teacher switches to another course. */
+export function reset() {
+  selection.length = 0;
+  if (els.list) render();
+}
+
 export function selectionIds() {
   return selection.map(q => q.id);
 }

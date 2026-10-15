@@ -17,7 +17,7 @@ from typing import Any, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from pydantic import BaseModel, Field
 
-from server import appdb, auth, papers  # noqa: E402
+from server import appdb, auth, courses, papers  # noqa: E402
 
 router = APIRouter()
 
@@ -187,6 +187,8 @@ def activity(limit: int = Query(100, le=500), user_id: Optional[int] = None,
 class DraftBody(BaseModel):
     id: Optional[int] = None
     name: str = "Untitled paper"
+    # Which course's bank this paper draws on.  A paper never spans courses.
+    course: str = ""
     question_ids: list = Field(default_factory=list)
     question_overrides: dict = Field(default_factory=dict)
     metadata: dict = Field(default_factory=dict)
@@ -195,11 +197,13 @@ class DraftBody(BaseModel):
 
 
 @router.get("/api/paper-drafts")
-def drafts(user: dict = Depends(auth.current_user)):
-    items = papers.list_paper_drafts(_db(), user_id=int(user["id"]))
+def drafts(course: str = "", user: dict = Depends(auth.current_user)):
+    course_id = courses.get(course).id
+    items = papers.list_paper_drafts(_db(), user_id=int(user["id"]),
+                                     course_id=course_id)
     for item in items:
         item["source_update"] = papers.publication_source_update(_db(), item)
-    return {"drafts": items}
+    return {"drafts": items, "course": course_id}
 
 
 @router.post("/api/paper-drafts")
@@ -211,12 +215,14 @@ def save_draft(request: Request, body: DraftBody,
             question_ids=body.question_ids,
             question_overrides=body.question_overrides,
             metadata=body.metadata, settings=body.settings,
-            draft_id=body.id, expected_version=body.version)
+            draft_id=body.id, expected_version=body.version,
+            course_id=courses.get(body.course).id)
     except Exception as exc:  # noqa: BLE001
         raise _fail(exc)
     _record(request, user, "paper_draft.save", entity_type="paper",
             entity_id=saved["id"], summary=f"Saved paper '{saved['name']}'",
-            metadata={"questions": len(saved["question_ids"])})
+            metadata={"questions": len(saved["question_ids"]),
+                      "course": saved.get("course")})
     return {"draft": saved}
 
 
@@ -247,8 +253,13 @@ class FolderBody(BaseModel):
 
 
 @router.get("/api/paper-sharing")
-def sharing(user: dict = Depends(auth.current_user)):
-    return papers.paper_sharing_payload(_db(), user_id=int(user["id"]))
+def sharing(course: str = "", user: dict = Depends(auth.current_user)):
+    """Shared papers plus the people list, scoped to one course."""
+    course_id = courses.get(course).id
+    payload = papers.paper_sharing_payload(_db(), user_id=int(user["id"]),
+                                           course_id=course_id)
+    payload["course"] = course_id
+    return payload
 
 
 @router.post("/api/paper-folders")

@@ -30,35 +30,84 @@ async function request(url, options = {}) {
   return type.includes("application/json") ? res.json() : res;
 }
 
+// The course the whole UI is currently pointed at.  Banks are separate, so
+// every bank-scoped call carries it; nothing reaches across courses.
+let currentCourse = "";
+
+export function setCourse(id) {
+  currentCourse = id || "";
+}
+
+export function getCourse() {
+  return currentCourse;
+}
+
+/** Append the active course to a query string. */
+function cq(params = {}) {
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) {
+    if (v !== "" && v !== false && v != null) qs.set(k, v);
+  }
+  if (currentCourse) qs.set("course", currentCourse);
+  return qs.toString();
+}
+
+/** The same course, for request bodies. */
+function cb(body = {}) {
+  return currentCourse ? { ...body, course: currentCourse } : body;
+}
+
 export const api = {
-  health:  () => request("/api/health"),
-  taxonomy: () => request("/api/taxonomy"),
-  stats:   () => request("/api/stats"),
+  courses: () => request("/api/courses"),
+  health:  () => request("/api/health?" + cq()),
+  taxonomy: () => request("/api/taxonomy?" + cq()),
+  stats:   () => request("/api/stats?" + cq()),
 
   questions(params = {}) {
-    const qs = new URLSearchParams();
-    for (const [k, v] of Object.entries(params)) {
-      if (v !== "" && v !== false && v != null) qs.set(k, v);
-    }
-    return request("/api/questions?" + qs.toString());
+    return request("/api/questions?" + cq(params));
   },
 
-  question: (id) => request("/api/questions/" + encodeURIComponent(id)),
-  questionTex: (id) => request("/api/questions/" + encodeURIComponent(id) + "/tex").then(r => r.text()),
-  patch: (id, body) => request("/api/questions/" + encodeURIComponent(id), {
+  question: (id) => request("/api/questions/" + encodeURIComponent(id) + "?" + cq()),
+  questionTex: (id) => request("/api/questions/" + encodeURIComponent(id) + "/tex?" + cq())
+    .then(r => r.text()),
+  patch: (id, body) => request("/api/questions/" + encodeURIComponent(id) + "?" + cq(), {
     method: "PATCH", headers: JSON_HEADERS, body: JSON.stringify(body),
   }),
-  validate: (id, field, value) => request("/api/questions/" + encodeURIComponent(id) + "/validate", {
-    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ field, value }),
+  validate: (id, field, value) => request(
+    "/api/questions/" + encodeURIComponent(id) + "/validate?" + cq(), {
+      method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ field, value }),
+    }),
+  /** Deleting moves the question to the recycle bin; it is not destroyed. */
+  remove: (id) => request("/api/questions/" + encodeURIComponent(id) + "?" + cq(),
+                          { method: "DELETE" }),
+
+  // ---- recycle bin ----
+  recycle: () => request("/api/recycle?" + cq()),
+  recycleRestore: (id) => request("/api/recycle/restore?" + cq(), {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ id }),
   }),
-  remove: (id) => request("/api/questions/" + encodeURIComponent(id), { method: "DELETE" }),
+  recyclePurge: (id) => request("/api/recycle/purge?" + cq(), {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ id }),
+  }),
+  recycleEmpty: () => request("/api/recycle/empty?" + cq(),
+                              { method: "POST", headers: JSON_HEADERS, body: "{}" }),
+
+  // ---- authoring ----
+  author: (body) => request("/api/questions", {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(cb(body)),
+  }),
+  uploadImage: async (file) => {
+    const form = new FormData();
+    form.append("file", file);
+    return request("/api/uploads?" + cq(), { method: "POST", body: form });
+  },
 
   exportTex: (body) => request("/api/export/latex", {
-    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(cb(body)),
   }),
   exportPdf: async (body, filename) => {
     const res = await fetch("/api/export/pdf", {
-      method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+      method: "POST", headers: JSON_HEADERS, body: JSON.stringify(cb(body)),
     });
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
@@ -76,13 +125,13 @@ export const api = {
     form.append("file", file);
     if (docId) form.append("doc_id", docId);
     form.append("dpi", String(dpi));
-    return request("/api/ingest", { method: "POST", body: form });
+    return request("/api/ingest?" + cq(), { method: "POST", body: form });
   },
   ingestJobs: () => request("/api/ingest"),
   ingestJob:  (job) => request("/api/ingest/" + job),
   ingestPolish: (job, limit) => request(`/api/ingest/${job}/polish` + (limit ? `?limit=${limit}` : ""),
                                         { method: "POST" }),
-  ingestCommit: (job) => request(`/api/ingest/${job}/commit`, { method: "POST" }),
+  ingestCommit: (job) => request(`/api/ingest/${job}/commit?` + cq(), { method: "POST" }),
   ingestDelete: (job) => request("/api/ingest/" + job, { method: "DELETE" }),
 
   // ---- accounts ----
@@ -109,16 +158,16 @@ export const api = {
   },
 
   // ---- saved papers ----
-  drafts: () => request("/api/paper-drafts"),
+  drafts: () => request("/api/paper-drafts?" + cq()),
   saveDraft: (body) => request("/api/paper-drafts", {
-    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(cb(body)),
   }),
   deleteDraft: (id) => request("/api/paper-drafts/delete", {
     method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ id }),
   }),
 
   // ---- sharing ----
-  sharing: () => request("/api/paper-sharing"),
+  sharing: () => request("/api/paper-sharing?" + cq()),
   saveFolder: (body) => request("/api/paper-folders", {
     method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
   }),

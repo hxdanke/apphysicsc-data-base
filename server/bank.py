@@ -1,8 +1,18 @@
-"""Question-bank storage.
+"""Question-bank storage, one bank per course.
 
-The bank is plain JSON on disk (git friendly, diffable, no database to migrate).
-`data/bank.json` holds every question; `data/media/` holds the figures that the
-LaTeX bodies reference with \\includegraphics.
+Each course keeps its own JSON bank (git friendly, diffable, no database to
+migrate).  ``data/media/`` holds the figures the LaTeX bodies reference with
+``\\includegraphics`` and is shared between courses; filenames carry the course
+they came from.
+
+Every function takes a ``course_id`` and defaults to AP Physics C: Mechanics,
+which is what the pre-multi-course scripts expect -- they keep working untouched.
+
+Beyond the unit/topic a question is filed under, a question may carry
+``additional_topics``: the other knowledge blocks it draws on.  A mechanics
+question that is really about energy *and* momentum can be found from either
+side, and filtering by a topic matches questions that list it as primary *or* as
+additional.
 """
 
 from __future__ import annotations
@@ -13,11 +23,15 @@ import re
 import threading
 from copy import deepcopy
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(ROOT, "data")
-MEDIA_DIR = os.path.join(DATA_DIR, "media")
-BANK_PATH = os.path.join(DATA_DIR, "bank.json")
-TAXONOMY_PATH = os.path.join(DATA_DIR, "taxonomy.json")
+from . import courses as courses_mod
+
+ROOT = courses_mod.ROOT
+DATA_DIR = courses_mod.DATA_DIR
+MEDIA_DIR = courses_mod.MEDIA_DIR
+# Absolute paths for the default course, kept for the pre-multi-course scripts
+# that reach for these constants directly.
+BANK_PATH = courses_mod.get(None).path(courses_mod.get(None).bank)
+TAXONOMY_PATH = courses_mod.get(None).path(courses_mod.get(None).taxonomy)
 EXPORT_DIR = os.path.join(ROOT, "exports")
 
 _lock = threading.Lock()
@@ -88,58 +102,88 @@ DEFAULT_TAXONOMY = {
 }
 
 
-def load_taxonomy() -> dict:
-    if os.path.exists(TAXONOMY_PATH):
-        with open(TAXONOMY_PATH, "r", encoding="utf-8") as f:
+def load_taxonomy(course_id: str | None = None) -> dict:
+    course = courses_mod.get(course_id)
+    path = course.path(course.taxonomy)
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
+    # Only the default course has a fallback; a new course must ship its own.
     return deepcopy(DEFAULT_TAXONOMY)
 
 
-def save_taxonomy(tax: dict) -> None:
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(TAXONOMY_PATH, "w", encoding="utf-8") as f:
+def save_taxonomy(tax: dict, course_id: str | None = None) -> None:
+    course = courses_mod.get(course_id)
+    path = course.path(course.taxonomy)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(tax, f, ensure_ascii=False, indent=2)
+
+
+def resolve_topic(topic_id: str, course_id: str | None = None) -> tuple:
+    """Return ``(unit_id, topic_title)`` for a topic id, or ``(0, "")``."""
+    for unit in load_taxonomy(course_id).get("units", []):
+        for topic in unit.get("topics", []):
+            if str(topic["id"]) == str(topic_id):
+                return unit["id"], topic["title"]
+    return 0, ""
+
+
+def topic_titles(course_id: str | None = None) -> dict:
+    """Every ``unit|topic`` id mapped to its title."""
+    return {
+        f"{unit['id']}|{topic['id']}": topic["title"]
+        for unit in load_taxonomy(course_id).get("units", [])
+        for topic in unit.get("topics", [])
+    }
 
 
 # --------------------------------------------------------------------------------------
 # bank
 # --------------------------------------------------------------------------------------
 
-def blank_question(qid: str) -> dict:
+def blank_question(qid: str, unit: int = 0, topic: str = "") -> dict:
     return {
-        "id": qid, "unit": 0, "unit_title": "", "topic": "", "topic_title": "",
+        "id": qid, "unit": unit, "unit_title": "", "topic": topic, "topic_title": "",
         "number": 0, "qtype": "mcq", "stem": "", "choices": [], "answer": "",
         "solution": "", "images": [], "difficulty": "", "tags": [],
         "source": {}, "layout": "inline", "needs_review": False,
+        "stem_blocks": [], "additional_topics": [],
     }
 
 
-def load_bank() -> dict:
-    if not os.path.exists(BANK_PATH):
-        return {"version": 1, "course": "AP Physics C: Mechanics", "questions": []}
-    with open(BANK_PATH, "r", encoding="utf-8") as f:
+def load_bank(course_id: str | None = None) -> dict:
+    course = courses_mod.get(course_id)
+    path = course.path(course.bank)
+    if not os.path.exists(path):
+        return {"version": 1, "course": course.title, "questions": []}
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def save_bank(bank: dict) -> None:
-    os.makedirs(DATA_DIR, exist_ok=True)
-    tmp = BANK_PATH + ".tmp"
+def save_bank(bank: dict, course_id: str | None = None) -> None:
+    course = courses_mod.get(course_id)
+    path = course.path(course.bank)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(bank, f, ensure_ascii=False, indent=1)
-    os.replace(tmp, BANK_PATH)
+    os.replace(tmp, path)
 
 
-def next_id(bank: dict, unit: int, topic: str) -> str:
+def next_id(bank: dict, unit: int, topic: str, course_id: str | None = None) -> str:
+    course = courses_mod.get(course_id)
     used = {q["id"] for q in bank["questions"]}
-    prefix = f"Q-U{unit}-{topic or '0'}-"
+    prefix = f"{course.id_prefix}-U{unit}-{topic or '0'}-Q"
     n = 1
     while f"{prefix}{n}" in used:
         n += 1
     return f"{prefix}{n}"
 
 
-def upsert(bank: dict, questions: list, replace_source: str | None = None) -> int:
-    """Insert or replace questions.  Returns how many were written."""
+def upsert(bank: dict, questions: list, replace_source: str | None = None,
+           course_id: str | None = None) -> int:
+    """Insert or replace questions and write the bank.  Returns how many were written."""
     with _lock:
         if replace_source:
             bank["questions"] = [q for q in bank["questions"]
@@ -150,17 +194,18 @@ def upsert(bank: dict, questions: list, replace_source: str | None = None) -> in
                 bank["questions"][index[q["id"]]] = q
             else:
                 bank["questions"].append(q)
-        save_bank(bank)
+        save_bank(bank, course_id)
     return len(questions)
 
 
-def delete_question(bank: dict, qid: str) -> bool:
+def delete_question(bank: dict, qid: str, course_id: str | None = None) -> bool:
+    """Remove a question and write the bank.  True when something was removed."""
     before = len(bank["questions"])
     bank["questions"] = [q for q in bank["questions"] if q["id"] != qid]
-    if len(bank["questions"]) != before:
-        save_bank(bank)
-        return True
-    return False
+    if len(bank["questions"]) == before:
+        return False
+    save_bank(bank, course_id)
+    return True
 
 
 def stats(bank: dict) -> dict:
@@ -196,15 +241,42 @@ def plain_text(q: dict) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
+def topics_of(q: dict) -> list[str]:
+    """Every knowledge block a question is filed under, primary first."""
+    out = []
+    primary = q.get("topic")
+    if primary:
+        out.append(str(primary))
+    for extra in q.get("additional_topics") or []:
+        text = str(extra)
+        if text and text not in out:
+            out.append(text)
+    return out
+
+
+def units_of(q: dict, course_id: str | None = None) -> set:
+    """The unit ids a question touches, from its primary and additional topics."""
+    out = set()
+    if q.get("unit") is not None:
+        out.add(q.get("unit"))
+    for topic in q.get("additional_topics") or []:
+        unit, _ = resolve_topic(str(topic), course_id)
+        if unit:
+            out.add(unit)
+    return out
+
+
 def search(bank: dict, query: str = "", unit: int | None = None, topic: str | None = None,
            qtype: str | None = None, needs_review: bool | None = None,
-           untagged: bool | None = None, limit: int = 500) -> list:
+           untagged: bool | None = None, limit: int = 500,
+           course_id: str | None = None) -> list:
     q = (query or "").strip().lower()
     out = []
     for item in bank["questions"]:
-        if unit is not None and item.get("unit") != unit:
+        if unit is not None and unit not in units_of(item, course_id):
             continue
-        if topic and item.get("topic") != topic:
+        # A topic filter matches the primary topic *or* any additional one.
+        if topic and str(topic) not in topics_of(item):
             continue
         if qtype and item.get("qtype") != qtype:
             continue

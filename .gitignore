@@ -17,6 +17,11 @@ data/app.sqlite
 data/app.sqlite-wal
 data/app.sqlite-shm
 
+# recycle bins: transient by design -- a deleted question is kept for 30 days and
+# then dropped automatically, so this is churn rather than content
+data/recycled.json
+data/banks/*/recycled.json
+
 # secrets
 .env
 

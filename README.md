@@ -21,6 +21,24 @@ python -m uvicorn server.main:app --host 127.0.0.1 --port 8765
 
 Open <http://127.0.0.1:8765>.
 
+### Courses
+
+Four courses are served, each with **its own independent bank**. A question in
+one course is invisible to the others, and a paper never spans courses — switch
+with the dropdown on the course name, top left.
+
+| course id | name |
+|---|---|
+| `apc-mech` | AP Physics C: Mechanics |
+| `apc-em` | AP Physics C: Electricity and Magnetism |
+| `ap1` | AP Physics 1 |
+| `ap2` | AP Physics 2 |
+
+AP Physics C: Mechanics keeps the original `data/bank.json`; the others live
+under `data/banks/<course>/`. Figures share `data/media/` with course-prefixed
+filenames. The three newer courses ship a taxonomy and one sample question —
+regenerate them with `python scripts/init_courses.py` (add `--force` to overwrite).
+
 ### Sign-in
 
 On first run an `admin` account is created automatically with the password
@@ -104,7 +122,44 @@ Sharing is deliberately one-directional and frozen at publish time:
 Admins create teacher accounts, reset passwords, disable accounts and read the
 activity log. At least one active admin is always required.
 
-### 5. Import (扩充题库)
+### 5. New question (自己编题)
+
+Build a question without a PDF. The stem is a list of **blocks** — text and
+figures in whatever order you want, each one moveable and removable:
+
+* a **text block** holds LaTeX, as typed;
+* an **image block** takes an uploaded figure, its width and an optional caption.
+  Leave it empty and it renders as a visible placeholder, so a half-finished
+  question looks half-finished rather than quietly missing a figure.
+
+The blocks are the editable form; the LaTeX `stem` the paper uses is derived from
+them, which is why a hand-written question composes into a paper exactly like an
+imported one. Editing the LaTeX directly drops the blocks.
+
+You must file the question under at least one **knowledge block** (see below).
+
+### 6. Knowledge blocks
+
+A question is filed under a primary unit/topic, and may also list
+**additional topics** — the other blocks it draws on. A question about a
+collision that needs energy conservation can be found from either side, and
+filtering by a topic matches questions that list it as primary *or* additional.
+
+Both the authoring form and the **Knowledge blocks** button on any existing
+question open the same multi-select picker; the first box you tick is the primary.
+
+### 7. Recycle Bin (回收站)
+
+Deleting a question asks for confirmation, then moves it to the per-course
+Recycle Bin instead of destroying it. There it keeps its whole body and can be:
+
+* **restored** back into the bank, or
+* **deleted permanently** by hand, or
+* left alone — after **30 days** it is dropped automatically.
+
+The retention sweep runs whenever the bin is read, so it needs no scheduled job.
+
+### 8. Import (扩充题库)
 Upload a PDF → the server extracts text, sub/superscripts, figures (rendered at the
 chosen DPI) and the unit/topic structure → you get a **draft** to review → optional
 **AI polish** → **commit** to the bank.
@@ -121,17 +176,21 @@ and simply keeps the deterministic draft.
 
 ```
 data/
-  bank.json        # every question (git-friendly, diffable)
-  taxonomy.json    # 7 units / 41 topics (AP Physics C: Mechanics CED order)
-  media/*.png      # figures referenced by the LaTeX bodies
+  bank.json        # AP Physics C: Mechanics (git-friendly, diffable)
+  taxonomy.json    # its 7 units / 41 topics (AP Physics C: Mechanics CED order)
+  media/*.png      # figures referenced by the LaTeX bodies, all courses
+  banks/<course>/  # bank.json + taxonomy.json for the other three courses
   app.sqlite       # accounts, saved papers, sharing, activity log (gitignored)
+  recycled.json    # recycle bin, transient (gitignored)
 ingest/<job>/      # drafts from the import UI (gitignored)
 exports/           # generated .tex / .pdf (gitignored)
 ```
 
-Question **content** stays in `bank.json`; `app.sqlite` is server-owned live
-state and is never edited by hand. Keeping them apart means reseeding the bank
-never touches who can sign in or which papers teachers saved.
+Question **content** stays in the bank JSON files; `app.sqlite` is server-owned
+live state and is never edited by hand. Keeping them apart means reseeding a bank
+never touches who can sign in or which papers teachers saved. The data root can
+be relocated with `QB_DATA_DIR` (the tests use this to run against a throw-away
+tree).
 
 A question looks like this (trimmed):
 

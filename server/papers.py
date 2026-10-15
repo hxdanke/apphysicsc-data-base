@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS paper_drafts (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
   name TEXT NOT NULL,
+  course TEXT NOT NULL DEFAULT '',
   question_ids_json TEXT NOT NULL DEFAULT '[]',
   question_overrides_json TEXT NOT NULL DEFAULT '{{}}',
   metadata_json TEXT NOT NULL DEFAULT '{{}}',
@@ -83,6 +84,7 @@ CREATE TABLE IF NOT EXISTS paper_publications (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   owner_user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
   source_draft_id INTEGER REFERENCES paper_drafts(id) ON DELETE SET NULL,
+  course TEXT NOT NULL DEFAULT '',
   title TEXT NOT NULL,
   message TEXT NOT NULL DEFAULT '',
   version INTEGER NOT NULL DEFAULT 1,
@@ -157,6 +159,17 @@ def init_papers(db_path: Path | str) -> None:
     appdb.init_db(db_path)
     with appdb.connect(db_path) as conn:
         conn.executescript(PAPER_SCHEMA)
+        _ensure_course_columns(conn)
+
+
+def _ensure_course_columns(conn: sqlite3.Connection) -> None:
+    """Add ``course`` to tables created before courses existed."""
+    for table in ("paper_drafts", "paper_publications"):
+        columns = {row["name"] for row in
+                   conn.execute(f"PRAGMA table_info({table})").fetchall()}
+        if "course" not in columns:
+            conn.execute(
+                f"ALTER TABLE {table} ADD COLUMN course TEXT NOT NULL DEFAULT ''")
 
 
 # --------------------------------------------------------------------------------------
@@ -254,10 +267,12 @@ def clean_unique_positive_ids(values: Iterable[Any]) -> list[int]:
 # --------------------------------------------------------------------------------------
 
 def _draft_row(row: sqlite3.Row) -> dict[str, Any]:
+    keys = row.keys()
     return {
         "id": int(row["id"]),
         "user_id": row["user_id"],
         "name": row["name"],
+        "course": row["course"] if "course" in keys else "",
         "question_ids": clean_question_ids(row["question_ids_json"]),
         "question_overrides": _json_dict(row["question_overrides_json"]),
         "metadata": _json_dict(row["metadata_json"]),
@@ -270,14 +285,23 @@ def _draft_row(row: sqlite3.Row) -> dict[str, Any]:
 
 
 def list_paper_drafts(db_path: Path | str, *, user_id: int | None = None,
-                      include_all: bool = False) -> list[dict[str, Any]]:
-    """Drafts belong to their owner; another teacher's draft is invisible."""
+                      include_all: bool = False,
+                      course_id: str | None = None) -> list[dict[str, Any]]:
+    """Drafts belong to their owner; another teacher's draft is invisible.
+
+    Filtering by ``course_id`` is what keeps the composing views separate: an
+    AP Physics 1 paper never appears in the AP Physics C list.
+    """
     init_papers(db_path)
-    where = ""
+    clauses: list[str] = []
     params: list[Any] = []
     if user_id is not None and not include_all:
-        where = "WHERE user_id = ?"
+        clauses.append("user_id = ?")
         params.append(int(user_id))
+    if course_id:
+        clauses.append("course = ?")
+        params.append(str(course_id))
+    where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
     with appdb.connect(db_path) as conn:
         rows = conn.execute(
             f"SELECT * FROM paper_drafts {where} ORDER BY updated_at DESC, id DESC",
@@ -291,7 +315,8 @@ def save_paper_draft(db_path: Path | str, *, user_id: int, name: str,
                      question_overrides: Any = None, metadata: Any = None,
                      settings: Any = None, draft_id: int | None = None,
                      expected_version: int | None = None,
-                     copied_from_revision_id: int | None = None) -> dict[str, Any]:
+                     copied_from_revision_id: int | None = None,
+                     course_id: str | None = None) -> dict[str, Any]:
     init_papers(db_path)
     clean_name = (name or "").strip() or "Untitled paper"
     ids = clean_question_ids(question_ids)
@@ -331,11 +356,12 @@ def save_paper_draft(db_path: Path | str, *, user_id: int, name: str,
             cursor = conn.execute(
                 """
                 INSERT INTO paper_drafts
-                  (user_id, name, question_ids_json, question_overrides_json,
+                  (user_id, name, course, question_ids_json, question_overrides_json,
                    metadata_json, settings_json, copied_from_revision_id)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 """,
-                (owner, clean_name, json.dumps(ids, ensure_ascii=False),
+                (owner, clean_name, str(course_id or ""),
+                 json.dumps(ids, ensure_ascii=False),
                  json.dumps(overrides, ensure_ascii=False),
                  json.dumps(cover, ensure_ascii=False),
                  json.dumps(options, ensure_ascii=False),
@@ -659,13 +685,15 @@ def publish_paper_draft(db_path: Path | str, *, actor_user_id: int, draft_id: in
             raise ValueError("This paper and its sharing settings are already up to date")
 
         if existing is None:
+            draft_course = draft["course"] if "course" in draft.keys() else ""
             cursor = conn.execute(
                 """
                 INSERT INTO paper_publications
-                  (owner_user_id, source_draft_id, title, message)
-                VALUES (?, ?, ?, ?)
+                  (owner_user_id, source_draft_id, course, title, message)
+                VALUES (?, ?, ?, ?, ?)
                 """,
-                (int(actor_user_id), int(draft_id), clean_title, message or ""),
+                (int(actor_user_id), int(draft_id), str(draft_course or ""),
+                 clean_title, message or ""),
             )
             publication_id = int(cursor.lastrowid)
         else:
@@ -875,12 +903,13 @@ def copy_paper_publication(db_path: Path | str, publication_id: int,
         cursor = conn.execute(
             """
             INSERT INTO paper_drafts
-              (user_id, name, question_ids_json, question_overrides_json,
+              (user_id, name, course, question_ids_json, question_overrides_json,
                metadata_json, settings_json, copied_from_revision_id)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 int(actor_user_id), draft_name,
+                str(publication["course"] if "course" in publication.keys() else ""),
                 json.dumps(question_ids, ensure_ascii=False),
                 revision["question_overrides_json"],
                 revision["metadata_json"],
@@ -952,6 +981,7 @@ def _publication_payload(db_path: Path | str, row: sqlite3.Row,
         "id": publication_id,
         "title": row["title"],
         "message": row["message"],
+        "course": row["course"] if "course" in row.keys() else "",
         "owner_user_id": int(row["owner_user_id"]),
         "source_draft_id": row["source_draft_id"],
         "revision_id": int(revision["id"]) if revision is not None else None,
@@ -968,19 +998,30 @@ def _publication_payload(db_path: Path | str, row: sqlite3.Row,
     }
 
 
-def paper_sharing_payload(db_path: Path | str, *, user_id: int) -> dict[str, Any]:
-    """Everything the My Papers tab needs, already filtered for this reader."""
+def paper_sharing_payload(db_path: Path | str, *, user_id: int,
+                          course_id: str | None = None) -> dict[str, Any]:
+    """Everything the My Papers tab needs, already filtered for this reader.
+
+    ``course_id`` narrows the list to one course, so a shared AP Physics 2 paper
+    does not clutter an AP Physics C teacher's view.
+    """
     init_papers(db_path)
     with appdb.connect(db_path) as conn:
         actor = _actor_row(conn, user_id)
+        where = "p.active = 1"
+        params: list[Any] = []
+        if course_id:
+            where += " AND p.course = ?"
+            params.append(str(course_id))
         rows = conn.execute(
-            """
+            f"""
             SELECT p.*, u.display_name AS owner_display_name, u.username AS owner_username
             FROM paper_publications p
             JOIN users u ON u.id = p.owner_user_id
-            WHERE p.active = 1
+            WHERE {where}
             ORDER BY p.updated_at DESC, p.id DESC
             """,
+            params,
         ).fetchall()
         publications = []
         for row in rows:

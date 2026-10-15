@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "course": "AP Physics C: Electricity and Magnetism",
+  "questions": [
+    {
+      "id": "APCE-U1-1.3-Q1",
+      "unit": 1,
+      "unit_title": "Electrostatics",
+      "topic": "1.3",
+      "topic_title": "Electric Flux and Gauss's Law",
+      "additional_topics": [
+        "1.2"
+      ],
+      "number": 1,
+      "qtype": "mcq",
+      "stem": "A point charge $+Q$ sits at the center of a cube of side length $a$. What is the electric flux through one face of the cube?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "$\\dfrac{Q}{\\varepsilon_{0}}$"
+        },
+        {
+          "label": "B",
+          "text": "$\\dfrac{Q}{6\\varepsilon_{0}}$"
+        },
+        {
+          "label": "C",
+          "text": "$\\dfrac{Q}{6a^{2}\\varepsilon_{0}}$"
+        },
+        {
+          "label": "D",
+          "text": "$\\dfrac{Q}{a^{2}\\varepsilon_{0}}$"
+        }
+      ],
+      "answer": "B",
+      "solution": "Gauss's law gives the total flux through the closed cube as $\\Phi_{E} = \\dfrac{Q}{\\varepsilon_{0}}$. By symmetry the six faces share it equally, so one face carries $\\dfrac{Q}{6\\varepsilon_{0}}$.",
+      "stem_blocks": [
+        {
+          "type": "text",
+          "text": "A point charge $+Q$ sits at the center of a cube of side length $a$. What is the electric flux through one face of the cube?"
+        }
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "gauss",
+        "flux",
+        "sample"
+      ],
+      "source": {
+        "doc": "SAMPLE"
+      },
+      "images": [],
+      "layout": "inline",
+      "needs_review": false
+    }
+  ]
+}

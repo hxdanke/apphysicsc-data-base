@@ -481,3 +481,101 @@ textarea.input { resize: vertical; }
   display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap;
   padding: 7px 0; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
 }
+
+/* ==================================================================================
+   course switcher, block authoring, knowledge blocks, recycle bin
+   ================================================================================== */
+
+.course-switch { position: relative; }
+.course-button {
+  display: flex; align-items: center; gap: 8px; cursor: pointer;
+  background: transparent; border: 1px solid var(--line); border-radius: 8px;
+  padding: 5px 10px; font: inherit; color: inherit; text-align: left;
+}
+.course-button:hover { background: var(--panel-2); }
+.course-badge {
+  background: var(--accent); color: #fff; border-radius: 5px;
+  padding: 2px 6px; font-size: 11px; font-weight: 600; white-space: nowrap;
+}
+.course-name { font-weight: 600; font-size: 13px; }
+.course-caret { color: var(--muted); font-size: 11px; }
+.course-menu {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 40;
+  min-width: 320px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 14px 40px rgba(20, 30, 50, .22);
+  padding: 6px; display: flex; flex-direction: column; gap: 2px;
+}
+.course-option {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: transparent; border: 0; border-radius: 7px; padding: 9px 10px;
+  font: inherit; color: inherit; cursor: pointer; text-align: left; width: 100%;
+}
+.course-option:hover { background: var(--panel-2); }
+.course-option.active { background: var(--panel-2); font-weight: 600; }
+.course-option-count {
+  color: var(--muted); font-size: 11.5px; font-variant-numeric: tabular-nums;
+}
+
+/* knowledge blocks */
+.tag-extra { background: #eef3fb; color: #2b5aa8; }
+.topic-picker {
+  padding: 10px 14px; overflow: auto; max-height: 46vh;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.topic-group-head {
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); margin-bottom: 5px;
+}
+.topic-option {
+  display: flex; align-items: center; gap: 8px; padding: 4px 2px;
+  font-size: 13px; cursor: pointer; border-radius: 5px;
+}
+.topic-option:hover { background: var(--panel-2); }
+.topic-id { color: var(--muted); font-size: 11.5px; min-width: 30px; }
+.topic-title { flex: 1; }
+.topic-primary {
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--accent); font-weight: 600;
+}
+
+/* block editor */
+.blocks { padding: 14px; overflow: auto; display: flex; flex-direction: column; gap: 12px; }
+.block { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.block-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 10px; border-bottom: 1px solid var(--line-soft);
+}
+.block-kind {
+  font-size: 11px; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--muted);
+}
+.block-input {
+  width: 100%; border: 0; border-radius: 0 0 8px 8px; resize: vertical;
+  font-family: var(--mono, ui-monospace, Consolas, monospace); font-size: 12.5px;
+}
+.block-image-body { display: flex; gap: 12px; padding: 10px; flex-wrap: wrap; }
+.block-thumb {
+  width: 190px; min-height: 110px; border: 1px dashed var(--line);
+  border-radius: 6px; display: flex; align-items: center; justify-content: center;
+  background: var(--panel-2); overflow: hidden; flex-shrink: 0;
+}
+.block-thumb img { max-width: 100%; max-height: 150px; display: block; }
+.block-thumb.empty { border-style: dashed; }
+.block-thumb-hint { color: var(--muted); font-size: 11.5px; }
+.block-image-fields {
+  display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 180px;
+}
+.icon-btn {
+  background: transparent; border: 1px solid var(--line); border-radius: 5px;
+  width: 24px; height: 24px; line-height: 1; cursor: pointer; color: inherit;
+  font-size: 13px; padding: 0;
+}
+.icon-btn:hover { background: var(--panel-2); }
+.icon-btn:disabled { opacity: .35; cursor: default; }
+.icon-btn.danger { color: var(--danger); }
+.choices-edit { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.choice-row { display: flex; align-items: center; gap: 8px; }
+.choice-row .input { flex: 1; }
+.preview-slot { padding: 12px 14px; overflow: auto; }
+.author-latex { margin-top: 12px; }
+.author-latex summary { cursor: pointer; font-size: 12px; color: var(--muted); }
