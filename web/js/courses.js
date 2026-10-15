@@ -49,13 +49,18 @@ export function renderSwitcher() {
     </div>`;
 
   const menu = document.getElementById("course-menu");
-  document.getElementById("course-button").onclick = (event) => {
+  const button = document.getElementById("course-button");
+  button.onclick = (event) => {
+    // Stop the click reaching the document handler, which would close the menu
+    // again in the same event and make the toggle look dead.
     event.stopPropagation();
     menu.hidden = !menu.hidden;
+    button.setAttribute("aria-expanded", String(!menu.hidden));
   };
   menu.querySelectorAll("[data-course]").forEach(option => {
     option.onclick = async () => {
       menu.hidden = true;
+      button.setAttribute("aria-expanded", "false");
       await switchTo(option.dataset.course);
     };
   });
@@ -70,11 +75,22 @@ export async function switchTo(courseId) {
   await onSwitch(current());
 }
 
-/** Close the switcher when clicking anywhere else. */
+/** Close the switcher when clicking anywhere else, or pressing Escape. */
 export function installOutsideClick() {
   document.addEventListener("click", () => {
     const menu = document.getElementById("course-menu");
-    if (menu) menu.hidden = true;
+    if (!menu || menu.hidden) return;
+    menu.hidden = true;
+    const button = document.getElementById("course-button");
+    if (button) button.setAttribute("aria-expanded", "false");
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const menu = document.getElementById("course-menu");
+    if (!menu || menu.hidden) return;
+    menu.hidden = true;
+    const button = document.getElementById("course-button");
+    if (button) button.setAttribute("aria-expanded", "false");
   });
 }
 
