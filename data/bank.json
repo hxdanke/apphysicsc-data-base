@@ -648,19 +648,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$21 c\\mathrm{m/s}$"
+     "text": "$21\\ \\mathrm{cm/s}$"
     },
     {
      "label": "B",
-     "text": "$31 c\\mathrm{m/s}$"
+     "text": "$31\\ \\mathrm{cm/s}$"
     },
     {
      "label": "C",
-     "text": "$84 c\\mathrm{m/s}$"
+     "text": "$84\\ \\mathrm{cm/s}$"
     },
     {
      "label": "D",
-     "text": "$136 c\\mathrm{m/s}$"
+     "text": "$136\\ \\mathrm{cm/s}$"
     }
    ],
    "answer": "",
@@ -2218,7 +2218,7 @@
    "topic_title": "Systems and Center of Mass",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.23\\linewidth]{media/u2_21_q6_1.png}\n\nA uniform sheet of cardboard is cut into an ``L'' shape as shown. One end of string is attached at point P, and the object is held vertically at rest by the string. Which of the following diagrams best represents this rest position as the shape is supported by the string?",
+   "stem": "\\includegraphics[width=0.23\\linewidth]{media/u2_21_q6_1.png}\n\nA uniform sheet of cardboard is cut into an \"L\" shape as shown. One end of string is attached at point P, and the object is held vertically at rest by the string. Which of the following diagrams best represents this rest position as the shape is supported by the string?",
    "choices": [
     {
      "label": "A",
