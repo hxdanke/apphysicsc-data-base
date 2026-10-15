@@ -77,6 +77,10 @@ export const api = {
     "/api/questions/" + encodeURIComponent(id) + "/validate?" + cq(), {
       method: "POST", headers: JSON_HEADERS, body: JSON.stringify({ field, value }),
     }),
+  /** Whole-question compile check for the live preview. */
+  preview: (body) => request("/api/questions/preview?" + cq(), {
+    method: "POST", headers: JSON_HEADERS, body: JSON.stringify(body),
+  }),
   /** Deleting moves the question to the recycle bin; it is not destroyed. */
   remove: (id) => request("/api/questions/" + encodeURIComponent(id) + "?" + cq(),
                           { method: "DELETE" }),

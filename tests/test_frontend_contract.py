@@ -27,6 +27,7 @@ CSS_SOURCE = (ROOT / "web" / "css" / "app.css").read_text(encoding="utf-8")
 CSS = re.sub(r"/\*.*?\*/", "", CSS_SOURCE, flags=re.DOTALL)
 COURSES_JS = (ROOT / "web" / "js" / "courses.js").read_text(encoding="utf-8")
 APP_JS = (ROOT / "web" / "js" / "app.js").read_text(encoding="utf-8")
+EDIT_JS = (ROOT / "web" / "js" / "edit.js").read_text(encoding="utf-8")
 
 
 def css_rule(selector: str) -> str:
@@ -72,6 +73,40 @@ class CourseSwitcherTest(unittest.TestCase):
 
     def test_the_outside_click_handler_is_installed(self) -> None:
         self.assertIn("courses.installOutsideClick()", APP_JS)
+
+
+class WholeEditorTest(unittest.TestCase):
+    """The whole-question editor previews live and saves without validating."""
+
+    def test_the_editor_has_a_preview_pane(self) -> None:
+        self.assertIn('class="qedit-preview"', EDIT_JS)
+        self.assertIn("qedit-split", EDIT_JS)
+
+    def test_typing_redraws_the_preview(self) -> None:
+        self.assertIn('area.addEventListener("input"', EDIT_JS)
+        self.assertIn("drawNow()", EDIT_JS)
+
+    def test_a_broken_source_blanks_the_preview(self) -> None:
+        self.assertIn("preview.innerHTML = \"\"", EDIT_JS)
+
+    def test_the_real_engine_is_consulted_once_typing_settles(self) -> None:
+        self.assertIn("api.preview(", EDIT_JS)
+        self.assertIn("setTimeout(", EDIT_JS)
+
+    def test_a_stale_reply_cannot_overwrite_a_newer_edit(self) -> None:
+        # Each request carries a sequence number; a late reply is discarded.
+        self.assertIn("requestSeq", EDIT_JS)
+
+    def test_saving_does_not_validate(self) -> None:
+        # The old flow ran a validate pass on save; the live preview replaces it.
+        self.assertNotIn("validateWhole", EDIT_JS)
+        self.assertNotIn("Validating…", EDIT_JS)
+        self.assertIn("No validation step", EDIT_JS)
+
+    def test_the_single_formula_popup_still_validates(self) -> None:
+        # Only the whole-question editor changed: a single formula is still
+        # compile-checked before it is committed.
+        self.assertIn("api.validate(id, field, value)", EDIT_JS)
 
 
 if __name__ == "__main__":

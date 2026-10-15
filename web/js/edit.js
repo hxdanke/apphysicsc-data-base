@@ -1,14 +1,15 @@
 /* Two LaTeX editors:
  *   - openWholeEditor(q, onSaved): full-screen modal editing the whole question
- *     as one LaTeX source (STEM / CHOICES / ANSWER / SOLUTION sections). Save is
- *     required to leave; leaving with unsaved changes asks first.
+ *     as one LaTeX source (STEM / CHOICES / ANSWER / SOLUTION sections). The
+ *     preview redraws as you type and goes blank when the source cannot build,
+ *     so saving needs no separate validation step.
  *   - openMathPopup({q, fieldKey, idx, anchorEl, commit}): a small floating
  *     popover for one formula / quantity. Edits apply on close; if the result
  *     cannot compile it is reverted automatically.
  */
 
 import { api } from "./api.js";
-import { replaceMathRun, extractMathRuns } from "./render.js";
+import { replaceMathRun, extractMathRuns, renderLatex } from "./render.js";
 
 const root = () => document.getElementById("edit-root");
 
@@ -111,28 +112,37 @@ function fieldOf(fieldKey) {
   return [fieldKey, -1];
 }
 
-async function validateWhole(qid, parsed) {
-  const fields = [
-    ["stem", parsed.stem],
-    ["choices", parsed.choices],
-    ["answer", parsed.answer],
-    ["solution", parsed.solution],
-  ];
-  // 1) strict client-side gate: catches brace/syntax errors TeX auto-recovers from
-  for (const [field, value] of fields) {
-    const c = checkFieldLatex(field, value);
-    if (!c.ok) return { ok: false, field, log: "LaTeX error: " + c.error };
+/** The preview body for a parsed question, mirroring the Browse detail pane. */
+function previewHtml(parsed) {
+  const choices = (parsed.choices || []).map((c, i) =>
+    `<li><span class="choice-label">${escAttr(c.label || "")}</span>
+       <span>${renderLatex(c.text || "", "choice:" + i)}</span></li>`).join("");
+  return `
+    <div class="qpaper">
+      <div class="qstem">${renderLatex(parsed.stem || "", "stem")}</div>
+      ${choices ? `<ul class="choices">${choices}</ul>` : ""}
+      ${parsed.answer
+        ? `<div class="answer-box"><strong>Answer:</strong>
+             ${renderLatex(parsed.answer, "answer")}</div>` : ""}
+      ${parsed.solution
+        ? `<div class="solution-box"><strong>Solution.</strong>
+             ${renderLatex(parsed.solution, "solution")}</div>` : ""}
+    </div>`;
+}
+
+/**
+ * Does every formula in this draft parse?
+ *
+ * KaTeX with throwOnError rejects input TeX would silently recover from, which
+ * is exactly what makes the preview react on the keystroke rather than after a
+ * round trip. The real engine has the last word, checked once typing settles.
+ */
+function clientGate(parsed) {
+  for (const field of ["stem", "choices", "answer", "solution"]) {
+    const check = checkFieldLatex(field, parsed[field]);
+    if (!check.ok) return check;
   }
-  // 2) server compile gate: true TeX build through the real engine
-  for (const [field, value] of fields) {
-    try {
-      const res = await api.validate(qid, field, value);
-      if (!res.ok) return { ok: false, field, log: res.log };
-    } catch (err) {
-      return { ok: false, field, log: String(err.message || err) };
-    }
-  }
-  return { ok: true, field: null, log: "" };
+  return { ok: true };
 }
 
 export function openWholeEditor(q, onSaved) {
@@ -155,7 +165,10 @@ export function openWholeEditor(q, onSaved) {
         <code>=== ANSWER ===</code>, <code>=== SOLUTION ===</code>.
         Choices are one line each: <code>(A) …</code>.
       </div>
-      <textarea class="qedit-area" spellcheck="false"></textarea>
+      <div class="qedit-split">
+        <textarea class="qedit-area" spellcheck="false"></textarea>
+        <div class="qedit-preview" id="qedit-preview"></div>
+      </div>
       <div class="qedit-status"></div>
       <div class="qedit-foot">
         <button class="btn" data-act="cancel">Cancel</button>
@@ -166,35 +179,86 @@ export function openWholeEditor(q, onSaved) {
 
   const area = wrap.querySelector(".qedit-area");
   const status = wrap.querySelector(".qedit-status");
+  const preview = wrap.querySelector(".qedit-preview");
   area.value = initial;
 
   let dirty = false;
-  area.addEventListener("input", () => { dirty = area.value !== initial; });
+  let compileOk = true;                 // result of the last real engine build
+  let compileTimer = null;
+  let requestSeq = 0;                   // ignore a stale reply that arrives late
+
+  function setStatus(text, isError = false) {
+    status.textContent = text || "";
+    status.className = "qedit-status" + (isError ? " err" : "");
+  }
+
+  /** Draw the preview straight away; blank it if the source cannot build. */
+  function drawNow() {
+    const parsed = parseWhole(area.value);
+    const gate = clientGate(parsed);
+    if (!gate.ok) {
+      preview.innerHTML = "";
+      preview.classList.add("blank");
+      setStatus("Does not build: " + gate.error, true);
+      compileOk = false;
+      return;
+    }
+    preview.innerHTML = previewHtml(parsed);
+    preview.classList.remove("blank");
+    if (compileOk) setStatus("");
+    return parsed;
+  }
+
+  /** Once typing settles, ask the real engine. A failure blanks the preview. */
+  function scheduleCompile(parsed) {
+    clearTimeout(compileTimer);
+    compileTimer = setTimeout(async () => {
+      const seq = ++requestSeq;
+      try {
+        const res = await api.preview({
+          stem: parsed.stem, choices: parsed.choices,
+          answer: parsed.answer, solution: parsed.solution,
+        });
+        if (seq !== requestSeq) return;             // a newer edit won
+        compileOk = !!res.ok;
+        if (!res.ok) {
+          preview.innerHTML = "";
+          preview.classList.add("blank");
+          setStatus("Does not build — nothing to preview.", true);
+        } else {
+          setStatus("");
+        }
+      } catch (err) {
+        if (seq !== requestSeq) return;
+        // The engine being unreachable is not the same as the source being
+        // wrong, so the preview stays up.
+        setStatus("");
+      }
+    }, 700);
+  }
+
+  area.addEventListener("input", () => {
+    dirty = area.value !== initial;
+    const parsed = drawNow();
+    if (parsed) scheduleCompile(parsed);
+  });
 
   function close() {
+    clearTimeout(compileTimer);
     wrap.remove();
     document.removeEventListener("keydown", onKey, true);
   }
 
   async function doSave() {
     const parsed = parseWhole(area.value);
-    status.className = "qedit-status";
-    status.textContent = "Validating…";
-    const v = await validateWhole(id, parsed);
-    if (!v.ok) {
-      status.className = "qedit-status err";
-      status.textContent = `Cannot compile (${v.field}): ` +
-        (v.log ? v.log.split("\n").filter(Boolean).slice(-6).join(" ") : "unknown error");
-      return false;
-    }
+    // No validation step: the preview already showed whether this builds.
     try {
       await api.patch(id, {
         stem: parsed.stem, choices: parsed.choices,
         answer: parsed.answer, solution: parsed.solution,
       });
     } catch (err) {
-      status.className = "qedit-status err";
-      status.textContent = "Save failed: " + (err.message || err);
+      setStatus("Save failed: " + (err.message || err), true);
       return false;
     }
     if (onSaved) onSaved(parsed);
@@ -222,6 +286,9 @@ export function openWholeEditor(q, onSaved) {
   wrap.querySelector('[data-act="cancel"]').onclick = attemptClose;
   wrap.querySelector(".qedit-x").onclick = attemptClose;
 
+  // Show the current state before the teacher types anything.
+  const first = drawNow();
+  if (first) scheduleCompile(first);
   setTimeout(() => area.focus(), 30);
 }
 

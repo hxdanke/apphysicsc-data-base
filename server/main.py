@@ -248,6 +248,53 @@ def validate_question(qid: str, body: ValidateBody, course: str = ""):
     return {"ok": True, "log": ""}
 
 
+class PreviewBody(BaseModel):
+    """A whole question being edited, for the live preview gate."""
+    stem: str = ""
+    choices: list = []
+    answer: str = ""
+    solution: str = ""
+    course: str = ""
+
+
+@app.post("/api/questions/preview")
+def preview_question(body: PreviewBody):
+    """Does this question build through the real TeX engine?
+
+    The editor calls this once typing settles.  It answers the same question the
+    old save-time validation did, but without making the teacher wait: the draft
+    is already on screen, and a failure simply means there is nothing to show.
+    """
+    draft = {
+        "id": "preview",
+        "unit": 0, "unit_title": "", "topic": "", "topic_title": "",
+        "number": 1, "qtype": "mcq",
+        "stem": body.stem or "",
+        "choices": body.choices or [],
+        "answer": body.answer or "",
+        "solution": body.solution or "",
+        "images": [], "difficulty": "", "tags": [],
+        "source": {}, "layout": "inline", "needs_review": False,
+    }
+    # An empty editor is not a syntax error.  TeX emits no page at all for an
+    # empty body and the engine reports that as a failure, so check first --
+    # otherwise clearing the textarea would look like broken LaTeX.
+    has_content = any([
+        (draft["stem"] or "").strip(),
+        draft["choices"],
+        (body.answer or "").strip(),
+        (body.solution or "").strip(),
+    ])
+    if not has_content:
+        return {"ok": True, "log": ""}
+
+    tex = latex_mod.question_tex(draft)
+    res = latex_mod.compile_pdf(tex)
+    log = res.get("log") or ""
+    ok = bool(res.get("ok")) and not _log_has_errors(log)
+    return {"ok": ok, "log": "" if ok else _tail(log, 1200)}
+
+
 def _clean_topic_list(values, course_id: str) -> list:
     """Keep only topic ids that exist in this course's taxonomy, order intact."""
     out = []

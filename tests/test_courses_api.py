@@ -258,6 +258,36 @@ class AuthoringApiTest(CourseApiMixin):
         self.assertEqual(res.status_code, 400)
 
 
+class QuestionPreviewApiTest(CourseApiMixin):
+    """The live-preview compile gate used by the whole-question editor."""
+
+    def test_a_buildable_question_passes(self) -> None:
+        res = self.client.post("/api/questions/preview", json={
+            "stem": "A block slides down a ramp. What is its speed?",
+            "choices": [{"label": "A", "text": "$2\\ \\mathrm{m/s}$"},
+                        {"label": "B", "text": "$4\\ \\mathrm{m/s}$"}],
+            "answer": "A", "solution": "Use energy conservation.",
+        })
+        self.assertEqual(res.status_code, 200)
+        self.assertTrue(res.json()["ok"])
+        self.assertEqual(res.json()["log"], "")
+
+    def test_a_question_that_cannot_build_reports_why(self) -> None:
+        res = self.client.post("/api/questions/preview", json={
+            "stem": "An undefined command follows: \\thisdoesnotexist{x}",
+            "choices": [], "answer": "", "solution": "",
+        })
+        self.assertEqual(res.status_code, 200)
+        self.assertFalse(res.json()["ok"])
+        self.assertTrue(res.json()["log"], "a failure must say why")
+
+    def test_an_empty_question_still_builds(self) -> None:
+        """Clearing the editor should not look like a syntax error."""
+        res = self.client.post("/api/questions/preview", json={})
+        self.assertEqual(res.status_code, 200)
+        self.assertTrue(res.json()["ok"])
+
+
 class PaperCourseIsolationApiTest(CourseApiMixin):
     def test_a_draft_belongs_to_one_course(self) -> None:
         saved = self.client.post("/api/paper-drafts", json={
