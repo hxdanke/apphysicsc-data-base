@@ -138,6 +138,23 @@ def stats(course: str = ""):
     return bank_mod.stats(bank_mod.load_bank(course))
 
 
+@app.get("/api/tags")
+def tags(course: str = ""):
+    """Every tag already used in this course, with how many questions carry it.
+
+    This is what lets the editor offer a tag for reuse instead of letting the
+    same idea get typed three different ways -- the list is the vocabulary.
+    """
+    course_id = courses_mod.get(course).id
+    bank = bank_mod.load_bank(course_id)
+    counts = bank_mod.tag_counts(bank)
+    ordered = sorted(counts.items(), key=lambda item: (-item[1], item[0].casefold()))
+    return {
+        "course": course_id,
+        "tags": [{"name": name, "count": count} for name, count in ordered],
+    }
+
+
 @app.get("/api/questions")
 def list_questions(q: str = "", unit: Optional[int] = None, topic: str = "",
                    qtype: str = "", needs_review: bool = False, untagged: bool = False,
@@ -352,7 +369,10 @@ def patch_question(qid: str, body: PatchBody, course: str = ""):
 
         for field, value in fields.items():
             if value is not None:
-                item[field] = value
+                if field == "tags":
+                    item["tags"] = bank_mod.clean_tags(value)
+                else:
+                    item[field] = value
 
         bank_mod.save_bank(bank, course)
         return item
@@ -506,7 +526,7 @@ def author_question(body: AuthorBody, course: str = ""):
     item["solution"] = body.solution or ""
     item["qtype"] = body.qtype or "mcq"
     item["difficulty"] = body.difficulty or ""
-    item["tags"] = body.tags or []
+    item["tags"] = bank_mod.clean_tags(body.tags)
     if body.number is not None:
         item["number"] = body.number
 

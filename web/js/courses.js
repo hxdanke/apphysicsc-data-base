@@ -70,6 +70,9 @@ export async function switchTo(courseId) {
   if (!courseId || courseId === getCourse()) return;
   setCourse(courseId);
   taxonomyCache.clear();
+  // Each course has its own tag vocabulary, so the cached list must go too.
+  const { invalidateTags } = await import("./tags.js");
+  invalidateTags();
   localStorage.setItem(STORAGE_KEY, courseId);
   renderSwitcher();
   await onSwitch(current());

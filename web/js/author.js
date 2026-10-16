@@ -1,6 +1,7 @@
 import { api } from "./api.js";
 import { renderLatex } from "./render.js";
 import * as courses from "./courses.js";
+import * as tags from "./tags.js";
 import { toast } from "./session.js";
 
 // New question: build the stem out of blocks.
@@ -17,6 +18,8 @@ let blocks = [];
 let choices = [];
 let picker = null;
 let editingId = null;
+let tagEditor = null;
+let currentTags = [];
 
 function escapeHtml(value) {
   return String(value == null ? "" : value).replace(/[&<>"']/g, ch => ({
@@ -29,6 +32,7 @@ export function init() {
     blocks: document.getElementById("a-blocks"),
     choices: document.getElementById("a-choices"),
     topics: document.getElementById("a-topics"),
+    tags: document.getElementById("a-tags"),
     status: document.getElementById("a-status"),
     title: document.getElementById("a-title"),
     answer: document.getElementById("a-answer"),
@@ -56,6 +60,7 @@ export function resetForm() {
   editingId = null;
   blocks = [{ type: "text", text: "" }];
   choices = ["A", "B", "C", "D"].map(label => ({ label, text: "" }));
+  currentTags = [];
   if (els.title) els.title.textContent = "New question";
   if (els.answer) els.answer.value = "";
   if (els.solution) els.solution.value = "";
@@ -63,6 +68,16 @@ export function resetForm() {
   renderBlocks();
   renderChoices();
   void renderTopics();
+  void mountTags();
+}
+
+async function mountTags(initial = []) {
+  if (!els.tags) return;
+  currentTags = [...initial];
+  tagEditor = await tags.renderTagEditor(els.tags, {
+    tags: currentTags,
+    onChange: (next) => { currentTags = next; },
+  });
 }
 
 /** Load an existing question into the editor. */
@@ -80,6 +95,7 @@ export async function edit(id) {
   if (els.solution) els.solution.value = question.solution || "";
   renderBlocks();
   renderChoices();
+  await mountTags(question.tags || []);
   await renderTopics(question.topic, question.additional_topics || []);
   setStatus("");
 }
@@ -277,6 +293,7 @@ async function save() {
     answer: els.answer.value.trim(),
     solution: els.solution.value,
     qtype: "mcq",
+    tags: tagEditor ? tagEditor.value() : currentTags,
   };
   try {
     const res = await api.author(payload);

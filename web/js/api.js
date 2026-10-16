@@ -59,6 +59,8 @@ function cb(body = {}) {
 
 export const api = {
   courses: () => request("/api/courses"),
+  /** Every tag already used in this course, with counts. */
+  tags: () => request("/api/tags?" + cq()),
   health:  () => request("/api/health?" + cq()),
   taxonomy: () => request("/api/taxonomy?" + cq()),
   stats:   () => request("/api/stats?" + cq()),

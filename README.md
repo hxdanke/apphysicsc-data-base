@@ -148,7 +148,28 @@ filtering by a topic matches questions that list it as primary *or* additional.
 Both the authoring form and the **Knowledge blocks** button on any existing
 question open the same multi-select picker; the first box you tick is the primary.
 
-### 7. Recycle Bin (回收站)
+### 7. Tags (标签)
+
+Any question can carry as many tags as you like. Tags are free text, but the
+editor offers every tag already used in that course, so a tag gets reused rather
+than retyped three different ways — the list *is* the vocabulary.
+
+* type a new tag and press Enter, or click one of the suggestions;
+* click **×** on a tag to remove it, or Backspace in the empty box to undo the
+  last one;
+* tags are matched by the search box, so typing a tag finds its questions;
+* each course keeps its own vocabulary.
+
+Tags are pure metadata: they never appear in the compiled paper.
+`scripts/tag_all.py` adds or removes one tag across a whole course, and runs dry
+by default:
+
+```bash
+python scripts/tag_all.py --course apc-mech --tag "Topic Questions"          # dry run
+python scripts/tag_all.py --course apc-mech --tag "Topic Questions" --apply
+```
+
+### 8. Recycle Bin (回收站)
 
 Deleting a question asks for confirmation, then moves it to the per-course
 Recycle Bin instead of destroying it. There it keeps its whole body and can be:
@@ -159,7 +180,7 @@ Recycle Bin instead of destroying it. There it keeps its whole body and can be:
 
 The retention sweep runs whenever the bin is read, so it needs no scheduled job.
 
-### 8. Import (扩充题库)
+### 9. Import (扩充题库)
 Upload a PDF → the server extracts text, sub/superscripts, figures (rendered at the
 chosen DPI) and the unit/topic structure → you get a **draft** to review → optional
 **AI polish** → **commit** to the bank.

@@ -288,6 +288,69 @@ class QuestionPreviewApiTest(CourseApiMixin):
         self.assertTrue(res.json()["ok"])
 
 
+class TagApiTest(CourseApiMixin):
+    def test_a_question_can_carry_several_tags(self) -> None:
+        saved = self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                                  json={"tags": ["projectile", "graph"]}).json()
+        self.assertEqual(saved["tags"], ["projectile", "graph"])
+
+    def test_adding_a_tag_keeps_the_existing_ones(self) -> None:
+        self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                          json={"tags": ["projectile"]})
+        saved = self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                                  json={"tags": ["projectile", "exam"]}).json()
+        self.assertEqual(saved["tags"], ["projectile", "exam"])
+
+    def test_removing_every_tag_clears_the_list(self) -> None:
+        self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                          json={"tags": ["projectile", "exam"]})
+        saved = self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                                  json={"tags": []}).json()
+        self.assertEqual(saved["tags"], [])
+
+    def test_tags_are_trimmed_and_de_duplicated(self) -> None:
+        saved = self.client.patch(
+            "/api/questions/AP1-Q1?course=ap1",
+            json={"tags": ["  forces  ", "", "forces", "FORCES", "graph"]}).json()
+        # "forces"/"FORCES" collapse to one, keeping the first spelling.
+        self.assertEqual(saved["tags"], ["forces", "graph"])
+
+    def test_the_vocabulary_lists_tags_with_counts(self) -> None:
+        self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                          json={"tags": ["projectile", "graph"]})
+        payload = self.client.get("/api/tags?course=ap1").json()
+        self.assertEqual(payload["course"], "ap1")
+        names = [t["name"] for t in payload["tags"]]
+        self.assertIn("projectile", names)
+        self.assertEqual(
+            next(t for t in payload["tags"] if t["name"] == "projectile")["count"], 1)
+
+    def test_the_vocabulary_is_per_course(self) -> None:
+        self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                          json={"tags": ["only-in-ap1"]})
+        self.assertEqual(
+            [t["name"] for t in self.client.get("/api/tags?course=ap2").json()["tags"]], [])
+        self.assertEqual(
+            [t["name"] for t in self.client.get("/api/tags?course=ap1").json()["tags"]],
+            ["only-in-ap1"])
+
+    def test_a_tagged_question_is_found_by_searching_the_tag(self) -> None:
+        self.client.patch("/api/questions/AP1-Q1?course=ap1",
+                          json={"tags": ["zebra-marker"]})
+        found = self.client.get("/api/questions?course=ap1&q=zebra-marker").json()
+        self.assertIn("AP1-Q1", [q["id"] for q in found["questions"]])
+
+    def test_a_new_question_can_be_created_with_tags(self) -> None:
+        res = self.client.post("/api/questions", json={
+            "course": "ap1", "topic": "1.1",
+            "stem_blocks": [{"type": "text", "text": "tagged"}],
+            "tags": ["new-tag"],
+        }).json()
+        self.assertEqual(res["question"]["tags"], ["new-tag"])
+        self.assertIn("new-tag",
+                      [t["name"] for t in self.client.get("/api/tags?course=ap1").json()["tags"]])
+
+
 class PaperCourseIsolationApiTest(CourseApiMixin):
     def test_a_draft_belongs_to_one_course(self) -> None:
         saved = self.client.post("/api/paper-drafts", json={

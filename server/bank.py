@@ -241,6 +241,46 @@ def plain_text(q: dict) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
+MAX_TAG_LENGTH = 40
+MAX_TAGS_PER_QUESTION = 12
+
+
+def clean_tags(values) -> list[str]:
+    """Normalise a tag list: trimmed, de-duplicated, bounded.
+
+    Duplicates are compared case-insensitively but the first spelling wins, so
+    "Forces" and "forces" cannot both end up on the same question while the
+    capitalisation the teacher typed is preserved.
+    """
+    out: list[str] = []
+    seen: set[str] = set()
+    for raw in values or ():
+        text = str(raw).strip()
+        if not text:
+            continue
+        if len(text) > MAX_TAG_LENGTH:
+            text = text[:MAX_TAG_LENGTH].strip()
+            if not text:
+                continue
+        key = text.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(text)
+        if len(out) >= MAX_TAGS_PER_QUESTION:
+            break
+    return out
+
+
+def tag_counts(bank: dict) -> dict[str, int]:
+    """Every tag in this bank with how many questions carry it."""
+    counts: dict[str, int] = {}
+    for question in bank["questions"]:
+        for tag in clean_tags(question.get("tags")):
+            counts[tag] = counts.get(tag, 0) + 1
+    return counts
+
+
 def topics_of(q: dict) -> list[str]:
     """Every knowledge block a question is filed under, primary first."""
     out = []

@@ -3,6 +3,7 @@ import { renderLatex, plainPreview } from "./render.js";
 import { openWholeEditor, openMathPopup } from "./edit.js";
 import * as courses from "./courses.js";
 import * as author from "./author.js";
+import * as tags from "./tags.js";
 import { toast as sessionToast } from "./session.js";
 
 const state = {
@@ -119,17 +120,20 @@ function renderList() {
   for (const q of state.items) {
     const card = document.createElement("div");
     card.className = "qcard" + (state.current && state.current.id === q.id ? " active" : "");
-    const tags = [];
-    if ((q.images || []).length) tags.push(`<span class="tag tag-fig">fig ×${q.images.length}</span>`);
-    if (q.answer) tags.push(`<span class="tag tag-ans">${q.answer}</span>`);
-    if (q.difficulty) tags.push(`<span class="tag">${q.difficulty}</span>`);
-    if (q.needs_review) tags.push(`<span class="tag tag-review">review</span>`);
+    const badges = [];
+    if ((q.images || []).length) badges.push(`<span class="tag tag-fig">fig ×${q.images.length}</span>`);
+    if (q.answer) badges.push(`<span class="tag tag-ans">${q.answer}</span>`);
+    if (q.difficulty) badges.push(`<span class="tag">${q.difficulty}</span>`);
+    if (q.needs_review) badges.push(`<span class="tag tag-review">review</span>`);
     const extras = q.additional_topics || [];
-    if (extras.length) tags.push(`<span class="tag tag-extra">+${extras.length} block</span>`);
+    if (extras.length) badges.push(`<span class="tag tag-extra">+${extras.length} block</span>`);
+    for (const name of q.tags || []) {
+      badges.push(`<span class="tag tag-label">${escapeBraces(name)}</span>`);
+    }
     card.innerHTML =
       `<div class="qcard-top">
          <span class="qcard-id">${q.id}</span>
-         <span class="qcard-tags">${tags.join("")}</span>
+         <span class="qcard-tags">${badges.join("")}</span>
        </div>
        <div class="qcard-body">${escapeBraces(plainPreview(q))}</div>`;
     card.onclick = () => select(q, card);
@@ -226,6 +230,10 @@ function renderDetail(q) {
       ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${renderLatex(q.answer, "answer")}</div>` : ""}
       ${q.solution ? `<div class="solution-box"><strong>Solution.</strong> ${renderLatex(q.solution, "solution")}</div>` : ""}
       <div class="qmeta">${meta.join("")}</div>
+      <div class="qtags-block">
+        <div class="lbl">Tags</div>
+        <div id="q-tags" class="tag-editor"></div>
+      </div>
       <div class="qactions">
         <button class="btn" data-act="add">Add to paper</button>
         <button class="btn" data-act="edit">Edit LaTeX</button>
@@ -259,6 +267,7 @@ function renderDetail(q) {
       sessionToast(`${q.id} knowledge blocks updated`);
     });
   };
+  mountTagEditor(q);
   els.detail.querySelector('[data-act="delete"]').onclick = () => removeQuestion(q);
   els.detail.querySelector('[data-act="toggle-review"]').onclick = async () => {
     await api.patch(q.id, { needs_review: !q.needs_review });
@@ -283,6 +292,26 @@ async function commitField(field, value) {
   else q[field] = value;
   renderDetail(q);
   reload();
+}
+
+/** Tags are persisted one edit at a time, so there is nothing to confirm. */
+async function mountTagEditor(q) {
+  const host = els.detail.querySelector("#q-tags");
+  if (!host) return;
+  await tags.renderTagEditor(host, {
+    tags: q.tags || [],
+    onChange: async (next) => {
+      try {
+        const saved = await api.patch(q.id, { tags: next });
+        q.tags = saved.tags || next;
+        // A brand-new tag becomes available to everyone straight away.
+        tags.invalidate();
+        reload();
+      } catch (err) {
+        sessionToast(String(err.message || err), true);
+      }
+    },
+  });
 }
 
 /**
