@@ -42,7 +42,10 @@
     "book_page": 1
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.1-Q2",
@@ -93,6 +96,9 @@
    "table_headers": [
     "Magnitude",
     "Direction"
+   ],
+   "additional_topics": [
+    "1.2"
    ]
   },
   {
@@ -103,7 +109,7 @@
    "topic_title": "Scalars and Vectors",
    "number": 3,
    "qtype": "mcq",
-   "stem": "Consider two vectors, $\\vec{A} =\\ 3\\hat{i} +\\ 1\\hat{j}$ and $\\vec{B} =\\ -1\\hat{i} -\\ 3\\hat{j}$. Which of the following is a true statement about the",
+   "stem": "Consider two vectors, $\\vec{A} =\\ 3\\hat{i} +\\ 1\\hat{j}$ and $\\vec{B} =\\ -1\\hat{i} -\\ 3\\hat{j}$. Which of the following is a true statement about the vector sum $\\vec{A} + \\vec{B}$?",
    "choices": [
     {
      "label": "A",
@@ -135,7 +141,7 @@
     "book_page": 1
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.1-Q4",
@@ -257,7 +263,7 @@
     },
     {
      "label": "D",
-     "text": "$\\frac{A}{tan \\theta}$  $\\vec{A} \\vec{B}$"
+     "text": "$\\frac{A}{\\tan \\theta}$"
     }
    ],
    "answer": "",
@@ -273,7 +279,10 @@
     "book_page": 2
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.1-Q7",
@@ -383,7 +392,10 @@
     "book_page": 2
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.1-Q9",
@@ -431,7 +443,10 @@
     "book_page": 3
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.2-Q1",
@@ -521,7 +536,10 @@
     "book_page": 3
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.3"
+   ]
   },
   {
    "id": "EB3-U1-1.2-Q3",
@@ -620,6 +638,9 @@
    "table_headers": [
     "Velocities",
     "Accelerations"
+   ],
+   "additional_topics": [
+    "1.3"
    ]
   },
   {
@@ -746,7 +767,10 @@
     "book_page": 4
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.1"
+   ]
   },
   {
    "id": "EB3-U1-1.2-Q8",
@@ -830,7 +854,10 @@
     "book_page": 5
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.3-Q2",
@@ -878,7 +905,10 @@
     "book_page": 5
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.3-Q3",
@@ -1094,7 +1124,10 @@
     "book_page": 6
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.3-Q8",
@@ -1104,7 +1137,7 @@
    "topic_title": "Representing Motion",
    "number": 8,
    "qtype": "mcq",
-   "stem": "An object moves in one dimension along the $x$-axis as described by the position versus time graph shown in the figure. During the time interval of the graph, how many times does the object change direction and what feature or features of the graph justifies this response?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u1_13_q8_1.png}\n\nAn object moves in one dimension along the $x$-axis as described by the position versus time graph shown in the figure. During the time interval of the graph, how many times does the object change direction and what feature or features of the graph justifies this response?",
    "choices": [
     {
      "label": "A",
@@ -1125,7 +1158,12 @@
    ],
    "answer": "",
    "solution": "",
-   "images": [],
+   "images": [
+    {
+     "file": "u1_13_q8_1.png",
+     "rel": "media/u1_13_q8_1.png"
+    }
+   ],
    "difficulty": "",
    "tags": [
     "Topic Questions"
@@ -1136,7 +1174,10 @@
     "book_page": 6
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.3-Q9",
@@ -1184,7 +1225,10 @@
     "book_page": 7
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.3-Q10",
@@ -1232,7 +1276,10 @@
     "book_page": 7
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.2"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q1",
@@ -1274,7 +1321,10 @@
     "book_page": 7
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q2",
@@ -1316,7 +1366,10 @@
     "book_page": 8
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q3",
@@ -1400,7 +1453,10 @@
     "book_page": 8
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q5",
@@ -1448,7 +1504,10 @@
     "book_page": 8
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.3"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q6",
@@ -1496,7 +1555,10 @@
     "book_page": 8
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q7",
@@ -1592,7 +1654,10 @@
     "book_page": 9
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.4-Q9",
@@ -1640,7 +1705,10 @@
     "book_page": 9
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U1-1.5-Q1",
@@ -1658,15 +1726,15 @@
     },
     {
      "label": "B",
-     "text": "$(v_{\\mathrm{bw}} \\sin \\theta_{\\mathrm{bw}}\\ -\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} cos \\theta_{\\mathrm{bw}}}$"
+     "text": "$(v_{\\mathrm{bw}} \\sin \\theta_{\\mathrm{bw}}\\ -\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} \\cos \\theta_{\\mathrm{bw}}}$"
     },
     {
      "label": "C",
-     "text": "$(v_{\\mathrm{bw}} \\cos \\theta_{\\mathrm{bw}}\\ -\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} sin \\theta_{\\mathrm{bw}}}$"
+     "text": "$(v_{\\mathrm{bw}} \\cos \\theta_{\\mathrm{bw}}\\ -\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} \\sin \\theta_{\\mathrm{bw}}}$"
     },
     {
      "label": "D",
-     "text": "$(v_{\\mathrm{bw}} \\cos \\theta_{\\mathrm{bw}}\\ +\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} sin \\theta_{\\mathrm{bw}}}$"
+     "text": "$(v_{\\mathrm{bw}} \\cos \\theta_{\\mathrm{bw}}\\ +\\ v_{r}) \\frac{W}{v_{\\mathrm{bw}} \\sin \\theta_{\\mathrm{bw}}}$"
     }
    ],
    "answer": "",
@@ -1688,7 +1756,10 @@
     "book_page": 10
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "1.4"
+   ]
   },
   {
    "id": "EB3-U1-1.5-Q2",
@@ -1736,7 +1807,10 @@
     "book_page": 10
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.1"
+   ]
   },
   {
    "id": "EB3-U1-1.5-Q3",
@@ -1826,7 +1900,10 @@
     "book_page": 11
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.4"
+   ]
   },
   {
    "id": "EB3-U1-1.5-Q5",
@@ -1840,19 +1917,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$\\frac{v_{0} sin \\theta}{g}$"
+     "text": "$\\frac{v_{0} \\sin \\theta}{g}$"
     },
     {
      "label": "B",
-     "text": "$\\frac{3}{2} \\frac{v_{0} sin \\theta}{g}$"
+     "text": "$\\frac{3}{2} \\frac{v_{0} \\sin \\theta}{g}$"
     },
     {
      "label": "C",
-     "text": "$2 \\frac{v_{0} sin \\theta}{g}$"
+     "text": "$2 \\frac{v_{0} \\sin \\theta}{g}$"
     },
     {
      "label": "D",
-     "text": "$4 \\frac{v_{0} sin \\theta}{g}$"
+     "text": "$4 \\frac{v_{0} \\sin \\theta}{g}$"
     }
    ],
    "answer": "",
@@ -1874,7 +1951,7 @@
     "book_page": 11
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.5-Q6",
@@ -1978,19 +2055,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$\\vec{r} = (v_{0}t)\\hat{i} + (H\\ - \\frac{1}{2} gt2) \\hat{j}$"
+     "text": "$\\vec{r} = (v_{0}t)\\hat{i} + (H\\ - \\frac{1}{2} gt^{2}) \\hat{j}$"
     },
     {
      "label": "B",
-     "text": "$\\vec{r} = (v_{0}t\\cos \\theta_{0})\\hat{i} + (H\\ -\\ v_{0}t \\sin \\theta_{0}\\ - \\frac{1}{2} gt2)\\hat{j}$"
+     "text": "$\\vec{r} = (v_{0}t\\cos \\theta_{0})\\hat{i} + (H\\ -\\ v_{0}t \\sin \\theta_{0}\\ - \\frac{1}{2} gt^{2})\\hat{j}$"
     },
     {
      "label": "C",
-     "text": "$\\vec{r} = (v_{0}t\\cos \\theta_{0})\\hat{i} + (H\\ +\\ v_{0}t \\sin \\theta_{0}\\ - \\frac{1}{2} gt2) \\hat{j}$"
+     "text": "$\\vec{r} = (v_{0}t\\cos \\theta_{0})\\hat{i} + (H\\ +\\ v_{0}t \\sin \\theta_{0}\\ - \\frac{1}{2} gt^{2}) \\hat{j}$"
     },
     {
      "label": "D",
-     "text": "$\\vec{r} = (- \\frac{1}{2} gt2 + v0t$ cos$\\theta 0)\\hat{i} + (H - v0t$ sin$\\theta 0 - \\frac{1}{2} gt2) \\hat{j}$"
+     "text": "$\\vec{r} = (-\\frac{1}{2}gt^{2} + v_{0}t\\cos \\theta_{0})\\hat{i} + (H - v_{0}t\\sin \\theta_{0} - \\frac{1}{2}gt^{2})\\hat{j}$"
     }
    ],
    "answer": "",
@@ -2012,7 +2089,10 @@
     "book_page": 12
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "1.1"
+   ]
   },
   {
    "id": "EB3-U1-1.5-Q9",
@@ -2170,7 +2250,10 @@
     "book_page": 13
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U2-2.1-Q3",
@@ -2376,7 +2459,10 @@
     "book_page": 15
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.5"
+   ]
   },
   {
    "id": "EB3-U2-2.1-Q7",
@@ -2472,7 +2558,10 @@
     "book_page": 16
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.5"
+   ]
   },
   {
    "id": "EB3-U2-2.1-Q9",
@@ -2630,7 +2719,10 @@
     "book_page": 17
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.2-Q3",
@@ -2678,7 +2770,11 @@
     "book_page": 17
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5",
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.2-Q4",
@@ -2726,7 +2822,10 @@
     "book_page": 18
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.2-Q5",
@@ -2862,7 +2961,11 @@
     "book_page": 19
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.4",
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.2-Q7",
@@ -2910,7 +3013,10 @@
     "book_page": 19
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.2-Q8",
@@ -3000,7 +3106,10 @@
     "book_page": 20
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.3-Q1",
@@ -3144,7 +3253,10 @@
     "book_page": 21
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.4"
+   ]
   },
   {
    "id": "EB3-U2-2.3-Q4",
@@ -3186,7 +3298,10 @@
     "book_page": 22
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.3-Q5",
@@ -3330,7 +3445,11 @@
     "book_page": 23
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.4",
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.3-Q8",
@@ -3387,6 +3506,10 @@
    "table_headers": [
     "Both blocks in motion",
     "After hanging block stops"
+   ],
+   "additional_topics": [
+    "2.5",
+    "2.7"
    ]
   },
   {
@@ -3435,7 +3558,10 @@
     "book_page": 23
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.4-Q1",
@@ -3492,6 +3618,9 @@
    "table_headers": [
     "Before P",
     "After P"
+   ],
+   "additional_topics": [
+    "2.7"
    ]
   },
   {
@@ -3576,7 +3705,10 @@
     "book_page": 24
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.4-Q4",
@@ -3879,7 +4011,10 @@
     "book_page": 27
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.5-Q1",
@@ -3969,7 +4104,10 @@
     "book_page": 27
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.3"
+   ]
   },
   {
    "id": "EB3-U2-2.5-Q3",
@@ -4065,7 +4203,10 @@
     "book_page": 28
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.2"
+   ]
   },
   {
    "id": "EB3-U2-2.5-Q5",
@@ -4257,7 +4398,10 @@
     "book_page": 29
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.2"
+   ]
   },
   {
    "id": "EB3-U2-2.5-Q9",
@@ -4305,7 +4449,10 @@
     "book_page": 30
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.2"
+   ]
   },
   {
    "id": "EB3-U2-2.6-Q1",
@@ -4611,7 +4758,10 @@
     "book_page": 32
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.10"
+   ]
   },
   {
    "id": "EB3-U2-2.6-Q8",
@@ -4791,7 +4941,10 @@
     "book_page": 33
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.7-Q3",
@@ -4965,7 +5118,10 @@
     "book_page": 33
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.2"
+   ]
   },
   {
    "id": "EB3-U2-2.7-Q7",
@@ -5049,7 +5205,10 @@
     "book_page": 34
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.7-Q9",
@@ -5097,7 +5256,10 @@
     "book_page": 34
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.8-Q1",
@@ -5149,7 +5311,7 @@
    "topic_title": "Spring Forces",
    "number": 2,
    "qtype": "mcq",
-   "stem": "When a block of mass $M$ is hung vertically from a spring, the spring is stretched by a distance $D$ compared to its unstretched length. If a second identical spring is connected in series with the first spring and a larger block of mass $2M$ is then hung vertically from the two-spring combination, by how much is the combination stretched compared to its unstretched length? D",
+   "stem": "When a block of mass $M$ is hung vertically from a spring, the spring is stretched by a distance $D$ compared to its unstretched length. If a second identical spring is connected in series with the first spring and a larger block of mass $2M$ is then hung vertically from the two-spring combination, by how much is the combination stretched compared to its unstretched length?",
    "choices": [
     {
      "label": "A",
@@ -5157,7 +5319,7 @@
     },
     {
      "label": "B",
-     "text": ""
+     "text": "$D$"
     },
     {
      "label": "C",
@@ -5181,7 +5343,10 @@
     "book_page": 34
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.8-Q3",
@@ -5271,7 +5436,10 @@
     "book_page": 35
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.8-Q5",
@@ -5319,7 +5487,10 @@
     "book_page": 35
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.8-Q6",
@@ -5499,7 +5670,10 @@
     "book_page": 37
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.9-Q1",
@@ -5550,6 +5724,9 @@
    "table_headers": [
     "Initial Acceleration",
     "Terminal Speed"
+   ],
+   "additional_topics": [
+    "2.5"
    ]
   },
   {
@@ -5592,7 +5769,10 @@
     "book_page": 38
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.9-Q3",
@@ -5691,7 +5871,10 @@
     "book_page": 38
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.9-Q5",
@@ -5826,7 +6009,10 @@
     "book_page": 39
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.9-Q8",
@@ -5952,7 +6138,10 @@
     "book_page": 40
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q2",
@@ -6000,7 +6189,10 @@
     "book_page": 40
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q3",
@@ -6042,7 +6234,10 @@
     "book_page": 40
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q4",
@@ -6052,7 +6247,7 @@
    "topic_title": "Circular Motion",
    "number": 4,
    "qtype": "mcq",
-   "stem": "An object of mass $\\mathrm{m}$ is attached to the end of a string. The string is spun around in a vertical circle of radius $r$. When the object is at the top of its path, the speed of the object is $v$ and the string has a tension $F_{T}$. Which",
+   "stem": "An object of mass $\\mathrm{m}$ is attached to the end of a string. The string is spun around in a vertical circle of radius $r$. When the object is at the top of its path, the speed of the object is $v$ and the string has a tension $F_{T}$. Which of the following is an expression for $v$ at the top of the circular path?",
    "choices": [
     {
      "label": "A",
@@ -6084,7 +6279,10 @@
     "book_page": 40
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q5",
@@ -6132,7 +6330,10 @@
     "book_page": 41
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q6",
@@ -6180,7 +6381,10 @@
     "book_page": 41
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q7",
@@ -6264,7 +6468,10 @@
     "book_page": 42
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U2-2.10-Q9",
@@ -6726,7 +6933,11 @@
     "book_page": 46
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.4",
+    "4.3"
+   ]
   },
   {
    "id": "EB3-U3-3.2-Q1",
@@ -6858,7 +7069,10 @@
     "book_page": 47
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.1"
+   ]
   },
   {
    "id": "EB3-U3-3.2-Q4",
@@ -6942,7 +7156,10 @@
     "book_page": 47
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U3-3.2-Q6",
@@ -6984,7 +7201,10 @@
     "book_page": 47
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U3-3.2-Q7",
@@ -7032,7 +7252,10 @@
     "book_page": 48
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U3-3.2-Q8",
@@ -7184,7 +7407,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "The force exerted by a non-linear spring is given by$F(x) \\sqrt{=} -kx 2\\ \\mathrm{m/s}$"
+     "text": "$2\\ \\mathrm{m/s}$"
     },
     {
      "label": "B",
@@ -7192,7 +7415,7 @@
     },
     {
      "label": "C",
-     "text": "$23\\ \\mathrm{m/s}$"
+     "text": "$2\\sqrt{3}\\ \\mathrm{m/s}$"
     },
     {
      "label": "D",
@@ -7218,7 +7441,7 @@
     "book_page": 49
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.3-Q3",
@@ -7228,7 +7451,7 @@
    "topic_title": "Potential Energy",
    "number": 3,
    "qtype": "mcq",
-   "stem": "$4 ^{3}$ . Which of the following expressions correctly models the potential energy stored in the spring when it is compressed a distance of $D$?",
+   "stem": "The force exerted by a non-linear spring is given by $F(x) = -kx^{\\frac{1}{3}}$. Which of the following expressions correctly models the potential energy stored in the spring when it is compressed a distance of $D$?",
    "choices": [
     {
      "label": "A",
@@ -7260,7 +7483,7 @@
     "book_page": 49
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.3-Q4",
@@ -7308,7 +7531,10 @@
     "book_page": 50
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U3-3.3-Q5",
@@ -7356,7 +7582,11 @@
     "book_page": 50
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8",
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U3-3.3-Q6",
@@ -7404,7 +7634,10 @@
     "book_page": 50
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U3-3.3-Q7",
@@ -7500,7 +7733,10 @@
     "book_page": 51
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U3-3.3-Q9",
@@ -7596,7 +7832,10 @@
     "book_page": 52
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.5"
+   ]
   },
   {
    "id": "EB3-U3-3.4-Q2",
@@ -7644,7 +7883,10 @@
     "book_page": 53
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U3-3.4-Q3",
@@ -7696,7 +7938,7 @@
     "book_page": 53
    },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Final velocities",
@@ -7854,7 +8096,10 @@
     "book_page": 55
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U3-3.4-Q7",
@@ -7992,7 +8237,10 @@
     "book_page": 56
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U3-3.5-Q1",
@@ -8097,7 +8345,10 @@
     "book_page": 56
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U3-3.5-Q3",
@@ -8213,7 +8464,11 @@
     "book_page": 57
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5",
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U3-3.5-Q5",
@@ -8270,6 +8525,9 @@
    "table_headers": [
     "Work",
     "Time"
+   ],
+   "additional_topics": [
+    "2.5"
    ]
   },
   {
@@ -8390,6 +8648,10 @@
    "table_headers": [
     "$P_{\\text{pull}}$",
     "$P_{\\text{norm}}$"
+   ],
+   "additional_topics": [
+    "2.4",
+    "2.7"
    ]
   },
   {
@@ -8522,7 +8784,10 @@
     "book_page": 60
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "1.1"
+   ]
   },
   {
    "id": "EB3-U4-4.1-Q2",
@@ -8648,7 +8913,10 @@
     "book_page": 60
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U4-4.1-Q5",
@@ -8696,7 +8964,10 @@
     "book_page": 60
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.1"
+   ]
   },
   {
    "id": "EB3-U4-4.1-Q6",
@@ -8848,7 +9119,10 @@
     "book_page": 61
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "4.2"
+   ]
   },
   {
    "id": "EB3-U4-4.1-Q9",
@@ -8932,7 +9206,10 @@
     "book_page": 62
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "4.1"
+   ]
   },
   {
    "id": "EB3-U4-4.2-Q2",
@@ -9042,6 +9319,9 @@
     "Maximum of $F_h$",
     "Duration of collision",
     "Area under graph"
+   ],
+   "additional_topics": [
+    "4.3"
    ]
   },
   {
@@ -9141,7 +9421,10 @@
     "book_page": 64
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "4.1"
+   ]
   },
   {
    "id": "EB3-U4-4.2-Q6",
@@ -9279,7 +9562,11 @@
     "book_page": 65
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.5",
+    "4.1"
+   ]
   },
   {
    "id": "EB3-U4-4.2-Q9",
@@ -9379,7 +9666,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.57\\linewidth]{media/u4_43_q2_1.png}\n\nBlocks A and B can move along a horizontal surface with negligible friction, as shown in the figure. The mass of Block A is three times the mass of Block B. In two separate experimental trials, the blocks are initially moving toward each other, each with a speed of $v_{0}$. In Trial $1,$ Block A comes to rest after the collision, while in Trial $2$ the blocks stick together. The table shows the speed of the center of mass of the two-block system after the collision in each trial, as well as the magnitude of the impulse exerted on Block B during each collision. Which of the following correctly compares these values? Center of Magnitude of the impulses mass speeds exerted on Block B",
+   "stem": "\\includegraphics[width=0.57\\linewidth]{media/u4_43_q2_1.png}\n\nBlocks A and B can move along a horizontal surface with negligible friction, as shown in the figure. The mass of Block A is three times the mass of Block B. In two separate experimental trials, the blocks are initially moving toward each other, each with a speed of $v_{0}$. In Trial $1,$ Block A comes to rest after the collision, while in Trial $2$ the blocks stick together. The table shows the speed of the center of mass of the two-block system after the collision in each trial, as well as the magnitude of the impulse exerted on Block B during each collision. Which of the following correctly compares these values?",
    "choices": [
     {
      "label": "A",
@@ -9421,7 +9708,7 @@
     "book_page": 66
    },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Center of mass speeds",
@@ -9522,7 +9809,10 @@
     "book_page": 67
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "4.2"
+   ]
   },
   {
    "id": "EB3-U4-4.3-Q5",
@@ -9564,7 +9854,10 @@
     "book_page": 67
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.5"
+   ]
   },
   {
    "id": "EB3-U4-4.3-Q6",
@@ -9759,6 +10052,9 @@
    "table_headers": [
     "$v_x$",
     "$v_y$"
+   ],
+   "additional_topics": [
+    "4.4"
    ]
   },
   {
@@ -9897,7 +10193,11 @@
     "book_page": 70
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.3",
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U4-4.4-Q4",
@@ -9987,7 +10287,10 @@
     "book_page": 70
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.1"
+   ]
   },
   {
    "id": "EB3-U4-4.4-Q6",
@@ -10134,7 +10437,10 @@
     "book_page": 71
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "4.1"
+   ]
   },
   {
    "id": "EB3-U4-4.4-Q9",
@@ -10407,7 +10713,10 @@
     "book_page": 73
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.2"
+   ]
   },
   {
    "id": "EB3-U5-5.1-Q6",
@@ -10506,6 +10815,9 @@
    "table_headers": [
     "Angular displacement",
     "Angular acceleration"
+   ],
+   "additional_topics": [
+    "5.2"
    ]
   },
   {
@@ -10674,7 +10986,10 @@
     "book_page": 75
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.1"
+   ]
   },
   {
    "id": "EB3-U5-5.2-Q3",
@@ -10848,7 +11163,10 @@
     "book_page": 76
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.1"
+   ]
   },
   {
    "id": "EB3-U5-5.2-Q7",
@@ -11001,7 +11319,10 @@
     "book_page": 77
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.1"
+   ]
   },
   {
    "id": "EB3-U5-5.3-Q1",
@@ -11049,7 +11370,10 @@
     "book_page": 77
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.6"
+   ]
   },
   {
    "id": "EB3-U5-5.3-Q2",
@@ -11193,7 +11517,10 @@
     "book_page": 78
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.6"
+   ]
   },
   {
    "id": "EB3-U5-5.3-Q5",
@@ -11433,7 +11760,10 @@
     "book_page": 81
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.6"
+   ]
   },
   {
    "id": "EB3-U5-5.4-Q1",
@@ -11619,7 +11949,10 @@
     "book_page": 82
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.4-Q5",
@@ -11667,7 +12000,10 @@
     "book_page": 82
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.4-Q6",
@@ -11907,7 +12243,10 @@
     "book_page": 85
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.5-Q2",
@@ -11955,7 +12294,10 @@
     "book_page": 85
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.5-Q3",
@@ -12045,7 +12387,11 @@
     "book_page": 86
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3",
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U5-5.5-Q5",
@@ -12257,7 +12603,10 @@
     "book_page": 88
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.5-Q9",
@@ -12305,7 +12654,10 @@
     "book_page": 88
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.6-Q1",
@@ -12415,7 +12767,7 @@
    "choices": [
     {
      "label": "A",
-     "text": ""
+     "text": "$1$"
     },
     {
      "label": "B",
@@ -12449,7 +12801,7 @@
     "book_page": 89
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.6-Q4",
@@ -12497,7 +12849,10 @@
     "book_page": 90
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.6-Q5",
@@ -12545,7 +12900,11 @@
     "book_page": 90
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3",
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U5-5.6-Q6",
@@ -12641,7 +13000,10 @@
     "book_page": 91
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.2"
+   ]
   },
   {
    "id": "EB3-U5-5.6-Q8",
@@ -12689,7 +13051,10 @@
     "book_page": 92
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U5-5.6-Q9",
@@ -12911,7 +13276,11 @@
     "book_page": 94
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "3.4",
+    "6.5"
+   ]
   },
   {
    "id": "EB3-U6-6.1-Q5",
@@ -12959,7 +13328,11 @@
     "book_page": 94
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4",
+    "6.2"
+   ]
   },
   {
    "id": "EB3-U6-6.1-Q6",
@@ -13043,7 +13416,10 @@
     "book_page": 95
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "6.5"
+   ]
   },
   {
    "id": "EB3-U6-6.1-Q8",
@@ -13091,7 +13467,10 @@
     "book_page": 95
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "6.5"
+   ]
   },
   {
    "id": "EB3-U6-6.1-Q9",
@@ -13181,7 +13560,10 @@
     "book_page": 96
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.1"
+   ]
   },
   {
    "id": "EB3-U6-6.2-Q2",
@@ -13271,7 +13653,10 @@
     "book_page": 97
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.2-Q4",
@@ -13361,7 +13746,10 @@
     "book_page": 97
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.2-Q6",
@@ -13499,7 +13887,10 @@
     "book_page": 99
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.1"
+   ]
   },
   {
    "id": "EB3-U6-6.2-Q9",
@@ -13637,7 +14028,10 @@
     "book_page": 100
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "6.4"
+   ]
   },
   {
    "id": "EB3-U6-6.3-Q3",
@@ -13781,7 +14175,10 @@
     "book_page": 101
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.3-Q6",
@@ -13877,7 +14274,10 @@
     "book_page": 102
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.3-Q8",
@@ -14069,7 +14469,10 @@
     "book_page": 104
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.4-Q3",
@@ -14165,7 +14568,10 @@
     "book_page": 105
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "6.5"
+   ]
   },
   {
    "id": "EB3-U6-6.4-Q5",
@@ -14213,7 +14619,10 @@
     "book_page": 106
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "6.3"
+   ]
   },
   {
    "id": "EB3-U6-6.4-Q6",
@@ -14357,7 +14766,10 @@
     "book_page": 107
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.3"
+   ]
   },
   {
    "id": "EB3-U6-6.4-Q9",
@@ -14453,7 +14865,10 @@
     "book_page": 108
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.5-Q2",
@@ -14505,7 +14920,7 @@
    "topic_title": "Rolling",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u6_65_q3_1.png}\n\nA hollow cylinder is initially sliding without rotating up a smooth section of a ramp that makes an angle $\\theta_{R}$ with the horizontal, as shown in the figure. The cylinder then reaches a rough section of the ramp where the coefficient of kinetic friction between the cylinder and the ramp is $\\mu_{k}$. The cylinder, which has mass $\\mathrm{m}_{C}$, $2$, starts to rotate while slipping on the rough radius $r_{C}$, and rotational inertia about its center of $I_{C}\\ =\\ \\mathrm{m}_{C}r_{C}$ section of the ramp. When the cylinder is rolling upward while slipping on the rough section, what is the magnitude \\textit{a} of the cylinder's translational acceleration in terms of the magnitude $\\alpha$ of its angular acceleration and the given quantities?",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u6_65_q3_1.png}\n\nA hollow cylinder is initially sliding without rotating up a smooth section of a ramp that makes an angle $\\theta_{R}$ with the horizontal, as shown in the figure. The cylinder then reaches a rough section of the ramp where the coefficient of kinetic friction between the cylinder and the ramp is $\\mu_{k}$. The cylinder, which has mass $\\mathrm{m}_{C}$, radius $r_{C}$, and rotational inertia about its center of $I_{C} = \\mathrm{m}_{C}r_{C}^{2}$, starts to rotate while slipping on the rough section of the ramp. When the cylinder is rolling upward while slipping on the rough section, what is the magnitude \\textit{a} of the cylinder's translational acceleration in terms of the magnitude $\\alpha$ of its angular acceleration and the given quantities?",
    "choices": [
     {
      "label": "A",
@@ -14517,11 +14932,11 @@
     },
     {
      "label": "C",
-     "text": "$\\alpha r_{C} \\frac{sin \\theta_{R}}{\\mu_{k} cos \\theta_{R}}$"
+     "text": "$\\alpha r_{C} \\frac{\\sin \\theta_{R}}{\\mu_{k} \\cos \\theta_{R}}$"
     },
     {
      "label": "D",
-     "text": "$\\alpha r_{C} \\frac{sin \\theta_{R}+\\mu_{k} \\theta_{R}}{\\mu_{k} cos \\theta_{R}}$ cos"
+     "text": "$\\alpha r_{C} \\frac{\\sin \\theta_{R} + \\mu_{k} \\cos \\theta_{R}}{\\mu_{k} \\cos \\theta_{R}}$"
     }
    ],
    "answer": "",
@@ -14543,7 +14958,11 @@
     "book_page": 109
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "2.7",
+    "5.6"
+   ]
   },
   {
    "id": "EB3-U6-6.5-Q4",
@@ -14591,7 +15010,10 @@
     "book_page": 109
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U6-6.5-Q5",
@@ -14771,7 +15193,10 @@
     "book_page": 110
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.7"
+   ]
   },
   {
    "id": "EB3-U6-6.5-Q9",
@@ -14861,7 +15286,10 @@
     "book_page": 111
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q2",
@@ -14903,7 +15331,11 @@
     "book_page": 111
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6",
+    "6.4"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q3",
@@ -14951,7 +15383,11 @@
     "book_page": 112
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.6",
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q4",
@@ -14999,7 +15435,10 @@
     "book_page": 112
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q5",
@@ -15041,7 +15480,10 @@
     "book_page": 112
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q6",
@@ -15083,7 +15525,10 @@
     "book_page": 112
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q7",
@@ -15131,7 +15576,11 @@
     "book_page": 113
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6",
+    "6.4"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q8",
@@ -15179,7 +15628,11 @@
     "book_page": 113
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6",
+    "6.4"
+   ]
   },
   {
    "id": "EB3-U6-6.6-Q9",
@@ -15227,7 +15680,11 @@
     "book_page": 114
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6",
+    "6.4"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q1",
@@ -15275,7 +15732,10 @@
     "book_page": 115
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q2",
@@ -15323,7 +15783,10 @@
     "book_page": 115
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q3",
@@ -15365,7 +15828,10 @@
     "book_page": 115
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q4",
@@ -15470,7 +15936,10 @@
     "book_page": 116
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q6",
@@ -15566,7 +16035,11 @@
     "book_page": 117
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8",
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U7-7.1-Q8",
@@ -15656,7 +16129,11 @@
     "book_page": 118
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.4",
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.2-Q1",
@@ -15740,7 +16217,10 @@
     "book_page": 119
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.2-Q3",
@@ -15782,7 +16262,10 @@
     "book_page": 119
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.2-Q4",
@@ -15892,7 +16375,10 @@
     "book_page": 120
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.2-Q6",
@@ -15988,7 +16474,10 @@
     "book_page": 121
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.2-Q8",
@@ -16084,7 +16573,10 @@
     "book_page": 122
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.3-Q1",
@@ -16135,6 +16627,9 @@
    "table_headers": [
     "Period",
     "Maximum Speed"
+   ],
+   "additional_topics": [
+    "2.8"
    ]
   },
   {
@@ -16225,7 +16720,10 @@
     "book_page": 123
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.3-Q4",
@@ -16267,7 +16765,10 @@
     "book_page": 123
    },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": true,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.3-Q5",
@@ -16357,7 +16858,10 @@
     "book_page": 124
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.3-Q7",
@@ -16495,7 +16999,10 @@
     "book_page": 125
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.8"
+   ]
   },
   {
    "id": "EB3-U7-7.4-Q1",
@@ -16552,6 +17059,9 @@
    "table_headers": [
     "Amplitude",
     "Maximum Speed"
+   ],
+   "additional_topics": [
+    "4.3"
    ]
   },
   {
@@ -16594,7 +17104,10 @@
     "book_page": 126
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U7-7.4-Q3",
@@ -16636,7 +17149,10 @@
     "book_page": 126
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U7-7.4-Q4",
@@ -16687,6 +17203,9 @@
    "table_headers": [
     "Total Mechanical Energy",
     "Maximum Kinetic Energy"
+   ],
+   "additional_topics": [
+    "3.1"
    ]
   },
   {
@@ -16825,7 +17344,10 @@
     "book_page": 127
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "3.4"
+   ]
   },
   {
    "id": "EB3-U7-7.4-Q8",
@@ -16873,7 +17395,10 @@
     "book_page": 128
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "2.6"
+   ]
   },
   {
    "id": "EB3-U7-7.4-Q9",
@@ -16895,7 +17420,7 @@
     },
     {
      "label": "C",
-     "text": "$\\sqrt{2} v$max,X"
+     "text": "$\\sqrt{2} v_{\\mathrm{max,X}}$"
     },
     {
      "label": "D",
@@ -16915,7 +17440,7 @@
     "book_page": 128
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.5-Q1",
@@ -16999,7 +17524,10 @@
     "book_page": 128
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q3",
@@ -17047,7 +17575,10 @@
     "book_page": 129
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q4",
@@ -17095,7 +17626,10 @@
     "book_page": 129
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q5",
@@ -17143,7 +17677,10 @@
     "book_page": 130
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q6",
@@ -17153,7 +17690,7 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_75_q6_1.png}\n\nA torsion pendulum consists of a vertical wire connected to a uniform disk of mass $\\mathrm{m}_{D}$, radius $r_{D}$, and $2\\ /2,$ as shown in the figure. An applied force of magnitude $F_{0}$ is applied tangentially rotational inertia $\\mathrm{m}_{D}r_{D}$ to the disk, holding it in place at an angular displacement $\\theta_{\\mathrm{max}}$ from the wire's relaxed angular position. The applied force is then removed, and the disk undergoes rotational simple harmonic motion. What is the angular acceleration of the disk when its angular displacement from equilibrium is $\\theta_{\\mathrm{max}}/2?$",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_75_q6_1.png}\n\nA torsion pendulum consists of a vertical wire connected to a uniform disk of mass $\\mathrm{m}_{D}$, radius $r_{D}$, and rotational inertia $\\mathrm{m}_{D}r_{D}^{2}/2$, as shown in the figure. An applied force of magnitude $F_{0}$ is applied tangentially to the disk, holding it in place at an angular displacement $\\theta_{\\mathrm{max}}$ from the wire's relaxed angular position. The applied force is then removed, and the disk undergoes rotational simple harmonic motion. What is the angular acceleration of the disk when its angular displacement from equilibrium is $\\theta_{\\mathrm{max}}/2?$",
    "choices": [
     {
      "label": "A",
@@ -17191,7 +17728,11 @@
     "book_page": 130
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "5.4",
+    "5.6"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q7",
@@ -17201,7 +17742,7 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.20\\linewidth]{media/u7_75_q7_1.png}\n\nA uniform rod of length $\\mathrm{L}_{R}$ and mass $M_{R}$ is free to rotate about a pivot located a distance $\\ell$, where $\\ell \\ll \\mathrm{L}_{R}$, above the rod's center, as shown in the figure. Which of the following changes could result in a shorter $2 /12.$ period for small-angle oscillations of the rod? The rotational inertia about the center of the rod is $M_{R}\\mathrm{L}_{R}$",
+   "stem": "\\includegraphics[width=0.20\\linewidth]{media/u7_75_q7_1.png}\n\nA uniform rod of length $\\mathrm{L}_{R}$ and mass $M_{R}$ is free to rotate about a pivot located a distance $\\ell$, where $\\ell \\ll \\mathrm{L}_{R}$, above the rod's center, as shown in the figure. The rotational inertia about the center of the rod is $M_{R}\\mathrm{L}_{R}^{2}/12$. Which of the following changes could result in a shorter period for small-angle oscillations of the rod?",
    "choices": [
     {
      "label": "A",
@@ -17239,7 +17780,11 @@
     "book_page": 131
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true,
+   "additional_topics": [
+    "5.3",
+    "5.4"
+   ]
   },
   {
    "id": "EB3-U7-7.5-Q8",
@@ -17335,7 +17880,10 @@
     "book_page": 132
    },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": false,
+   "additional_topics": [
+    "5.4"
+   ]
   }
  ]
 }
