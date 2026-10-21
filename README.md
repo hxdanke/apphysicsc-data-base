@@ -213,6 +213,19 @@ never touches who can sign in or which papers teachers saved. The data root can
 be relocated with `QB_DATA_DIR` (the tests use this to run against a throw-away
 tree).
 
+A question's `stem_table` holds a data table that belongs to the stem (readings to
+reason from, as opposed to `choice_layout: "table"`, which lays out the options).
+`position` is `"before"` when the book prints the table above the text and
+`"after"` when it prints it below:
+
+```json
+"stem_table": {
+  "position": "before",
+  "headers": ["$t$ (s)", "$x$ (m)"],
+  "rows": [["0", "160"], ["2", "136"]]
+}
+```
+
 A question looks like this (trimmed):
 
 ```json

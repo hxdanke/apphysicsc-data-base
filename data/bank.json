@@ -352,7 +352,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.2"
    ]
@@ -398,7 +398,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.2"
    ]
@@ -438,7 +438,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.2-Q2",
@@ -481,7 +481,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.3"
    ]
@@ -521,7 +521,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.2-Q4",
@@ -568,7 +568,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "choice_layout": "table",
    "table_headers": [
     "Velocities",
@@ -613,7 +613,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.2-Q6",
@@ -650,7 +650,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.2-Q7",
@@ -687,7 +687,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.1"
    ]
@@ -700,7 +700,7 @@
    "topic_title": "Displacement, Velocity, and Acceleration",
    "number": 8,
    "qtype": "mcq",
-   "stem": "An object moves in one dimension along the $x$-axis. At time $t\\ =\\ 0,$ the object is located at position $x\\ =\\ 1\\ \\mathrm{m}$ and has a velocity $v\\ =\\ 1\\ \\mathrm{m/s}.$ The object's acceleration varies as \\textit{a}$= 3t$, where \\textit{a} is in $\\mathrm{m/s}^{2}$ and $t$ is time in seconds. A student incorrectly derives the equation for the object's position as $x\\ =\\ t^{3}/2\\ +\\ 1,$ where $x$ is in meters. Which of the following describes a possible error that could have resulted in the incorrect equation?",
+   "stem": "An object moves in one dimension along the $x$-axis. At time $t\\ =\\ 0,$ the object is located at position $x\\ =\\ 1\\ \\mathrm{m}$ and has a velocity $v\\ =\\ 1\\ \\mathrm{m/s}.$ The object's acceleration varies as $a= 3t$, where $a$ is in $\\mathrm{m/s}^{2}$ and $t$ is time in seconds. A student incorrectly derives the equation for the object's position as $x\\ =\\ t^{3}/2\\ +\\ 1,$ where $x$ is in meters. Which of the following describes a possible error that could have resulted in the incorrect equation?",
    "choices": [
     {
      "label": "A",
@@ -712,11 +712,11 @@
     },
     {
      "label": "C",
-     "text": "The student's equation does not substitute \\textit{a}$= 3t$ in the $at^{2}/2$ term."
+     "text": "The student's equation does not substitute $a= 3t$ in the $at^{2}/2$ term."
     },
     {
      "label": "D",
-     "text": "The student's equation should not have a $+1$ term, as integrating the acceleration function twice yields $x\\ =\\ t^{3}/2.$"
+     "text": "The student's equation should not have $a+1$ term, as integrating the acceleration function twice yields $x\\ =\\ t^{3}/2.$"
     }
    ],
    "answer": "",
@@ -727,7 +727,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.3-Q1",
@@ -764,7 +764,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.2"
    ]
@@ -810,7 +810,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.2"
    ]
@@ -823,7 +823,7 @@
    "topic_title": "Representing Motion",
    "number": 3,
    "qtype": "mcq",
-   "stem": "On a distant planet where the acceleration due to gravity is $\\mathrm{g}_{P}$, an object takes a time $t_{P}$ to reach the ground when dropped from a height $\\mathrm{h}_{0}$. On a small moon of the planet, the acceleration due to gravity is $\\mathrm{g}_{P}/16.$ How long does it take an object to reach the ground when it is dropped from the same height on the moon?",
+   "stem": "On a distant planet where the acceleration due to gravity is $g_{P}$, an object takes a time $t_{P}$ to reach the ground when dropped from a height $h_{0}$. On a small moon of the planet, the acceleration due to gravity is $g_{P}/16.$ How long does it take an object to reach the ground when it is dropped from the same height on the moon?",
    "choices": [
     {
      "label": "A",
@@ -850,7 +850,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.3-Q4",
@@ -887,7 +887,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.3-Q5",
@@ -924,7 +924,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.3-Q6",
@@ -934,7 +934,7 @@
    "topic_title": "Representing Motion",
    "number": 6,
    "qtype": "mcq",
-   "stem": "A car is initially at rest and driven along a straight road with a constant acceleration \\textit{a}. The car has a velocity $v$ when it has traveled a distance $d$. A second car starts from rest on the same road and has an acceleration $3$\\textit{a} until it reaches the same final velocity. How far does the second car travel?",
+   "stem": "A car is initially at rest and driven along a straight road with a constant acceleration $a$. The car has a velocity $v$ when it has traveled a distance $d$. A second car starts from rest on the same road and has an acceleration $3a$ until it reaches the same final velocity. How far does the second car travel?",
    "choices": [
     {
      "label": "A",
@@ -961,7 +961,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.3-Q7",
@@ -971,7 +971,7 @@
    "topic_title": "Representing Motion",
    "number": 7,
    "qtype": "mcq",
-   "stem": "A car travelling at an unknown initial speed in a straight line is described by the time $(t)$ and position $(x)$ data shown in the table. Which of the following claims about the signs of the car's velocity and acceleration is correct, and how does the data provide evidence for the claim?\n\n\\includegraphics[width=0.40\\linewidth]{media/u1_13_q7_1.png}",
+   "stem": "A car travelling at an unknown initial speed in a straight line is described by the time $(t)$ and position $(x)$ data shown in the table. Which of the following claims about the signs of the car's velocity and acceleration is correct, and how does the data provide evidence for the claim?",
    "choices": [
     {
      "label": "A",
@@ -1007,7 +1007,36 @@
    "needs_review": true,
    "additional_topics": [
     "1.2"
-   ]
+   ],
+   "stem_table": {
+    "position": "before",
+    "headers": [
+     "$t$ (s)",
+     "$x$ (m)"
+    ],
+    "rows": [
+     [
+      "0",
+      "160"
+     ],
+     [
+      "2",
+      "136"
+     ],
+     [
+      "4",
+      "104"
+     ],
+     [
+      "6",
+      "64"
+     ],
+     [
+      "8",
+      "16"
+     ]
+    ]
+   }
   },
   {
    "id": "EB3-U1-1.3-Q8",
@@ -8713,7 +8742,27 @@
    "table_headers": [
     "Center of mass speeds",
     "Magnitude of the impulses exerted on Block B"
-   ]
+   ],
+   "stem_table": {
+    "position": "before",
+    "headers": [
+     "Trial",
+     "Center of mass speed after collision",
+     "Impulse exerted on Block B"
+    ],
+    "rows": [
+     [
+      "1",
+      "$v_{1}$",
+      "$J_{1}$"
+     ],
+     [
+      "2",
+      "$v_{2}$",
+      "$J_{2}$"
+     ]
+    ]
+   }
   },
   {
    "id": "EB3-U4-4.3-Q3",
@@ -12080,7 +12129,40 @@
    "needs_review": true,
    "additional_topics": [
     "6.5"
-   ]
+   ],
+   "stem_table": {
+    "position": "before",
+    "headers": [
+     "Object Name",
+     "Radius",
+     "Rotational Inertia",
+     "Translational Speed",
+     "Angular Speed"
+    ],
+    "rows": [
+     [
+      "Hoop",
+      "$r_{0}$",
+      "$I_{0}$",
+      "$v_{0}$",
+      "$\\omega_{0}$"
+     ],
+     [
+      "Disk 1",
+      "$r_{0}$",
+      "$\\dfrac{1}{2}I_{0}$",
+      "$v_{0}$",
+      "$\\omega_{0}$"
+     ],
+     [
+      "Disk 2",
+      "$\\dfrac{1}{2}r_{0}$",
+      "$\\dfrac{1}{8}I_{0}$",
+      "$2v_{0}$",
+      "$\\omega_{0}$"
+     ]
+    ]
+   }
   },
   {
    "id": "EB3-U6-6.1-Q9",

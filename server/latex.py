@@ -707,6 +707,33 @@ def _drop_stray_braces(text: str) -> str:
     return out
 
 
+def stem_table_latex(spec: dict) -> str:
+    """A data table that belongs to the stem rather than to the options.
+
+    The book prints these with a full grid -- a box, a rule under the header and
+    a rule between every pair of rows -- so that is what this draws.  Cells are
+    centred, and each one goes through ``tex_safe`` because they are maths.
+    """
+    headers = spec.get("headers") or []
+    rows = spec.get("rows") or []
+    ncol = max([len(headers)] + [len(r) for r in rows] or [1])
+    if ncol < 1:
+        return ""
+
+    spec_cols = "|" + "|".join("c" * ncol) + "|"
+    body = ["\\hline"]
+    if headers:
+        cells = [tex_safe(str(h)) for h in headers] + [""] * (ncol - len(headers))
+        body.append(" & ".join(cells[:ncol]) + " \\\\")
+        body.append("\\hline")
+    for row in rows:
+        cells = [tex_safe(str(c)) for c in row] + [""] * (ncol - len(row))
+        body.append(" & ".join(cells[:ncol]) + " \\\\")
+        body.append("\\hline")
+    return ("\\begin{center}\n\\begin{tabular}{" + spec_cols + "}\n"
+            + "\n".join(body) + "\n\\end{tabular}\n\\end{center}")
+
+
 def question_body(q: dict, show_answer: bool = False, show_solution: bool = False,
                   indent_choices: bool = True) -> str:
     """LaTeX snippet for a single question."""
@@ -722,6 +749,11 @@ def question_body(q: dict, show_answer: bool = False, show_solution: bool = Fals
         # wide, so only ordinary choices get the blank line.
         if not is_table:
             lines.append("")
+    # A stem table printed after the text hangs below it like another paragraph.
+    spec = q.get("stem_table") or {}
+    if stem and spec and spec.get("position") == "after":
+        lines.append(stem_table_latex(spec))
+        lines.append("")
     if choices:
         if is_table:
             lines.append(_choices_table_latex(choices, q.get("table_headers") or []))
@@ -773,13 +805,21 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
     for q in ordered:
         stem = q.get("stem") or ""
         m = RE_LEADING_IMG.match(stem)
-        if m:
+        # A stem table printed before the text opens the question the same way a
+        # leading figure does: on its own line above the item, so the number
+        # still sits on the first line of the text.
+        spec = q.get("stem_table") or {}
+        table_first = bool(stem) and spec.get("position") == "before"
+        if m or table_first:
             if list_open:
                 out.append("\\end{enumerate}\n")
                 list_open = False
-            out.append("\\noindent\\hspace*{1cm}" + m.group(1).strip() + "\n\n")
+            if m:
+                out.append("\\noindent\\hspace*{1cm}" + m.group(1).strip() + "\n\n")
+            if table_first:
+                out.append("\\noindent\\hspace*{1cm}" + stem_table_latex(spec) + "\n\n")
             q2 = dict(q)
-            q2["stem"] = stem[m.end():]
+            q2["stem"] = stem[m.end():] if m else stem
             body = question_body(q2, show_answer, show_solution)
         else:
             body = question_body(q, show_answer, show_solution)
