@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import sys
 from collections import defaultdict
 
 import pymupdf
@@ -73,9 +74,29 @@ def band_cols(lines, y0, y1, xmin=100, gap=18.0):
     return split_columns(items, gap)
 
 
+def load_questions(path: str | None) -> list:
+    """Read questions, preferring extractor output.
+
+    The bank stopped recording which page a question came from, so this tool is
+    pointed at a file of extracted questions when it needs that.
+    """
+    with open(path or BANK, encoding="utf-8") as fh:
+        data = json.load(fh)
+    qs = data["questions"] if isinstance(data, dict) else data
+    paged = [q for q in qs if (q.get("source") or {}).get("pdf_page") is not None]
+    if path:
+        return paged
+    if not paged:
+        raise SystemExit(
+            "the bank no longer stores page numbers — pass extractor output "
+            "with --questions")
+    return paged
+
+
 def main():
-    bank = json.load(open(BANK, encoding="utf-8"))
-    qs = bank["questions"]
+    argv = sys.argv[1:]
+    qpath = argv[1] if argv and argv[0] == "--questions" else None
+    qs = load_questions(qpath)
     doc = pymupdf.open(PDF)
 
     by_page = defaultdict(list)

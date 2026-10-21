@@ -115,7 +115,7 @@ def polish(job: str, limit: int | None = None) -> dict:
     return {"ok": True, "count": len(qs)}
 
 
-def commit(job: str, replace_source: bool = True, course_id: str | None = None) -> dict:
+def commit(job: str, course_id: str | None = None) -> dict:
     meta = read_meta(job)
     if not meta:
         return {"ok": False, "error": "unknown job"}
@@ -160,9 +160,7 @@ def commit(job: str, replace_source: bool = True, course_id: str | None = None) 
                 q["stem"] = re_include_path(q["stem"], im["file"])
 
     bank = bank_mod.load_bank(course_id)
-    written = bank_mod.upsert(bank, qs,
-                              replace_source=meta["doc_id"] if replace_source else None,
-                              course_id=course_id)
+    written = bank_mod.upsert(bank, qs, course_id=course_id)
     meta["committed"] = True
     meta["stage"] = "committed"
     meta["committed_count"] = written

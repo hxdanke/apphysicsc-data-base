@@ -147,7 +147,7 @@ def blank_question(qid: str, unit: int = 0, topic: str = "") -> dict:
         "id": qid, "unit": unit, "unit_title": "", "topic": topic, "topic_title": "",
         "number": 0, "qtype": "mcq", "stem": "", "choices": [], "answer": "",
         "solution": "", "images": [], "difficulty": "", "tags": [],
-        "source": {}, "layout": "inline", "needs_review": False,
+        "layout": "inline", "needs_review": False,
         "stem_blocks": [], "additional_topics": [],
     }
 
@@ -181,15 +181,16 @@ def next_id(bank: dict, unit: int, topic: str, course_id: str | None = None) -> 
     return f"{prefix}{n}"
 
 
-def upsert(bank: dict, questions: list, replace_source: str | None = None,
-           course_id: str | None = None) -> int:
-    """Insert or replace questions and write the bank.  Returns how many were written."""
+def upsert(bank: dict, questions: list, course_id: str | None = None) -> int:
+    """Insert or replace questions by id and write the bank.
+
+    Returns how many were written.  Questions carry no record of which file they
+    came from, so any such field is dropped on the way in.
+    """
     with _lock:
-        if replace_source:
-            bank["questions"] = [q for q in bank["questions"]
-                                 if (q.get("source") or {}).get("doc") != replace_source]
         index = {q["id"]: i for i, q in enumerate(bank["questions"])}
         for q in questions:
+            q.pop("source", None)
             if q["id"] in index:
                 bank["questions"][index[q["id"]]] = q
             else:

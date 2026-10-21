@@ -10,7 +10,7 @@
    "topic_title": "Scalars and Vectors",
    "number": 1,
    "qtype": "mcq",
-   "stem": "The $x-$ and $y$-components of an acceleration vector are given by the equations $a_{x}\\ = (t\\ -\\ 6)\\ \\mathrm{m/s}^{2}$ and $a_{y}\\ = (4t\\ -\\ 5)\\ \\mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t\\ =\\ 2\\ \\mathrm{s}$?",
+   "stem": "The $x$- and $y$-components of an acceleration vector are given by the equations $a_{x}\\ = (t\\ -\\ 6)\\ \\mathrm{m/s}^{2}$ and $a_{y}\\ = (4t\\ -\\ 5)\\ \\mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t\\ =\\ 2\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -36,11 +36,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 7,
-    "book_page": 1
-   },
    "layout": "inline",
    "needs_review": false,
    "additional_topics": [
@@ -85,11 +80,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 7,
-    "book_page": 1
-   },
    "layout": "inline",
    "needs_review": false,
    "choice_layout": "table",
@@ -135,13 +125,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 7,
-    "book_page": 1
-   },
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.1-Q4",
@@ -183,11 +168,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 7,
-    "book_page": 1
-   },
    "layout": "inline",
    "needs_review": false
   },
@@ -231,11 +211,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 8,
-    "book_page": 2
-   },
    "layout": "inline",
    "needs_review": false
   },
@@ -247,7 +222,7 @@
    "topic_title": "Scalars and Vectors",
    "number": 6,
    "qtype": "mcq",
-   "stem": "An object moves in the $xy$-plane a distance $A$ at an angle $\\theta$ measured counterclockwise from the positive $x-$ direction, where $0\\ <\\ \\theta\\ <\\ 90^{\\circ}.$ The object then moves a distance $B$ in the positive $x$-direction. The change in the $x$-component of the object's position is equal to the change in the $y$-component of its position. What is $B$ in terms of $A$ and $\\theta$?",
+   "stem": "An object moves in the $xy$-plane a distance $A$ at an angle $\\theta$ measured counterclockwise from the positive $x$-direction, where $0\\ <\\ \\theta\\ <\\ 90^{\\circ}.$ The object then moves a distance $B$ in the positive $x$-direction. The change in the $x$-component of the object's position is equal to the change in the $y$-component of its position. What is $B$ in terms of $A$ and $\\theta$?",
    "choices": [
     {
      "label": "A",
@@ -273,13 +248,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 8,
-    "book_page": 2
-   },
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.2"
    ]
@@ -344,11 +314,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 8,
-    "book_page": 2
-   },
    "layout": "inline",
    "needs_review": false
   },
@@ -386,13 +351,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 8,
-    "book_page": 2
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -437,13 +397,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 9,
-    "book_page": 3
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -482,11 +437,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 9,
-    "book_page": 3
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -530,13 +480,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 9,
-    "book_page": 3
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.3"
    ]
@@ -575,13 +520,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 9,
-    "book_page": 3
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.2-Q4",
@@ -627,13 +567,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 10,
-    "book_page": 4
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Velocities",
@@ -677,13 +612,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 10,
-    "book_page": 4
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.2-Q6",
@@ -719,13 +649,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 10,
-    "book_page": 4
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.2-Q7",
@@ -761,13 +686,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 10,
-    "book_page": 4
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.1"
    ]
@@ -806,13 +726,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 10,
-    "book_page": 4
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.3-Q1",
@@ -848,11 +763,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -899,13 +809,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -944,13 +849,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.3-Q4",
@@ -986,13 +886,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.3-Q5",
@@ -1028,13 +923,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.3-Q6",
@@ -1070,13 +960,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 11,
-    "book_page": 5
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.3-Q7",
@@ -1118,13 +1003,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 12,
-    "book_page": 6
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -1168,11 +1048,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 12,
-    "book_page": 6
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -1219,13 +1094,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 13,
-    "book_page": 7
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -1270,13 +1140,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 13,
-    "book_page": 7
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.2"
    ]
@@ -1315,13 +1180,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 13,
-    "book_page": 7
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1360,13 +1220,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 14,
-    "book_page": 8
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1405,13 +1260,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 14,
-    "book_page": 8
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.4-Q4",
@@ -1447,13 +1297,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 14,
-    "book_page": 8
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1498,13 +1343,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 14,
-    "book_page": 8
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.3"
    ]
@@ -1549,13 +1389,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 14,
-    "book_page": 8
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1600,13 +1435,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 15,
-    "book_page": 9
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.4-Q8",
@@ -1648,13 +1478,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 15,
-    "book_page": 9
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1699,13 +1524,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 15,
-    "book_page": 9
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -1750,11 +1570,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 16,
-    "book_page": 10
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -1801,13 +1616,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 16,
-    "book_page": 10
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.1"
    ]
@@ -1846,13 +1656,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 16,
-    "book_page": 10
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.5-Q4",
@@ -1894,13 +1699,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 17,
-    "book_page": 11
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.4"
    ]
@@ -1945,11 +1745,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 17,
-    "book_page": 11
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -1993,13 +1788,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 17,
-    "book_page": 11
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U1-1.5-Q7",
@@ -2035,11 +1825,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 18,
-    "book_page": 12
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -2083,11 +1868,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 18,
-    "book_page": 12
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -2128,13 +1908,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 18,
-    "book_page": 12
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q1",
@@ -2176,13 +1951,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 19,
-    "book_page": 13
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q2",
@@ -2244,13 +2014,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 19,
-    "book_page": 13
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -2295,13 +2060,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 20,
-    "book_page": 14
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q4",
@@ -2343,13 +2103,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 20,
-    "book_page": 14
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q5",
@@ -2385,13 +2140,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 20,
-    "book_page": 14
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q6",
@@ -2453,13 +2203,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 21,
-    "book_page": 15
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.5"
    ]
@@ -2504,13 +2249,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 21,
-    "book_page": 15
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.1-Q8",
@@ -2552,13 +2292,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 22,
-    "book_page": 16
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.5"
    ]
@@ -2603,13 +2338,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 22,
-    "book_page": 16
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.2-Q1",
@@ -2645,13 +2375,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 22,
-    "book_page": 16
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.2-Q2",
@@ -2713,13 +2438,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 23,
-    "book_page": 17
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -2764,13 +2484,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 23,
-    "book_page": 17
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5",
     "2.7"
@@ -2816,13 +2531,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 24,
-    "book_page": 18
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -2887,13 +2597,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 24,
-    "book_page": 18
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.2-Q6",
@@ -2955,13 +2660,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 25,
-    "book_page": 19
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.4",
     "2.7"
@@ -3007,13 +2707,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 25,
-    "book_page": 19
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -3052,11 +2747,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 26,
-    "book_page": 20
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -3100,13 +2790,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 26,
-    "book_page": 20
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -3151,13 +2836,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 26,
-    "book_page": 20
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.3-Q2",
@@ -3199,13 +2879,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 27,
-    "book_page": 21
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.3-Q3",
@@ -3247,13 +2922,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 27,
-    "book_page": 21
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.4"
    ]
@@ -3292,13 +2962,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 28,
-    "book_page": 22
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -3343,11 +3008,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 28,
-    "book_page": 22
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -3391,13 +3051,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 28,
-    "book_page": 22
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.3-Q7",
@@ -3439,13 +3094,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 29,
-    "book_page": 23
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.4",
     "2.7"
@@ -3495,13 +3145,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 29,
-    "book_page": 23
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Both blocks in motion",
@@ -3552,13 +3197,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 29,
-    "book_page": 23
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -3607,13 +3247,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 30,
-    "book_page": 24
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Before P",
@@ -3657,13 +3292,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 30,
-    "book_page": 24
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q3",
@@ -3699,13 +3329,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 30,
-    "book_page": 24
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -3750,13 +3375,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 31,
-    "book_page": 25
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q5",
@@ -3798,13 +3418,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 31,
-    "book_page": 25
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q6",
@@ -3846,13 +3461,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 31,
-    "book_page": 25
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q7",
@@ -3894,13 +3504,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 32,
-    "book_page": 26
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q8",
@@ -3942,13 +3547,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 32,
-    "book_page": 26
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.4-Q9",
@@ -4005,11 +3605,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 33,
-    "book_page": 27
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -4056,13 +3651,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 33,
-    "book_page": 27
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.5-Q2",
@@ -4098,13 +3688,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 33,
-    "book_page": 27
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.3"
    ]
@@ -4149,13 +3734,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 34,
-    "book_page": 28
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.5-Q4",
@@ -4197,13 +3777,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 34,
-    "book_page": 28
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.2"
    ]
@@ -4248,13 +3823,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 34,
-    "book_page": 28
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.5-Q6",
@@ -4296,13 +3866,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 35,
-    "book_page": 29
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.5-Q7",
@@ -4344,13 +3909,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 35,
-    "book_page": 29
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.5-Q8",
@@ -4392,13 +3952,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 35,
-    "book_page": 29
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.2"
    ]
@@ -4443,13 +3998,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 36,
-    "book_page": 30
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.2"
    ]
@@ -4494,13 +4044,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 36,
-    "book_page": 30
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q2",
@@ -4536,13 +4081,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 37,
-    "book_page": 31
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q3",
@@ -4578,11 +4118,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 37,
-    "book_page": 31
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -4626,13 +4161,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 37,
-    "book_page": 31
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q5",
@@ -4668,13 +4198,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 37,
-    "book_page": 31
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q6",
@@ -4710,13 +4235,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 37,
-    "book_page": 31
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q7",
@@ -4752,11 +4272,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 38,
-    "book_page": 32
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -4803,13 +4318,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 38,
-    "book_page": 32
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.6-Q9",
@@ -4845,13 +4355,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 38,
-    "book_page": 32
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.7-Q1",
@@ -4893,13 +4398,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 38,
-    "book_page": 32
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.7-Q2",
@@ -4935,13 +4435,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 39,
-    "book_page": 33
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -4980,13 +4475,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 39,
-    "book_page": 33
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.7-Q4",
@@ -5022,13 +4512,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 39,
-    "book_page": 33
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.7-Q5",
@@ -5064,11 +4549,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 39,
-    "book_page": 33
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -5112,13 +4592,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 39,
-    "book_page": 33
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.2"
    ]
@@ -5157,13 +4632,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.7-Q8",
@@ -5199,11 +4669,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -5250,13 +4715,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -5295,13 +4755,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.8-Q2",
@@ -5337,11 +4792,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -5382,13 +4832,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 40,
-    "book_page": 34
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.8-Q4",
@@ -5430,13 +4875,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 41,
-    "book_page": 35
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -5481,13 +4921,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 41,
-    "book_page": 35
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -5526,11 +4961,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 42,
-    "book_page": 36
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -5574,13 +5004,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 42,
-    "book_page": 36
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.8-Q8",
@@ -5616,11 +5041,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 43,
-    "book_page": 37
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -5664,13 +5084,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 43,
-    "book_page": 37
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -5713,13 +5128,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 43,
-    "book_page": 37
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Initial Acceleration",
@@ -5763,11 +5173,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 44,
-    "book_page": 38
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -5818,13 +5223,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 44,
-    "book_page": 38
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Acceleration",
@@ -5865,13 +5265,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 44,
-    "book_page": 38
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -5914,13 +5309,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 44,
-    "book_page": 38
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "$v_T$",
@@ -5961,13 +5351,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 45,
-    "book_page": 39
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.9-Q7",
@@ -6003,13 +5388,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 45,
-    "book_page": 39
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -6048,13 +5428,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 45,
-    "book_page": 39
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.9-Q9",
@@ -6090,13 +5465,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 45,
-    "book_page": 39
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.10-Q1",
@@ -6132,13 +5502,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 46,
-    "book_page": 40
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -6183,13 +5548,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 46,
-    "book_page": 40
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -6228,13 +5588,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 46,
-    "book_page": 40
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -6273,11 +5628,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 46,
-    "book_page": 40
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -6324,13 +5674,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 47,
-    "book_page": 41
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -6375,13 +5720,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 47,
-    "book_page": 41
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -6420,13 +5760,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 47,
-    "book_page": 41
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U2-2.10-Q8",
@@ -6462,13 +5797,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 48,
-    "book_page": 42
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -6507,13 +5837,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 48,
-    "book_page": 42
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q1",
@@ -6555,13 +5880,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 49,
-    "book_page": 43
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q2",
@@ -6603,13 +5923,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 49,
-    "book_page": 43
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q3",
@@ -6651,13 +5966,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 50,
-    "book_page": 44
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q4",
@@ -6693,11 +6003,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 50,
-    "book_page": 44
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -6741,13 +6046,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 50,
-    "book_page": 44
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q6",
@@ -6789,13 +6089,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 51,
-    "book_page": 45
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q7",
@@ -6837,13 +6132,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 51,
-    "book_page": 45
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q8",
@@ -6879,13 +6169,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 52,
-    "book_page": 46
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.1-Q9",
@@ -6927,13 +6212,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 52,
-    "book_page": 46
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.4",
     "4.3"
@@ -6973,13 +6253,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 52,
-    "book_page": 46
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.2-Q2",
@@ -7015,13 +6290,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 52,
-    "book_page": 46
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.2-Q3",
@@ -7063,13 +6333,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 53,
-    "book_page": 47
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.1"
    ]
@@ -7108,13 +6373,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 53,
-    "book_page": 47
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.2-Q5",
@@ -7150,13 +6410,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 53,
-    "book_page": 47
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -7195,13 +6450,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 53,
-    "book_page": 47
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -7246,13 +6496,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 54,
-    "book_page": 48
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -7291,11 +6536,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 54,
-    "book_page": 48
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -7339,13 +6579,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 54,
-    "book_page": 48
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.3-Q1",
@@ -7387,13 +6622,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 55,
-    "book_page": 49
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.3-Q2",
@@ -7435,11 +6665,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 55,
-    "book_page": 49
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -7477,11 +6702,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 55,
-    "book_page": 49
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -7525,13 +6745,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 56,
-    "book_page": 50
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -7576,13 +6791,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 56,
-    "book_page": 50
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8",
     "3.4"
@@ -7628,13 +6838,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 56,
-    "book_page": 50
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -7679,13 +6884,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 57,
-    "book_page": 51
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.3-Q8",
@@ -7727,13 +6927,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 57,
-    "book_page": 51
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.4"
    ]
@@ -7778,13 +6973,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 58,
-    "book_page": 52
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.4-Q1",
@@ -7826,13 +7016,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 58,
-    "book_page": 52
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.5"
    ]
@@ -7877,13 +7062,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 59,
-    "book_page": 53
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -7932,11 +7112,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 59,
-    "book_page": 53
-   },
    "layout": "inline",
    "needs_review": true,
    "choice_layout": "table",
@@ -7985,13 +7160,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 60,
-    "book_page": 54
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.4-Q5",
@@ -8037,13 +7207,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 60,
-    "book_page": 54
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Speed of ship",
@@ -8090,13 +7255,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 61,
-    "book_page": 55
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -8141,13 +7301,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 61,
-    "book_page": 55
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.4-Q8",
@@ -8183,11 +7338,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 62,
-    "book_page": 56
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -8231,13 +7381,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 62,
-    "book_page": 56
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -8297,13 +7442,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 62,
-    "book_page": 56
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.5-Q2",
@@ -8339,13 +7479,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 62,
-    "book_page": 56
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5"
    ]
@@ -8410,13 +7545,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 63,
-    "book_page": 57
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U3-3.5-Q4",
@@ -8458,13 +7588,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 63,
-    "book_page": 57
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5",
     "2.7"
@@ -8514,13 +7639,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 64,
-    "book_page": 58
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Work",
@@ -8585,11 +7705,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 64,
-    "book_page": 58
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -8637,13 +7752,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 65,
-    "book_page": 59
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "$P_{\\text{pull}}$",
@@ -8688,11 +7798,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 65,
-    "book_page": 59
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -8736,13 +7841,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 65,
-    "book_page": 59
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.1-Q1",
@@ -8778,13 +7878,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 66,
-    "book_page": 60
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "1.1"
    ]
@@ -8823,13 +7918,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 66,
-    "book_page": 60
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.1-Q3",
@@ -8865,13 +7955,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 66,
-    "book_page": 60
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.1-Q4",
@@ -8907,11 +7992,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 66,
-    "book_page": 60
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -8958,13 +8038,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 66,
-    "book_page": 60
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.1"
    ]
@@ -9003,13 +8078,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 67,
-    "book_page": 61
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.1-Q7",
@@ -9045,13 +8115,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 67,
-    "book_page": 61
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.1-Q8",
@@ -9113,13 +8178,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 67,
-    "book_page": 61
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "4.2"
    ]
@@ -9158,13 +8218,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 68,
-    "book_page": 62
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.2-Q1",
@@ -9200,11 +8255,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 68,
-    "book_page": 62
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -9251,13 +8301,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 68,
-    "book_page": 62
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.2-Q3",
@@ -9307,13 +8352,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 69,
-    "book_page": 63
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Maximum of $F_h$",
@@ -9368,13 +8408,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 69,
-    "book_page": 63
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Work",
@@ -9415,11 +8450,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 70,
-    "book_page": 64
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -9466,13 +8496,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 70,
-    "book_page": 64
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.2-Q7",
@@ -9508,13 +8533,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 70,
-    "book_page": 64
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.2-Q8",
@@ -9556,13 +8576,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 71,
-    "book_page": 65
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.5",
     "4.1"
@@ -9608,13 +8623,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 71,
-    "book_page": 65
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q1",
@@ -9650,13 +8660,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 71,
-    "book_page": 65
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q2",
@@ -9702,11 +8707,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 72,
-    "book_page": 66
-   },
    "layout": "inline",
    "needs_review": true,
    "choice_layout": "table",
@@ -9755,13 +8755,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 72,
-    "book_page": 66
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q4",
@@ -9803,13 +8798,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 73,
-    "book_page": 67
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "4.2"
    ]
@@ -9848,11 +8838,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 73,
-    "book_page": 67
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -9899,13 +8884,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 73,
-    "book_page": 67
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q7",
@@ -9947,13 +8927,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 74,
-    "book_page": 68
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q8",
@@ -9995,13 +8970,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 74,
-    "book_page": 68
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.3-Q9",
@@ -10041,13 +9011,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 75,
-    "book_page": 69
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "$v_x$",
@@ -10097,13 +9062,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 75,
-    "book_page": 69
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.4-Q2",
@@ -10139,13 +9099,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 75,
-    "book_page": 69
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.4-Q3",
@@ -10187,13 +9142,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 76,
-    "book_page": 70
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.3",
     "3.4"
@@ -10239,13 +9189,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 76,
-    "book_page": 70
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.4-Q5",
@@ -10281,13 +9226,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 76,
-    "book_page": 70
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.1"
    ]
@@ -10326,13 +9266,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 77,
-    "book_page": 71
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.4-Q7",
@@ -10389,13 +9324,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 77,
-    "book_page": 71
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U4-4.4-Q8",
@@ -10431,13 +9361,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 77,
-    "book_page": 71
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "4.1"
    ]
@@ -10497,13 +9422,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 78,
-    "book_page": 72
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q1",
@@ -10539,13 +9459,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 79,
-    "book_page": 73
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q2",
@@ -10581,13 +9496,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 79,
-    "book_page": 73
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q3",
@@ -10623,13 +9533,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 79,
-    "book_page": 73
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q4",
@@ -10665,13 +9570,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 79,
-    "book_page": 73
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q5",
@@ -10707,13 +9607,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 79,
-    "book_page": 73
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.2"
    ]
@@ -10752,11 +9647,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 80,
-    "book_page": 74
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -10804,13 +9694,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 80,
-    "book_page": 74
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Angular displacement",
@@ -10854,13 +9739,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 80,
-    "book_page": 74
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.1-Q9",
@@ -10896,13 +9776,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 80,
-    "book_page": 74
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.2-Q1",
@@ -10938,13 +9813,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 80,
-    "book_page": 74
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.2-Q2",
@@ -10980,13 +9850,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 81,
-    "book_page": 75
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.1"
    ]
@@ -11025,11 +9890,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 81,
-    "book_page": 75
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -11073,13 +9933,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 81,
-    "book_page": 75
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.2-Q5",
@@ -11115,13 +9970,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 81,
-    "book_page": 75
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.2-Q6",
@@ -11157,13 +10007,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 82,
-    "book_page": 76
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.1"
    ]
@@ -11208,13 +10053,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 82,
-    "book_page": 76
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.2-Q8",
@@ -11260,13 +10100,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 82,
-    "book_page": 76
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Angular speed",
@@ -11313,13 +10148,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 83,
-    "book_page": 77
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.1"
    ]
@@ -11364,13 +10194,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 83,
-    "book_page": 77
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.6"
    ]
@@ -11415,13 +10240,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 83,
-    "book_page": 77
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q3",
@@ -11463,13 +10283,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 84,
-    "book_page": 78
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q4",
@@ -11511,13 +10326,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 84,
-    "book_page": 78
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.6"
    ]
@@ -11562,13 +10372,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 85,
-    "book_page": 79
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q6",
@@ -11610,13 +10415,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 85,
-    "book_page": 79
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q7",
@@ -11658,13 +10458,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 86,
-    "book_page": 80
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q8",
@@ -11706,13 +10501,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 86,
-    "book_page": 80
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.3-Q9",
@@ -11754,13 +10544,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 87,
-    "book_page": 81
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.6"
    ]
@@ -11799,11 +10584,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 87,
-    "book_page": 81
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -11847,13 +10627,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 87,
-    "book_page": 81
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.4-Q3",
@@ -11895,13 +10670,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 88,
-    "book_page": 82
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.4-Q4",
@@ -11943,13 +10713,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 88,
-    "book_page": 82
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -11994,13 +10759,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 88,
-    "book_page": 82
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12045,13 +10805,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 89,
-    "book_page": 83
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.4-Q7",
@@ -12093,13 +10848,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 89,
-    "book_page": 83
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.4-Q8",
@@ -12141,13 +10891,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 90,
-    "book_page": 84
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.4-Q9",
@@ -12189,13 +10934,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 90,
-    "book_page": 84
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.5-Q1",
@@ -12237,13 +10977,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 91,
-    "book_page": 85
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12288,13 +11023,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 91,
-    "book_page": 85
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12333,13 +11063,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 92,
-    "book_page": 86
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.5-Q4",
@@ -12381,13 +11106,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 92,
-    "book_page": 86
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3",
     "5.4"
@@ -12433,13 +11153,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 92,
-    "book_page": 86
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.5-Q6",
@@ -12501,13 +11216,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 93,
-    "book_page": 87
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.5-Q7",
@@ -12549,13 +11259,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 93,
-    "book_page": 87
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.5-Q8",
@@ -12597,13 +11302,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 94,
-    "book_page": 88
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12648,13 +11348,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 94,
-    "book_page": 88
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12699,13 +11394,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 95,
-    "book_page": 89
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.6-Q2",
@@ -12747,13 +11437,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 95,
-    "book_page": 89
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.6-Q3",
@@ -12795,11 +11480,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 95,
-    "book_page": 89
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -12843,13 +11523,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 96,
-    "book_page": 90
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -12894,13 +11569,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 96,
-    "book_page": 90
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3",
     "5.4"
@@ -12946,13 +11616,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 97,
-    "book_page": 91
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U5-5.6-Q7",
@@ -12994,13 +11659,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 97,
-    "book_page": 91
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.2"
    ]
@@ -13045,13 +11705,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 98,
-    "book_page": 92
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -13096,13 +11751,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 98,
-    "book_page": 92
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.1-Q1",
@@ -13138,13 +11788,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 99,
-    "book_page": 93
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.1-Q2",
@@ -13180,11 +11825,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 99,
-    "book_page": 93
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -13228,13 +11868,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 99,
-    "book_page": 93
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.1-Q4",
@@ -13270,11 +11905,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 100,
-    "book_page": 94
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -13322,13 +11952,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 100,
-    "book_page": 94
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4",
     "6.2"
@@ -13368,13 +11993,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 100,
-    "book_page": 94
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.1-Q7",
@@ -13410,11 +12030,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 101,
-    "book_page": 95
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -13461,13 +12076,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 101,
-    "book_page": 95
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "6.5"
    ]
@@ -13512,13 +12122,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 102,
-    "book_page": 96
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.2-Q1",
@@ -13554,13 +12159,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 102,
-    "book_page": 96
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.1"
    ]
@@ -13599,13 +12199,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 102,
-    "book_page": 96
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.2-Q3",
@@ -13647,13 +12242,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 103,
-    "book_page": 97
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -13698,13 +12288,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 103,
-    "book_page": 97
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.2-Q5",
@@ -13740,13 +12325,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 103,
-    "book_page": 97
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -13791,11 +12371,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 104,
-    "book_page": 98
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -13839,13 +12414,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 104,
-    "book_page": 98
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.2-Q8",
@@ -13881,13 +12451,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 105,
-    "book_page": 99
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.1"
    ]
@@ -13932,13 +12497,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 105,
-    "book_page": 99
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q1",
@@ -13974,13 +12534,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 105,
-    "book_page": 99
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q2",
@@ -14022,13 +12577,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 106,
-    "book_page": 100
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "6.4"
    ]
@@ -14073,13 +12623,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 106,
-    "book_page": 100
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q4",
@@ -14121,13 +12666,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 107,
-    "book_page": 101
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q5",
@@ -14169,13 +12709,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 107,
-    "book_page": 101
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -14220,13 +12755,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 108,
-    "book_page": 102
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q7",
@@ -14268,13 +12798,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 108,
-    "book_page": 102
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -14319,13 +12844,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 109,
-    "book_page": 103
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.3-Q9",
@@ -14367,13 +12887,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 109,
-    "book_page": 103
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.4-Q1",
@@ -14415,13 +12930,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 110,
-    "book_page": 104
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.4-Q2",
@@ -14463,13 +12973,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 110,
-    "book_page": 104
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -14514,13 +13019,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 111,
-    "book_page": 105
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.4-Q4",
@@ -14562,13 +13062,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 111,
-    "book_page": 105
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "6.5"
    ]
@@ -14613,13 +13108,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 112,
-    "book_page": 106
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "6.3"
    ]
@@ -14664,13 +13154,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 112,
-    "book_page": 106
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.4-Q7",
@@ -14712,13 +13197,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 113,
-    "book_page": 107
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.4-Q8",
@@ -14760,13 +13240,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 113,
-    "book_page": 107
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.3"
    ]
@@ -14811,13 +13286,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 114,
-    "book_page": 108
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.5-Q1",
@@ -14859,13 +13329,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 114,
-    "book_page": 108
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -14904,13 +13369,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 114,
-    "book_page": 108
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.5-Q3",
@@ -14952,11 +13412,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 115,
-    "book_page": 109
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -15004,13 +13459,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 115,
-    "book_page": 109
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -15049,13 +13499,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 115,
-    "book_page": 109
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.5-Q6",
@@ -15097,13 +13542,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 116,
-    "book_page": 110
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.5-Q7",
@@ -15145,13 +13585,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 116,
-    "book_page": 110
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.5-Q8",
@@ -15187,13 +13622,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 116,
-    "book_page": 110
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.7"
    ]
@@ -15232,13 +13662,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 117,
-    "book_page": 111
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U6-6.6-Q1",
@@ -15280,13 +13705,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 117,
-    "book_page": 111
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -15325,13 +13745,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 117,
-    "book_page": 111
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6",
     "6.4"
@@ -15377,11 +13792,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 118,
-    "book_page": 112
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -15429,13 +13839,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 118,
-    "book_page": 112
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -15474,13 +13879,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 118,
-    "book_page": 112
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -15519,13 +13919,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 118,
-    "book_page": 112
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -15570,13 +13965,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 119,
-    "book_page": 113
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6",
     "6.4"
@@ -15622,13 +14012,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 119,
-    "book_page": 113
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6",
     "6.4"
@@ -15674,13 +14059,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 120,
-    "book_page": 114
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6",
     "6.4"
@@ -15726,13 +14106,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 121,
-    "book_page": 115
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -15777,13 +14152,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 121,
-    "book_page": 115
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -15822,13 +14192,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 121,
-    "book_page": 115
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -15877,11 +14242,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 122,
-    "book_page": 116
-   },
    "layout": "inline",
    "needs_review": true,
    "choice_layout": "table",
@@ -15930,13 +14290,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 122,
-    "book_page": 116
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -15981,11 +14336,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 123,
-    "book_page": 117
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -16029,13 +14379,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 123,
-    "book_page": 117
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8",
     "3.4"
@@ -16075,11 +14420,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 124,
-    "book_page": 118
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -16123,13 +14463,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 124,
-    "book_page": 118
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.4",
     "2.8"
@@ -16169,13 +14504,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 125,
-    "book_page": 119
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.2-Q2",
@@ -16211,13 +14541,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 125,
-    "book_page": 119
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16256,13 +14581,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 125,
-    "book_page": 119
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16301,13 +14621,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 125,
-    "book_page": 119
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.2-Q5",
@@ -16369,13 +14684,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 126,
-    "book_page": 120
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16420,13 +14730,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 126,
-    "book_page": 120
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.2-Q7",
@@ -16468,13 +14773,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 127,
-    "book_page": 121
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16519,13 +14819,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 127,
-    "book_page": 121
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.2-Q9",
@@ -16567,13 +14862,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 128,
-    "book_page": 122
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16616,11 +14906,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 128,
-    "book_page": 122
-   },
    "layout": "inline",
    "needs_review": true,
    "choice_layout": "table",
@@ -16672,13 +14957,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 128,
-    "book_page": 122
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.3-Q3",
@@ -16714,13 +14994,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 129,
-    "book_page": 123
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16759,11 +15034,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 129,
-    "book_page": 123
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -16810,13 +15080,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 129,
-    "book_page": 123
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.3-Q6",
@@ -16852,13 +15117,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 130,
-    "book_page": 124
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -16903,13 +15163,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 130,
-    "book_page": 124
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.3-Q8",
@@ -16951,13 +15206,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 130,
-    "book_page": 124
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.3-Q9",
@@ -16993,13 +15243,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 131,
-    "book_page": 125
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.8"
    ]
@@ -17048,13 +15293,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 131,
-    "book_page": 125
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Amplitude",
@@ -17098,13 +15338,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 132,
-    "book_page": 126
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.4"
    ]
@@ -17143,13 +15378,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 132,
-    "book_page": 126
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.4"
    ]
@@ -17192,13 +15422,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 132,
-    "book_page": 126
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "choice_layout": "table",
    "table_headers": [
     "Total Mechanical Energy",
@@ -17242,13 +15467,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 132,
-    "book_page": 126
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.4-Q6",
@@ -17290,13 +15510,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 133,
-    "book_page": 127
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.4-Q7",
@@ -17338,13 +15553,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 133,
-    "book_page": 127
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "3.4"
    ]
@@ -17389,13 +15599,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 134,
-    "book_page": 128
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "2.6"
    ]
@@ -17434,11 +15639,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 134,
-    "book_page": 128
-   },
    "layout": "inline",
    "needs_review": true
   },
@@ -17476,13 +15676,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 134,
-    "book_page": 128
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.5-Q2",
@@ -17518,13 +15713,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 134,
-    "book_page": 128
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -17569,13 +15759,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 135,
-    "book_page": 129
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -17620,13 +15805,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 135,
-    "book_page": 129
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -17671,13 +15851,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 136,
-    "book_page": 130
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]
@@ -17722,11 +15897,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 136,
-    "book_page": 130
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -17774,11 +15944,6 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 137,
-    "book_page": 131
-   },
    "layout": "inline",
    "needs_review": true,
    "additional_topics": [
@@ -17826,13 +15991,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 137,
-    "book_page": 131
-   },
    "layout": "inline",
-   "needs_review": false
+   "needs_review": true
   },
   {
    "id": "EB3-U7-7.5-Q9",
@@ -17874,13 +16034,8 @@
    "tags": [
     "Topic Questions"
    ],
-   "source": {
-    "doc": "EB3",
-    "pdf_page": 138,
-    "book_page": 132
-   },
    "layout": "inline",
-   "needs_review": false,
+   "needs_review": true,
    "additional_topics": [
     "5.4"
    ]

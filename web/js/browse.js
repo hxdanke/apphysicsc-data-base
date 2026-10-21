@@ -216,8 +216,6 @@ function renderDetail(q) {
     meta.push(`<span class="tag tag-extra">+${extra}</span>`);
   }
   if (q.qtype) meta.push(`<span class="tag">${q.qtype}</span>`);
-  if (q.source && q.source.doc) meta.push(`<span class="tag">${q.source.doc}` +
-    (q.source.book_page ? ` p.${q.source.book_page}` : "") + `</span>`);
 
   els.detail.innerHTML = `
     <div class="qpaper">

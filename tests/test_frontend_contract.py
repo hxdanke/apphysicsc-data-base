@@ -13,6 +13,7 @@ exactly that, which is why the sheet re-asserts ``[hidden]`` with ``!important``
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 import unittest
@@ -28,6 +29,9 @@ CSS = re.sub(r"/\*.*?\*/", "", CSS_SOURCE, flags=re.DOTALL)
 COURSES_JS = (ROOT / "web" / "js" / "courses.js").read_text(encoding="utf-8")
 APP_JS = (ROOT / "web" / "js" / "app.js").read_text(encoding="utf-8")
 EDIT_JS = (ROOT / "web" / "js" / "edit.js").read_text(encoding="utf-8")
+BROWSE_JS = (ROOT / "web" / "js" / "browse.js").read_text(encoding="utf-8")
+MAIN_PY = (ROOT / "server" / "main.py").read_text(encoding="utf-8")
+BANK_PY = (ROOT / "server" / "bank.py").read_text(encoding="utf-8")
 
 
 def css_rule(selector: str) -> str:
@@ -73,6 +77,35 @@ class CourseSwitcherTest(unittest.TestCase):
 
     def test_the_outside_click_handler_is_installed(self) -> None:
         self.assertIn("courses.installOutsideClick()", APP_JS)
+
+
+class SourceProvenanceTest(unittest.TestCase):
+    """Questions do not advertise which file they were imported from.
+
+    The card used to carry an "EB3 p.1" badge.  It told a teacher nothing useful
+    and it is not wanted back, so the field is gone from the data and from every
+    code path that would have recorded it.
+    """
+
+    def test_no_question_in_the_bank_has_a_source_field(self) -> None:
+        for name in ("data/bank.json", "data/banks/apc-em/bank.json",
+                     "data/banks/ap1/bank.json", "data/banks/ap2/bank.json"):
+            bank = json.loads((ROOT / name).read_text(encoding="utf-8"))
+            strays = [q["id"] for q in bank["questions"] if "source" in q]
+            self.assertEqual(strays, [], f"{name} still carries a source tag")
+
+    def test_the_card_does_not_render_a_source_badge(self) -> None:
+        self.assertNotIn("q.source", BROWSE_JS)
+        self.assertNotIn("book_page", BROWSE_JS)
+
+    def test_new_questions_are_not_stamped_with_a_source(self) -> None:
+        self.assertNotIn('item["source"]', MAIN_PY)
+        self.assertNotIn('"source": {}', MAIN_PY)
+        self.assertNotIn('"source": {}', BANK_PY)
+
+    def test_upsert_strips_any_source_that_reaches_it(self) -> None:
+        # The extractor still tracks pages for its own use; the bank must not.
+        self.assertIn('q.pop("source", None)', BANK_PY)
 
 
 class WholeEditorTest(unittest.TestCase):

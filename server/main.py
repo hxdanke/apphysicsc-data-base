@@ -291,7 +291,7 @@ def preview_question(body: PreviewBody):
         "answer": body.answer or "",
         "solution": body.solution or "",
         "images": [], "difficulty": "", "tags": [],
-        "source": {}, "layout": "inline", "needs_review": False,
+        "layout": "inline", "needs_review": False,
     }
     # An empty editor is not a syntax error.  TeX emits no page at all for an
     # empty body and the engine reports that as a failure, so check first --
@@ -504,8 +504,7 @@ def author_question(body: AuthorBody, course: str = ""):
             raise HTTPException(400, f"unknown topic '{body.topic}'")
         qid = bank_mod.next_id(bank, unit_id, body.topic, course_id)
         item = bank_mod.blank_question(qid)
-        item["source"] = {"doc": "AUTHORED"}
-
+    
     _apply_topics(item, body.topic, body.additional_topics, body.unit, course_id)
 
     blocks = blocks_mod.normalise_blocks(body.stem_blocks)
@@ -693,8 +692,8 @@ def ingest_polish(job: str, limit: Optional[int] = None):
 
 
 @app.post("/api/ingest/{job}/commit")
-def ingest_commit(job: str, replace_source: bool = True, course: str = ""):
-    res = ingest_mod.commit(job, replace_source, course_id=course or None)
+def ingest_commit(job: str, course: str = ""):
+    res = ingest_mod.commit(job, course_id=course or None)
     if not res.get("ok"):
         return JSONResponse(res, status_code=400)
     return res

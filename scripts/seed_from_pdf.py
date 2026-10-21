@@ -58,12 +58,6 @@ def main() -> int:
             print(q["stem"][:400])
         return 0
 
-    if args.replace:
-        bank = bank_mod.load_bank()
-        bank["questions"] = [q for q in bank["questions"]
-                             if (q.get("source") or {}).get("doc") != doc_id]
-        bank_mod.save_bank(bank)
-
     bank = bank_mod.load_bank()
     written = bank_mod.upsert(bank, questions)
     tax = bank_mod.load_taxonomy()

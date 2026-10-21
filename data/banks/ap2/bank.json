@@ -1,57 +1,54 @@
 {
-  "version": 1,
-  "course": "AP Physics 2",
-  "questions": [
+ "version": 1,
+ "course": "AP Physics 2",
+ "questions": [
+  {
+   "id": "AP2-U2-2.4-Q1",
+   "unit": 2,
+   "unit_title": "Thermodynamics",
+   "topic": "2.4",
+   "topic_title": "Thermodynamic Processes",
+   "additional_topics": [
+    "2.3"
+   ],
+   "number": 1,
+   "qtype": "mcq",
+   "stem": "An ideal gas expands from $2.0\\ \\mathrm{m}^{3}$ to $5.0\\ \\mathrm{m}^{3}$ at a constant pressure of $4.0 \\times 10^{4}\\ \\mathrm{Pa}$. How much work is done by the gas?",
+   "choices": [
     {
-      "id": "AP2-U2-2.4-Q1",
-      "unit": 2,
-      "unit_title": "Thermodynamics",
-      "topic": "2.4",
-      "topic_title": "Thermodynamic Processes",
-      "additional_topics": [
-        "2.3"
-      ],
-      "number": 1,
-      "qtype": "mcq",
-      "stem": "An ideal gas expands from $2.0\\ \\mathrm{m}^{3}$ to $5.0\\ \\mathrm{m}^{3}$ at a constant pressure of $4.0 \\times 10^{4}\\ \\mathrm{Pa}$. How much work is done by the gas?",
-      "choices": [
-        {
-          "label": "A",
-          "text": "$8.0 \\times 10^{4}\\ \\mathrm{J}$"
-        },
-        {
-          "label": "B",
-          "text": "$1.2 \\times 10^{5}\\ \\mathrm{J}$"
-        },
-        {
-          "label": "C",
-          "text": "$2.0 \\times 10^{5}\\ \\mathrm{J}$"
-        },
-        {
-          "label": "D",
-          "text": "$2.8 \\times 10^{5}\\ \\mathrm{J}$"
-        }
-      ],
-      "answer": "B",
-      "solution": "At constant pressure $W = P\\Delta V = (4.0 \\times 10^{4})(5.0 - 2.0) = 1.2 \\times 10^{5}\\ \\mathrm{J}$.",
-      "stem_blocks": [
-        {
-          "type": "text",
-          "text": "An ideal gas expands from $2.0\\ \\mathrm{m}^{3}$ to $5.0\\ \\mathrm{m}^{3}$ at a constant pressure of $4.0 \\times 10^{4}\\ \\mathrm{Pa}$. How much work is done by the gas?"
-        }
-      ],
-      "difficulty": "medium",
-      "tags": [
-        "thermo",
-        "work",
-        "sample"
-      ],
-      "source": {
-        "doc": "SAMPLE"
-      },
-      "images": [],
-      "layout": "inline",
-      "needs_review": false
+     "label": "A",
+     "text": "$8.0 \\times 10^{4}\\ \\mathrm{J}$"
+    },
+    {
+     "label": "B",
+     "text": "$1.2 \\times 10^{5}\\ \\mathrm{J}$"
+    },
+    {
+     "label": "C",
+     "text": "$2.0 \\times 10^{5}\\ \\mathrm{J}$"
+    },
+    {
+     "label": "D",
+     "text": "$2.8 \\times 10^{5}\\ \\mathrm{J}$"
     }
-  ]
+   ],
+   "answer": "B",
+   "solution": "At constant pressure $W = P\\Delta V = (4.0 \\times 10^{4})(5.0 - 2.0) = 1.2 \\times 10^{5}\\ \\mathrm{J}$.",
+   "stem_blocks": [
+    {
+     "type": "text",
+     "text": "An ideal gas expands from $2.0\\ \\mathrm{m}^{3}$ to $5.0\\ \\mathrm{m}^{3}$ at a constant pressure of $4.0 \\times 10^{4}\\ \\mathrm{Pa}$. How much work is done by the gas?"
+    }
+   ],
+   "difficulty": "medium",
+   "tags": [
+    "thermo",
+    "work",
+    "sample"
+   ],
+   "images": [],
+   "layout": "inline",
+   "needs_review": false
+  }
+ ]
 }
