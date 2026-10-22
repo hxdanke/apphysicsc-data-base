@@ -27,7 +27,6 @@ async function onCourseChanged(course) {
   author.resetForm();
   await browse.refreshTree();
   await browse.reload();
-  await updateBadges();
   document.querySelector('.tab[data-view="browse"]')?.click();
 }
 
@@ -68,33 +67,11 @@ async function boot() {
     await browse.refreshTree();
     await browse.reload();
     sync();
-    updateBadges();
   });
 
   await browse.reload();
   sync();
-  await updateBadges();
   return refreshTreeFn;
-}
-
-async function updateBadges() {
-  try {
-    const health = await api.health();
-    const eng = document.getElementById("engine-badge");
-    if (health.engine) {
-      eng.textContent = "TeX: " + health.engine;
-      eng.className = "badge";
-    } else {
-      eng.textContent = "TeX: none (LaTeX export only)";
-      eng.className = "badge badge-warn";
-    }
-    const b = health.bank || {};
-    document.getElementById("bank-badge").textContent =
-      `${b.total} questions · ${b.images} figures · ${b.needs_review} to review`;
-    document.getElementById("bank-badge").className = "badge badge-soft";
-  } catch (err) {
-    document.getElementById("bank-badge").textContent = "offline";
-  }
 }
 
 boot();

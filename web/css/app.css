@@ -61,14 +61,35 @@ html, body {
 .tab:hover { background: var(--line-soft); color: var(--text); }
 .tab.active { background: var(--accent-soft); color: var(--accent); }
 
-.topbar-right { margin-left: auto; display: flex; gap: 8px; }
-.badge {
-  font-size: 11.5px; padding: 4px 9px; border-radius: 999px;
-  background: var(--accent-soft); color: var(--accent); font-weight: 600;
-  white-space: nowrap;
+/* Nothing in the bar wraps: a tab label dropping onto a second line (or the row
+   itself) is what made it look crowded.  Narrow windows tighten the tabs
+   instead, and the groups that must not shrink are pinned. */
+.topbar { flex-wrap: nowrap; }
+.tabs { flex-wrap: nowrap; min-width: 0; }
+.tab { white-space: nowrap; }
+.brand { flex: 0 0 auto; }
+.brand-text strong, .brand-text span { white-space: nowrap; }
+.course-button { white-space: nowrap; }
+.topbar-right { margin-left: auto; display: flex; gap: 8px; flex: 0 0 auto; white-space: nowrap; }
+
+@media (max-width: 1240px) {
+  .topbar { gap: 12px; padding: 0 12px; }
+  .tabs { gap: 2px; margin-left: 4px; }
+  .tab { padding: 7px 10px; font-size: 12.5px; }
 }
-.badge-soft { background: var(--line-soft); color: var(--muted); }
-.badge-warn { background: #fdf3e3; color: var(--warn); }
+@media (max-width: 1040px) {
+  .topbar { gap: 8px; }
+  .tab { padding: 6px 8px; font-size: 12px; }
+  .brand { gap: 7px; }
+  .brand-mark { width: 30px; height: 30px; }
+}
+/* Last resort on a very narrow window: the tabs scroll sideways rather than
+   squeezing until their labels break. */
+@media (max-width: 900px) {
+  .tabs { overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { flex: 0 0 auto; }
+}
 
 /* ---------------- layout ---------------- */
 .layout { height: calc(100vh - 56px); }
