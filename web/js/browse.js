@@ -1,5 +1,5 @@
 import { api } from "./api.js";
-import { renderLatex, plainPreview } from "./render.js";
+import { renderLatex, plainPreview, stemTableFor } from "./render.js";
 import { openWholeEditor, openMathPopup } from "./edit.js";
 import * as courses from "./courses.js";
 import * as author from "./author.js";
@@ -223,7 +223,7 @@ function renderDetail(q) {
         <h3>Question ${q.number || ""}</h3>
         <span class="muted">${q.id}</span>
       </div>
-      <div class="qstem">${renderLatex(q.stem, "stem")}</div>
+      <div class="qstem">${stemTableFor(q.stem_table, "before")}${renderLatex(q.stem, "stem")}${stemTableFor(q.stem_table, "after")}</div>
       ${choices}
       ${q.answer ? `<div class="answer-box"><strong>Answer:</strong> ${renderLatex(q.answer, "answer")}</div>` : ""}
       ${q.solution ? `<div class="solution-box"><strong>Solution.</strong> ${renderLatex(q.solution, "solution")}</div>` : ""}

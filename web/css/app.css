@@ -637,3 +637,21 @@ textarea.input { resize: vertical; }
   border-style: solid; border-color: var(--accent); color: var(--accent);
   background: var(--accent-soft);
 }
+
+/* ==================================================================================
+   stem data table (preview)
+   ================================================================================== */
+
+.q-stem-table {
+  border-collapse: collapse; margin: 4px auto 10px; font-size: 13px;
+}
+.q-stem-table th,
+.q-stem-table td {
+  border: 1px solid var(--line); padding: 4px 12px; text-align: center;
+  vertical-align: middle;
+}
+.q-stem-table th { background: var(--panel-2); font-weight: 600; }
+.choice-extra {
+  margin-left: 14px; color: var(--muted);
+}
+.choice-extra::before { content: "· "; }

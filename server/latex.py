@@ -814,10 +814,12 @@ def build_document(questions: list, title: str = "AP Physics C: Mechanics Practi
             if list_open:
                 out.append("\\end{enumerate}\n")
                 list_open = False
+            # Both sit centred on the text measure, as the book sets them; the
+            # number still opens the first line of the text below.
             if m:
-                out.append("\\noindent\\hspace*{1cm}" + m.group(1).strip() + "\n\n")
+                out.append("\\begin{center}" + m.group(1).strip() + "\\end{center}\n")
             if table_first:
-                out.append("\\noindent\\hspace*{1cm}" + stem_table_latex(spec) + "\n\n")
+                out.append(stem_table_latex(spec) + "\n")
             q2 = dict(q)
             q2["stem"] = stem[m.end():] if m else stem
             body = question_body(q2, show_answer, show_solution)

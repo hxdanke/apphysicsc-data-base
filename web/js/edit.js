@@ -9,7 +9,7 @@
  */
 
 import { api } from "./api.js";
-import { replaceMathRun, extractMathRuns, renderLatex } from "./render.js";
+import { replaceMathRun, extractMathRuns, renderLatex, stemTableFor } from "./render.js";
 
 const root = () => document.getElementById("edit-root");
 
@@ -112,14 +112,41 @@ function fieldOf(fieldKey) {
   return [fieldKey, -1];
 }
 
-/** The preview body for a parsed question, mirroring the Browse detail pane. */
-function previewHtml(parsed) {
-  const choices = (parsed.choices || []).map((c, i) =>
-    `<li><span class="choice-label">${escAttr(c.label || "")}</span>
-       <span>${renderLatex(c.text || "", "choice:" + i)}</span></li>`).join("");
+/**
+ * The textarea carries one line per option, so it only ever holds the first
+ * column.  A table-layout question keeps its remaining columns untouched rather
+ * than having them silently dropped on save.
+ */
+function keepExtraColumns(parsedChoices, original) {
+  const byLabel = new Map((original || []).map(c => [c.label, c]));
+  return (parsedChoices || []).map((choice) => {
+    const before = byLabel.get(choice.label);
+    if (!before) return choice;
+    const merged = { ...choice };
+    for (const key of ["text2", "text3", "text4"]) {
+      if (before[key] != null) merged[key] = before[key];
+    }
+    return merged;
+  });
+}
+
+/** The preview body for a parsed question, mirroring the Browse detail pane.
+ *  `spec` carries the stem table, which lives on the question rather than in the
+ *  editable text. */
+function previewHtml(parsed, spec) {
+  const choices = (parsed.choices || []).map((c, i) => {
+    // A table-layout option keeps its other columns; show them so the preview
+    // does not suggest they were lost.
+    const extra = ["text2", "text3", "text4"]
+      .filter(key => c[key])
+      .map(key => `<span class="choice-extra">${renderLatex(c[key], "choice:" + i)}</span>`)
+      .join("");
+    return `<li><span class="choice-label">${escAttr(c.label || "")}</span>
+       <span>${renderLatex(c.text || "", "choice:" + i)}</span>${extra}</li>`;
+  }).join("");
   return `
     <div class="qpaper">
-      <div class="qstem">${renderLatex(parsed.stem || "", "stem")}</div>
+      <div class="qstem">${stemTableFor(spec, "before")}${renderLatex(parsed.stem || "", "stem")}${stemTableFor(spec, "after")}</div>
       ${choices ? `<ul class="choices">${choices}</ul>` : ""}
       ${parsed.answer
         ? `<div class="answer-box"><strong>Answer:</strong>
@@ -195,6 +222,7 @@ export function openWholeEditor(q, onSaved) {
   /** Draw the preview straight away; blank it if the source cannot build. */
   function drawNow() {
     const parsed = parseWhole(area.value);
+    parsed.choices = keepExtraColumns(parsed.choices, q.choices);
     const gate = clientGate(parsed);
     if (!gate.ok) {
       preview.innerHTML = "";
@@ -203,7 +231,7 @@ export function openWholeEditor(q, onSaved) {
       compileOk = false;
       return;
     }
-    preview.innerHTML = previewHtml(parsed);
+    preview.innerHTML = previewHtml(parsed, q.stem_table);
     preview.classList.remove("blank");
     if (compileOk) setStatus("");
     return parsed;
@@ -251,6 +279,7 @@ export function openWholeEditor(q, onSaved) {
 
   async function doSave() {
     const parsed = parseWhole(area.value);
+    parsed.choices = keepExtraColumns(parsed.choices, q.choices);
     // No validation step: the preview already showed whether this builds.
     try {
       await api.patch(id, {

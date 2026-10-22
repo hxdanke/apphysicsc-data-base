@@ -81,5 +81,28 @@ class StemTablePlacementTest(unittest.TestCase):
         self.assertNotIn("\\begin{tabular}", plain)
 
 
+class StemFigurePlacementTest(unittest.TestCase):
+    """A figure that opens a question is centred, like the book sets it."""
+
+    def test_a_leading_figure_is_centred(self) -> None:
+        q = question(stem="\\includegraphics[width=0.5\\linewidth]{media/x.png}\n\nText.")
+        tex = latex.build_document([q])
+        self.assertIn("\\begin{center}\\includegraphics", tex)
+        self.assertNotIn("\\hspace*{1cm}\\includegraphics", tex)
+
+    def test_a_figure_and_a_table_are_both_centred(self) -> None:
+        q = question(
+            stem="\\includegraphics[width=0.5\\linewidth]{media/x.png}\n\nText.",
+            stem_table=TABLE,
+        )
+        tex = latex.build_document([q])
+        # figure, then table, then the numbered text
+        fig_at = tex.index("\\begin{center}\\includegraphics")
+        tbl_at = tex.index("\\begin{tabular}")
+        item_at = tex.index("\\item")
+        self.assertLess(fig_at, tbl_at)
+        self.assertLess(tbl_at, item_at)
+
+
 if __name__ == "__main__":
     unittest.main()

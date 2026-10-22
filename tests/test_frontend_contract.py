@@ -32,6 +32,7 @@ EDIT_JS = (ROOT / "web" / "js" / "edit.js").read_text(encoding="utf-8")
 BROWSE_JS = (ROOT / "web" / "js" / "browse.js").read_text(encoding="utf-8")
 MAIN_PY = (ROOT / "server" / "main.py").read_text(encoding="utf-8")
 BANK_PY = (ROOT / "server" / "bank.py").read_text(encoding="utf-8")
+RENDER_JS = (ROOT / "web" / "js" / "render.js").read_text(encoding="utf-8")
 
 
 def css_rule(selector: str) -> str:
@@ -106,6 +107,41 @@ class SourceProvenanceTest(unittest.TestCase):
     def test_upsert_strips_any_source_that_reaches_it(self) -> None:
         # The extractor still tracks pages for its own use; the bank must not.
         self.assertIn('q.pop("source", None)', BANK_PY)
+
+
+class StemTablePreviewTest(unittest.TestCase):
+    """The preview has to draw a stem table, not just the PDF."""
+
+    def test_the_renderer_exposes_a_stem_table(self) -> None:
+        self.assertIn("export function renderStemTable", RENDER_JS)
+        self.assertIn("export function stemTableFor", RENDER_JS)
+
+    def test_both_previews_draw_it(self) -> None:
+        self.assertIn('stemTableFor(q.stem_table, "before")', BROWSE_JS)
+        self.assertIn('stemTableFor(q.stem_table, "after")', BROWSE_JS)
+        self.assertIn("stemTableFor(spec,", EDIT_JS)
+
+    def test_it_respects_the_printed_side(self) -> None:
+        self.assertIn('(spec.position || "before") === when', RENDER_JS)
+
+
+class WholeEditorPreservesColumnsTest(unittest.TestCase):
+    """The editor shows one line per option, so it must not drop the other columns.
+
+    Saving through it used to wipe `text2`, silently turning a two-column option
+    table into a single column of duplicated-looking answers.
+    """
+
+    def test_extra_columns_are_merged_back_on_save(self) -> None:
+        self.assertIn("function keepExtraColumns", EDIT_JS)
+        self.assertIn("keepExtraColumns(parsed.choices, q.choices)", EDIT_JS)
+
+    def test_the_merge_covers_every_extra_column(self) -> None:
+        for key in ("text2", "text3", "text4"):
+            self.assertIn(f'"{key}"', EDIT_JS)
+
+    def test_the_preview_shows_the_extra_columns(self) -> None:
+        self.assertIn("choice-extra", EDIT_JS)
 
 
 class WholeEditorTest(unittest.TestCase):

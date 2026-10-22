@@ -113,8 +113,7 @@ export function replaceMathRun(src, idx, newBody) {
   return src.slice(0, r.start) + open + newBody + close + src.slice(r.end);
 }
 
-/** Render a TeX fragment: inline $...$, display, images, plain text. */
-export function renderLatex(src, fieldKey = "") {
+/** Render a TeX fragment: inline $...$, display, images, plain text. */export function renderLatex(src, fieldKey = "") {
   if (!src) return "";
   src = String(src);
 
@@ -182,4 +181,33 @@ export function plainPreview(q, max = 180) {
        .replace(/\s+/g, " ")
        .trim();
   return s.length > max ? s.slice(0, max) + "…" : s;
+}
+
+/**
+ * A stem data table: readings to reason from, as opposed to `choice_layout:
+ * "table"`, which lays out the options.  Cells go through the same renderer as
+ * everything else so the preview matches the printed paper, and the table is
+ * placed before or after the stem text as the book prints it.
+ */
+export function renderStemTable(spec) {
+  if (!spec) return "";
+  const headers = spec.headers || [];
+  const rows = spec.rows || [];
+  const ncol = Math.max(headers.length, ...rows.map(r => r.length), 0);
+  if (!ncol) return "";
+
+  const pad = (cells) => cells.concat(Array(Math.max(0, ncol - cells.length)).fill(""));
+  const head = headers.length
+    ? `<thead><tr>${pad(headers).map(h => `<th>${renderLatex(h)}</th>`).join("")}</tr></thead>`
+    : "";
+  const body = rows
+    .map(r => `<tr>${pad(r).map(c => `<td>${renderLatex(c)}</td>`).join("")}</tr>`)
+    .join("");
+  return `<table class="q-stem-table">${head}<tbody>${body}</tbody></table>`;
+}
+
+/** The table for one side of the stem, or nothing if it belongs on the other. */
+export function stemTableFor(spec, when) {
+  if (!spec) return "";
+  return (spec.position || "before") === when ? renderStemTable(spec) : "";
 }

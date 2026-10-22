@@ -8700,7 +8700,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.57\\linewidth]{media/u4_43_q2_1.png}\n\nBlocks A and B can move along a horizontal surface with negligible friction, as shown in the figure. The mass of Block A is three times the mass of Block B. In two separate experimental trials, the blocks are initially moving toward each other, each with a speed of $v_{0}$. In Trial $1,$ Block A comes to rest after the collision, while in Trial $2$ the blocks stick together. The table shows the speed of the center of mass of the two-block system after the collision in each trial, as well as the magnitude of the impulse exerted on Block B during each collision. Which of the following correctly compares these values?",
+   "stem": "\\includegraphics[width=0.57\\linewidth]{media/u4_43_q2_1.png}\n\nBlocks A and B can move along a horizontal surface with negligible friction, as shown in the figure. The mass of Block A is three times the mass of Block B. In two separate experimental trials, the blocks are initially moving toward each other, each with a speed of $v_{0}$. In Trial 1, Block A comes to rest after the collision, while in Trial 2 the blocks stick together. The table shows the speed of the center of mass of the two-block system after the collision in each trial, as well as the magnitude of the impulse exerted on Block B during each collision. Which of the following correctly compares these values?",
    "choices": [
     {
      "label": "A",
