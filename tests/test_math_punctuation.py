@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from server.latex import _scan_math  # noqa: E402
 from fix_math_punctuation import fix_text  # noqa: E402
 from fix_item_labels import fix_text as fix_labels  # noqa: E402
+from fix_plain_quantities import fix_text as plain_qty  # noqa: E402
 
 ENDING = re.compile(r"([.,;:!?])\s*$")
 BANKS = [ROOT / "data" / "bank.json"] + sorted(
@@ -142,3 +143,43 @@ class ItemLabelTest(unittest.TestCase):
                 for text in texts_of(q):
                     strays += pattern.findall(text)
         self.assertEqual(strays, [], "item label still set as maths")
+
+
+class PlainQuantityTest(unittest.TestCase):
+    """A number and a unit are not mathematics.
+
+    "3.0 m/s" has no subscript, no superscript and no algebra, so it belongs in
+    the prose.  A quantity that does have any of those keeps its maths.
+    """
+
+    def test_number_and_unit_become_text(self) -> None:
+        self.assertEqual(plain_qty("$4\\ \\mathrm{m/s}$"), "4 m/s")
+        self.assertEqual(plain_qty("$0.50\\ \\mathrm{m}$"), "0.50 m")
+
+    def test_a_number_with_its_unit_in_the_prose_becomes_text(self) -> None:
+        self.assertEqual(plain_qty("a force of $6$ N"), "a force of 6 N")
+
+    def test_a_superscript_keeps_its_maths(self) -> None:
+        src = "$9.8\\ \\mathrm{m/s}^{2}$"
+        self.assertEqual(plain_qty(src), src)
+
+    def test_an_algebraic_expression_keeps_its_maths(self) -> None:
+        src = "$A = 3.0\\ \\mathrm{m}$"
+        self.assertEqual(plain_qty(src), src)
+
+    def test_a_symbol_keeps_its_maths(self) -> None:
+        for src in ("$v_{0}$", "$30^{\\circ}$", "$\\frac{1}{2}I_{0}$"):
+            self.assertEqual(plain_qty(src), src)
+
+    def test_no_plain_quantity_is_left_in_maths(self) -> None:
+        pure = re.compile(r"^\s*[-+]?\d+(?:\.\d+)?\s*(?:\\\s+|\s+)?"
+                          r"(?:\\mathrm|\\text)\{[^}]*\}\s*$")
+        bare = re.compile(r"^\s*[-+]?\d+(?:\.\d+)?\s*$")
+        strays = []
+        for path in BANKS:
+            for q in json.loads(path.read_text(encoding="utf-8"))["questions"]:
+                for text in texts_of(q):
+                    for kind, body in _scan_math(text):
+                        if kind == "math" and (pure.match(body) or bare.match(body)):
+                            strays.append(body)
+        self.assertEqual(strays, [], "a plain quantity is still set as maths")

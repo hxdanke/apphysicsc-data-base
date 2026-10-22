@@ -54,12 +54,12 @@
    "choices": [
     {
      "label": "A",
-     "text": "$4\\ \\mathrm{m/s}$",
+     "text": "4 m/s",
      "text2": "$45^{\\circ}$ counterclockwise from the $+x$-direction"
     },
     {
      "label": "B",
-     "text": "$4\\ \\mathrm{m/s}$",
+     "text": "4 m/s",
      "text2": "$45^{\\circ}$ clockwise from the $+x$-direction"
     },
     {
@@ -329,19 +329,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$11.0\\ \\mathrm{m/s}$"
+     "text": "11.0 m/s"
     },
     {
      "label": "B",
-     "text": "$12.0\\ \\mathrm{m/s}$"
+     "text": "12.0 m/s"
     },
     {
      "label": "C",
-     "text": "$15.6\\ \\mathrm{m/s}$"
+     "text": "15.6 m/s"
     },
     {
      "label": "D",
-     "text": "$19.6\\ \\mathrm{m/s}$"
+     "text": "19.6 m/s"
     }
    ],
    "answer": "",
@@ -415,19 +415,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1\\ \\mathrm{m/s}$"
+     "text": "1 m/s"
     },
     {
      "label": "B",
-     "text": "$5\\ \\mathrm{m/s}$"
+     "text": "5 m/s"
     },
     {
      "label": "C",
-     "text": "$7\\ \\mathrm{m/s}$"
+     "text": "7 m/s"
     },
     {
      "label": "D",
-     "text": "$12\\ \\mathrm{m/s}$"
+     "text": "12 m/s"
     }
    ],
    "answer": "",
@@ -627,19 +627,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$21\\ \\mathrm{cm/s}$"
+     "text": "21 cm/s"
     },
     {
      "label": "B",
-     "text": "$31\\ \\mathrm{cm/s}$"
+     "text": "31 cm/s"
     },
     {
      "label": "C",
-     "text": "$84\\ \\mathrm{cm/s}$"
+     "text": "84 cm/s"
     },
     {
      "label": "D",
-     "text": "$136\\ \\mathrm{cm/s}$"
+     "text": "136 cm/s"
     }
    ],
    "answer": "",
@@ -1095,11 +1095,11 @@
    "choices": [
     {
      "label": "A",
-     "text": "The position of the object is $4\\ \\mathrm{m}$ , because the object moves from $-2\\ \\mathrm{m}$ to $+2\\ \\mathrm{m}$ during the entire time interval."
+     "text": "The position of the object is 4 m , because the object moves from -2 m to +2 m during the entire time interval."
     },
     {
      "label": "B",
-     "text": "The position of the object is $4\\ \\mathrm{m}$, because the area under the velocity graph is $4\\ \\mathrm{m}$ during the time interval when $v$ is positive."
+     "text": "The position of the object is 4 m, because the area under the velocity graph is 4 m during the time interval when $v$ is positive."
     },
     {
      "label": "C",
@@ -1137,11 +1137,11 @@
    "topic_title": "Representing Motion",
    "number": 10,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.36\\linewidth]{media/u1_13_q10_1.png}\n\nA cart traveling along a straight track accelerates from an initial velocity of $6\\ \\mathrm{m/s}$. The graph shows the cart's acceleration $a$ as a function of time $t$. What is the displacement of the cart in meters as a function of $t$?",
+   "stem": "\\includegraphics[width=0.36\\linewidth]{media/u1_13_q10_1.png}\n\nA cart traveling along a straight track accelerates from an initial velocity of 6 m/s. The graph shows the cart's acceleration $a$ as a function of time $t$. What is the displacement of the cart in meters as a function of $t$?",
    "choices": [
     {
      "label": "A",
-     "text": "$0$"
+     "text": "0"
     },
     {
      "label": "B",
@@ -1183,7 +1183,7 @@
    "topic_title": "Reference Frames and Relative Motion",
    "number": 1,
    "qtype": "mcq",
-   "stem": "A bus is moving forward at $5\\ \\mathrm{m/s}$ when a student on the bus tosses an apple upward and toward the front of the bus. With respect to the moving bus, the apple has an initial velocity of $10\\ \\mathrm{m/s}$ at an angle of $60^{\\circ}$ above horizontal. Which of the following correctly describes the magnitude $v_{0}$ and angle $\\theta_{0}$ of the apple's initial velocity relative to an observer standing on the ground?",
+   "stem": "A bus is moving forward at 5 m/s when a student on the bus tosses an apple upward and toward the front of the bus. With respect to the moving bus, the apple has an initial velocity of 10 m/s at an angle of $60^{\\circ}$ above horizontal. Which of the following correctly describes the magnitude $v_{0}$ and angle $\\theta_{0}$ of the apple's initial velocity relative to an observer standing on the ground?",
    "choices": [
     {
      "label": "A",
@@ -1223,7 +1223,7 @@
    "topic_title": "Reference Frames and Relative Motion",
    "number": 2,
    "qtype": "mcq",
-   "stem": "Car A is traveling east with a speed of $30\\ \\mathrm{m/s}$. Car B is traveling north with speed of $40\\ \\mathrm{m/s}$. What is the direction of the velocity of Car B relative to Car A?",
+   "stem": "Car A is traveling east with a speed of 30 m/s. Car B is traveling north with speed of 40 m/s. What is the direction of the velocity of Car B relative to Car A?",
    "choices": [
     {
      "label": "A",
@@ -1390,19 +1390,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$3\\ \\mathrm{m/s}$"
+     "text": "3 m/s"
     },
     {
      "label": "B",
-     "text": "$4\\ \\mathrm{m/s}$"
+     "text": "4 m/s"
     },
     {
      "label": "C",
-     "text": "$5\\ \\mathrm{m/s}$"
+     "text": "5 m/s"
     },
     {
      "label": "D",
-     "text": "$7\\ \\mathrm{m/s}$"
+     "text": "7 m/s"
     }
    ],
    "answer": "",
@@ -1479,19 +1479,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$10\\ \\mathrm{m/s}$"
+     "text": "10 m/s"
     },
     {
      "label": "B",
-     "text": "$13\\ \\mathrm{m/s}$"
+     "text": "13 m/s"
     },
     {
      "label": "C",
-     "text": "$26\\ \\mathrm{m/s}$"
+     "text": "26 m/s"
     },
     {
      "label": "D",
-     "text": "$28\\ \\mathrm{m/s}$"
+     "text": "28 m/s"
     }
    ],
    "answer": "",
@@ -1729,7 +1729,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.4"
    ]
@@ -1775,7 +1775,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.5-Q6",
@@ -1818,7 +1818,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.5-Q7",
@@ -1855,7 +1855,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U1-1.5-Q8",
@@ -1898,7 +1898,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.1"
    ]
@@ -1911,7 +1911,7 @@
    "topic_title": "Motion in Two or Three Dimensions",
    "number": 9,
    "qtype": "mcq",
-   "stem": "On Earth, an object is launched horizontally with an initial speed $v$ at a height $\\mathrm{h}$ and lands at a horizontal distance $x_{E}$ from its launch point. An astronaut on the surface of the Moon horizontally launches an object with the same initial speed $v$ and height $\\mathrm{h}$, and this object lands at a horizontal distance $x_{M}$ from its launch point. What is the ratio $x_{E}/x_{M}$ in terms of the acceleration of gravity $\\mathrm{g}_{E}$ near Earth's surface and $\\mathrm{g}_{M}$ near the Moon's surface?",
+   "stem": "On Earth, an object is launched horizontally with an initial speed $v$ at a height $h$ and lands at a horizontal distance $x_{E}$ from its launch point. An astronaut on the surface of the Moon horizontally launches an object with the same initial speed $v$ and height $\\mathrm{h}$, and this object lands at a horizontal distance $x_{M}$ from its launch point. What is the ratio $x_{E}/x_{M}$ in terms of the acceleration of gravity $\\mathrm{g}_{E}$ near Earth's surface and $\\mathrm{g}_{M}$ near the Moon's surface?",
    "choices": [
     {
      "label": "A",
@@ -1938,7 +1938,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U2-2.1-Q1",
@@ -1948,7 +1948,7 @@
    "topic_title": "Systems and Center of Mass",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_21_q1_1.png}\n\nA $24\\ \\mathrm{cm}$ long rectangular bar is composed of two uniform $12\\ \\mathrm{cm}$ bars of different materials, A and B, with the same cross-sectional area as shown. The density of material B is twice the density of material A. The long bar is cut through its center of mass and perpendicular to its long axis. What is the ratio of the mass of the left piece to the mass of the right piece?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_21_q1_1.png}\n\nA 24 cm long rectangular bar is composed of two uniform 12 cm bars of different materials, A and B, with the same cross-sectional area as shown. The density of material B is twice the density of material A. The long bar is cut through its center of mass and perpendicular to its long axis. What is the ratio of the mass of the left piece to the mass of the right piece?",
    "choices": [
     {
      "label": "A",
@@ -1981,7 +1981,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U2-2.1-Q2",
@@ -2044,7 +2044,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "1.5"
    ]
@@ -2090,7 +2090,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U2-2.1-Q4",
@@ -2133,7 +2133,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U2-2.1-Q5",
@@ -2143,23 +2143,23 @@
    "topic_title": "Systems and Center of Mass",
    "number": 5,
    "qtype": "mcq",
-   "stem": "A $0.50\\ \\mathrm{m}$ long rod lies along the $+x$-axis with one end of the rod at the origin. The rod's linear density is $\\lambda\\ =\\ A\\ -\\ Bx$ where $A\\ =\\ 2.0\\ \\mathrm{kg}/\\mathrm{m}$ and $B\\ =\\ 1.0\\ \\mathrm{kg}/\\mathrm{m}^{2}$. What is the $x$-position of the center of mass of the rod?",
+   "stem": "A 0.50 m long rod lies along the $+x$-axis with one end of the rod at the origin. The rod's linear density is $\\lambda\\ =\\ A\\ -\\ Bx$ where $A\\ =\\ 2.0\\ \\mathrm{kg}/\\mathrm{m}$ and $B\\ =\\ 1.0\\ \\mathrm{kg}/\\mathrm{m}^{2}$. What is the $x$-position of the center of mass of the rod?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.21$ m"
+     "text": "0.21 m"
     },
     {
      "label": "B",
-     "text": "$0.24$ m"
+     "text": "0.24 m"
     },
     {
      "label": "C",
-     "text": "$0.33$ m"
+     "text": "0.33 m"
     },
     {
      "label": "D",
-     "text": "$0.67$ m"
+     "text": "0.67 m"
     }
    ],
    "answer": "",
@@ -2170,7 +2170,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true
+   "needs_review": false
   },
   {
    "id": "EB3-U2-2.1-Q6",
@@ -2233,7 +2233,7 @@
     "Topic Questions"
    ],
    "layout": "inline",
-   "needs_review": true,
+   "needs_review": false,
    "additional_topics": [
     "5.5"
    ]
@@ -2289,7 +2289,7 @@
    "topic_title": "Systems and Center of Mass",
    "number": 8,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.69\\linewidth]{media/u2_21_q8_1.png}\n\nThe center of mass of an irregularly shaped platform is balanced on a pivot Point P with coordinates $(7.0\\ \\mathrm{m}$, $1.0\\ \\mathrm{m})$. Two rocks are then placed on top of the platform, as shown in the top view. One rock has a mass of $1.0\\ \\mathrm{kg}$ and is located at $(-2.0\\ \\mathrm{m}$, $-3.0\\ \\mathrm{m})$, and the second rock has a mass of $3.0\\ \\mathrm{kg}$ and is located at $(5.0\\ \\mathrm{m}$, $4.0\\ \\mathrm{m})$. At which coordinates should a third rock of mass $4.0\\ \\mathrm{kg}$ be placed such that the three rock-platform system is balanced?",
+   "stem": "\\includegraphics[width=0.69\\linewidth]{media/u2_21_q8_1.png}\n\nThe center of mass of an irregularly shaped platform is balanced on a pivot Point P with coordinates $(7.0\\ \\mathrm{m}$, $1.0\\ \\mathrm{m})$. Two rocks are then placed on top of the platform, as shown in the top view. One rock has a mass of 1.0 kg and is located at $(-2.0\\ \\mathrm{m}$, $-3.0\\ \\mathrm{m})$, and the second rock has a mass of 3.0 kg and is located at $(5.0\\ \\mathrm{m}$, $4.0\\ \\mathrm{m})$. At which coordinates should a third rock of mass 4.0 kg be placed such that the three rock-platform system is balanced?",
    "choices": [
     {
      "label": "A",
@@ -2335,23 +2335,23 @@
    "topic_title": "Systems and Center of Mass",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_21_q9_1.png}\n\nA system consists of three uniform spheres connected by a uniform rod passing through the center of each sphere. The rod has a length of $2.0\\ \\mathrm{m}$ and mass of $1.0\\ \\mathrm{kg}$, and the spheres have a mass of $1.0\\ \\mathrm{kg}$, $3.0\\ \\mathrm{kg}$, and $2.0\\ \\mathrm{kg}$ located in positions as shown. What is the distance between the center of the $3.0\\ \\mathrm{kg}$ sphere and the center of mass of the system?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_21_q9_1.png}\n\nA system consists of three uniform spheres connected by a uniform rod passing through the center of each sphere. The rod has a length of 2.0 m and mass of 1.0 kg, and the spheres have a mass of 1.0 kg, 3.0 kg, and 2.0 kg located in positions as shown. What is the distance between the center of the 3.0 kg sphere and the center of mass of the system?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.075$ m"
+     "text": "0.075 m"
     },
     {
      "label": "B",
-     "text": "$0.14$ m"
+     "text": "0.14 m"
     },
     {
      "label": "C",
-     "text": "$0.17$ m"
+     "text": "0.17 m"
     },
     {
      "label": "D",
-     "text": "$0.33$ m"
+     "text": "0.33 m"
     }
    ],
    "answer": "",
@@ -2919,23 +2919,23 @@
    "topic_title": "Newton’s Third Law",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_23_q3_1.png}\n\nA block with a weight of $50\\ \\mathrm{N}$ hangs vertically by a rope, with uniform density, attached to a hook as shown. The weight of the rope is $5\\ \\mathrm{N}$. Which statement best describes the tension in the rope?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_23_q3_1.png}\n\nA block with a weight of 50 N hangs vertically by a rope, with uniform density, attached to a hook as shown. The weight of the rope is 5 N. Which statement best describes the tension in the rope?",
    "choices": [
     {
      "label": "A",
-     "text": "The tension in the rope is $50\\ \\mathrm{N}$ at every location along the rope."
+     "text": "The tension in the rope is 50 N at every location along the rope."
     },
     {
      "label": "B",
-     "text": "The tension in the rope is $55\\ \\mathrm{N}$ at every location the rope."
+     "text": "The tension in the rope is 55 N at every location the rope."
     },
     {
      "label": "C",
-     "text": "The tension in the rope changes uniformly from $50\\ \\mathrm{N}$ at the top of the rope to $55\\ \\mathrm{N}$ at the bottom of the rope."
+     "text": "The tension in the rope changes uniformly from 50 N at the top of the rope to 55 N at the bottom of the rope."
     },
     {
      "label": "D",
-     "text": "The tension in the rope changes uniformly from $50\\ \\mathrm{N}$ at the bottom of the rope to $55\\ \\mathrm{N}$ at the top of the rope."
+     "text": "The tension in the rope changes uniformly from 50 N at the bottom of the rope to 55 N at the top of the rope."
     }
    ],
    "answer": "",
@@ -3005,15 +3005,15 @@
    "topic_title": "Newton’s Third Law",
    "number": 5,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u2_23_q5_1.png}\n\nA $1\\ \\mathrm{kg}$ box rests on a horizontal floor, up against a wall. A student then pushes the box such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\\mathrm{W}\\ 1}$ on the box. Next, the student replaces the $1\\ \\mathrm{kg}$ box with a $2\\ \\mathrm{kg}$ box and pushes it such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\\mathrm{W}\\ 2}$ on the box. There is negligible friction between the boxes and the floor. Which of the following statements correctly compares $F_{\\mathrm{W}\\ 1}$ to $F_{\\mathrm{W}\\ 2}$ and provides a correct justification?",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u2_23_q5_1.png}\n\nA 1 kg box rests on a horizontal floor, up against a wall. A student then pushes the box such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\\mathrm{W}\\ 1}$ on the box. Next, the student replaces the 1 kg box with a 2 kg box and pushes it such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\\mathrm{W}\\ 2}$ on the box. There is negligible friction between the boxes and the floor. Which of the following statements correctly compares $F_{\\mathrm{W}\\ 1}$ to $F_{\\mathrm{W}\\ 2}$ and provides a correct justification?",
    "choices": [
     {
      "label": "A",
-     "text": "$F_{\\mathrm{W}\\ 2}\\ >\\ F_{\\mathrm{W}\\ 1}$ because the weight of the $2\\ \\mathrm{kg}$ box is greater than that of the $1\\ \\mathrm{kg}$ box."
+     "text": "$F_{\\mathrm{W}\\ 2}\\ >\\ F_{\\mathrm{W}\\ 1}$ because the weight of the 2 kg box is greater than that of the 1 kg box."
     },
     {
      "label": "B",
-     "text": "$F_{\\mathrm{W}\\ 2}\\ >\\ F_{\\mathrm{W}\\ 1}$ because the normal force exerted on the $2\\ \\mathrm{kg}$ box must be greater than the normal force exerted on the $1\\ \\mathrm{kg}$ box."
+     "text": "$F_{\\mathrm{W}\\ 2}\\ >\\ F_{\\mathrm{W}\\ 1}$ because the normal force exerted on the 2 kg box must be greater than the normal force exerted on the 1 kg box."
     },
     {
      "label": "C",
@@ -3332,23 +3332,23 @@
    "topic_title": "Newton’s First Law",
    "number": 3,
    "qtype": "mcq",
-   "stem": "Two students are pushing a $10\\ \\mathrm{kg}$ box with horizontal forces in opposite directions along a rough, horizontal surface. The magnitudes of these forces are $24\\ \\mathrm{N}$ and $60\\ \\mathrm{N}$. If the box is traveling with a constant velocity of $3\\ \\mathrm{m/s}$, what is the magnitude of the frictional force exerted the box by the surface?",
+   "stem": "Two students are pushing a 10 kg box with horizontal forces in opposite directions along a rough, horizontal surface. The magnitudes of these forces are 24 N and 60 N. If the box is traveling with a constant velocity of 3 m/s, what is the magnitude of the frictional force exerted the box by the surface?",
    "choices": [
     {
      "label": "A",
-     "text": "$6$ N"
+     "text": "6 N"
     },
     {
      "label": "B",
-     "text": "$36$ N"
+     "text": "36 N"
     },
     {
      "label": "C",
-     "text": "$84$ N"
+     "text": "84 N"
     },
     {
      "label": "D",
-     "text": "$100$ N"
+     "text": "100 N"
     }
    ],
    "answer": "",
@@ -3376,19 +3376,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$40.0$ N"
+     "text": "40.0 N"
     },
     {
      "label": "B",
-     "text": "$56.6$ N"
+     "text": "56.6 N"
     },
     {
      "label": "C",
-     "text": "$108$ N"
+     "text": "108 N"
     },
     {
      "label": "D",
-     "text": "$120\\ \\mathrm{N}$"
+     "text": "120 N"
     }
    ],
    "answer": "",
@@ -3544,23 +3544,23 @@
    "topic_title": "Newton’s First Law",
    "number": 8,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_24_q8_1.png}\n\nA $50\\ \\mathrm{N}$ block is suspended from the ceiling and wall by light strings as shown in the figure. String A is at an angle $\\theta\\ =\\ 30^{\\circ}$ below the horizontal and String B is horizontal. The tension in String B is most nearly",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_24_q8_1.png}\n\nA 50 N block is suspended from the ceiling and wall by light strings as shown in the figure. String A is at an angle $\\theta\\ =\\ 30^{\\circ}$ below the horizontal and String B is horizontal. The tension in String B is most nearly",
    "choices": [
     {
      "label": "A",
-     "text": "$29$ N"
+     "text": "29 N"
     },
     {
      "label": "B",
-     "text": "$50$ N"
+     "text": "50 N"
     },
     {
      "label": "C",
-     "text": "$87$ N"
+     "text": "87 N"
     },
     {
      "label": "D",
-     "text": "$100$ N"
+     "text": "100 N"
     }
    ],
    "answer": "",
@@ -3648,23 +3648,23 @@
    "topic_title": "Newton’s Second Law",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.72\\linewidth]{media/u2_25_q1_1.png}\n\nThree blocks are in contact with each other, and they are at rest on a horizontal surface with negligible friction. The masses of the blocks are $2\\ \\mathrm{kg}$, $4\\ \\mathrm{kg}$, and $1\\ \\mathrm{kg}$, as shown in the figure. While a force of $28\\ \\mathrm{N}$ pushes the $2\\ \\mathrm{kg}$ block to the right, what is the magnitude of the force that the $2\\ \\mathrm{kg}$ block exerts on the $4\\ \\mathrm{kg}$ block?",
+   "stem": "\\includegraphics[width=0.72\\linewidth]{media/u2_25_q1_1.png}\n\nThree blocks are in contact with each other, and they are at rest on a horizontal surface with negligible friction. The masses of the blocks are 2 kg, 4 kg, and 1 kg, as shown in the figure. While a force of 28 N pushes the 2 kg block to the right, what is the magnitude of the force that the 2 kg block exerts on the 4 kg block?",
    "choices": [
     {
      "label": "A",
-     "text": "$8$ N"
+     "text": "8 N"
     },
     {
      "label": "B",
-     "text": "$16$ N"
+     "text": "16 N"
     },
     {
      "label": "C",
-     "text": "$20$ N"
+     "text": "20 N"
     },
     {
      "label": "D",
-     "text": "$28$ N"
+     "text": "28 N"
     }
    ],
    "answer": "",
@@ -3731,7 +3731,7 @@
    "topic_title": "Newton’s Second Law",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_25_q3_1.png}\n\nA system consists of three discrete masses, and a different rightward force is exerted on each mass. A $2\\ \\mathrm{N}$ force is exerted on the $2\\ \\mathrm{kg}$ mass, a $16\\ \\mathrm{N}$ force is exerted on the $4\\ \\mathrm{kg}$ mass, and a $42\\ \\mathrm{N}$ force is exerted on the $6\\ \\mathrm{kg}$ mass as shown in the figure. What is the magnitude of the acceleration of the center of mass of the system?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u2_25_q3_1.png}\n\nA system consists of three discrete masses, and a different rightward force is exerted on each mass. A 2 N force is exerted on the 2 kg mass, a 16 N force is exerted on the 4 kg mass, and a 42 N force is exerted on the 6 kg mass as shown in the figure. What is the magnitude of the acceleration of the center of mass of the system?",
    "choices": [
     {
      "label": "A",
@@ -3790,7 +3790,7 @@
     },
     {
      "label": "D",
-     "text": "$5$\\textit{a}$/2$"
+     "text": "5\\textit{a}$/2$"
     }
    ],
    "answer": "",
@@ -3863,7 +3863,7 @@
    "topic_title": "Newton’s Second Law",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q6_1.png}\n\nTwo horizontal forces cause an object to move with an acceleration \\textit{a} to the right. The force $F_{\\mathrm{L}}$ is exerted to the left, with magnitude $F$, and the force $F_{R}$ is exerted to the right, with magnitude $3F$. What would the magnitude of $F_{R}$ need to be to cause the object to move with an acceleration of $4$\\textit{a} to the right while $F_{\\mathrm{L}}$ remains unchanged?",
+   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q6_1.png}\n\nTwo horizontal forces cause an object to move with an acceleration \\textit{a} to the right. The force $F_{\\mathrm{L}}$ is exerted to the left, with magnitude $F$, and the force $F_{R}$ is exerted to the right, with magnitude $3F$. What would the magnitude of $F_{R}$ need to be to cause the object to move with an acceleration of 4\\textit{a} to the right while $F_{\\mathrm{L}}$ remains unchanged?",
    "choices": [
     {
      "label": "A",
@@ -3906,23 +3906,23 @@
    "topic_title": "Newton’s Second Law",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q7_1.png}\n\nA $0.5\\ \\mathrm{kg}$ object with three constant forces exerted on it has an acceleration \\textit{a} $=\\ 28.2\\ \\mathrm{m/s}^{2}$ at an angle of $45^{\\circ}$ above the horizontal as shown in the figure. Two of the forces are given as $F_{1}\\ =\\ 5\\ \\mathrm{N}$ and $F_{2}\\ =\\ 30\\ \\mathrm{N}$ with directions as shown. What is the magnitude of the third force?",
+   "stem": "\\includegraphics[width=0.38\\linewidth]{media/u2_25_q7_1.png}\n\nA 0.5 kg object with three constant forces exerted on it has an acceleration \\textit{a} $=\\ 28.2\\ \\mathrm{m/s}^{2}$ at an angle of $45^{\\circ}$ above the horizontal as shown in the figure. Two of the forces are given as $F_{1}\\ =\\ 5\\ \\mathrm{N}$ and $F_{2}\\ =\\ 30\\ \\mathrm{N}$ with directions as shown. What is the magnitude of the third force?",
    "choices": [
     {
      "label": "A",
-     "text": "$10.9$ N"
+     "text": "10.9 N"
     },
     {
      "label": "B",
-     "text": "$20.9$ N"
+     "text": "20.9 N"
     },
     {
      "label": "C",
-     "text": "$25.0$ N"
+     "text": "25.0 N"
     },
     {
      "label": "D",
-     "text": "$30.4\\ \\mathrm{N}$"
+     "text": "30.4 N"
     }
    ],
    "answer": "",
@@ -4045,7 +4045,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$"
+     "text": "0"
     },
     {
      "label": "B",
@@ -4275,23 +4275,23 @@
    "topic_title": "Gravitational Force",
    "number": 7,
    "qtype": "mcq",
-   "stem": "Two satellites orbit Earth at different altitudes. Satellite 1 has mass $\\mathrm{m}$ and orbits at a distance $d$ from Earth's center. Satellite 2 has mass $2\\ \\mathrm{m}$ and orbits at a distance $2d$ from Earth's center. What is the ratio of the gravitational force exerted by Earth on Satellite 1 to the gravitational force exerted by Earth on Satellite 2?",
+   "stem": "Two satellites orbit Earth at different altitudes. Satellite 1 has mass $\\mathrm{m}$ and orbits at a distance $d$ from Earth's center. Satellite 2 has mass 2 m and orbits at a distance $2d$ from Earth's center. What is the ratio of the gravitational force exerted by Earth on Satellite 1 to the gravitational force exerted by Earth on Satellite 2?",
    "choices": [
     {
      "label": "A",
-     "text": "$1$ : $2$"
+     "text": "1 : 2"
     },
     {
      "label": "B",
-     "text": "$1$ : $1$"
+     "text": "1 : 1"
     },
     {
      "label": "C",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     },
     {
      "label": "D",
-     "text": "$4$ : $1$"
+     "text": "4 : 1"
     }
    ],
    "answer": "",
@@ -4358,7 +4358,7 @@
    "topic_title": "Gravitational Force",
    "number": 9,
    "qtype": "mcq",
-   "stem": "Asteroid S is spherical in shape with a mass $M$ and radius $R$. Asteroid T, also spherical, has a mass $3M$ and radius $3R$. A small space probe of mass $\\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{S}$ at the surface of Asteroid S. A different space probe of mass $2\\ \\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{T}$ at the surface of Asteroid T. What is $\\mathrm{g}_{T}$ in terms of $\\mathrm{g}_{S}$?",
+   "stem": "Asteroid S is spherical in shape with a mass $M$ and radius $R$. Asteroid T, also spherical, has a mass $3M$ and radius $3R$. A small space probe of mass $\\mathrm{m}$ experiences a gravitational acceleration of $\\mathrm{g}_{S}$ at the surface of Asteroid S. A different space probe of mass 2 m experiences a gravitational acceleration of $\\mathrm{g}_{T}$ at the surface of Asteroid T. What is $\\mathrm{g}_{T}$ in terms of $\\mathrm{g}_{S}$?",
    "choices": [
     {
      "label": "A",
@@ -4395,23 +4395,23 @@
    "topic_title": "Kinetic and Static Friction",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.44\\linewidth]{media/u2_27_q1_1.png}\n\nBlock 1 of mass $3.0\\ \\mathrm{kg}$ is on a horizontal surface and is pulled at a constant velocity to the right by a string, as shown in the figure. Block 2 of mass $1.0\\ \\mathrm{kg}$ is on Block 1 and held at rest by another string attached to a vertical wall. The coefficients of kinetic and static friction between all surfaces are $0.20$ and $0.40$, respectively, and the strings have negligible mass. What is the tension in the string attached to Block 1?",
+   "stem": "\\includegraphics[width=0.44\\linewidth]{media/u2_27_q1_1.png}\n\nBlock 1 of mass 3.0 kg is on a horizontal surface and is pulled at a constant velocity to the right by a string, as shown in the figure. Block 2 of mass 1.0 kg is on Block 1 and held at rest by another string attached to a vertical wall. The coefficients of kinetic and static friction between all surfaces are 0.20 and 0.40, respectively, and the strings have negligible mass. What is the tension in the string attached to Block 1?",
    "choices": [
     {
      "label": "A",
-     "text": "$6$ N"
+     "text": "6 N"
     },
     {
      "label": "B",
-     "text": "$8$ N"
+     "text": "8 N"
     },
     {
      "label": "C",
-     "text": "$10$ N"
+     "text": "10 N"
     },
     {
      "label": "D",
-     "text": "$12$ N"
+     "text": "12 N"
     }
    ],
    "answer": "",
@@ -4438,23 +4438,23 @@
    "topic_title": "Kinetic and Static Friction",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A $1.5\\ \\mathrm{kg}$ block is held at rest near the top of a rough incline that makes an angle of $37^{\\circ}$ from the horizontal. The block is then released and starts moving with a constant acceleration. When the block travels $2.0\\ \\mathrm{m}$, its velocity is $4.0\\ \\mathrm{m/s}$. The coefficient of kinetic friction between the surface of the incline and the block is most nearly",
+   "stem": "A 1.5 kg block is held at rest near the top of a rough incline that makes an angle of $37^{\\circ}$ from the horizontal. The block is then released and starts moving with a constant acceleration. When the block travels 2.0 m, its velocity is 4.0 m/s. The coefficient of kinetic friction between the surface of the incline and the block is most nearly",
    "choices": [
     {
      "label": "A",
-     "text": "$0.20$"
+     "text": "0.20"
     },
     {
      "label": "B",
-     "text": "$0.25$"
+     "text": "0.25"
     },
     {
      "label": "C",
-     "text": "$0.40$"
+     "text": "0.40"
     },
     {
      "label": "D",
-     "text": "$0.75$"
+     "text": "0.75"
     }
    ],
    "answer": "",
@@ -4552,7 +4552,7 @@
    "topic_title": "Kinetic and Static Friction",
    "number": 5,
    "qtype": "mcq",
-   "stem": "A box is initially held at rest on a ramp with an incline of $37^{\\circ}$ with respect to the horizontal and then released. The coefficients of static and kinetic friction between the box and the ramp are $0.50$ and $0.20$, respectively. Which of the following best describes the motion, if any, of the box after it is released?",
+   "stem": "A box is initially held at rest on a ramp with an incline of $37^{\\circ}$ with respect to the horizontal and then released. The coefficients of static and kinetic friction between the box and the ramp are 0.50 and 0.20, respectively. Which of the following best describes the motion, if any, of the box after it is released?",
    "choices": [
     {
      "label": "A",
@@ -4672,7 +4672,7 @@
    "topic_title": "Kinetic and Static Friction",
    "number": 8,
    "qtype": "mcq",
-   "stem": "A block is given an initial velocity up an incline that makes an angle of $53^{\\circ}$ from the horizontal. As it is sliding up the incline, the block is slowing down with a constant acceleration of magnitude \\textit{a}. If the coefficient of kinetic friction between the block and the incline is $0.5$, what is \\textit{a}?",
+   "stem": "A block is given an initial velocity up an incline that makes an angle of $53^{\\circ}$ from the horizontal. As it is sliding up the incline, the block is slowing down with a constant acceleration of magnitude \\textit{a}. If the coefficient of kinetic friction between the block and the incline is 0.5, what is \\textit{a}?",
    "choices": [
     {
      "label": "A",
@@ -4835,7 +4835,7 @@
    "topic_title": "Spring Forces",
    "number": 3,
    "qtype": "mcq",
-   "stem": "A $10\\ \\mathrm{kg}$ block is hung vertically from an ideal spring, stretching the spring by $0.25\\ \\mathrm{m}$. The block is removed, and the spring is cut into two segments of equal length. What is the spring constant of one of these segments?",
+   "stem": "A 10 kg block is hung vertically from an ideal spring, stretching the spring by 0.25 m. The block is removed, and the spring is cut into two segments of equal length. What is the spring constant of one of these segments?",
    "choices": [
     {
      "label": "A",
@@ -4922,19 +4922,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0.10$ m"
+     "text": "0.10 m"
     },
     {
      "label": "B",
-     "text": "$0.20$ m"
+     "text": "0.20 m"
     },
     {
      "label": "C",
-     "text": "$0.80$ m"
+     "text": "0.80 m"
     },
     {
      "label": "D",
-     "text": "$1.6$ m"
+     "text": "1.6 m"
     }
    ],
    "answer": "",
@@ -5044,23 +5044,23 @@
    "topic_title": "Spring Forces",
    "number": 8,
    "qtype": "mcq",
-   "stem": "A group of students is experimenting with two springs, Spring 1 and Spring 2. Spring 1 stretches by a distance of $0.400\\ \\mathrm{m}$ when a block weighing $8.0\\ \\mathrm{N}$ is hung vertically from it. When the same block is hung vertically from Spring 2, Spring 2 stretches by a distance of $0.100\\ \\mathrm{m}$. The two springs are then connected in series, and a smaller $4.0\\ \\mathrm{N}$ block is hung vertically from this combination of springs. What is the distance that this combination will stretch from its unstretched length?",
+   "stem": "A group of students is experimenting with two springs, Spring 1 and Spring 2. Spring 1 stretches by a distance of 0.400 m when a block weighing 8.0 N is hung vertically from it. When the same block is hung vertically from Spring 2, Spring 2 stretches by a distance of 0.100 m. The two springs are then connected in series, and a smaller 4.0 N block is hung vertically from this combination of springs. What is the distance that this combination will stretch from its unstretched length?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.040$ m"
+     "text": "0.040 m"
     },
     {
      "label": "B",
-     "text": "$0.080$ m"
+     "text": "0.080 m"
     },
     {
      "label": "C",
-     "text": "$0.125$ m"
+     "text": "0.125 m"
     },
     {
      "label": "D",
-     "text": "$0.250\\ \\mathrm{m}$"
+     "text": "0.250 m"
     }
    ],
    "answer": "",
@@ -5509,19 +5509,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "of the following is an expression for $\\sqrt{v}$ at the top of the circular path? $1$ : $2$"
+     "text": "of the following is an expression for $\\sqrt{v}$ at the top of the circular path? 1 : 2"
     },
     {
      "label": "B",
-     "text": "$1$ :$2$"
+     "text": "1 :2"
     },
     {
      "label": "C",
-     "text": "$1$ : $1$"
+     "text": "1 : 1"
     },
     {
      "label": "D",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     }
    ],
    "answer": "",
@@ -5549,7 +5549,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$"
+     "text": "0"
     },
     {
      "label": "B",
@@ -5679,7 +5679,7 @@
     },
     {
      "label": "B",
-     "text": "$3\\ \\mathrm{mg}$"
+     "text": "3 mg"
     },
     {
      "label": "C",
@@ -5687,7 +5687,7 @@
     },
     {
      "label": "D",
-     "text": "$4\\ \\mathrm{mg}$"
+     "text": "4 mg"
     }
    ],
    "answer": "",
@@ -5844,19 +5844,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0.5$"
+     "text": "0.5"
     },
     {
      "label": "B",
-     "text": "$1.6$"
+     "text": "1.6"
     },
     {
      "label": "C",
-     "text": "$2.0$"
+     "text": "2.0"
     },
     {
      "label": "D",
-     "text": "$2.8$"
+     "text": "2.8"
     }
    ],
    "answer": "",
@@ -5881,19 +5881,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "The kinetic energy of the object decreases uniformly for the first $4$ seconds, then decreases uniformly at a higher rate for the next $2$ seconds."
+     "text": "The kinetic energy of the object decreases uniformly for the first 4 seconds, then decreases uniformly at a higher rate for the next 2 seconds."
     },
     {
      "label": "B",
-     "text": "The kinetic energy of the object remains constant for the first $4$ seconds and then changes to a higher constant value for the next $2$ seconds."
+     "text": "The kinetic energy of the object remains constant for the first 4 seconds and then changes to a higher constant value for the next 2 seconds."
     },
     {
      "label": "C",
-     "text": "The kinetic energy of the object remains constant for the first $4$ seconds and then changes to a lower constant value for the next $2$ seconds."
+     "text": "The kinetic energy of the object remains constant for the first 4 seconds and then changes to a lower constant value for the next 2 seconds."
     },
     {
      "label": "D",
-     "text": "The kinetic energy of the object remains constant for the first $4$ seconds and then decreases to zero over the next $2$ seconds."
+     "text": "The kinetic energy of the object remains constant for the first 4 seconds and then decreases to zero over the next 2 seconds."
     }
    ],
    "answer": "",
@@ -6176,19 +6176,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1$ : $2$, because kinetic energy is proportional to the speed of the block."
+     "text": "1 : 2, because kinetic energy is proportional to the speed of the block."
     },
     {
      "label": "B",
-     "text": "$1$ : $2$, because half of the block's kinetic energy is converted into gravitational potential energy."
+     "text": "1 : 2, because half of the block's kinetic energy is converted into gravitational potential energy."
     },
     {
      "label": "C",
-     "text": "$1$ : $4$, because kinetic energy depends on velocity."
+     "text": "1 : 4, because kinetic energy depends on velocity."
     },
     {
      "label": "D",
-     "text": "$1$ : $4$, because kinetic energy is proportional to velocity squared."
+     "text": "1 : 4, because kinetic energy is proportional to velocity squared."
     }
    ],
    "answer": "",
@@ -6330,7 +6330,7 @@
    "topic_title": "Work",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.56\\linewidth]{media/u3_32_q3_1.png}\n\nThe net force acting on an object as a function of its displacement is shown for the first $10\\ \\mathrm{m}$ of the object's motion. Which of the following statements is true about the work done on the object by the net force during this interval?",
+   "stem": "\\includegraphics[width=0.56\\linewidth]{media/u3_32_q3_1.png}\n\nThe net force acting on an object as a function of its displacement is shown for the first 10 m of the object's motion. Which of the following statements is true about the work done on the object by the net force during this interval?",
    "choices": [
     {
      "label": "A",
@@ -6417,19 +6417,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$8$ : $1$"
+     "text": "8 : 1"
     },
     {
      "label": "B",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     },
     {
      "label": "C",
-     "text": "$4$ : $1$"
+     "text": "4 : 1"
     },
     {
      "label": "D",
-     "text": "$1$ : $2$"
+     "text": "1 : 2"
     }
    ],
    "answer": "",
@@ -6619,7 +6619,7 @@
    "topic_title": "Potential Energy",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.58\\linewidth]{media/u3_33_q1_1.png}\n\nAn object in space is placed between two planets as shown. Planet A has a mass $\\mathrm{m}$ and the distance from the center of Planet A to the object is $d$. Planet B has a mass $2\\ \\mathrm{m}$ and the distance from the center of Planet B to the object is $2d$. Upon releasing the object from rest, where will the object move and how will the potential energy of the two-planet-object system change?",
+   "stem": "\\includegraphics[width=0.58\\linewidth]{media/u3_33_q1_1.png}\n\nAn object in space is placed between two planets as shown. Planet A has a mass $\\mathrm{m}$ and the distance from the center of Planet A to the object is $d$. Planet B has a mass 2 m and the distance from the center of Planet B to the object is $2d$. Upon releasing the object from rest, where will the object move and how will the potential energy of the two-planet-object system change?",
    "choices": [
     {
      "label": "A",
@@ -6662,11 +6662,11 @@
    "topic_title": "Potential Energy",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_33_q2_1.png}\n\nAn object of mass 2kg moves along the $x$-axis while a net non-linear conservative force is exerted on it. The potential energy of the system consisting of the object as well as other objects is given by the graph. The speed of the object at $x\\ =\\ 1\\ \\mathrm{m}$ is $2\\ \\mathrm{m/s}$. Estimate the maximum speed of the object.",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_33_q2_1.png}\n\nAn object of mass 2kg moves along the $x$-axis while a net non-linear conservative force is exerted on it. The potential energy of the system consisting of the object as well as other objects is given by the graph. The speed of the object at $x\\ =\\ 1\\ \\mathrm{m}$ is 2 m/s. Estimate the maximum speed of the object.",
    "choices": [
     {
      "label": "A",
-     "text": "$2\\ \\mathrm{m/s}$"
+     "text": "2 m/s"
     },
     {
      "label": "B",
@@ -6678,7 +6678,7 @@
     },
     {
      "label": "D",
-     "text": "$5\\ \\mathrm{m/s}$"
+     "text": "5 m/s"
     }
    ],
    "answer": "",
@@ -6746,7 +6746,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$12$\\textit{a}"
+     "text": "12\\textit{a}"
     },
     {
      "label": "B",
@@ -6788,23 +6788,23 @@
    "topic_title": "Potential Energy",
    "number": 5,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.42\\linewidth]{media/u3_33_q5_1.png}\n\nOne end of an ideal spring is attached to a wall and the other end to a block as shown. The block is initially at equilibrium at $x\\ =\\ 0\\ \\mathrm{m}$. A physics student determines that stretching the spring by moving the block from $x\\ =\\ 0\\ \\mathrm{m}$ to $x\\ =\\ 0.05\\ \\mathrm{m}$ stores $4.0\\ \\mathrm{J}$ of energy in the block-spring system. How much additional energy is stored in the block-spring system after the block is moved from $x\\ =\\ 0.05\\ \\mathrm{m}$ to $x\\ =\\ 0.10\\ \\mathrm{m}$?",
+   "stem": "\\includegraphics[width=0.42\\linewidth]{media/u3_33_q5_1.png}\n\nOne end of an ideal spring is attached to a wall and the other end to a block as shown. The block is initially at equilibrium at $x\\ =\\ 0\\ \\mathrm{m}$. A physics student determines that stretching the spring by moving the block from $x\\ =\\ 0\\ \\mathrm{m}$ to $x\\ =\\ 0.05\\ \\mathrm{m}$ stores 4.0 J of energy in the block-spring system. How much additional energy is stored in the block-spring system after the block is moved from $x\\ =\\ 0.05\\ \\mathrm{m}$ to $x\\ =\\ 0.10\\ \\mathrm{m}$?",
    "choices": [
     {
      "label": "A",
-     "text": "$4.0$ J"
+     "text": "4.0 J"
     },
     {
      "label": "B",
-     "text": "$8.0$ J"
+     "text": "8.0 J"
     },
     {
      "label": "C",
-     "text": "$12$ J"
+     "text": "12 J"
     },
     {
      "label": "D",
-     "text": "$16\\ \\mathrm{J}$"
+     "text": "16 J"
     }
    ],
    "answer": "",
@@ -6885,19 +6885,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0.06$ m"
+     "text": "0.06 m"
     },
     {
      "label": "B",
-     "text": "$0.2$ m"
+     "text": "0.2 m"
     },
     {
      "label": "C",
-     "text": "$0.5$ m"
+     "text": "0.5 m"
     },
     {
      "label": "D",
-     "text": "$0.8\\ \\mathrm{m}$"
+     "text": "0.8 m"
     }
    ],
    "answer": "",
@@ -6928,11 +6928,11 @@
    "choices": [
     {
      "label": "A",
-     "text": "The mechanical energy of the movable object in the region shown can never be greater than $2\\ \\mathrm{J}$."
+     "text": "The mechanical energy of the movable object in the region shown can never be greater than 2 J."
     },
     {
      "label": "B",
-     "text": "There are $3$ positions of stable equilibrium for the movable object in the region shown."
+     "text": "There are 3 positions of stable equilibrium for the movable object in the region shown."
     },
     {
      "label": "C",
@@ -6974,19 +6974,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1$"
+     "text": "1"
     },
     {
      "label": "B",
-     "text": "$2$"
+     "text": "2"
     },
     {
      "label": "C",
-     "text": "$3$"
+     "text": "3"
     },
     {
      "label": "D",
-     "text": "$4$"
+     "text": "4"
     }
    ],
    "answer": "",
@@ -7105,7 +7105,7 @@
    "topic_title": "Conservation of Energy",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.46\\linewidth]{media/u3_34_q3_1.png}\n\nTwo blocks, Block A and Block B are both released from a height $\\mathrm{h}$ above the ground. Block A of mass $2\\ \\mathrm{m}$ falls straight down, and Block B of mass $\\mathrm{m}$ slides down the incline as shown in the figure. There is negligible friction between Block B and the incline. After the blocks have fallen a vertical distance $\\mathrm{h}$, which of the following is true about the final speeds $v_{A}$ and $v_{B}$ and final mechanical energies $E_{A}$ and $E_{B}$ of Blocks A and B, respectively? Final velocities Final energies",
+   "stem": "\\includegraphics[width=0.46\\linewidth]{media/u3_34_q3_1.png}\n\nTwo blocks, Block A and Block B are both released from a height $\\mathrm{h}$ above the ground. Block A of mass 2 m falls straight down, and Block B of mass $\\mathrm{m}$ slides down the incline as shown in the figure. There is negligible friction between Block B and the incline. After the blocks have fallen a vertical distance $\\mathrm{h}$, which of the following is true about the final speeds $v_{A}$ and $v_{B}$ and final mechanical energies $E_{A}$ and $E_{B}$ of Blocks A and B, respectively? Final velocities Final energies",
    "choices": [
     {
      "label": "A",
@@ -7382,7 +7382,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$"
+     "text": "0"
     },
     {
      "label": "B",
@@ -7482,23 +7482,23 @@
    "topic_title": "Power",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A cart of mass $\\mathrm{m}\\ =\\ 4\\ \\mathrm{kg}$ slides along a horizontal surface with an initial velocity of $5\\ \\mathrm{m/s}$. A net force of $8\\ \\mathrm{N}$ is then exerted on the cart in the direction of motion for $3\\ \\mathrm{s}$. What is the average power delivered to the cart during the three seconds the force is applied?",
+   "stem": "A cart of mass $\\mathrm{m}\\ =\\ 4\\ \\mathrm{kg}$ slides along a horizontal surface with an initial velocity of 5 m/s. A net force of 8 N is then exerted on the cart in the direction of motion for 3 s. What is the average power delivered to the cart during the three seconds the force is applied?",
    "choices": [
     {
      "label": "A",
-     "text": "$24$ W"
+     "text": "24 W"
     },
     {
      "label": "B",
-     "text": "$40$ W"
+     "text": "40 W"
     },
     {
      "label": "C",
-     "text": "$64$ W"
+     "text": "64 W"
     },
     {
      "label": "D",
-     "text": "$88$ W"
+     "text": "88 W"
     }
    ],
    "answer": "",
@@ -7585,23 +7585,23 @@
    "topic_title": "Power",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_35_q4_1.png}\n\nA $0.250\\ \\mathrm{kg}$ cart is being pushed up a track that is inclined at $30^{\\circ}$ above the horizontal as shown. Friction between the cart and the track is negligible. Calculate the minimum power required to push the cart up the track at a constant speed of $2.4\\ \\mathrm{m/s}$.",
+   "stem": "\\includegraphics[width=0.45\\linewidth]{media/u3_35_q4_1.png}\n\nA 0.250 kg cart is being pushed up a track that is inclined at $30^{\\circ}$ above the horizontal as shown. Friction between the cart and the track is negligible. Calculate the minimum power required to push the cart up the track at a constant speed of 2.4 m/s.",
    "choices": [
     {
      "label": "A",
-     "text": "$0$ W"
+     "text": "0 W"
     },
     {
      "label": "B",
-     "text": "$0.72$ W"
+     "text": "0.72 W"
     },
     {
      "label": "C",
-     "text": "$3.0$ W"
+     "text": "3.0 W"
     },
     {
      "label": "D",
-     "text": "$5.2$ W"
+     "text": "5.2 W"
     }
    ],
    "answer": "",
@@ -7805,7 +7805,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$ W"
+     "text": "0 W"
     },
     {
      "label": "B",
@@ -7813,7 +7813,7 @@
     },
     {
      "label": "C",
-     "text": "$16$ W"
+     "text": "16 W"
     },
     {
      "label": "D",
@@ -7962,19 +7962,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1$"
+     "text": "1"
     },
     {
      "label": "B",
-     "text": "$2$"
+     "text": "2"
     },
     {
      "label": "C",
-     "text": "$4$"
+     "text": "4"
     },
     {
      "label": "D",
-     "text": "$16$"
+     "text": "16"
     }
    ],
    "answer": "",
@@ -7995,7 +7995,7 @@
    "topic_title": "Linear Momentum",
    "number": 4,
    "qtype": "mcq",
-   "stem": "A block with a mass of $2.0\\ \\mathrm{kg}$ starts from rest and begins to move along the $x$-axis at time $t\\ =\\ 0$ according to the equation $x\\ =\\ t^{3}/2$, where $x$ is the block's position, in meters, and $t$ is the time, in seconds. What is the momentum of the block at time $t\\ =\\ 4.0\\ \\mathrm{s}$?",
+   "stem": "A block with a mass of 2.0 kg starts from rest and begins to move along the $x$-axis at time $t\\ =\\ 0$ according to the equation $x\\ =\\ t^{3}/2$, where $x$ is the block's position, in meters, and $t$ is the time, in seconds. What is the momentum of the block at time $t\\ =\\ 4.0\\ \\mathrm{s}$?",
    "choices": [
     {
      "label": "A",
@@ -8258,11 +8258,11 @@
    "topic_title": "Change in Momentum and Impulse",
    "number": 1,
    "qtype": "mcq",
-   "stem": "A 50-kg student sitting in a rolling chair at rest pushes against a wall, which applies a $10$ Ns horizontal impulse to the student. Later, a 40-kg student is at rest in the same rolling chair and catches a 10-kg ball while applying a $10$ Ns horizontal impulse to the ball. Which of the following statements best describes the students' final speeds and provides valid reasoning supporting the claim?",
+   "stem": "A 50-kg student sitting in a rolling chair at rest pushes against a wall, which applies a 10 Ns horizontal impulse to the student. Later, a 40-kg student is at rest in the same rolling chair and catches a 10-kg ball while applying a 10 Ns horizontal impulse to the ball. Which of the following statements best describes the students' final speeds and provides valid reasoning supporting the claim?",
    "choices": [
     {
      "label": "A",
-     "text": "Both students have the same final speed because the $50\\ \\mathrm{kg}$ student-chair system and the $10\\ \\mathrm{kg}$ ball- $40\\ \\mathrm{kg}$ student-chair system have the same mass and experience impulses of the same magnitude."
+     "text": "Both students have the same final speed because the 50 kg student-chair system and the 10 kg ball- 40 kg student-chair system have the same mass and experience impulses of the same magnitude."
     },
     {
      "label": "B",
@@ -8815,7 +8815,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u4_43_q4_1.png}\n\nTwo blocks A and B have masses $\\mathrm{m}$ and $2\\ \\mathrm{m}$, respectively, and are free to move on a horizontal surface with negligible friction, as shown in the figure. Block A is initially moving with speed $v_{0}$ toward Block B, which is at rest and has a spring attached to one side. Block A then makes contact with the spring, causing the spring to compress. After the spring reaches its maximum compression, the blocks move apart and Block A loses contact with the spring. What is the speed of the center of mass of the blocks-spring system after the blocks have separated?",
+   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u4_43_q4_1.png}\n\nTwo blocks A and B have masses $\\mathrm{m}$ and 2 m, respectively, and are free to move on a horizontal surface with negligible friction, as shown in the figure. Block A is initially moving with speed $v_{0}$ toward Block B, which is at rest and has a spring attached to one side. Block A then makes contact with the spring, causing the spring to compress. After the spring reaches its maximum compression, the blocks move apart and Block A loses contact with the spring. What is the speed of the center of mass of the blocks-spring system after the blocks have separated?",
    "choices": [
     {
      "label": "A",
@@ -8861,7 +8861,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 5,
    "qtype": "mcq",
-   "stem": "In three different scenarios, a student of mass $3\\ \\mathrm{m}$ pulls on a lightweight rope attached to a block of mass $\\mathrm{m}$. The student and the block are both initially at rest in each scenario. In Scenario 1, the student stands on the shore of a frozen lake and the block is on the ice. After the student starts pulling on the rope in Scenario 1, the block slides with negligible friction while the student remains in the same location on the shore. In Scenario 2, both the student and the block are on the ice. After the student starts pulling on the rope in Scenario 2, both the student and the block slide with negligible friction. In Scenario 3, the block is at rest on the shore while the student is on the ice. After the student starts pulling on the rope in Scenario 3, the student slides with negligible friction while the block remains in the same location on the shore. The final velocity of the block relative to the student is the same in each scenario. For which scenario, if any, is the final speed of the center of mass of the block-student system the greatest?",
+   "stem": "In three different scenarios, a student of mass 3 m pulls on a lightweight rope attached to a block of mass $\\mathrm{m}$. The student and the block are both initially at rest in each scenario. In Scenario 1, the student stands on the shore of a frozen lake and the block is on the ice. After the student starts pulling on the rope in Scenario 1, the block slides with negligible friction while the student remains in the same location on the shore. In Scenario 2, both the student and the block are on the ice. After the student starts pulling on the rope in Scenario 2, both the student and the block slide with negligible friction. In Scenario 3, the block is at rest on the shore while the student is on the ice. After the student starts pulling on the rope in Scenario 3, the student slides with negligible friction while the block remains in the same location on the shore. The final velocity of the block relative to the student is the same in each scenario. For which scenario, if any, is the final speed of the center of mass of the block-student system the greatest?",
    "choices": [
     {
      "label": "A",
@@ -8944,7 +8944,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.53\\linewidth]{media/u4_43_q7_1.png}\n\nA 1-kg object moving at $6\\ \\mathrm{m/s}$ collides with a 3-kg object moving at $4\\ \\mathrm{m/s}$ in the same direction. Data for the momentum $p$ as a function of time $t$ for both objects is shown in the graph. Which of the following statements best describes this collision?",
+   "stem": "\\includegraphics[width=0.53\\linewidth]{media/u4_43_q7_1.png}\n\nA 1-kg object moving at 6 m/s collides with a 3-kg object moving at 4 m/s in the same direction. Data for the momentum $p$ as a function of time $t$ for both objects is shown in the graph. Which of the following statements best describes this collision?",
    "choices": [
     {
      "label": "A",
@@ -8987,7 +8987,7 @@
    "topic_title": "Conservation of Linear Momentum",
    "number": 8,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u4_43_q8_1.png}\n\nA small block of mass $\\mathrm{m}$ is held in place inside a larger, U-shaped block of mass $3\\ \\mathrm{m}$, as shown in the figure. Initially, the centers of mass of the two blocks are located at the same position, and a spring attached to the larger block is compressed a distance $D$ from its relaxed length by the smaller block. At time $t\\ =\\ 0$, the two blocks are released from rest. At time $t_{1}\\ >\\ 0$, the spring is at its relaxed length, the centers of mass of the two blocks are a distance $D$ apart, and the small block is moving to the right with a velocity $v$ just as it loses contact with the spring. If there are no external forces exerted on the blocks-spring system, what is the distance of separation of the two centers of mass at a later time $t\\ >\\ t_{1}$?",
+   "stem": "\\includegraphics[width=0.52\\linewidth]{media/u4_43_q8_1.png}\n\nA small block of mass $\\mathrm{m}$ is held in place inside a larger, U-shaped block of mass 3 m, as shown in the figure. Initially, the centers of mass of the two blocks are located at the same position, and a spring attached to the larger block is compressed a distance $D$ from its relaxed length by the smaller block. At time $t\\ =\\ 0$, the two blocks are released from rest. At time $t_{1}\\ >\\ 0$, the spring is at its relaxed length, the centers of mass of the two blocks are a distance $D$ apart, and the small block is moving to the right with a velocity $v$ just as it loses contact with the spring. If there are no external forces exerted on the blocks-spring system, what is the distance of separation of the two centers of mass at a later time $t\\ >\\ t_{1}$?",
    "choices": [
     {
      "label": "A",
@@ -9049,8 +9049,8 @@
     },
     {
      "label": "D",
-     "text": "$0$",
-     "text2": "$0$"
+     "text": "0",
+     "text2": "0"
     }
    ],
    "answer": "",
@@ -9079,23 +9079,23 @@
    "topic_title": "Elastic and Inelastic Collisions",
    "number": 1,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.62\\linewidth]{media/u4_44_q1_1.png}\n\nTwo pucks are free to slide on a horizontal surface with negligible friction. The figure shows a top view of the pucks, one of mass $4.0\\ \\mathrm{kg}$ and one of mass $3.0\\ \\mathrm{kg}$, before and after they undergo an elastic collision with each other. Before the collision, the 4.0-kg puck slides at $6.0\\ \\mathrm{m/s}$ in the $+x$-direction and the 3.0-kg puck is at rest. After the collision, the 3.0-kg puck moves with a speed of $2.0\\ \\mathrm{m/s}$ at an unknown angle $\\theta_{3}$ measured clockwise from the $+x$-direction, as indicated, while the 4.0-kg puck moves at an unknown speed and at an unknown angle $\\theta_{4}$ measured counterclockwise from the $+x$-direction, as indicated. What is the speed of the 4.0-kg puck after the elastic collision?",
+   "stem": "\\includegraphics[width=0.62\\linewidth]{media/u4_44_q1_1.png}\n\nTwo pucks are free to slide on a horizontal surface with negligible friction. The figure shows a top view of the pucks, one of mass 4.0 kg and one of mass 3.0 kg, before and after they undergo an elastic collision with each other. Before the collision, the 4.0-kg puck slides at 6.0 m/s in the $+x$-direction and the 3.0-kg puck is at rest. After the collision, the 3.0-kg puck moves with a speed of 2.0 m/s at an unknown angle $\\theta_{3}$ measured clockwise from the $+x$-direction, as indicated, while the 4.0-kg puck moves at an unknown speed and at an unknown angle $\\theta_{4}$ measured counterclockwise from the $+x$-direction, as indicated. What is the speed of the 4.0-kg puck after the elastic collision?",
    "choices": [
     {
      "label": "A",
-     "text": "$1.5\\ \\mathrm{m/s}$"
+     "text": "1.5 m/s"
     },
     {
      "label": "B",
-     "text": "$4.0\\ \\mathrm{m/s}$"
+     "text": "4.0 m/s"
     },
     {
      "label": "C",
-     "text": "$4.5\\ \\mathrm{m/s}$"
+     "text": "4.5 m/s"
     },
     {
      "label": "D",
-     "text": "$5.7\\ \\mathrm{m/s}$"
+     "text": "5.7 m/s"
     }
    ],
    "answer": "",
@@ -9122,23 +9122,23 @@
    "topic_title": "Elastic and Inelastic Collisions",
    "number": 2,
    "qtype": "mcq",
-   "stem": "An 8-kg object is moving with a speed of $6\\ \\mathrm{m/s}$ along a horizontal surface while a 4-kg object is moving in the opposite direction with a speed of $3\\ \\mathrm{m/s}$ on the same surface. The objects collide and stick together after the collision. Friction between the objects and the surface is negligible. What is the decrease in total kinetic energy of the two-object system during the collision?",
+   "stem": "An 8-kg object is moving with a speed of 6 m/s along a horizontal surface while a 4-kg object is moving in the opposite direction with a speed of 3 m/s on the same surface. The objects collide and stick together after the collision. Friction between the objects and the surface is negligible. What is the decrease in total kinetic energy of the two-object system during the collision?",
    "choices": [
     {
      "label": "A",
-     "text": "$54$ J"
+     "text": "54 J"
     },
     {
      "label": "B",
-     "text": "$90$ J"
+     "text": "90 J"
     },
     {
      "label": "C",
-     "text": "$108$ J"
+     "text": "108 J"
     },
     {
      "label": "D",
-     "text": "$162$ J"
+     "text": "162 J"
     }
    ],
    "answer": "",
@@ -9206,7 +9206,7 @@
    "topic_title": "Elastic and Inelastic Collisions",
    "number": 4,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.87\\linewidth]{media/u4_44_q4_1.png}\n\nTwo carts, Cart 1 of mass $0.25\\ \\mathrm{kg}$ and Cart 2 of mass $0.50\\ \\mathrm{kg}$, are free to move along a straight, horizontal track, as shown in the figure. There is negligible friction in the axles of the carts' wheels, and Cart 1 is initially moving to the right at $4\\ \\mathrm{m/s}$ before colliding with Cart 2, which is initially at rest. After the collision, the carts stick together and move to the right. What is the kinetic energy of the two-cart system immediately after the collision?",
+   "stem": "\\includegraphics[width=0.87\\linewidth]{media/u4_44_q4_1.png}\n\nTwo carts, Cart 1 of mass 0.25 kg and Cart 2 of mass 0.50 kg, are free to move along a straight, horizontal track, as shown in the figure. There is negligible friction in the axles of the carts' wheels, and Cart 1 is initially moving to the right at 4 m/s before colliding with Cart 2, which is initially at rest. After the collision, the carts stick together and move to the right. What is the kinetic energy of the two-cart system immediately after the collision?",
    "choices": [
     {
      "label": "A",
@@ -9214,15 +9214,15 @@
     },
     {
      "label": "B",
-     "text": "$1$ J"
+     "text": "1 J"
     },
     {
      "label": "C",
-     "text": "$2$ J"
+     "text": "2 J"
     },
     {
      "label": "D",
-     "text": "$6$ J"
+     "text": "6 J"
     }
    ],
    "answer": "",
@@ -9249,7 +9249,7 @@
    "topic_title": "Elastic and Inelastic Collisions",
    "number": 5,
    "qtype": "mcq",
-   "stem": "Object 1 of mass $\\mathrm{m}$ and Object 2 of mass $3\\ \\mathrm{m}$ can slide along a straight, horizontal track with negligible friction. Object 1 initially moves to the right with speed $v$ toward Object 2, which is initially at rest, and the two objects collide. Immediately after the collision, Object 1 moves to the left with speed $v/2$. Is this information sufficient to determine whether the collision was elastic? Why or why not?",
+   "stem": "Object 1 of mass $\\mathrm{m}$ and Object 2 of mass 3 m can slide along a straight, horizontal track with negligible friction. Object 1 initially moves to the right with speed $v$ toward Object 2, which is initially at rest, and the two objects collide. Immediately after the collision, Object 1 moves to the left with speed $v/2$. Is this information sufficient to determine whether the collision was elastic? Why or why not?",
    "choices": [
     {
      "label": "A",
@@ -9384,7 +9384,7 @@
    "topic_title": "Elastic and Inelastic Collisions",
    "number": 8,
    "qtype": "mcq",
-   "stem": "Two blocks, one of mass $\\mathrm{m}$ and one of mass $2\\ \\mathrm{m}$, are free to move along a horizontal surface with negligible friction. The blocks undergo collisions in two separate scenarios. In the first scenario, the block of mass $\\mathrm{m}$ moves with an initial speed $v_{0}$ toward the block of mass $2\\ \\mathrm{m}$, which is initially at rest, and the blocks stick together after they collide. In the second scenario, the block of mass $2\\ \\mathrm{m}$ moves with the same initial speed $v_{0}$ toward the block of mass $\\mathrm{m}$, which is initially at rest, and the blocks again stick together after colliding. The total kinetic energy of the two-block system decreases by an amount $\\Delta K_{1}$ in the first scenario and by $\\Delta K_{2}$ in the second scenario. What is the ratio $\\Delta K_{2}/\\Delta K_{1}$?",
+   "stem": "Two blocks, one of mass $\\mathrm{m}$ and one of mass 2 m, are free to move along a horizontal surface with negligible friction. The blocks undergo collisions in two separate scenarios. In the first scenario, the block of mass $\\mathrm{m}$ moves with an initial speed $v_{0}$ toward the block of mass 2 m, which is initially at rest, and the blocks stick together after they collide. In the second scenario, the block of mass 2 m moves with the same initial speed $v_{0}$ toward the block of mass $\\mathrm{m}$, which is initially at rest, and the blocks again stick together after colliding. The total kinetic energy of the two-block system decreases by an amount $\\Delta K_{1}$ in the first scenario and by $\\Delta K_{2}$ in the second scenario. What is the ratio $\\Delta K_{2}/\\Delta K_{1}$?",
    "choices": [
     {
      "label": "A",
@@ -9400,7 +9400,7 @@
     },
     {
      "label": "D",
-     "text": "$1$"
+     "text": "1"
     }
    ],
    "answer": "",
@@ -9482,7 +9482,7 @@
    "topic_title": "Rotational Kinematics",
    "number": 1,
    "qtype": "mcq",
-   "stem": "A wheel spins with an initial angular velocity of $18\\ \\mathrm{rad/s}$ in the clockwise direction and has a constant angular acceleration. After $3$ seconds the wheel is spinning at $6\\ \\mathrm{rad/s}$ in the counterclockwise direction. What is the magnitude and direction of the angular acceleration?",
+   "stem": "A wheel spins with an initial angular velocity of 18 rad/s in the clockwise direction and has a constant angular acceleration. After 3 seconds the wheel is spinning at 6 rad/s in the counterclockwise direction. What is the magnitude and direction of the angular acceleration?",
    "choices": [
     {
      "label": "A",
@@ -9670,23 +9670,23 @@
    "topic_title": "Rotational Kinematics",
    "number": 6,
    "qtype": "mcq",
-   "stem": "A rotating wheel with an initial clockwise angular velocity of $2.0\\ \\mathrm{rad/s}$ has a constant, counterclockwise angular acceleration of $0.50\\ \\mathrm{rad/s}^{2}$. What is the angular speed of the wheel when it has rotated through an angular displacement of $2.0$ radians?",
+   "stem": "A rotating wheel with an initial clockwise angular velocity of 2.0 rad/s has a constant, counterclockwise angular acceleration of $0.50\\ \\mathrm{rad/s}^{2}$. What is the angular speed of the wheel when it has rotated through an angular displacement of 2.0 radians?",
    "choices": [
     {
      "label": "A",
-     "text": "$1.0\\ \\mathrm{rad/s}$"
+     "text": "1.0 rad/s"
     },
     {
      "label": "B",
-     "text": "$1.4\\ \\mathrm{rad/s}$"
+     "text": "1.4 rad/s"
     },
     {
      "label": "C",
-     "text": "$2.4\\ \\mathrm{rad/s}$"
+     "text": "2.4 rad/s"
     },
     {
      "label": "D",
-     "text": "$3.0\\ \\mathrm{rad/s}$"
+     "text": "3.0 rad/s"
     }
    ],
    "answer": "",
@@ -9803,19 +9803,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1\\ \\mathrm{rad/s}$"
+     "text": "1 rad/s"
     },
     {
      "label": "B",
-     "text": "$2\\ \\mathrm{rad/s}$"
+     "text": "2 rad/s"
     },
     {
      "label": "C",
-     "text": "$3\\ \\mathrm{rad/s}$"
+     "text": "3 rad/s"
     },
     {
      "label": "D",
-     "text": "$4\\ \\mathrm{rad/s}$"
+     "text": "4 rad/s"
     }
    ],
    "answer": "",
@@ -10257,23 +10257,23 @@
    "topic_title": "Torque",
    "number": 2,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.31\\linewidth]{media/u5_53_q2_1.png}\n\nA long bar of length $5$ meters can rotate about a pivot at one end, as shown in the figure. The pivot is located at the origin of a coordinate plane. A force of $5$ newtons is exerted on the other end of the bar, which is located at coordinates $(4\\ \\mathrm{m}$, $3\\ \\mathrm{m})$. With respect to the pivot at the origin, what is the magnitude of the torque due to the $5$ newton force?",
+   "stem": "\\includegraphics[width=0.31\\linewidth]{media/u5_53_q2_1.png}\n\nA long bar of length 5 meters can rotate about a pivot at one end, as shown in the figure. The pivot is located at the origin of a coordinate plane. A force of 5 newtons is exerted on the other end of the bar, which is located at coordinates $(4\\ \\mathrm{m}$, $3\\ \\mathrm{m})$. With respect to the pivot at the origin, what is the magnitude of the torque due to the 5 newton force?",
    "choices": [
     {
      "label": "A",
-     "text": "$25$ Nm"
+     "text": "25 Nm"
     },
     {
      "label": "B",
-     "text": "$20$ Nm"
+     "text": "20 Nm"
     },
     {
      "label": "C",
-     "text": "$15$ Nm"
+     "text": "15 Nm"
     },
     {
      "label": "D",
-     "text": "$5$ Nm"
+     "text": "5 Nm"
     }
    ],
    "answer": "",
@@ -10300,7 +10300,7 @@
    "topic_title": "Torque",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u5_53_q3_1.png}\n\nA horizontal pole can rotate vertically about a pivot that is attached to a wall at Point P, as shown in the figure. A fixed ring is located higher up on the wall, $1.2$ meters above the pivot, where a rope can be attached to support the pole. The figures show two possible attachment points on the pole for the rope, at points Q and R. If the rope tension results in the same torque $\\tau_{0}$ for both attachment points, for which attachment point is the rope tension greater? What evidence supports reasoning for the claim?",
+   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u5_53_q3_1.png}\n\nA horizontal pole can rotate vertically about a pivot that is attached to a wall at Point P, as shown in the figure. A fixed ring is located higher up on the wall, 1.2 meters above the pivot, where a rope can be attached to support the pole. The figures show two possible attachment points on the pole for the rope, at points Q and R. If the rope tension results in the same torque $\\tau_{0}$ for both attachment points, for which attachment point is the rope tension greater? What evidence supports reasoning for the claim?",
    "choices": [
     {
      "label": "A",
@@ -10436,19 +10436,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$10$ Nm"
+     "text": "10 Nm"
     },
     {
      "label": "B",
-     "text": "$15$ Nm"
+     "text": "15 Nm"
     },
     {
      "label": "C",
-     "text": "$20$ Nm"
+     "text": "20 Nm"
     },
     {
      "label": "D",
-     "text": "$25$ Nm"
+     "text": "25 Nm"
     }
    ],
    "answer": "",
@@ -10561,7 +10561,7 @@
    "topic_title": "Torque",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.76\\linewidth]{media/u5_53_q9_1.png}\n\nA bar of length $1.0\\ \\mathrm{m}$ sits on a pivot located at its center. At the instant shown in the figure, the bar is horizontal and two forces, $F_{1}$ and $F_{2}$, are exerted on its ends as indicated. With respect to the pivot point, what are the magnitudes $\\tau_{1}$ and $\\tau_{2}$ of the torques due to $F_{1}$ and $F_{2}$, respectively?",
+   "stem": "\\includegraphics[width=0.76\\linewidth]{media/u5_53_q9_1.png}\n\nA bar of length 1.0 m sits on a pivot located at its center. At the instant shown in the figure, the bar is horizontal and two forces, $F_{1}$ and $F_{2}$, are exerted on its ends as indicated. With respect to the pivot point, what are the magnitudes $\\tau_{1}$ and $\\tau_{2}$ of the torques due to $F_{1}$ and $F_{2}$, respectively?",
    "choices": [
     {
      "label": "A",
@@ -11086,7 +11086,7 @@
    "topic_title": "Rotational Equilibrium and Newton’s First Law in Rotational Form",
    "number": 3,
    "qtype": "mcq",
-   "stem": "A bar of length $1$ meter is thrown vertically upward, with an initial translational velocity of $v_{0}$ for its center of mass and an initial angular velocity of $\\omega_{0}$. The bar continues to spin as it travels upward and then falls back downward. Which of the following is a correct claim about the rotational equilibrium about the center of mass and the translational equilibrium of the bar at the instant its center of mass has reached its maximum height?",
+   "stem": "A bar of length 1 meter is thrown vertically upward, with an initial translational velocity of $v_{0}$ for its center of mass and an initial angular velocity of $\\omega_{0}$. The bar continues to spin as it travels upward and then falls back downward. Which of the following is a correct claim about the rotational equilibrium about the center of mass and the translational equilibrium of the bar at the instant its center of mass has reached its maximum height?",
    "choices": [
     {
      "label": "A",
@@ -11292,7 +11292,7 @@
     },
     {
      "label": "D",
-     "text": "At no time between $0$ and $5$ seconds is the angular velocity of the disk constant."
+     "text": "At no time between 0 and 5 seconds is the angular velocity of the disk constant."
     }
    ],
    "answer": "",
@@ -11365,7 +11365,7 @@
    "topic_title": "Rotational Equilibrium and Newton’s First Law in Rotational Form",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.64\\linewidth]{media/u5_55_q9_1.png}\n\nA teacher and student sit on a uniform, horizontal board that rests on a pivot. The board can rotate about the pivot with negligible friction. The teacher weighs $800\\ \\mathrm{N}$ and sits $1.0\\ \\mathrm{m}$ to the left of the pivot. The student weighs $400\\ \\mathrm{N}$ and sits $2.0\\ \\mathrm{m}$ to the right of the pivot, as shown. At time $t\\ =\\ 0$, the teacher and student simultaneously lift their feet off the ground so that the board is free to rotate. Which of the following describes the motion of the board immediately after $t\\ =$ 0?",
+   "stem": "\\includegraphics[width=0.64\\linewidth]{media/u5_55_q9_1.png}\n\nA teacher and student sit on a uniform, horizontal board that rests on a pivot. The board can rotate about the pivot with negligible friction. The teacher weighs 800 N and sits 1.0 m to the left of the pivot. The student weighs 400 N and sits 2.0 m to the right of the pivot, as shown. At time $t\\ =\\ 0$, the teacher and student simultaneously lift their feet off the ground so that the board is free to rotate. Which of the following describes the motion of the board immediately after $t\\ =$ 0?",
    "choices": [
     {
      "label": "A",
@@ -11415,19 +11415,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     },
     {
      "label": "B",
-     "text": "$1$ : $2$"
+     "text": "1 : 2"
     },
     {
      "label": "C",
-     "text": "$1$ : $4$"
+     "text": "1 : 4"
     },
     {
      "label": "D",
-     "text": "$1$ : $8$"
+     "text": "1 : 8"
     }
    ],
    "answer": "",
@@ -11497,11 +11497,11 @@
    "topic_title": "Newton’s Second Law in Rotational Form",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u5_56_q3_1.png}\n\nTwo blocks, one of mass $\\mathrm{m}_{0}$ and one of mass $3\\ \\mathrm{m}_{0}$, are attached to the ends of a thin rod of negligible rotational inertia, as shown in the figure. The rod is free to pivot with negligible friction about an axis that is perpendicular to the plane of the figure and passes through the rod's center. Each block's center of mass is a distance $r_{0}$ from the axis, and the blocks are small compared to $r_{0}$. The rod is held horizontal and then released from rest. Immediately after release, the angular acceleration of the blocks-rod system is $\\alpha_{1}$. The $2$ about its center. The two rod is then replaced with a heavy uniform rod that has a rotational inertia $\\mathrm{m}_{0}r_{0}$ blocks are attached to the ends of the second rod, the rod is again held horizontal and released from rest, and the angular acceleration is $\\alpha_{2}$ immediately after the second system is released. What is the ratio $\\alpha_{2}/\\alpha_{1}$?",
+   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u5_56_q3_1.png}\n\nTwo blocks, one of mass $\\mathrm{m}_{0}$ and one of mass $3\\ \\mathrm{m}_{0}$, are attached to the ends of a thin rod of negligible rotational inertia, as shown in the figure. The rod is free to pivot with negligible friction about an axis that is perpendicular to the plane of the figure and passes through the rod's center. Each block's center of mass is a distance $r_{0}$ from the axis, and the blocks are small compared to $r_{0}$. The rod is held horizontal and then released from rest. Immediately after release, the angular acceleration of the blocks-rod system is $\\alpha_{1}$. The 2 about its center. The two rod is then replaced with a heavy uniform rod that has a rotational inertia $\\mathrm{m}_{0}r_{0}$ blocks are attached to the ends of the second rod, the rod is again held horizontal and released from rest, and the angular acceleration is $\\alpha_{2}$ immediately after the second system is released. What is the ratio $\\alpha_{2}/\\alpha_{1}$?",
    "choices": [
     {
      "label": "A",
-     "text": "$1$"
+     "text": "1"
     },
     {
      "label": "B",
@@ -12255,7 +12255,7 @@
    "topic_title": "Torque and Work",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A time-varying counterclockwise torque is applied to the outer edge of a platform that is initially rotating clockwise about its center. The torque continuously increases in magnitude from an initial value of zero. The platform comes to a stop after $5$ rotations, at which time the torque is removed. How does the decrease in the rotational kinetic energy of the platform during the first rotation compare to the decrease in rotational kinetic energy during the final rotation?",
+   "stem": "A time-varying counterclockwise torque is applied to the outer edge of a platform that is initially rotating clockwise about its center. The torque continuously increases in magnitude from an initial value of zero. The platform comes to a stop after 5 rotations, at which time the torque is removed. How does the decrease in the rotational kinetic energy of the platform during the first rotation compare to the decrease in rotational kinetic energy during the final rotation?",
    "choices": [
     {
      "label": "A",
@@ -12381,7 +12381,7 @@
    "topic_title": "Torque and Work",
    "number": 5,
    "qtype": "mcq",
-   "stem": "A wheel is spinning freely on an axle passing through its center. A constant torque is exerted on the wheel, increasing the wheel's rotational kinetic energy from $2K_{0}$ to $3K_{0}$ as the wheel rotates through $1.5$ revolutions. What is the magnitude of the torque?",
+   "stem": "A wheel is spinning freely on an axle passing through its center. A constant torque is exerted on the wheel, increasing the wheel's rotational kinetic energy from $2K_{0}$ to $3K_{0}$ as the wheel rotates through 1.5 revolutions. What is the magnitude of the torque?",
    "choices": [
     {
      "label": "A",
@@ -12464,7 +12464,7 @@
    "topic_title": "Torque and Work",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u6_62_q7_1.png}\n\nAn object can rotate about an axis passing through its center of mass. At $t\\ =\\ 0$, the object is spinning in the positive direction and has an initial angular position of zero. The graph represents the net torque $\\tau_{\\mathrm{net}}$ exerted on the object as a function of angular position $\\theta$. Which of the following claims is true about the total work done on the object and the rotational kinetic energy of the object as it rotates from $0$ radians to $4$ radians?",
+   "stem": "\\includegraphics[width=0.35\\linewidth]{media/u6_62_q7_1.png}\n\nAn object can rotate about an axis passing through its center of mass. At $t\\ =\\ 0$, the object is spinning in the positive direction and has an initial angular position of zero. The graph represents the net torque $\\tau_{\\mathrm{net}}$ exerted on the object as a function of angular position $\\theta$. Which of the following claims is true about the total work done on the object and the rotational kinetic energy of the object as it rotates from 0 radians to 4 radians?",
    "choices": [
     {
      "label": "A",
@@ -12677,19 +12677,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$ to $1$ second"
+     "text": "0 to 1 second"
     },
     {
      "label": "B",
-     "text": "$1$ to $2$ seconds"
+     "text": "1 to 2 seconds"
     },
     {
      "label": "C",
-     "text": "$2$ to $3$ seconds"
+     "text": "2 to 3 seconds"
     },
     {
      "label": "D",
-     "text": "$3$ to $4$ seconds"
+     "text": "3 to 4 seconds"
     }
    ],
    "answer": "",
@@ -12898,19 +12898,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "Between $1$ and $3$ seconds"
+     "text": "Between 1 and 3 seconds"
     },
     {
      "label": "B",
-     "text": "Between $3$ and $5$ seconds"
+     "text": "Between 3 and 5 seconds"
     },
     {
      "label": "C",
-     "text": "Between $5$ and $9$ seconds"
+     "text": "Between 5 and 9 seconds"
     },
     {
      "label": "D",
-     "text": "Between $9$ and $11$ seconds"
+     "text": "Between 9 and 11 seconds"
     }
    ],
    "answer": "",
@@ -13069,7 +13069,7 @@
    "topic_title": "Conservation of Angular Momentum",
    "number": 3,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_64_q3_1.png}\n\nFour small disks are rigidly attached together by rods of negligible mass, as shown in the figure. The four- disk system rotates counterclockwise on a horizontal tabletop with an angular speed of $10\\ \\mathrm{rad/s}$ about an axis that is located at the system's center of mass and perpendicular to the plane of the figure. Each disk has a mass of $0.050\\ \\mathrm{kg}$ and is a distance $0.30\\ \\mathrm{m}$ from the system's center. Later, all the disks are simultaneously released from the rods and continue moving along the tabletop with negligible friction. If the size of each disk is small compared to the original $0.30\\ \\mathrm{m}$ distance from the center, what is the angular momentum of the system at the instant each disk is $0.50\\ \\mathrm{m}$ from the center of mass?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_64_q3_1.png}\n\nFour small disks are rigidly attached together by rods of negligible mass, as shown in the figure. The four- disk system rotates counterclockwise on a horizontal tabletop with an angular speed of 10 rad/s about an axis that is located at the system's center of mass and perpendicular to the plane of the figure. Each disk has a mass of 0.050 kg and is a distance 0.30 m from the system's center. Later, all the disks are simultaneously released from the rods and continue moving along the tabletop with negligible friction. If the size of each disk is small compared to the original 0.30 m distance from the center, what is the angular momentum of the system at the instant each disk is 0.50 m from the center of mass?",
    "choices": [
     {
      "label": "A",
@@ -13204,23 +13204,23 @@
    "topic_title": "Conservation of Angular Momentum",
    "number": 6,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_64_q6_1.png}\n\nA small disk can move on a horizontal surface with negligible friction. The disk is attached to a string that passes through a small hole in the surface and is held in place at the other end, under the surface. Initially, the disk is moving in a circle of radius $0.10\\ \\mathrm{m}$ about the hole with an angular speed of $4.0\\ \\mathrm{rad/s}$. The bottom end of the string is then raised upward so that the disk travels in a new circle of radius $0.20\\ \\mathrm{m}$. What is the angular speed of the disk at the new radius?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u6_64_q6_1.png}\n\nA small disk can move on a horizontal surface with negligible friction. The disk is attached to a string that passes through a small hole in the surface and is held in place at the other end, under the surface. Initially, the disk is moving in a circle of radius 0.10 m about the hole with an angular speed of 4.0 rad/s. The bottom end of the string is then raised upward so that the disk travels in a new circle of radius 0.20 m. What is the angular speed of the disk at the new radius?",
    "choices": [
     {
      "label": "A",
-     "text": "$1.0\\ \\mathrm{rad/s}$"
+     "text": "1.0 rad/s"
     },
     {
      "label": "B",
-     "text": "$2.0\\ \\mathrm{rad/s}$"
+     "text": "2.0 rad/s"
     },
     {
      "label": "C",
-     "text": "$4.0\\ \\mathrm{rad/s}$"
+     "text": "4.0 rad/s"
     },
     {
      "label": "D",
-     "text": "$8.0\\ \\mathrm{rad/s}$"
+     "text": "8.0 rad/s"
     }
    ],
    "answer": "",
@@ -13336,23 +13336,23 @@
    "topic_title": "Conservation of Angular Momentum",
    "number": 9,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u6_64_q9_1.png}\n\nDisk 1 has rotational inertia $I_{1}\\ =\\ 6.0\\ \\mathrm{kg\\cdot m}^{2}$ and rotates clockwise about the perpendicular axis passing through its center at an angular speed of $5.0\\ \\mathrm{rad/s}$, as shown in the figure. Directly above Disk 1 is Disk 2, which has rotational inertia $I_{2}\\ =\\ 3.0\\ \\mathrm{kg\\cdot m}^{2}$ and which also rotates about the axis passing through its center, but at an unknown angular speed. Disk 2 is dropped down onto Disk 1, and at a later time the two disks are rotating together in the clockwise direction at the same final angular speed of $1.0\\ \\mathrm{rad/s}$. What was the initial angular speed of Disk 2?",
+   "stem": "\\includegraphics[width=0.55\\linewidth]{media/u6_64_q9_1.png}\n\nDisk 1 has rotational inertia $I_{1}\\ =\\ 6.0\\ \\mathrm{kg\\cdot m}^{2}$ and rotates clockwise about the perpendicular axis passing through its center at an angular speed of 5.0 rad/s, as shown in the figure. Directly above Disk 1 is Disk 2, which has rotational inertia $I_{2}\\ =\\ 3.0\\ \\mathrm{kg\\cdot m}^{2}$ and which also rotates about the axis passing through its center, but at an unknown angular speed. Disk 2 is dropped down onto Disk 1, and at a later time the two disks are rotating together in the clockwise direction at the same final angular speed of 1.0 rad/s. What was the initial angular speed of Disk 2?",
    "choices": [
     {
      "label": "A",
-     "text": "$3.0\\ \\mathrm{rad/s}$"
+     "text": "3.0 rad/s"
     },
     {
      "label": "B",
-     "text": "$7.0\\ \\mathrm{rad/s}$"
+     "text": "7.0 rad/s"
     },
     {
      "label": "C",
-     "text": "$10\\ \\mathrm{rad/s}$"
+     "text": "10 rad/s"
     },
     {
      "label": "D",
-     "text": "$13\\ \\mathrm{rad/s}$"
+     "text": "13 rad/s"
     }
    ],
    "answer": "",
@@ -13383,19 +13383,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1$ : $1$"
+     "text": "1 : 1"
     },
     {
      "label": "B",
-     "text": "$4$ : $3$"
+     "text": "4 : 3"
     },
     {
      "label": "C",
-     "text": "$3$ : $2$"
+     "text": "3 : 2"
     },
     {
      "label": "D",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     }
    ],
    "answer": "",
@@ -13801,7 +13801,7 @@
    "topic_title": "Motion of Orbiting Satellites",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A small satellite of mass $\\mathrm{m}_{S}$ is in an elliptical orbit around a planet of mass $\\mathrm{m}_{P}$. While in its orbit, the satellite's closest and farthest distances from the planet's center are \\textit{a} and $3$\\textit{a}, respectively. By how much does the satellite's kinetic energy change when moving from its farthest distance to its closest distance from the planet's center?",
+   "stem": "A small satellite of mass $\\mathrm{m}_{S}$ is in an elliptical orbit around a planet of mass $\\mathrm{m}_{P}$. While in its orbit, the satellite's closest and farthest distances from the planet's center are \\textit{a} and 3\\textit{a}, respectively. By how much does the satellite's kinetic energy change when moving from its farthest distance to its closest distance from the planet's center?",
    "choices": [
     {
      "label": "A",
@@ -13979,19 +13979,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "$1$ : $2$"
+     "text": "1 : 2"
     },
     {
      "label": "B",
-     "text": "$1$ : $1$"
+     "text": "1 : 1"
     },
     {
      "label": "C",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     },
     {
      "label": "D",
-     "text": "$4$ : $1$"
+     "text": "4 : 1"
     }
    ],
    "answer": "",
@@ -14015,23 +14015,23 @@
    "topic_title": "Motion of Orbiting Satellites",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.39\\linewidth]{media/u6_66_q7_1.png}\n\nA space probe orbits a star in an elliptical orbit, as shown in the figure. The probe is farthest from the planet at Point A and closest at Point P. At Point P, the probe's kinetic energy is $4$ times greater than its kinetic energy at Point A. What is the ratio $\\mathrm{L}_{P}$ : $\\mathrm{L}_{A}$, where $\\mathrm{L}_{P}$ and $\\mathrm{L}_{A}$ are the probe's angular momenta about the star at points P and A, respectively?",
+   "stem": "\\includegraphics[width=0.39\\linewidth]{media/u6_66_q7_1.png}\n\nA space probe orbits a star in an elliptical orbit, as shown in the figure. The probe is farthest from the planet at Point A and closest at Point P. At Point P, the probe's kinetic energy is 4 times greater than its kinetic energy at Point A. What is the ratio $\\mathrm{L}_{P}$ : $\\mathrm{L}_{A}$, where $\\mathrm{L}_{P}$ and $\\mathrm{L}_{A}$ are the probe's angular momenta about the star at points P and A, respectively?",
    "choices": [
     {
      "label": "A",
-     "text": "$1$ : $2$"
+     "text": "1 : 2"
     },
     {
      "label": "B",
-     "text": "$1$ : $1$"
+     "text": "1 : 1"
     },
     {
      "label": "C",
-     "text": "$2$ : $1$"
+     "text": "2 : 1"
     },
     {
      "label": "D",
-     "text": "$4$ : $1$"
+     "text": "4 : 1"
     }
    ],
    "answer": "",
@@ -14835,11 +14835,11 @@
     },
     {
      "label": "C",
-     "text": "$2$"
+     "text": "2"
     },
     {
      "label": "D",
-     "text": "$4$"
+     "text": "4"
     }
    ],
    "answer": "",
@@ -15134,19 +15134,19 @@
    "choices": [
     {
      "label": "A",
-     "text": "The angular speed is a maximum at $1\\ \\mathrm{s}$ and $3\\ \\mathrm{s}$, and the magnitude of the angular acceleration is a maximum at $0\\ \\mathrm{s}$, $2\\ \\mathrm{s}$, and $4\\ \\mathrm{s}$."
+     "text": "The angular speed is a maximum at 1 s and 3 s, and the magnitude of the angular acceleration is a maximum at 0 s, 2 s, and 4 s."
     },
     {
      "label": "B",
-     "text": "The angular speed is a maximum at $0\\ \\mathrm{s}$, $2\\ \\mathrm{s}$, and $4\\ \\mathrm{s}$, and the magnitude of the angular acceleration is a maximum at $1\\ \\mathrm{s}$ and $3\\ \\mathrm{s}$."
+     "text": "The angular speed is a maximum at 0 s, 2 s, and 4 s, and the magnitude of the angular acceleration is a maximum at 1 s and 3 s."
     },
     {
      "label": "C",
-     "text": "Both the angular speed and the magnitude of the angular acceleration are maximum at $1\\ \\mathrm{s}$ and $3\\ \\mathrm{s}$."
+     "text": "Both the angular speed and the magnitude of the angular acceleration are maximum at 1 s and 3 s."
     },
     {
      "label": "D",
-     "text": "Both the angular speed and the magnitude of the angular acceleration are maximum at $0\\ \\mathrm{s}$, $2\\ \\mathrm{s}$, and $4\\ \\mathrm{s}$."
+     "text": "Both the angular speed and the magnitude of the angular acceleration are maximum at 0 s, 2 s, and 4 s."
     }
    ],
    "answer": "",
@@ -15394,23 +15394,23 @@
    "topic_title": "Energy of Simple Harmonic Oscillators",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block is free to move in the $x$-direction along the surface with negligible friction. The block is held in place with the spring stretched some distance from its relaxed length, at which point the block-spring system has a potential energy of $60\\ \\mathrm{J}$. The block is then released and starts oscillating. If the oscillation period is $1.20$ seconds, how much kinetic energy does the block have $0.20$ seconds after being released?",
+   "stem": "A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block is free to move in the $x$-direction along the surface with negligible friction. The block is held in place with the spring stretched some distance from its relaxed length, at which point the block-spring system has a potential energy of 60 J. The block is then released and starts oscillating. If the oscillation period is 1.20 seconds, how much kinetic energy does the block have 0.20 seconds after being released?",
    "choices": [
     {
      "label": "A",
-     "text": "$15$ J"
+     "text": "15 J"
     },
     {
      "label": "B",
-     "text": "$30$ J"
+     "text": "30 J"
     },
     {
      "label": "C",
-     "text": "$40$ J"
+     "text": "40 J"
     },
     {
      "label": "D",
-     "text": "$45$ J"
+     "text": "45 J"
     }
    ],
    "answer": "",
@@ -15434,23 +15434,23 @@
    "topic_title": "Energy of Simple Harmonic Oscillators",
    "number": 3,
    "qtype": "mcq",
-   "stem": "A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block, which is free to move in the $x$-direction along the surface with negligible friction, oscillates in simple harmonic motion. The block's mass is $2.0\\ \\mathrm{kg}$, and its motion has an oscillation period of $2.0\\ \\mathrm{s}$. When the block is $0.30\\ \\mathrm{m}$ from the equilibrium position, it has a speed of $0.50\\ \\mathrm{m/s}$. What is the amplitude of the block's motion?",
+   "stem": "A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block, which is free to move in the $x$-direction along the surface with negligible friction, oscillates in simple harmonic motion. The block's mass is 2.0 kg, and its motion has an oscillation period of 2.0 s. When the block is 0.30 m from the equilibrium position, it has a speed of 0.50 m/s. What is the amplitude of the block's motion?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.16$ m"
+     "text": "0.16 m"
     },
     {
      "label": "B",
-     "text": "$0.34$ m"
+     "text": "0.34 m"
     },
     {
      "label": "C",
-     "text": "$0.77$ m"
+     "text": "0.77 m"
     },
     {
      "label": "D",
-     "text": "$1.30$ m"
+     "text": "1.30 m"
     }
    ],
    "answer": "",
@@ -15603,23 +15603,23 @@
    "topic_title": "Energy of Simple Harmonic Oscillators",
    "number": 7,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_74_q7_1.png}\n\nA $2.0\\ \\mathrm{kg}$ block attached to a horizontal spring oscillates in simple harmonic motion in the horizontal direction. Friction is negligible, so the spring exerts the only horizontal force on the block. The graph shows the spring's potential energy $U$ as a function of the block's position $x$. The block's motion may or may not include positions outside the range shown in the graph. The speed of the block is $3.0\\ \\mathrm{m/s}$ when the block is at $x\\ =\\ 0.70\\ \\mathrm{m}$. At which of the following positions is the speed of the block most nearly equal to $4.0\\ \\mathrm{m/s}$?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_74_q7_1.png}\n\nA 2.0 kg block attached to a horizontal spring oscillates in simple harmonic motion in the horizontal direction. Friction is negligible, so the spring exerts the only horizontal force on the block. The graph shows the spring's potential energy $U$ as a function of the block's position $x$. The block's motion may or may not include positions outside the range shown in the graph. The speed of the block is 3.0 m/s when the block is at $x\\ =\\ 0.70\\ \\mathrm{m}$. At which of the following positions is the speed of the block most nearly equal to 4.0 m/s?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.27$ m"
+     "text": "0.27 m"
     },
     {
      "label": "B",
-     "text": "$0.51$ m"
+     "text": "0.51 m"
     },
     {
      "label": "C",
-     "text": "$0.64$ m"
+     "text": "0.64 m"
     },
     {
      "label": "D",
-     "text": "$0.93$ m"
+     "text": "0.93 m"
     }
    ],
    "answer": "",
@@ -15732,23 +15732,23 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 1,
    "qtype": "mcq",
-   "stem": "A simple pendulum has a length of $1.0\\ \\mathrm{m}$ and takes a time $T_{0}$ to complete one oscillation on Earth. What length would a pendulum have to have on Mars, where the acceleration due to gravity is $3.7\\ \\mathrm{m/s}^{2}$, in order to have the same period?",
+   "stem": "A simple pendulum has a length of 1.0 m and takes a time $T_{0}$ to complete one oscillation on Earth. What length would a pendulum have to have on Mars, where the acceleration due to gravity is $3.7\\ \\mathrm{m/s}^{2}$, in order to have the same period?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.14$ m"
+     "text": "0.14 m"
     },
     {
      "label": "B",
-     "text": "$0.38$ m"
+     "text": "0.38 m"
     },
     {
      "label": "C",
-     "text": "$0.61$ m"
+     "text": "0.61 m"
     },
     {
      "label": "D",
-     "text": "$2.60$ m"
+     "text": "2.60 m"
     }
    ],
    "answer": "",
@@ -15901,23 +15901,23 @@
    "topic_title": "Simple and Physical Pendulums",
    "number": 5,
    "qtype": "mcq",
-   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_75_q5_1.png}\n\nA thin hoop undergoes small-angle oscillations about a pivot at its top edge, as shown in the figure. If the oscillation period is $0.70\\ \\mathrm{s}$, what is the radius of the hoop?",
+   "stem": "\\includegraphics[width=0.48\\linewidth]{media/u7_75_q5_1.png}\n\nA thin hoop undergoes small-angle oscillations about a pivot at its top edge, as shown in the figure. If the oscillation period is 0.70 s, what is the radius of the hoop?",
    "choices": [
     {
      "label": "A",
-     "text": "$0.025$ m"
+     "text": "0.025 m"
     },
     {
      "label": "B",
-     "text": "$0.061$ m"
+     "text": "0.061 m"
     },
     {
      "label": "C",
-     "text": "$0.120$ m"
+     "text": "0.120 m"
     },
     {
      "label": "D",
-     "text": "$0.240\\ \\mathrm{m}$"
+     "text": "0.240 m"
     }
    ],
    "answer": "",
@@ -15951,7 +15951,7 @@
    "choices": [
     {
      "label": "A",
-     "text": "$0$"
+     "text": "0"
     },
     {
      "label": "B",
