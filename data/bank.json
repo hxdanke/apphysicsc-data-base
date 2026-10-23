@@ -5176,7 +5176,7 @@
    "topic_title": "Resistive Forces",
    "number": 2,
    "qtype": "mcq",
-   "stem": "An object of mass $\\mathrm{m}$ falling near Earth's surface experiences a resistive force of $F_{R}\\ =\\ -bv^{2}$, where $b$ is a positive constant with units of $Ns^{2}/\\mathrm{m}^{2}$ and $v$ is in $\\mathrm{m/s}$. What is the magnitude of the acceleration of the object when it is moving downward at a speed$v = \\sqrt{3mg/4b}$?",
+   "stem": "An object of mass $\\mathrm{m}$ falling near Earth's surface experiences a resistive force of $F_{R}\\ =\\ -bv^{2}$, where $b$ is a positive constant with units of $Ns^{2}/\\mathrm{m}^{2}$ and $v$ is in m/s. What is the magnitude of the acceleration of the object when it is moving downward at a speed$v = \\sqrt{3mg/4b}$?",
    "choices": [
     {
      "label": "A",
@@ -5268,7 +5268,7 @@
    "topic_title": "Resistive Forces",
    "number": 4,
    "qtype": "mcq",
-   "stem": "An object of mass $\\mathrm{m}$ is released from rest at time $t\\ =\\ 0$ near Earth's surface and experiences a resistive force of $F_{R}\\ =\\ -kv$, where $k$ is a positive constant with units of $Ns/\\mathrm{m}$ and $v$ is in $\\mathrm{m/s}$. What is the change in the object's speed between $t = \\mathrm{m}/k$ and $t = 4\\ \\mathrm{m}/k$?",
+   "stem": "An object of mass $\\mathrm{m}$ is released from rest at time $t\\ =\\ 0$ near Earth's surface and experiences a resistive force of $F_{R}\\ =\\ -kv$, where $k$ is a positive constant with units of $Ns/\\mathrm{m}$ and $v$ is in m/s. What is the change in the object's speed between $t = \\mathrm{m}/k$ and $t = 4\\ \\mathrm{m}/k$?",
    "choices": [
     {
      "label": "A",
@@ -5354,7 +5354,7 @@
    "topic_title": "Resistive Forces",
    "number": 6,
    "qtype": "mcq",
-   "stem": "An object of mass $\\mathrm{m}$ is moving horizontally in a region where there is a resistive force $F_{R}\\ =\\ -kv$, where $k$ is a positive constant with units of $Ns/\\mathrm{m}$ and $v$ is in $\\mathrm{m/s}$. The gravitational force exerted on this object is negligible. At time $t\\ =\\ 0$ the object has an initial velocity $v\\ =\\ v_{0}$. What is the expression for $v$ as a function of time $t$, where $t$ has units of seconds?",
+   "stem": "An object of mass $\\mathrm{m}$ is moving horizontally in a region where there is a resistive force $F_{R}\\ =\\ -kv$, where $k$ is a positive constant with units of $Ns/\\mathrm{m}$ and $v$ is in m/s. The gravitational force exerted on this object is negligible. At time $t\\ =\\ 0$ the object has an initial velocity $v\\ =\\ v_{0}$. What is the expression for $v$ as a function of time $t$, where $t$ has units of seconds?",
    "choices": [
     {
      "label": "A",
@@ -9519,7 +9519,7 @@
    "topic_title": "Rotational Kinematics",
    "number": 2,
    "qtype": "mcq",
-   "stem": "A long bar rotates about an axis that is perpendicular to the bar and located at its center. The angular velocity of the bar in $\\mathrm{rad/s}$ is given by $\\omega(t) =\\ 4t^{2}\\ +\\ 1$ , where $t$ is the time in seconds. Which of the following approaches could be used to find the average angular velocity of the bar in the time interval $1\\ \\leq\\ t\\ \\leq$ 3?",
+   "stem": "A long bar rotates about an axis that is perpendicular to the bar and located at its center. The angular velocity of the bar in rad/s is given by $\\omega(t) =\\ 4t^{2}\\ +\\ 1$ , where $t$ is the time in seconds. Which of the following approaches could be used to find the average angular velocity of the bar in the time interval $1\\ \\leq\\ t\\ \\leq$ 3?",
    "choices": [
     {
      "label": "A",

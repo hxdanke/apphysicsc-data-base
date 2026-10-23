@@ -171,6 +171,22 @@ class PlainQuantityTest(unittest.TestCase):
         for src in ("$v_{0}$", "$30^{\\circ}$", "$\\frac{1}{2}I_{0}$"):
             self.assertEqual(plain_qty(src), src)
 
+    def test_a_compound_unit_becomes_text(self) -> None:
+        self.assertEqual(plain_qty("$v$ is in $\\mathrm{m/s}$"), "$v$ is in m/s")
+        self.assertEqual(plain_qty("angular velocity in $\\mathrm{rad/s}$"),
+                         "angular velocity in rad/s")
+
+    def test_a_roman_letter_stays_maths_because_it_is_a_variable(self) -> None:
+        # "mass m", "height h", "the work W" -- a lone roman letter names a
+        # variable far more often than it names a unit.
+        for src in ("a block of mass $\\mathrm{m}$",
+                    "released from a height $\\mathrm{h}$",
+                    "the magnitude $\\mathrm{W}$ of the work"):
+            self.assertEqual(plain_qty(src), src)
+
+    def test_a_roman_number_becomes_text(self) -> None:
+        self.assertEqual(plain_qty("$\\mathrm{2}$"), "2")
+
     def test_no_plain_quantity_is_left_in_maths(self) -> None:
         pure = re.compile(r"^\s*[-+]?\d+(?:\.\d+)?\s*(?:\\\s+|\s+)?"
                           r"(?:\\mathrm|\\text)\{[^}]*\}\s*$")

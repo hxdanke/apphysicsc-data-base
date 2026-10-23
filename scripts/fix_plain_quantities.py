@@ -27,6 +27,10 @@ PURE = re.compile(
     r"^\s*([-+]?\d+(?:\.\d+)?)\s*(?:\\\s+|\s+)?(?:\\mathrm|\\text)\{([^}]*)\}\s*$")
 # just a number, with the unit left in the prose ("$6$ N")
 BARE = re.compile(r"^\s*([-+]?\d+(?:\.\d+)?)\s*$")
+# a number dressed up as roman ("$\mathrm{2}$")
+ROMAN_NUM = re.compile(r"^(?:\\mathrm|\\text)\{(\d+(?:\.\d+)?)\}$")
+# a unit on its own, but only a compound one -- see below
+UNIT = re.compile(r"^(?:\\mathrm|\\text)\{([^{}]*)\}$")
 
 
 def fix_run(body: str) -> str:
@@ -36,6 +40,17 @@ def fix_run(body: str) -> str:
     m = BARE.match(body)
     if m:
         return m.group(1)
+    m = ROMAN_NUM.match(body)
+    if m:
+        return m.group(1)
+
+    # A lone roman letter is a variable far more often than a unit: "a block of
+    # mass $\mathrm{m}$", "a height $\mathrm{h}$", "the work $\mathrm{W}$". Those
+    # have to stay in maths.  Only a compound unit (m/s, rad/s, N m) is never a
+    # variable, so that is what gets taken out.
+    m = UNIT.match(body)
+    if m and ("/" in m.group(1) or "\\cdot" in m.group(1)):
+        return m.group(1).replace("\\cdot", "·").replace("\\ ", " ")
     return "$" + body + "$"
 
 
