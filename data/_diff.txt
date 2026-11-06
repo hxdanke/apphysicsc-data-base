@@ -1,0 +1,1789 @@
+old 369  new 369
+only in old (0): []
+only in new (0): []
+
+### EB3-U1-1.1-Q1 STEM
+  OLD: The $x$- and $y$-components of an acceleration vector are given by the equations $a_{x}\ = (t\ -\ 6)\ \mathrm{m/s}^{2}$ and $a_{y}\ = (4\ t\ -\ 5)\ \mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t = 2\ \mathrm{s}?$
+  NEW: The $x$- and $y$-components of an acceleration vector are given by the equations a$_{x}\ = (t\ -\ 6)\ \mathrm{m/s}^{2}$ and a$_{y}\ = (4\ t\ -\ 5)\ \mathrm{m/s}^{2}$, respectively, where $t$ is the time in seconds. What is the magnitude of the acceleration vector at $t = 2\ \mathrm{s}?$
+
+### EB3-U1-1.1-Q2 STEM
+  OLD: The components of a velocity vector are given by the functions $v_{x}\ = (2\ t\ -\ 2)\ \mathrm{m/s}$ and $v_{y}\ = (t\ -\ 7)\ \mathrm{m/s} ,$ where $t$ is the time in seconds. What are the magnitude and direction of the velocity vector at $t = 3\ \mathrm{s}?$ Magnitude Direction
+  NEW: The components of a velocity vector are given by the functions $v_{x}\ = (2\ t\ -\ 2)$ m/s and $v_{y}\ = (t\ -\ 7)\ \mathrm{m/s} ,$ where $t$ is the time in seconds. What are the magnitude and direction of the velocity vector at $t = 3\ \mathrm{s}?$ Magnitude Direction
+
+### EB3-U1-1.1-Q2 choice A
+  OLD: $4\ \mathrm{m/s}\ 45^{\circ}$ courterclockwise from the $+x$-direction
+  NEW: $4\ \mathrm{m/s}$ $45^{\circ}$ courterclockwise from the $+x$-direction
+
+### EB3-U1-1.1-Q2 choice B
+  OLD: $4\ \mathrm{m/s}\ 45^{\circ}$ clockwise from the $+x$-direction
+  NEW: $4\ \mathrm{m/s}$ $45^{\circ}$ clockwise from the $+x$-direction
+
+### EB3-U1-1.1-Q2 choice C
+  OLD: $4\sqrt{2}\ \mathrm{m/s}\ 45^{\circ}$ courterclockwise from the $+x$-direction
+  NEW: $42\ \mathrm{m/s}$ $45^{\circ}$ courterclockwise from the $+x$-direction
+
+### EB3-U1-1.1-Q2 choice D
+  OLD: $4\sqrt{2}\ \mathrm{m/s}\ 45^{\circ}$ clockwise from the $+x$-direction \includegraphics[width=0.35\linewidth]{media/u1_11_q2_1.png}
+  NEW: $4\sqrt{2} \mathrm{m/s}$ $45^{\circ}$ clockwise from the $+x$-direction \includegraphics[width=0.35\linewidth]{media/u1_11_q2_1.png}
+
+### EB3-U1-1.1-Q3 STEM
+  OLD: Consider two vectors, $\vec{A} =\ 3\hat{i} +\ 1\hat{j}$ and $\vec{B} =\ -1\hat{i} -\ 3\hat{j}$. Which of the following is a true statement about the vector sum $\vec{A} +\ \vec{B}$?
+  NEW: Consider two vectors, $\vec{A} =\ 3\hat{i} +\ 1\hat{j}$ and $\vec{B} =\ -1\hat{i} -\ 3\hat{j}$. Which of the following is a true statement about the vector sum \textbackslash{}vec\{A\} $\sqrt{+ }$\textbackslash{}vec\{B\}?
+
+### EB3-U1-1.1-Q6 STEM
+  OLD: An object moves in the $xy$-plane a distance A at an angle $\theta$ measured counterclockwise from the positive $x-$ direction, where $0\ <\ \theta\ <\ 90^{\circ}.$ The object then moves a distance $B$ in the positive $x$-direction. The change in the $x$-component of the object's position is equal t
+  NEW: An object moves in the $xy$-plane a distance A at an angle $\theta$ measured counterclockwise from the positive $x-$ direction, where $0\ <\ \theta\ <\ 90^{\circ}.$ The object then moves a distance $B$ in the positive $x$-direction. The change in the $x$-component of the object's position is equal t
+
+### EB3-U1-1.1-Q6 choice A
+  OLD: A$(\sin \theta\ - \cos \theta)$
+  NEW: A$(\sin \theta\ -$$\cos \theta)$
+
+### EB3-U1-1.1-Q6 choice B
+  OLD: A$(\cos \theta\ - \sin \theta)$
+  NEW: A$(\cos \theta\ -$$\sin \theta)$
+
+### EB3-U1-1.1-Q6 choice C
+  OLD: A$(\cos \theta\ + \sin \theta)$
+  NEW: A$(\cos \theta\ +$$\sin \theta)$
+
+### EB3-U1-1.1-Q6 choice D
+  OLD: $\tan \theta$
+  NEW: $\frac{A}{tan \theta}$ \includegraphics[width=0.34\linewidth]{media/u1_11_q6_2.png} $\vec{A}$ $\vec{B}$
+
+### EB3-U1-1.2-Q2 STEM
+  OLD: The position-time graph shown represents the motion of a car moving along a straight road during the time interval $t$ = 0 to $t\ =\ 6\ \mathrm{s}$. Consider the instantaneous speed at two different times as $v_{1}$ at $t$ = 1 s and $v_{5}$ at $t\ =\ 5\ \mathrm{s}$ and the average speed $v_{\mathrm{
+  NEW: The position-time graph shown represents the motion of a car moving along a straight road during the time interval $t$ = 0 to $t\ =\ 6$ s. Consider the instantaneous speed at two different times as $v_{1}$ at $t$ = 1 s and $v_{5}$ at $t\ =\ 5$ s and the average speed $v_{avg}$ over the entire time i
+
+### EB3-U1-1.2-Q2 choice A
+  OLD: $v_{1}\ <\ v_{\mathrm{avg}}\ <\ v_{5}$
+  NEW: $v_{1}\ <\ v_{avg}\ <\ v_{5}$
+
+### EB3-U1-1.2-Q2 choice B
+  OLD: $v_{5}\ =\ v_{\mathrm{avg}}\ <\ v_{1}$
+  NEW: $v_{5}\ =\ v_{avg}\ <\ v_{1}$
+
+### EB3-U1-1.2-Q2 choice C
+  OLD: $v_{\mathrm{avg}}\ <\ v_{5}\ <\ v_{1}$
+  NEW: $v_{avg}\ <\ v_{5}\ <\ v_{1}$
+
+### EB3-U1-1.2-Q2 choice D
+  OLD: $v_{\mathrm{avg}}\ <\ v_{5}\ =\ v_{1}$
+  NEW: $v_{avg}\ <\ v_{5}\ =\ v_{1}$
+
+### EB3-U1-1.2-Q4 STEM
+  OLD: The graph represents the position $x$ of an object as a function of time $t$. Compare the directions of the velocities $v_{A}$ and $v_{B}$, and the directions of the accelerations $a_{A}$ and $a_{B}$, of the object at times $t_{A}$ and $t_{B}$. Velocities Accelerations
+  NEW: The graph represents the position $x$ of an object as a function of time $t$. Compare the directions of the velocities $v_{A}$ and $v_{B}$, and the directions of the accelerations a$_{A}$ and a$_{B}$, of the object at times $t_{A}$ and $t_{B}$. Velocities Accelerations
+
+### EB3-U1-1.2-Q7 STEM
+  OLD: Two objects, Object $1$ and Object $2,$ have velocities $\vec{v}_{1}\ = (3\ t^{2}\hat{i} +\ 5\ t\hat{j})\ \mathrm{m/s}$ and $\vec{v}_{2}\ = (5\ t^{2}\hat{i} -\ 3\ t\hat{j})\ \mathrm{m/s} ,$ respectively, where $t$ is time in seconds. Which of the following correctly indicates the relationship betwee
+  NEW: Two objects, Object $1$ and Object $2,$ have velocities $\vec{v}_{1}\ = (3\ t^{2}\hat{i} +\ 5\ t\hat{j})$ m/s and $\vec{v}_{2}\ = (5\ t^{2}\hat{i} -\ 3\ t\hat{j})\ \mathrm{m/s} ,$ respectively, where $t$ is time in seconds. Which of the following correctly indicates the relationship between the magn
+
+### EB3-U1-1.2-Q7 choice A
+  OLD: $a_{1}\ < a_{2}$
+  NEW: a$_{1}\ <$ a$_{2}$
+
+### EB3-U1-1.2-Q7 choice B
+  OLD: $a_{1}\ > a_{2}$
+  NEW: a$_{1}\ >$ a$_{2}$
+
+### EB3-U1-1.2-Q7 choice C
+  OLD: $a_{1}\ = a_{2}\ \neq\ 0$
+  NEW: a$_{1}\ =$ a$_{2}\ \neq\ 0$
+
+### EB3-U1-1.2-Q7 choice D
+  OLD: $a_{1}\ = a_{2}\ =\ 0$
+  NEW: a$_{1}\ =$ a$_{2}\ =\ 0$
+
+### EB3-U1-1.2-Q8 STEM
+  OLD: An object moves in one dimension along the $x$-axis. At time $t\ =\ 0,$ the object is located at position $x = 1\ \mathrm{m}$ and has a velocity $v\ =\ 1\ \mathrm{m/s}.$ The object's acceleration varies as a$= 3\ t$, where a is in m/s$2$ and $t$ is time in seconds. A student incorrectly derives the 
+  NEW: An object moves in one dimension along the $x$-axis. At time $t\ =\ 0,$ the object is located at position $x = 1\ \mathrm{m}$ and has a velocity $v\ =\ 1\ \mathrm{m/s}.$ The object's acceleration varies as a$= 3\ t$, where a is in m/s$^{2}$ and $t$ is time in seconds. A student incorrectly derives t
+
+### EB3-U1-1.2-Q8 choice C
+  OLD: The student's equation does not substitute a$= 3\ t$ in the at$2/2 term.$
+  NEW: The student's equation does not substitute a$= 3\ t$ in the at$^{2}/2 term.$
+
+### EB3-U1-1.3-Q1 STEM
+  OLD: Students testing two different toy cars on a straight track determine that, starting from rest, Car A reaches a velocity $v_{A}$ in a displacement of $x_{A}$ and Car B reaches a velocity of $2\ v_{A}$ in a displacement of $2\ x_{A}$ . The motion of each car can be modeled with constant acceleration.
+  NEW: Students testing two different toy cars on a straight track determine that, starting from rest, Car A reaches a velocity $v_{A}$ in a displacement of $x_{A}$ and Car B reaches a velocity of $2\ v_{A}$ in a displacement of $2\ x_{A}$ . The motion of each car can be modeled with constant acceleration.
+
+### EB3-U1-1.3-Q1 choice A
+  OLD: $a_{A}/2$
+  NEW: a$_{A}/2$
+
+### EB3-U1-1.3-Q1 choice B
+  OLD: $a_{A}$
+  NEW: a$_{A}$
+
+### EB3-U1-1.3-Q1 choice C
+  OLD: $2 a_{A}$
+  NEW: $2$a$_{A}$
+
+### EB3-U1-1.3-Q1 choice D
+  OLD: $4 a_{A}$ \includegraphics[width=0.29\linewidth]{media/u1_13_q1_10.png}
+  NEW: $4$a$_{A}$ \includegraphics[width=0.29\linewidth]{media/u1_13_q1_10.png}
+
+### EB3-U1-1.3-Q10 choice B
+  OLD: $\frac{1}{3}\ t^{3}$
+  NEW: $\frac{1}{3}$ $^{t}^{3}$
+
+### EB3-U1-1.3-Q10 choice D
+  OLD: $\frac{1}{3}\ t^{3}\ +\ 6^{t}$
+  NEW: $\frac{1}{3}$ $^{t}^{3}\ ^{+}\ ^{6}^{t}$
+
+### EB3-U1-1.3-Q9 STEM
+  OLD: The graph of velocity $v$ as a function of time $t$ for one-dimensional motion of an object is shown. Which of the following statements about the position of the object at $t\ =\ 8\ \mathrm{s}$ is correct?
+  NEW: The graph of velocity $v$ as a function of time $t$ for one-dimensional motion of an object is shown. Which of the following statements about the position of the object at $t\ =\ 8$ s is correct?
+
+### EB3-U1-1.3-Q9 choice A
+  OLD: The position of the object is $4\ \mathrm{m}$ , because the object moves from $-$2m to $+2\ \mathrm{m}$ during the entire time interval.
+  NEW: The position of the object is $4$ m , because the object moves from $-$2m to $+2$ m during the entire time interval.
+
+### EB3-U1-1.3-Q9 choice B
+  OLD: The position of the object is $4\ \mathrm{m}$, because the area under the velocity graph is $4\ \mathrm{m}$ during the time interval when $v$ is positive.
+  NEW: The position of the object is $4$ m, because the area under the velocity graph is $4$ m during the time interval when $v$ is positive.
+
+### EB3-U1-1.4-Q4 STEM
+  OLD: A toy plane which maintains an airspeed $v_{P}$ flies between points A and B in a time $t_{0}$ when there is negligible wind. When the air is moving at a velocity of $v_{P}/2$ from Point B to Point A, the toy plane can make the trip from A to B in $t_{\mathrm{AB}}$, and the return trip from B to A i
+  NEW: A toy plane which maintains an airspeed $v_{P}$ flies between points A and B in a time $t_{0}$ when there is negligible wind. When the air is moving at a velocity of $v_{P}/2$ from Point B to Point A, the toy plane can make the trip from A to B in $t_{AB}$, and the return trip from B to A in $t_{BA}
+
+### EB3-U1-1.4-Q4 choice A
+  OLD: $t_{\mathrm{AB}}\ >\ t_{0}\ >\ t_{\mathrm{BA}}$
+  NEW: $t_{AB}\ >\ t_{0}\ >\ t_{BA}$
+
+### EB3-U1-1.4-Q4 choice B
+  OLD: $t_{\mathrm{BA}}\ >\ t_{0}\ >\ t_{\mathrm{AB}}$
+  NEW: $t_{BA}\ >\ t_{0}\ >\ t_{AB}$
+
+### EB3-U1-1.4-Q4 choice C
+  OLD: $(t_{\mathrm{AB}}\ =\ t_{\mathrm{BA}}) >\ t_{0}$
+  NEW: $(t_{AB}\ =\ t_{BA}) >\ t_{0}$
+
+### EB3-U1-1.4-Q4 choice D
+  OLD: $t_{0}\ > (t_{\mathrm{AB}}\ =\ t_{\mathrm{BA}})$ \includegraphics[width=0.31\linewidth]{media/u1_14_q4_13.png}
+  NEW: $t_{0}\ > (t_{AB}\ =\ t_{BA})$ \includegraphics[width=0.31\linewidth]{media/u1_14_q4_13.png}
+
+### EB3-U1-1.5-Q1 STEM
+  OLD: A river has width $\mathrm{W}$ and current $v_{r}$. A boat maintains a constant velocity as it travels from Point A to Point B. Point B is located at a distance $D$ upstream from Point A. The boat's water speed is $v_{\mathrm{bw}}$ with a heading of angle $\theta_{\mathrm{bw}}$, as shown in the figu
+  NEW: A river has width $\mathrm{W}$ and current $v_{r}$. A boat maintains a constant velocity as it travels from Point A to Point B. Point B is located at a distance $D$ upstream from Point A. The boat's water speed is $v_{bw}$ with a heading of angle $\theta_{bw}$, as shown in the figure. Which of the f
+
+### EB3-U1-1.5-Q1 choice A
+  OLD: $(v_{\mathrm{bw}}\ -\ v_{r})\ \frac{\mathrm{W}}{v}$bw
+  NEW: $(v_{bw}\ -\ v_{r})$ $\frac{W}{v_{bw}}$
+
+### EB3-U1-1.5-Q1 choice B
+  OLD: $(v_{\mathrm{bw}} \sin \theta_{\mathrm{bw}}\ -\ v_{r}) v$bw$\cos^{\theta}$bw $\mathrm{W}$
+  NEW: $(v_{bw} \sin \theta_{bw}\ -\ v_{r})$ $\frac{W}{^{v}bw cos^{\theta}bw}$
+
+### EB3-U1-1.5-Q1 choice C
+  OLD: $(v_{\mathrm{bw}} \cos \theta_{\mathrm{bw}}\ -\ v_{r})\ \mathrm{W}$
+  NEW: $(v_{bw} \cos \theta_{bw}\ -\ v_{r})$ $\frac{W}{^{v}bw sin^{\theta}bw}$
+
+### EB3-U1-1.5-Q1 choice D
+  OLD: $(v_{\mathrm{bw}} \cos \theta_{\mathrm{bw}}\ +\ v_{r})\ \mathrm{W} ^{v}$bw$\sin^{\theta}$bw $v$bw$\sin^{\theta}$bw \includegraphics[width=0.29\linewidth]{media/u1_15_q1_17.png}
+  NEW: $(v_{bw} \cos \theta_{bw}\ +\ v_{r})$ $\frac{W}{^{v}bw sin^{\theta}bw}$ \includegraphics[width=0.29\linewidth]{media/u1_15_q1_17.png}
+
+### EB3-U1-1.5-Q2 STEM
+  OLD: An object starts at rest and then moves in the $xy$-plane with the components of acceleration $a_{x}$ and $a_{y}$ each varying as represented by the acceleration-time graph shown. At what time or times during the time interval shown is $(are)$ the magnitude of the acceleration at a maximum, and what
+  NEW: An object starts at rest and then moves in the $xy$-plane with the components of acceleration a$_{x}$ and a$_{y}$ each varying as represented by the acceleration-time graph shown. At what time or times during the time interval shown is $(are)$ the magnitude of the acceleration at a maximum, and what
+
+### EB3-U1-1.5-Q2 choice A
+  OLD: At $t\ =\ t_{f}/2.$ The product $a_{x} a_{y}$ is at its greatest value.
+  NEW: At $t\ =\ t_{f}/2.$ The product a$_{x}$a$_{y}$ is at its greatest value.
+
+### EB3-U1-1.5-Q2 choice B
+  OLD: At $t\ =\ t_{f}/2. a_{x}$ and $a_{y}$ are equal in magnitude.
+  NEW: At $t\ =\ t_{f}/2.$a$_{x}$ and a$_{y}$ are equal in magnitude.
+
+### EB3-U1-1.5-Q2 choice C
+  OLD: At $t$ = 0 and $t\ =\ t_{f}$. $| a_{x}\ - a_{y}|$ is at its greatest value.
+  NEW: At $t$ = 0 and $t\ =\ t_{f}$. $|$a$_{x}\ -$ a$_{y}|$ is at its greatest value.
+
+### EB3-U1-1.5-Q2 choice D
+  OLD: At $t$ = 0 and $t\ =\ t_{f}$. $a_{x}^{2}\ + a_{y}^{2}$ is at its greatest value.
+  NEW: At $t$ = 0 and $t\ =\ t_{f}$. a$_{x}^{2}\ +$ a$_{y}^{2}$ is at its greatest value.
+
+### EB3-U1-1.5-Q5 choice A
+  OLD: $v0 \sin \theta$
+  NEW: $\frac{^{v}0 sin^{\theta}}{g}$
+
+### EB3-U1-1.5-Q5 choice B
+  OLD: $3 v0 \sin \theta$
+  NEW: $\frac{3}{2}$ $\frac{^{v}0 sin^{\theta}}{g}$
+
+### EB3-U1-1.5-Q5 choice C
+  OLD: $2\ ^{v 0 sin \theta}$
+  NEW: 2 $\frac{^{v}0 sin^{\theta}}{g}$
+
+### EB3-U1-1.5-Q5 choice D
+  OLD: $4\ ^{v 0 sin \theta}\ \mathrm{g}\ 2\ \mathrm{g}\ \mathrm{g}\ \mathrm{g}$ \includegraphics[width=0.42\linewidth]{media/u1_15_q5_19.png}
+  NEW: 4 $\frac{^{v}0 sin^{\theta}}{g}$ \includegraphics[width=0.42\linewidth]{media/u1_15_q5_19.png}
+
+### EB3-U1-1.5-Q8 choice A
+  OLD: $\vec{r} = (v_{0}t)\hat{i} + (H\ -\ \frac{1}{2}\ gt^{2})\hat{j}$
+  NEW: \textbackslash{}vec\{r\} = (v0t)\textbackslash{}hat\{i\} + (H - $\frac{1}{2}$ $^{gt}^{2}^{)}^{\hat{j}}$
+
+### EB3-U1-1.5-Q8 choice B
+  OLD: $\vec{r} = (v_{0}t\cos \theta_{0})\hat{i} + (H\ -\ v_{0}t \sin \theta_{0}\ -\ \frac{1}{2}\ gt^{2})\hat{j}$
+  NEW: \textbackslash{}vec\{r\} = (v0tcos \textbackslash{}theta0)\textbackslash{}hat\{i\} + (H - v0t sin \textbackslash{}theta0 - $\frac{1}{2}$ $^{gt}^{2}^{)}^{\hat{j}}$
+
+### EB3-U1-1.5-Q8 choice C
+  OLD: $\vec{r} = (v_{0}t\cos \theta_{0})\hat{i} + (H\ +\ v_{0}t \sin \theta_{0}\ -\ \frac{1}{2}\ gt^{2})\hat{j}$
+  NEW: \textbackslash{}vec\{r\} = (v0tcos \textbackslash{}theta0)\textbackslash{}hat\{i\} + (H + v0t sin \textbackslash{}theta0 - $\frac{1}{2}$ $^{gt}^{2}^{)}^{\hat{j}}$
+
+### EB3-U1-1.5-Q8 choice D
+  OLD: $\vec{r} = (-\frac{1}{2}\ gt^{2}\ +\ v^{0 t cos \theta 0})\hat{i}+(H\ -\ v^{0 t sin \theta 0}\ -\ \frac{1}{2}\ gt^{2})\hat{j}$
+  NEW: \textbackslash{}vec\{r\} = (-$\frac{1}{2}$ gt2 + v0t cos \textbackslash{}theta0)\textbackslash{}hat\{i\} + (H - v0t sin \textbackslash{}theta0 - $\frac{1}{2}$ $^{gt}^{2}^{)}^{\hat{j}}$
+
+### EB3-U1-1.5-Q9 choice A
+  OLD: ${\mathrm{g}}_{M}$
+  NEW: $\sqrt{\frac{g_{M}}{g_{E}}}$
+
+### EB3-U1-1.5-Q9 choice B
+  OLD: ${\mathrm{g}}_{E}$
+  NEW: 
+
+### EB3-U1-1.5-Q9 choice C
+  OLD: $\mathrm{g}_{M}$
+  NEW: $\frac{g_{M}}{g_{E}}$
+
+### EB3-U1-1.5-Q9 choice D
+  OLD: $\mathrm{g}_{E} ^{\mathrm{g}}_{E} ^{\mathrm{g}}_{M} ^{\mathrm{g}}_{E} ^{\mathrm{g}}_{M}$
+  NEW: $\sqrt{\frac{g_{E}}{g_{M}}}$ $\frac{g_{E}}{g_{M}}$
+
+### EB3-U2-2.1-Q1 STEM
+  OLD: A $24\ \mathrm{cm}$ long rectangular bar is composed of two uniform $12\ \mathrm{cm}$ bars of different materials, A and B, with the same cross-sectional area as shown. The density of material B is twice the density of material A. The long bar is cut through its center of mass and perpendicular to i
+  NEW: A $24$ cm long rectangular bar is composed of two uniform $12$ cm bars of different materials, A and B, with the same cross-sectional area as shown. The density of material B is twice the density of material A. The long bar is cut through its center of mass and perpendicular to its long axis. What i
+
+### EB3-U2-2.1-Q5 STEM
+  OLD: A $0.50\ \mathrm{m}$ long rod lies along the $+x$-axis with one end of the rod at the origin. The rod's linear density is $\lambda\ =$ A $-\ Bx$ where A $=\ 2.0\ \mathrm{kg}/\mathrm{m}$ and $B\ =\ 1.0\ \mathrm{kg}/\mathrm{m}^{2}$. What is the $x$-position of the center of mass of the rod?
+  NEW: A $0.50$ m long rod lies along the $+x$-axis with one end of the rod at the origin. The rod's linear density is $\lambda\ =$ A $-\ Bx$ where A $=\ 2.0\ \mathrm{kg}/\mathrm{m}$ and $B\ =\ 1.0\ \mathrm{kg}/\mathrm{m}^{2}$. What is the $x$-position of the center of mass of the rod?
+
+### EB3-U2-2.1-Q8 STEM
+  OLD: The center of mass of an irregularly shaped platform is balanced on a pivot Point P with coordinates $(7.0\ \mathrm{m}$, $1.0\ \mathrm{m}).$ Two rocks are then placed on top of the platform, as shown in the top view. One rock has a mass of $1.0\ \mathrm{kg}$ and is located at $(-$2.0 m, $-3.0\ \math
+  NEW: The center of mass of an irregularly shaped platform is balanced on a pivot Point P with coordinates $(7.0$ m, $1.0\ \mathrm{m}).$ Two rocks are then placed on top of the platform, as shown in the top view. One rock has a mass of $1.0$ kg and is located at $(-$2.0 m, $-3.0\ \mathrm{m}),$ and the sec
+
+### EB3-U2-2.1-Q8 choice C
+  OLD: $(-1.8\ \mathrm{m}$, $9.8\ \mathrm{m})$
+  NEW: $(-1.8$ m, $9.8\ \mathrm{m})$
+
+### EB3-U2-2.1-Q8 choice D
+  OLD: $(18\ \mathrm{m}$, $2.0\ \mathrm{m})$ \includegraphics[width=0.42\linewidth]{media/u2_21_q8_32.png}
+  NEW: $(18$ m, $2.0\ \mathrm{m})$ \includegraphics[width=0.42\linewidth]{media/u2_21_q8_32.png}
+
+### EB3-U2-2.1-Q9 STEM
+  OLD: A system consists of three uniform spheres connected by a uniform rod passing through the center of each sphere. The rod has a length of $2.0\ \mathrm{m}$ and mass of $1.0\ \mathrm{kg}$, and the spheres have a mass of $1.0\ \mathrm{kg}$, $3.0\ \mathrm{kg}$, and $2.0\ \mathrm{kg}$ located in position
+  NEW: A system consists of three uniform spheres connected by a uniform rod passing through the center of each sphere. The rod has a length of $2.0$ m and mass of $1.0$ kg, and the spheres have a mass of $1.0$ kg, $3.0$ kg, and $2.0$ kg located in positions as shown. What is the distance between the cente
+
+### EB3-U2-2.10-Q2 STEM
+  OLD: A small block of mass $M$ sits on a horizontally rotating platform, a distance $R$ from the axis of rotation. The coefficient of static friction between the block and the platform is $\mu_{\mathrm{s}}$ and the maximum speed the block can have before sliding along the rotating platform is $v_{\mathrm
+  NEW: A small block of mass $M$ sits on a horizontally rotating platform, a distance $R$ from the axis of rotation. The coefficient of static friction between the block and the platform is $\mu_{\mathrm{s}}$ and the maximum speed the block can have before sliding along the rotating platform is $v_{max}$. 
+
+### EB3-U2-2.10-Q2 choice B
+  OLD: $Mv^{2} R$
+  NEW: $\frac{Mv^{2}}{R}$
+
+### EB3-U2-2.10-Q2 choice D
+  OLD: $\mu_{\mathrm{s}}Mg\ -\ Mv^{2} R$
+  NEW: \textbackslash{}musMg - $\frac{Mv^{2}}{R}$
+
+### EB3-U2-2.10-Q4 choice B
+  OLD: $\sqrt{}-gr\ +\ rF^{T}\ \mathrm{m}$
+  NEW: $\sqrt{^{-}^{gr}^{}^{+}^{}\frac{rF_{T}}{m}}$
+
+### EB3-U2-2.10-Q4 choice C
+  OLD: $\sqrt{gr}\ -\ rF^{T}\ \mathrm{m}$
+  NEW: $\sqrt{^{gr}^{}^{-}^{}\frac{rF_{T}}{m}}$
+
+### EB3-U2-2.10-Q4 choice D
+  OLD: $\sqrt{gr}\ +\ rF^{T}\ \mathrm{m}$
+  NEW: $\sqrt{^{gr}^{}^{+}^{}\frac{rF_{T}}{m}}$
+
+### EB3-U2-2.10-Q5 choice A
+  OLD: $\sqrt{8\ \mathrm{mg}}$
+  NEW: $8\ \mathrm{mg}$
+
+### EB3-U2-2.10-Q5 choice C
+  OLD: $\sqrt{10\ \mathrm{mg}}$
+  NEW: $10\ \mathrm{mg}$
+
+### EB3-U2-2.10-Q6 choice A
+  OLD: 
+  NEW: $\frac{y}{4}$$\sqrt{^{1} }$
+
+### EB3-U2-2.10-Q6 choice B
+  OLD: $\sqrt{2} 2\ ^{y 1}$
+  NEW: $\frac{2}{2}$$\sqrt{ }$y1
+
+### EB3-U2-2.10-Q6 choice C
+  OLD: 
+  NEW: $\frac{y}{2}$$\sqrt{^{1} }$
+
+### EB3-U2-2.2-Q9 choice B
+  OLD: The $F_{P}$ arrow should be labeled as $F_{\mathrm{AB}}$ for the force that Block A exerts on Block B.
+  NEW: The $F_{P}$ arrow should be labeled as $F_{AB}$ for the force that Block A exerts on Block B.
+
+### EB3-U2-2.2-Q9 choice C
+  OLD: There should be an additional force $F_{\mathrm{AB}}$ pointing down the incline.
+  NEW: There should be an additional force $F_{AB}$ pointing down the incline.
+
+### EB3-U2-2.3-Q1 STEM
+  OLD: An elephant pushes two heavy boxes across a rough surface. The force that Box A exerts on Box B is $F_{\mathrm{AB}}$ and the force that Box B exerts on Box A is $F_{\mathrm{BA}}$. Which of the following statements indicates the correct reasoning to support the claim that $|F_{\mathrm{AB}}| = |F_{\ma
+  NEW: An elephant pushes two heavy boxes across a rough surface. The force that Box A exerts on Box B is $F_{AB}$ and the force that Box B exerts on Box A is $F_{BA}$. Which of the following statements indicates the correct reasoning to support the claim that $|F_{AB}| = |F_{BA}|$?
+
+### EB3-U2-2.3-Q3 STEM
+  OLD: A block with a weight of $50\ \mathrm{N}$ hangs vertically by a rope, with uniform density, attached to a hook as shown. The weight of the rope is $5\ \mathrm{N}$. Which statement best describes the tension in the rope?
+  NEW: A block with a weight of $50$ N hangs vertically by a rope, with uniform density, attached to a hook as shown. The weight of the rope is $5$ N. Which statement best describes the tension in the rope?
+
+### EB3-U2-2.3-Q3 choice A
+  OLD: The tension in the rope is $50\ \mathrm{N}$ at every location along the rope.
+  NEW: The tension in the rope is $50$ N at every location along the rope.
+
+### EB3-U2-2.3-Q3 choice B
+  OLD: The tension in the rope is $55\ \mathrm{N}$ at every location the rope.
+  NEW: The tension in the rope is $55$ N at every location the rope.
+
+### EB3-U2-2.3-Q3 choice C
+  OLD: The tension in the rope changes uniformly from $50\ \mathrm{N}$ at the top of the rope to $55\ \mathrm{N}$ at the bottom of the rope.
+  NEW: The tension in the rope changes uniformly from $50$ N at the top of the rope to $55$ N at the bottom of the rope.
+
+### EB3-U2-2.3-Q3 choice D
+  OLD: The tension in the rope changes uniformly from $50\ \mathrm{N}$ at the bottom of the rope to $55\ \mathrm{N}$ at the top of the rope.
+  NEW: The tension in the rope changes uniformly from $50$ N at the bottom of the rope to $55$ N at the top of the rope.
+
+### EB3-U2-2.3-Q5 STEM
+  OLD: A $1\ \mathrm{kg}$ box rests on a horizontal floor, up against a wall. A student then pushes the box such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\mathrm{W}\ 1}$ on the box. Next, the student replaces the $1\ \mathrm{kg}$ box with a $2\ \mathrm{kg}$ box and p
+  NEW: A $1$ kg box rests on a horizontal floor, up against a wall. A student then pushes the box such that the box exerts a force $F_{B}$ on the wall, and the wall exerts a force $F_{\mathrm{W}\ 1}$ on the box. Next, the student replaces the $1$ kg box with a $2$ kg box and pushes it such that the box exe
+
+### EB3-U2-2.3-Q5 choice A
+  OLD: $F_{\mathrm{W}\ 2}\ >\ F_{\mathrm{W}\ 1}$ because the weight of the $2\ \mathrm{kg}$ box is greater than that of the $1\ \mathrm{kg}$ box.
+  NEW: $F_{\mathrm{W}\ 2}\ >\ F_{\mathrm{W}\ 1}$ because the weight of the $2$ kg box is greater than that of the $1$ kg box.
+
+### EB3-U2-2.3-Q5 choice B
+  OLD: $F_{\mathrm{W}\ 2}\ >\ F_{\mathrm{W}\ 1}$ because the normal force exerted on the $2\ \mathrm{kg}$ box must be greater than the normal force exerted on the $1\ \mathrm{kg}$ box.
+  NEW: $F_{\mathrm{W}\ 2}\ >\ F_{\mathrm{W}\ 1}$ because the normal force exerted on the $2$ kg box must be greater than the normal force exerted on the $1$ kg box.
+
+### EB3-U2-2.3-Q8 choice A
+  OLD: $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ >\ 0 T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ =\ 0$
+  NEW: $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ >\ 0$ $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ =\ 0$
+
+### EB3-U2-2.3-Q8 choice B
+  OLD: $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ >\ 0 T_{\mathrm{s}}\ >\ T_{\mathrm{h}}\ =\ 0$
+  NEW: $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ >\ 0$ $T_{\mathrm{s}}\ >\ T_{\mathrm{h}}\ =\ 0$
+
+### EB3-U2-2.3-Q8 choice C
+  OLD: $T_{\mathrm{h}}\ >\ T_{\mathrm{s}}\ >\ 0 T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ =\ 0$
+  NEW: $T_{\mathrm{h}}\ >\ T_{\mathrm{s}}\ >\ 0$ $T_{\mathrm{h}}\ =\ T_{\mathrm{s}}\ =\ 0$
+
+### EB3-U2-2.3-Q8 choice D
+  OLD: $T_{\mathrm{h}}\ >\ T_{\mathrm{s}}\ >\ 0 T_{\mathrm{s}}\ >\ T_{\mathrm{h}}\ =\ 0$ \includegraphics[width=0.56\linewidth]{media/u2_23_q8_53.png}
+  NEW: $T_{\mathrm{h}}\ >\ T_{\mathrm{s}}\ >\ 0$ $T_{\mathrm{s}}\ >\ T_{\mathrm{h}}\ =\ 0$ \includegraphics[width=0.56\linewidth]{media/u2_23_q8_53.png}
+
+### EB3-U2-2.4-Q3 STEM
+  OLD: Two students are pushing a $10\ \mathrm{kg}$ box with horizontal forces in opposite directions along a rough, horizontal surface. The magnitudes of these forces are $24\ \mathrm{N}$ and $60\ \mathrm{N}$. If the box is traveling with a constant velocity of $3\ \mathrm{m/s},$ what is the magnitude of 
+  NEW: Two students are pushing a $10$ kg box with horizontal forces in opposite directions along a rough, horizontal surface. The magnitudes of these forces are $24$ N and $60$ N. If the box is traveling with a constant velocity of $3\ \mathrm{m/s},$ what is the magnitude of the frictional force exerted t
+
+### EB3-U2-2.4-Q8 STEM
+  OLD: A $50\ \mathrm{N}$ block is suspended from the ceiling and wall by light strings as shown in the figure. String A is at an angle $\theta\ =\ 30^{\circ}$ below the horizontal and String B is horizontal. The tension in String B is most nearly
+  NEW: A $50$ N block is suspended from the ceiling and wall by light strings as shown in the figure. String A is at an angle $\theta\ =\ 30^{\circ}$ below the horizontal and String B is horizontal. The tension in String B is most nearly
+
+### EB3-U2-2.5-Q1 STEM
+  OLD: Three blocks are in contact with each other, and they are at rest on a horizontal surface with negligible friction. The masses of the blocks are $2\ \mathrm{kg}$, $4\ \mathrm{kg}$, and $1\ \mathrm{kg}$, as shown in the figure. While a force of $28\ \mathrm{N}$ pushes the $2\ \mathrm{kg}$ block to th
+  NEW: Three blocks are in contact with each other, and they are at rest on a horizontal surface with negligible friction. The masses of the blocks are $2$ kg, $4$ kg, and $1$ kg, as shown in the figure. While a force of $28$ N pushes the $2$ kg block to the right, what is the magnitude of the force that t
+
+### EB3-U2-2.5-Q2 STEM
+  OLD: A small block of mass $\mathrm{m}$ is moving along a horizontal surface when it collides with a large block of mass $M$, which is initially at rest. Friction between the blocks and surface is negligible and $\mathrm{m} < M$. Which of the following statements correctly compares the magnitude of the a
+  NEW: A small block of mass $\mathrm{m}$ is moving along a horizontal surface when it collides with a large block of mass $M$, which is initially at rest. Friction between the blocks and surface is negligible and $\mathrm{m} < M$. Which of the following statements correctly compares the magnitude of the a
+
+### EB3-U2-2.5-Q2 choice A
+  OLD: $a_{S}\ > a_{\mathrm{L}}$ because the large block exerts a greater force on the small block than the small block exerts on the large block.
+  NEW: a$_{S}\ >$ a$_{\mathrm{L}}$ because the large block exerts a greater force on the small block than the small block exerts on the large block.
+
+### EB3-U2-2.5-Q2 choice B
+  OLD: $a_{S}\ > a_{\mathrm{L}}$ because the small block has less mass than the large block and the blocks exert forces of equal magnitude on each other.
+  NEW: a$_{S}\ >$ a$_{\mathrm{L}}$ because the small block has less mass than the large block and the blocks exert forces of equal magnitude on each other.
+
+### EB3-U2-2.5-Q2 choice C
+  OLD: $a_{S}\ = a_{\mathrm{L}}$ because Newton's third law states that every action has an equal and opposite reaction.
+  NEW: a$_{S}\ =$ a$_{\mathrm{L}}$ because Newton's third law states that every action has an equal and opposite reaction.
+
+### EB3-U2-2.5-Q2 choice D
+  OLD: $a_{S}\ = a_{\mathrm{L}}$ because the acceleration of the center of mass of the two-block system is zero as there is no external net force exerted on the system.
+  NEW: a$_{S}\ =$ a$_{\mathrm{L}}$ because the acceleration of the center of mass of the two-block system is zero as there is no external net force exerted on the system.
+
+### EB3-U2-2.5-Q3 STEM
+  OLD: A system consists of three discrete masses, and a different rightward force is exerted on each mass. A $2\ \mathrm{N}$ force is exerted on the $2\ \mathrm{kg}$ mass, a $16\ \mathrm{N}$ force is exerted on the $4\ \mathrm{kg}$ mass, and a $42\ \mathrm{N}$ force is exerted on the $6\ \mathrm{kg}$ mass
+  NEW: A system consists of three discrete masses, and a different rightward force is exerted on each mass. A $2$ N force is exerted on the $2$ kg mass, a $16$ N force is exerted on the $4$ kg mass, and a $42$ N force is exerted on the $6$ kg mass as shown in the figure. What is the magnitude of the accele
+
+### EB3-U2-2.5-Q5 STEM
+  OLD: Two forces, $F_{T}\ =$ 3 N and $F_{S}\ =\ 4\ \mathrm{N}$, exerted in opposite directions as shown in the figure, cause an object to move with an acceleration of magnitude $a_{0}$. If these forces are instead exerted perpendicular to each other, what is the new magnitude of the acceleration of the ob
+  NEW: Two forces, $F_{T}\ =$ 3 N and $F_{S}\ =\ 4$ N, exerted in opposite directions as shown in the figure, cause an object to move with an acceleration of magnitude a$_{0}$. If these forces are instead exerted perpendicular to each other, what is the new magnitude of the acceleration of the object?
+
+### EB3-U2-2.5-Q5 choice A
+  OLD: $a_{0}/5$
+  NEW: a$_{0}/5$
+
+### EB3-U2-2.5-Q5 choice B
+  OLD: $a_{0}$
+  NEW: a$_{0}$
+
+### EB3-U2-2.5-Q5 choice C
+  OLD: $5 a_{0}$
+  NEW: $5$a$_{0}$
+
+### EB3-U2-2.5-Q5 choice D
+  OLD: $7 a_{0}$
+  NEW: $7$a$_{0}$
+
+### EB3-U2-2.5-Q7 STEM
+  OLD: A $0.5\ \mathrm{kg}$ object with three constant forces exerted on it has an acceleration a $=\ 28.2\ \mathrm{m/s}^{2}$ at an angle of $45^{\circ}$ above the horizontal as shown in the figure. Two of the forces are given as $F_{1}\ =$ 5 N and $F_{2}\ =$ 30 N with directions as shown. What is the magn
+  NEW: A $0.5$ kg object with three constant forces exerted on it has an acceleration a $=\ 28.2\ \mathrm{m/s}^{2}$ at an angle of $45^{\circ}$ above the horizontal as shown in the figure. Two of the forces are given as $F_{1}\ =$ 5 N and $F_{2}\ =$ 30 N with directions as shown. What is the magnitude of t
+
+### EB3-U2-2.5-Q8 STEM
+  OLD: Three large blocks, A, B, and C, and a small block attached to Block B slide across a horizontal surface as a constant force $F$ is exerted on Block A, as shown in the figure. There is negligible friction between the blocks and the horizontal surface. Block A pushes Block B with a force $F_{\mathrm{
+  NEW: Three large blocks, A, B, and C, and a small block attached to Block B slide across a horizontal surface as a constant force $F$ is exerted on Block A, as shown in the figure. There is negligible friction between the blocks and the horizontal surface. Block A pushes Block B with a force $F_{AB}$ . T
+
+### EB3-U2-2.5-Q8 choice A
+  OLD: $F_{\mathrm{AB}}$ is not the same as the first situation because Block B now has the same acceleration but a different mass.
+  NEW: $F_{AB}$ is not the same as the first situation because Block B now has the same acceleration but a different mass.
+
+### EB3-U2-2.5-Q8 choice B
+  OLD: $F_{\mathrm{AB}}$ is not the same as the first situation because Block B now has a different acceleration.
+  NEW: $F_{AB}$ is not the same as the first situation because Block B now has a different acceleration.
+
+### EB3-U2-2.5-Q8 choice C
+  OLD: $F_{\mathrm{AB}}$ is the same as the first situation because Block B is also being pushed by Block C by the same amount in both situations.
+  NEW: $F_{AB}$ is the same as the first situation because Block B is also being pushed by Block C by the same amount in both situations.
+
+### EB3-U2-2.5-Q8 choice D
+  OLD: $F_{\mathrm{AB}}$ is the same as the first situation because the net force on Block A is the same in both situations.
+  NEW: $F_{AB}$ is the same as the first situation because the net force on Block A is the same in both situations.
+
+### EB3-U2-2.6-Q1 choice B
+  OLD: 
+  NEW: $\frac{GM}{R^{2}}$
+
+### EB3-U2-2.6-Q1 choice C
+  OLD: 
+  NEW: $\frac{GM}{(2R)^{2}}$
+
+### EB3-U2-2.6-Q1 choice D
+  OLD: $G(2\ M) (2\ R)2$
+  NEW: $\frac{G(2M)}{(2R)^{2}}$
+
+### EB3-U2-2.6-Q5 choice A
+  OLD: $1$
+  NEW: $\frac{1}{4}$ $\frac{GMm}{R^{2}}$
+
+### EB3-U2-2.6-Q5 choice B
+  OLD: $1$
+  NEW: $\frac{1}{2}$ $\frac{GMm}{R^{2}}$
+
+### EB3-U2-2.6-Q5 choice C
+  OLD: 
+  NEW: $\frac{GMm}{R^{2}}$
+
+### EB3-U2-2.6-Q5 choice D
+  OLD: $2\ ^{GMm} R^{2} 4 2$
+  NEW: 2 $\frac{GMm}{R^{2}}$
+
+### EB3-U2-2.6-Q6 choice A
+  OLD: $(\frac{1}{d}0 _{2}$
+  NEW: ($\frac{1}{2}$ $^{+}^{\sqrt{}}^{2}^{)}^{Gm}$ $\frac{02}{d_{0}^{2}}$
+
+### EB3-U2-2.6-Q6 choice B
+  OLD: $d0 _{2}$
+  NEW: (1 + \textbackslash{}sqrt\{\}2) $\frac{Gm_{0}^{2}}{d_{0}^{2}}$
+
+### EB3-U2-2.6-Q6 choice C
+  OLD: $(\frac{5}{d}0 _{2}$
+  NEW: ($\frac{5}{2}$ $^{)}^{G}$ $\frac{m_{0}^{2}}{d_{0}^{2}}$
+
+### EB3-U2-2.6-Q6 choice D
+  OLD: $d0 _{2}$
+  NEW: 3 $\frac{Gm_{0}^{2}}{d_{0}^{2}}$
+
+### EB3-U2-2.7-Q1 STEM
+  OLD: Block $1$ of mass $3.0\ \mathrm{kg}$ is on a horizontal surface and is pulled at a constant velocity to the right by a string, as shown in the figure. Block $2$ of mass $1.0\ \mathrm{kg}$ is on Block $1$ and held at rest by another string attached to a vertical wall. The coefficients of kinetic and 
+  NEW: Block $1$ of mass $3.0$ kg is on a horizontal surface and is pulled at a constant velocity to the right by a string, as shown in the figure. Block $2$ of mass $1.0$ kg is on Block $1$ and held at rest by another string attached to a vertical wall. The coefficients of kinetic and static friction betw
+
+### EB3-U2-2.7-Q2 STEM
+  OLD: A $1.5\ \mathrm{kg}$ block is held at rest near the top of a rough incline that makes an angle of $37^{\circ}$ from the horizontal. The block is then released and starts moving with a constant acceleration. When the block travels $2.0\ \mathrm{m}$, its velocity is $4.0\ \mathrm{m/s}.$ The coefficien
+  NEW: A $1.5$ kg block is held at rest near the top of a rough incline that makes an angle of $37^{\circ}$ from the horizontal. The block is then released and starts moving with a constant acceleration. When the block travels $2.0$ m, its velocity is $4.0\ \mathrm{m/s}.$ The coefficient of kinetic frictio
+
+### EB3-U2-2.8-Q3 STEM
+  OLD: A $10\ \mathrm{kg}$ block is hung vertically from an ideal spring, stretching the spring by $0.25\ \mathrm{m}$. The block is removed, and the spring is cut into two segments of equal length. What is the spring constant of one of these segments?
+  NEW: A $10$ kg block is hung vertically from an ideal spring, stretching the spring by $0.25$ m. The block is removed, and the spring is cut into two segments of equal length. What is the spring constant of one of these segments?
+
+### EB3-U2-2.8-Q5 STEM
+  OLD: Figure $1$ and Figure $2$ show identical blocks of mass $\mathrm{m}_{0}$ hanging from identical springs, each with a spring constant $k_{0}$. In Figure $1,$ the springs are connected in series, and the two-spring system stretches a distance $d_{1}\ =\ 0.40\ \mathrm{m}$ from its unstretched length. I
+  NEW: Figure $1$ and Figure $2$ show identical blocks of mass $\mathrm{m}_{0}$ hanging from identical springs, each with a spring constant $k_{0}$. In Figure $1,$ the springs are connected in series, and the two-spring system stretches a distance $d_{1}\ =\ 0.40$ m from its unstretched length. In Figure $
+
+### EB3-U2-2.8-Q8 STEM
+  OLD: A group of students is experimenting with two springs, Spring $1$ and Spring $2.$ Spring $1$ stretches by a distance of $0.400\ \mathrm{m}$ when a block weighing $8.0\ \mathrm{N}$ is hung vertically from it. When the same block is hung vertically from Spring $2,$ Spring $2$ stretches by a distance o
+  NEW: A group of students is experimenting with two springs, Spring $1$ and Spring $2.$ Spring $1$ stretches by a distance of $0.400$ m when a block weighing $8.0$ N is hung vertically from it. When the same block is hung vertically from Spring $2,$ Spring $2$ stretches by a distance of $0.100$ m. The two
+
+### EB3-U2-2.8-Q9 STEM
+  OLD: A block hangs at rest at the end of an ideal spring with spring constant $k_{1}$ as shown in Scenario $1.$ In Scenario $2,$ a second ideal spring with a spring constant $k_{2}$, where $k_{2}\ \neq\ k_{1}$, is then added above the original spring and the block again hangs at rest. Which statement bes
+  NEW: A block hangs at rest at the end of an ideal spring with spring constant $k_{1}$ as shown in Scenario $1.$ In Scenario $2,$ a second ideal spring with a spring constant $k_{2}$, where $k_{2}\ \neq\ k_{1}$, is then added above the original spring and the block again hangs at rest. Which statement bes
+
+### EB3-U2-2.8-Q9 choice A
+  OLD: $k_{\mathrm{eq}}\ >\ k_{1}$ because in Scenario $2$ both springs pull up on the block.
+  NEW: $k_{eq}\ >\ k_{1}$ because in Scenario $2$ both springs pull up on the block.
+
+### EB3-U2-2.8-Q9 choice B
+  OLD: $k_{\mathrm{eq}}\ >\ k_{1}$ because the combination of both springs will stretch more than the original spring.
+  NEW: $k_{eq}\ >\ k_{1}$ because the combination of both springs will stretch more than the original spring.
+
+### EB3-U2-2.8-Q9 choice C
+  OLD: $k_{\mathrm{eq}}\ <\ k_{1}$ because the same weight will cause more stretching with two springs than with one.
+  NEW: $k_{eq}\ <\ k_{1}$ because the same weight will cause more stretching with two springs than with one.
+
+### EB3-U2-2.8-Q9 choice D
+  OLD: $k_{\mathrm{eq}}\ <\ k_{1}$ because in Scenario $2$ both springs stretch by the same amount.
+  NEW: $k_{eq}\ <\ k_{1}$ because in Scenario $2$ both springs stretch by the same amount.
+
+### EB3-U2-2.9-Q1 STEM
+  OLD: Two spheres, A and B, of identical size and surface material, but different masses, are dropped from rest near the surface of Earth. While falling, each sphere experiences a resistive force which is proportional to the sphere's velocity. What are the relationships of the magnitude of the initial acc
+  NEW: Two spheres, A and B, of identical size and surface material, but different masses, are dropped from rest near the surface of Earth. While falling, each sphere experiences a resistive force which is proportional to the sphere's velocity. What are the relationships of the magnitude of the initial acc
+
+### EB3-U2-2.9-Q1 choice A
+  OLD: $a_{\mathrm{0,A}}\ = a_{\mathrm{0,B}} v_{\mathrm{T,A}}\ =\ v_{\mathrm{T,B}}$
+  NEW: a$_{0,A}\ =$ a$_{0,B}$ $v_{T,A}\ =\ v_{T,B}$
+
+### EB3-U2-2.9-Q1 choice B
+  OLD: $a_{\mathrm{0,A}}\ = a_{\mathrm{0,B}} v_{\mathrm{T,A}}\ <\ v_{\mathrm{T,B}}$
+  NEW: a$_{0,A}\ =$ a$_{0,B}$ $v_{T,A}\ <\ v_{T,B}$
+
+### EB3-U2-2.9-Q1 choice C
+  OLD: $a_{\mathrm{0,A}}\ < a_{\mathrm{0,B}} v_{\mathrm{T,A}}\ =\ v_{\mathrm{T,B}}$
+  NEW: a$_{0,A}\ <$ a$_{0,B}$ $v_{T,A}\ =\ v_{T,B}$
+
+### EB3-U2-2.9-Q1 choice D
+  OLD: $a_{\mathrm{0,A}}\ < a_{\mathrm{0,B}} v_{\mathrm{T,A}}\ <\ v_{\mathrm{T,B}}$
+  NEW: a$_{0,A}\ <$ a$_{0,B}$ $v_{T,A}\ <\ v_{T,B}$
+
+### EB3-U2-2.9-Q2 STEM
+  OLD: An object of mass $\mathrm{m}$ falling near Earth's surface experiences a resistive force of $F_{R}\ =\ -bv^{2}$, where $b$ is a positive constant with units of Ns$2/\mathrm{m}^{2}$ and $v$ is in $\mathrm{m/s}.$ What is the magnitude of the acceleration of the object when it is moving downward at a 
+  NEW: An object of mass $\mathrm{m}$ falling near Earth's surface experiences a resistive force of $F_{R}\ =\ -bv^{2}$, where $b$ is a positive constant with units of Ns$^{2}/\mathrm{m}^{2}$ and $v$ is in $\mathrm{m/s}.$ What is the magnitude of the acceleration of the object when it is moving downward at
+
+### EB3-U2-2.9-Q4 choice A
+  OLD: $\mathrm{mg} k\ (e\ -\ 1$ e $)$
+  NEW: $\frac{mg}{k}$ ($\frac{e - 1}{e}$ $)$
+
+### EB3-U2-2.9-Q4 choice B
+  OLD: $\mathrm{mg} k\ (e^{3}\ -\ 1$ e$3 )$
+  NEW: $\frac{mg}{k}$ ($\frac{e^{3} - 1}{e^{3}}$ $)$
+
+### EB3-U2-2.9-Q4 choice C
+  OLD: $\mathrm{mg} k\ (e^{3}\ -\ 1$ e$4 )$
+  NEW: $\frac{mg}{k}$ ($\frac{e^{3} - 1}{e^{4}}$ $)$
+
+### EB3-U2-2.9-Q4 choice D
+  OLD: $\mathrm{mg} k\ (e^{4}\ -\ 1$ e$4 )$
+  NEW: $\frac{mg}{k}$ ($\frac{e^{4} - 1}{e^{4}}$ $)$
+
+### EB3-U2-2.9-Q5 STEM
+  OLD: An object is dropped from rest at $t\ =\ 0$ near Earth's surface and experiences a resistive force of magnitude $kv$, where $v$ is the speed of the object and $k$ is a constant which depends on a variety of factors. The object reaches a speed of $0.5\ v_{T}$ at $t\ =\ t_{\mathrm{0.5}}$, where $v_{T}
+  NEW: An object is dropped from rest at $t\ =\ 0$ near Earth's surface and experiences a resistive force of magnitude $kv$, where $v$ is the speed of the object and $k$ is a constant which depends on a variety of factors. The object reaches a speed of $0.5\ v_{T}$ at $t\ =\ t_{0.5}$, where $v_{T}$ is the 
+
+### EB3-U2-2.9-Q6 choice A
+  OLD: $v_{0}$e $-k \mathrm{m} ^{t}$
+  NEW: $v_{0}$e $-k$ $\mathrm{m} ^{t}$
+
+### EB3-U2-2.9-Q6 choice B
+  OLD: $v_{0} (1\ -$ e $-k \mathrm{m} ^{t})$
+  NEW: $v_{0} (1\ -$ e $-k$ $\mathrm{m} ^{t})$
+
+### EB3-U2-2.9-Q6 choice C
+  OLD: $v_{0} (1\ -\ \frac{k}{mathrm}{m} ^{t})$
+  NEW: $v_{0} (1\ -\ ^{k}$ $\mathrm{m} ^{t}^{)}$
+
+### EB3-U2-2.9-Q6 choice D
+  OLD: $v_{0} (1\ +\ \frac{k}{mathrm}{m} ^{t})$
+  NEW: $v_{0} (1\ +\ ^{k}$ $\mathrm{m} ^{t}^{)}$
+
+### EB3-U2-2.9-Q9 STEM
+  OLD: An object is released from rest and falls to the ground near Earth's surface. The resistive force exerted on the object is directly proportional to the speed of the object which results in a velocity function which includes the term e$-t/\beta$, where $\beta$ is a positive constant . Which of the fo
+  NEW: An object is released from rest and falls to the ground near Earth's surface. The resistive force exerted on the object is directly proportional to the speed of the object which results in a velocity function which includes the term e$^{-}^{t}^{/}^{\beta}$, where $\beta$ is a positive constant . Whi
+
+### EB3-U3-3.1-Q7 STEM
+  OLD: A student stands on a bus moving with a constant speed $v$ to the left as shown in Figure $1.$ The student S is at rest relative to the bus and a ball sits at rest on the floor of the bus next to the student. Outside the bus standing at rest relative to the ground is an observer O. The kinetic energ
+  NEW: A student stands on a bus moving with a constant speed $v$ to the left as shown in Figure $1.$ The student S is at rest relative to the bus and a ball sits at rest on the floor of the bus next to the student. Outside the bus standing at rest relative to the ground is an observer O. The kinetic energ
+
+### EB3-U3-3.1-Q7 choice A
+  OLD: $K_{\mathrm{S1}}\ < K_{\mathrm{S2}}$ and $K_{\mathrm{O1}}\ <\ K_{\mathrm{O2}}$
+  NEW: $K_{S1}\ <$ K$_{S2}$ and $K_{O1}\ <\ K_{O2}$
+
+### EB3-U3-3.1-Q7 choice B
+  OLD: $K_{\mathrm{S1}}\ < K_{\mathrm{S2}}$ and $K_{\mathrm{O1}}\ >\ K_{\mathrm{O2}}$
+  NEW: $K_{S1}\ <$ K$_{S2}$ and $K_{O1}\ >\ K_{O2}$
+
+### EB3-U3-3.1-Q7 choice C
+  OLD: $K_{\mathrm{S1}}\ > K_{\mathrm{S2}}$ and $K_{\mathrm{O1}}\ <\ K_{\mathrm{O2}}$
+  NEW: $K_{S1}\ >$ K$_{S2}$ and $K_{O1}\ <\ K_{O2}$
+
+### EB3-U3-3.1-Q7 choice D
+  OLD: $K_{\mathrm{S1}}\ > K_{\mathrm{S2}}$ and $K_{\mathrm{O1}}\ >\ K_{\mathrm{O2}}$
+  NEW: $K_{S1}\ >$ K$_{S2}$ and $K_{O1}\ >\ K_{O2}$
+
+### EB3-U3-3.2-Q1 choice A
+  OLD: $2$A
+  NEW: $\sqrt{\frac{mv_{0}^{2}}{2A}}$
+
+### EB3-U3-3.2-Q1 choice B
+  OLD: 
+  NEW: $\sqrt{\frac{mv_{0}^{2}}{A}}$
+
+### EB3-U3-3.2-Q1 choice A
+  OLD: 
+  NEW: $\frac{mv_{0}^{2}}{2A}$
+
+### EB3-U3-3.2-Q1 choice C
+  OLD: 
+  NEW: $\frac{mv_{0}^{2}}{A}$
+
+### EB3-U3-3.2-Q3 STEM
+  OLD: The net force acting on an object as a function of its displacement is shown for the first $10\ \mathrm{m}$ of the object's motion. Which of the following statements is true about the work done on the object by the net force during this interval?
+  NEW: The net force acting on an object as a function of its displacement is shown for the first $10$ m of the object's motion. Which of the following statements is true about the work done on the object by the net force during this interval?
+
+### EB3-U3-3.2-Q8 STEM
+  OLD: An object is moving along the $x$-axis under the influence of a variable net force $F_{\mathrm{net}}$. The work done on the object as a function of the displacement, $x$, of the object (for values of displacement $x$ > 1) is $\mathrm{W}\ =$ a$/x^{2}\ -\ b/x$, where a and $b$ are constants with appro
+  NEW: An object is moving along the $x$-axis under the influence of a variable net force $F_{net}$. The work done on the object as a function of the displacement, $x$, of the object (for values of displacement $x$ > 1) is $\mathrm{W}\ =$ a$/x^{2}\ -\ b/x$, where a and $b$ are constants with appropriate un
+
+### EB3-U3-3.2-Q8 choice A
+  OLD: $x^{3}\ -\ b$ a $x^{2}$
+  NEW: $\frac{a}{x^{3}}$ - $\frac{b}{x^{2}}$
+
+### EB3-U3-3.2-Q8 choice B
+  OLD: $x^{2}\ -\ 2^{a} b x^{3}$
+  NEW: $\frac{b}{x^{2}}$ - $\frac{2a}{x^{3}}$
+
+### EB3-U3-3.2-Q8 choice C
+  OLD: $-a x\ -\ b^{ln}(x)$
+  NEW: -$\frac{a}{x}$ $^{-}\ ^{b}^{ln}^{(}^{x}^{)}$
+
+### EB3-U3-3.2-Q8 choice D
+  OLD: $\frac{a}{x}\ -\ b$ \includegraphics[width=0.39\linewidth]{media/u3_32_q8_79.png}
+  NEW: $\frac{a}{x}$ $^{-}\ ^{b}$ \includegraphics[width=0.39\linewidth]{media/u3_32_q8_79.png}
+
+### EB3-U3-3.2-Q9 choice A
+  OLD: $K\ =\ \frac{2}{3}\ D^{3}$
+  NEW: K = $\frac{2}{3}$ $^{D}^{3}$
+
+### EB3-U3-3.2-Q9 choice B
+  OLD: $K\ =\ \frac{3}{2}\ D^{2}$
+  NEW: K = $\frac{3}{2}$ $^{D}^{2}$
+
+### EB3-U3-3.2-Q9 choice D
+  OLD: $K\ =\ \frac{3}{2}\ D^{2}\ -\ \frac{2}{3}\ D^{3}$
+  NEW: K = $\frac{3}{2}$ D2 - $\frac{2}{3}$ $^{D}^{3}$
+
+### EB3-U3-3.3-Q2 STEM
+  OLD: An object of mass 2kg moves along the $x$-axis while a net non-linear conservative force is exerted on it. The potential energy of the system consisting of the object as well as other objects is given by the graph. The speed of the object at $x\ =\ 1\ \mathrm{m}$ is $2\ \mathrm{m/s}.$ Estimate the m
+  NEW: An object of mass 2kg moves along the $x$-axis while a net non-linear conservative force is exerted on it. The potential energy of the system consisting of the object as well as other objects is given by the graph. The speed of the object at $x\ =\ 1$ m is $2\ \mathrm{m/s}.$ Estimate the maximum spe
+
+### EB3-U3-3.3-Q2 choice B
+  OLD: $\sqrt{5}\ \mathrm{m/s}$
+  NEW: $5\ \mathrm{m/s}$
+
+### EB3-U3-3.3-Q2 choice C
+  OLD: $2\sqrt{3}\ \mathrm{m/s}$
+  NEW: $23\ \mathrm{m/s}$
+
+### EB3-U3-3.3-Q3 STEM
+  OLD: $3$ . Which of the following expressions correctly models the potential energy stored in the spring when it is compressed a distance of $D$?
+  NEW: The force exerted by a non-linear spring is given by F(x) $\sqrt{=}$ -kx $4$ $3$ . Which of the following expressions correctly models the potential energy stored in the spring when it is compressed a distance of $D$?
+
+### EB3-U3-3.3-Q3 choice A
+  OLD: $\frac{1}{2}\ kD^{2}$
+  NEW: $\frac{1}{2}$ $^{kD}^{2}$
+
+### EB3-U3-3.3-Q3 choice B
+  OLD: $\frac{3}{7}\ \frac{kD}{7} 3$
+  NEW: $\frac{3}{7}$ $\sqrt{ }$kD $7$ $3$
+
+### EB3-U3-3.3-Q3 choice C
+  OLD: $\frac{1}{2}\ \frac{kD}{8} 3$
+  NEW: $\frac{1}{2}$ $^{kD}$ $8$ $3$
+
+### EB3-U3-3.3-Q3 choice D
+  OLD: $\frac{4}{3}\ \frac{kD}{1} 3$
+  NEW: $\frac{4}{3}$ $^{kD}$ $1$ $3$
+
+### EB3-U3-3.3-Q4 choice B
+  OLD: $2$a$3\ -$ a$2$
+  NEW: $2$a$^{3}\ -$ a$^{2}$
+
+### EB3-U3-3.3-Q4 choice C
+  OLD: $14$a$3\ -\ 3$a$2$
+  NEW: $14$a$^{3}\ -\ 3$a$^{2}$
+
+### EB3-U3-3.3-Q4 choice D
+  OLD: $42$a$3\ -\ 6$a$2$ \includegraphics[width=0.36\linewidth]{media/u3_33_q4_81.png}
+  NEW: $42$a$^{3}\ -\ 6$a$^{2}$ \includegraphics[width=0.36\linewidth]{media/u3_33_q4_81.png}
+
+### EB3-U3-3.3-Q5 STEM
+  OLD: One end of an ideal spring is attached to a wall and the other end to a block as shown. The block is initially at equilibrium at $x\ =\ 0\ \mathrm{m}$. A physics student determines that stretching the spring by moving the block from $x$ = 0 m to $x\ =\ 0.05\ \mathrm{m}$ stores $4.0\ \mathrm{J}$ of e
+  NEW: One end of an ideal spring is attached to a wall and the other end to a block as shown. The block is initially at equilibrium at $x\ =\ 0$ m. A physics student determines that stretching the spring by moving the block from $x$ = 0 m to $x\ =\ 0.05$ m stores $4.0$ J of energy in the block-spring syst
+
+### EB3-U3-3.3-Q6 STEM
+  OLD: A non-linear spring that is neither compressed or stretched, is connected at one end to a wall and the other end is connected to a block as shown. The magnitude of the force $F$ required to compress the spring can be described by the equation $F(x) =$ e$kx$, where $k$ is the spring constant, and $x$
+  NEW: A non-linear spring that is neither compressed or stretched, is connected at one end to a wall and the other end is connected to a block as shown. The magnitude of the force $F$ required to compress the spring can be described by the equation $F(x) =$ e$^{kx}$, where $k$ is the spring constant, and 
+
+### EB3-U3-3.3-Q6 choice A
+  OLD: $\frac{1}{2}\ kD^{2}$
+  NEW: $\frac{1}{2}$ $^{kD}^{2}$
+
+### EB3-U3-3.3-Q6 choice B
+  OLD: e$kD$
+  NEW: e$^{kD}$
+
+### EB3-U3-3.3-Q6 choice C
+  OLD: $-k$e$kD$
+  NEW: $-k$e$^{kD}$
+
+### EB3-U3-3.3-Q6 choice D
+  OLD: $\frac{1}{k}\ (e^{kD}\ -\ 1)$
+  NEW: $\frac{1}{k}$ $^{(}^{e}^{kD}\ ^{-}\ ^{1}^{)}$
+
+### EB3-U3-3.3-Q7 STEM
+  OLD: One end of a spring of length $\mathrm{L}$and spring constant $k\ =\ 100\ \mathrm{N}/\mathrm{m}^{2}$, is attached to the ceiling as shown. The other end of the spring is attached to a small box of mass $\mathrm{m}_{b}\ =\ 0.6\ \mathrm{kg}$, and the block is released from rest. The potential energy $
+  NEW: One end of a spring of length $\mathrm{L}$and spring constant $k\ =\ 100\ \mathrm{N}/\mathrm{m}^{2}$, is attached to the ceiling as shown. The other end of the spring is attached to a small box of mass $\mathrm{m}_{b}\ =\ 0.6$ kg, and the block is released from rest. The potential energy $U_{\mathrm
+
+### EB3-U3-3.3-Q8 choice A
+  OLD: The mechanical energy of the movable object in the region shown can never be greater than $2\ \mathrm{J}$.
+  NEW: The mechanical energy of the movable object in the region shown can never be greater than $2$ J.
+
+### EB3-U3-3.4-Q3 choice A
+  OLD: $v_{A}\ =\ v_{B} E_{A}\ >\ E_{B}$
+  NEW: $v_{A}\ =\ v_{B}$ $E_{A}\ >\ E_{B}$
+
+### EB3-U3-3.4-Q3 choice B
+  OLD: $v_{A}\ =\ v_{B} E_{A}\ <\ E_{B}$
+  NEW: $v_{A}\ =\ v_{B}$ $E_{A}\ <\ E_{B}$
+
+### EB3-U3-3.4-Q3 choice C
+  OLD: $v_{A}\ >\ v_{B} E_{A}\ =\ E_{B}$
+  NEW: $v_{A}\ >\ v_{B}$ $E_{A}\ =\ E_{B}$
+
+### EB3-U3-3.4-Q3 choice D
+  OLD: $v_{A}\ >\ v_{B} E_{A}\ =\ E_{B}$
+  NEW: $v_{A}\ >\ v_{B}$ $E_{A}\ =\ E_{B}$
+
+### EB3-U3-3.4-Q4 choice A
+  OLD: $\frac{3}{4}\ d$
+  NEW: $\frac{3}{4}$ $^{d}$
+
+### EB3-U3-3.4-Q4 choice B
+  OLD: $\frac{4}{5}\ d$
+  NEW: $\frac{4}{5}$ $^{d}$
+
+### EB3-U3-3.4-Q4 choice C
+  OLD: $\sqrt{3} 2\ ^{d}$
+  NEW: $\frac{3}{2}$$\sqrt{ }$d
+
+### EB3-U3-3.4-Q4 choice D
+  OLD: $2 d \sqrt{5}$ \includegraphics[width=0.66\linewidth]{media/u3_34_q4_85.png}
+  NEW: $d$ $\frac{2}{\sqrt{}5}$ \includegraphics[width=0.66\linewidth]{media/u3_34_q4_85.png}
+
+### EB3-U3-3.4-Q8 choice A
+  OLD: $\Delta E\ =\ \frac{1}{2}\ kx^{2}\ +\ \frac{1}{2}\ mv^{2}$
+  NEW: \textbackslash{}DeltaE = $\frac{1}{2}$ kx2 + $\frac{1}{2}$ $^{mv}^{2}$
+
+### EB3-U3-3.4-Q8 choice B
+  OLD: $\Delta E\ =\ \frac{1}{2}\ kx^{2}\ -\ \frac{1}{2}\ mv^{2}$
+  NEW: \textbackslash{}DeltaE = $\frac{1}{2}$ kx2 - $\frac{1}{2}$ $^{mv}^{2}$
+
+### EB3-U3-3.4-Q8 choice C
+  OLD: $\Delta E\ =\ \frac{1}{2}\ k(D\ -\ x)2\ +\ \frac{1}{2}\ mv^{2}$
+  NEW: \textbackslash{}DeltaE = $\frac{1}{2}$ k(D - x)2 + $\frac{1}{2}$ $^{mv}^{2}$
+
+### EB3-U3-3.4-Q8 choice D
+  OLD: $\Delta E\ =\ \frac{1}{2}\ k(D\ -\ x)2\ -\ \frac{1}{2}\ mv^{2}$ \includegraphics[width=0.42\linewidth]{media/u3_34_q8_87.png}
+  NEW: \textbackslash{}DeltaE = $\frac{1}{2}$ k(D - x)2 - $\frac{1}{2}$ $^{mv}^{2}$ \includegraphics[width=0.42\linewidth]{media/u3_34_q8_87.png}
+
+### EB3-U3-3.4-Q9 choice B
+  OLD: $mgh\ -\ \frac{1}{2}\ mv^{2}$
+  NEW: mgh - $\frac{1}{2}$ $^{mv}^{2}$
+
+### EB3-U3-3.4-Q9 choice D
+  OLD: $mgh\ -\ \frac{3}{2}\ mv^{2}$
+  NEW: mgh - $\frac{3}{2}$ $^{mv}^{2}$
+
+### EB3-U3-3.5-Q2 STEM
+  OLD: A cart of mass $\mathrm{m}\ =\ 4\ \mathrm{kg}$ slides along a horizontal surface with an initial velocity of $5\ \mathrm{m/s}.$ A net force of $8\ \mathrm{N}$ is then exerted on the cart in the direction of motion for $3\ \mathrm{s}$. What is the average power delivered to the cart during the three 
+  NEW: A cart of mass $\mathrm{m}\ =\ 4$ kg slides along a horizontal surface with an initial velocity of $5\ \mathrm{m/s}.$ A net force of $8$ N is then exerted on the cart in the direction of motion for $3$ s. What is the average power delivered to the cart during the three seconds the force is applied?
+
+### EB3-U3-3.5-Q3 STEM
+  OLD: A motor is used to lift a platform as shown between the times $t$ = 0 and $t\ =\ 3\ \mathrm{s}$. The power supplied by the motor is given by $P =$A $-\ Bt$, where A = 6 W and $B\ =\ 2\ \mathrm{W}/\mathrm{s}.$ Which of the following graphs could represent the work done on the platform by the motor as
+  NEW: A motor is used to lift a platform as shown between the times $t$ = 0 and $t\ =\ 3$ s. The power supplied by the motor is given by $P =$A $-\ Bt$, where A = 6 W and $B\ =\ 2\ \mathrm{W}/\mathrm{s}.$ Which of the following graphs could represent the work done on the platform by the motor as a functio
+
+### EB3-U3-3.5-Q4 STEM
+  OLD: A $0.250\ \mathrm{kg}$ cart is being pushed up a track that is inclined at $30^{\circ}$ above the horizontal as shown. Friction between the cart and the track is negligible. Calculate the minimum power required to push the cart up the track at a constant speed of $2.4\ \mathrm{m/s}.$
+  NEW: A $0.250$ kg cart is being pushed up a track that is inclined at $30^{\circ}$ above the horizontal as shown. Friction between the cart and the track is negligible. Calculate the minimum power required to push the cart up the track at a constant speed of $2.4\ \mathrm{m/s}.$
+
+### EB3-U3-3.5-Q5 choice A
+  OLD: $\mathrm{W}_{2}\ =\ \mathrm{W}_{1} t_{2}\ >\ t_{1}$
+  NEW: $\mathrm{W}_{2}\ =\ \mathrm{W}_{1}$ $t_{2}\ >\ t_{1}$
+
+### EB3-U3-3.5-Q5 choice B
+  OLD: $\mathrm{W}_{2}\ >\ \mathrm{W}_{1} t_{2}\ =\ t_{1}$
+  NEW: $\mathrm{W}_{2}\ >\ \mathrm{W}_{1}$ $t_{2}\ =\ t_{1}$
+
+### EB3-U3-3.5-Q5 choice C
+  OLD: $\mathrm{W}_{2}\ =\ \mathrm{W}_{1} t_{2}\ =\ t_{1}$
+  NEW: $\mathrm{W}_{2}\ =\ \mathrm{W}_{1}$ $t_{2}\ =\ t_{1}$
+
+### EB3-U3-3.5-Q5 choice D
+  OLD: $\mathrm{W}_{2}\ >\ \mathrm{W}_{1} t_{2}\ >\ t_{1}$
+  NEW: $\mathrm{W}_{2}\ >\ \mathrm{W}_{1}$ $t_{2}\ >\ t_{1}$
+
+### EB3-U3-3.5-Q7 STEM
+  OLD: In Scenario $1$ an object is pulled at a constant speed on a ramp that is tilted at an angle $\theta_{1}$ above the horizontal as shown in Figure $1.$ Frictional forces between the object and the ramp are negligible. In Scenario $2,$ the incline of the ramp is increased to a larger angle $\theta_{2}
+  NEW: In Scenario $1$ an object is pulled at a constant speed on a ramp that is tilted at an angle $\theta_{1}$ above the horizontal as shown in Figure $1.$ Frictional forces between the object and the ramp are negligible. In Scenario $2,$ the incline of the ramp is increased to a larger angle $\theta_{2}
+
+### EB3-U3-3.5-Q8 STEM
+  OLD: The work done on an object in joules as a function of time is given by the equation $\mathrm{W}\ (t) =\ -$4 sin$($4\pi$t)$. What is the instantaneous power delivered to the object at $t = 0.25\ \mathrm{s}?$
+  NEW: The work done on an object in joules as a function of time is given by the equation $\mathrm{W}\ (t) =\ -$4 sin$($4\textbackslash{}pi$t)$. What is the instantaneous power delivered to the object at $t = 0.25\ \mathrm{s}?$
+
+### EB3-U3-3.5-Q8 choice D
+  OLD: 16\pi W \includegraphics[width=0.5\linewidth]{media/u3_35_q8_101.png}
+  NEW: 16\textbackslash{}pi W \includegraphics[width=0.5\linewidth]{media/u3_35_q8_101.png}
+
+### EB3-U4-4.1-Q1 STEM
+  OLD: An object of mass $\mathrm{m}\ =\ 0.5\ \mathrm{kg}$ is moving in the $xy$-plane with velocity components of $v_{x}\ =$ 3.0 m/s and $v_{y}\ =\ -4.0\ \mathrm{m/s}.$ What is the magnitude of the object's momentum?
+  NEW: An object of mass $\mathrm{m}\ =\ 0.5$ kg is moving in the $xy$-plane with velocity components of $v_{x}\ =$ 3.0 m/s and $v_{y}\ =\ -4.0\ \mathrm{m/s}.$ What is the magnitude of the object's momentum?
+
+### EB3-U4-4.1-Q2 choice B
+  OLD: $2\ p_{0}$
+  NEW: $\frac{2p_{0}}{\sqrt{}2}$
+
+### EB3-U4-4.1-Q2 choice D
+  OLD: $p_{0} \sqrt{2} \sqrt{2}$
+  NEW: $\frac{p_{0}}{\sqrt{}2}$
+
+### EB3-U4-4.1-Q4 STEM
+  OLD: A block with a mass of $2.0\ \mathrm{kg}$ starts from rest and begins to move along the $x$-axis at time $t\ =\ 0$ according to the equation $x\ =\ t^{3}$/2, where $x$ is the block's position, in meters, and $t$ is the time, in seconds. What is the momentum of the block at time $t = 4.0\ \mathrm{s}?
+  NEW: A block with a mass of $2.0$ kg starts from rest and begins to move along the $x$-axis at time $t\ =\ 0$ according to the equation $x\ =\ t^{3}$/2, where $x$ is the block's position, in meters, and $t$ is the time, in seconds. What is the momentum of the block at time $t = 4.0\ \mathrm{s}?$
+
+### EB3-U4-4.1-Q5 STEM
+  OLD: The graph shows the position $x$ as a function of time $t$ for a cart of mass $\mathrm{m}\ =\ 3.0\ \mathrm{kg}$ that moves along the $x-$ axis. What is the magnitude of the change in the cart's momentum between $t$ = 4 s and $t = 10\ \mathrm{s}?$
+
+\includegraphics[width=0.42\linewidth]{media/u4_41_q
+  NEW: The graph shows the position $x$ as a function of time $t$ for a cart of mass $\mathrm{m}\ =\ 3.0$ kg that moves along the $x-$ axis. What is the magnitude of the change in the cart's momentum between $t$ = 4 s and $t = 10\ \mathrm{s}?$
+
+\includegraphics[width=0.42\linewidth]{media/u4_41_q4_102.png}
+
+### EB3-U4-4.2-Q1 choice A
+  OLD: Both students have the same final speed because the $50\ \mathrm{kg}$ student-chair system and the $10\ \mathrm{kg}$ ball- $40\ \mathrm{kg}$ student-chair system have the same mass and experience impulses of the same magnitude.
+  NEW: Both students have the same final speed because the $50$ kg student-chair system and the $10$ kg ball- $40$ kg student-chair system have the same mass and experience impulses of the same magnitude.
+
+### EB3-U4-4.2-Q4 choice A
+  OLD: $\mathrm{W}_{1}\ <\ \mathrm{W}_{2}\ \mathrm{J}_{1}\ <\ \mathrm{J}_{2}$
+  NEW: $\mathrm{W}_{1}\ <\ \mathrm{W}_{2}$ $\mathrm{J}_{1}\ <\ \mathrm{J}_{2}$
+
+### EB3-U4-4.2-Q4 choice B
+  OLD: $\mathrm{W}_{1}\ <\ \mathrm{W}_{2}\ \mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+  NEW: $\mathrm{W}_{1}\ <\ \mathrm{W}_{2}$ $\mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+
+### EB3-U4-4.2-Q4 choice C
+  OLD: $\mathrm{W}_{1}\ >\ \mathrm{W}_{2}\ \mathrm{J}_{1}\ <\ \mathrm{J}_{2}$
+  NEW: $\mathrm{W}_{1}\ >\ \mathrm{W}_{2}$ $\mathrm{J}_{1}\ <\ \mathrm{J}_{2}$
+
+### EB3-U4-4.2-Q4 choice D
+  OLD: $\mathrm{W}_{1}\ >\ \mathrm{W}_{2}\ \mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+  NEW: $\mathrm{W}_{1}\ >\ \mathrm{W}_{2}$ $\mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+
+### EB3-U4-4.2-Q5 STEM
+  OLD: A force $F$ that varies with time $t$ is exerted on an object. The force is described by the equation $F(t) =\ F_{0}$e$-bt$ where $F_{0}$ and $b$ are positive constants. If the object is at rest at time $t\ =\ 0,$ the momentum of the object a very long time later is most nearly
+  NEW: A force $F$ that varies with time $t$ is exerted on an object. The force is described by the equation $F(t) =\ F_{0}$e$^{-}^{bt}$ where $F_{0}$ and $b$ are positive constants. If the object is at rest at time $t\ =\ 0,$ the momentum of the object a very long time later is most nearly
+
+### EB3-U4-4.2-Q8 choice A
+  OLD: $k(t_{2} ^{2}\ -\ t_{1} ^{2})$
+  NEW: $k(t_{2}$ $^{2}\ -\ t_{1}$ $^{2})$
+
+### EB3-U4-4.2-Q8 choice B
+  OLD: $kt_{2} ^{2}\ -\ \mathrm{mg} \sin \theta (t_{2})$
+  NEW: $kt_{2}$ $^{2}\ -\ \mathrm{mg} \sin \theta (t_{2})$
+
+### EB3-U4-4.2-Q8 choice C
+  OLD: $k(t_{2} ^{2}\ -\ t_{1} ^{2}) -\ \mathrm{mg} \sin \theta (t_{2}\ -\ t_{1})$
+  NEW: $k(t_{2}$ $^{2}\ -\ t_{1}$ $^{2}) -\ \mathrm{mg} \sin \theta (t_{2}\ -\ t_{1})$
+
+### EB3-U4-4.2-Q8 choice D
+  OLD: $k(t_{2} ^{2}\ -\ t_{1} ^{2}) -\ \mathrm{mg}\ (t_{2}\ -\ t_{1})$ \includegraphics[width=0.42\linewidth]{media/u4_42_q8_111.png}
+  NEW: $k(t_{2}$ $^{2}\ -\ t_{1}$ $^{2}) -\ \mathrm{mg}\ (t_{2}\ -\ t_{1})$ \includegraphics[width=0.42\linewidth]{media/u4_42_q8_111.png}
+
+### EB3-U4-4.2-Q9 STEM
+  OLD: The graph shows the net force $F$ exerted on an object as a function of time $t$. How does the impulse $\mathrm{J}_{1}$ exerted on the object from $t$ = 0 s to $t\ =\ 1\ \mathrm{s}$ compare to the impulse $\mathrm{J}_{2}$ exerted on the object from $t$ = 1 s to $t = 2\ \mathrm{s}?$
+  NEW: The graph shows the net force $F$ exerted on an object as a function of time $t$. How does the impulse $\mathrm{J}_{1}$ exerted on the object from $t$ = 0 s to $t\ =\ 1$ s compare to the impulse $\mathrm{J}_{2}$ exerted on the object from $t$ = 1 s to $t = 2\ \mathrm{s}?$
+
+### EB3-U4-4.3-Q2 choice A
+  OLD: $v_{1}\ =\ v_{2}\ \mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+  NEW: $v_{1}\ =\ v_{2}$ $\mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+
+### EB3-U4-4.3-Q2 choice B
+  OLD: $v_{1}\ =\ v_{2}\ \mathrm{J}_{1}\ =\ \mathrm{J}_{2}$
+  NEW: $v_{1}\ =\ v_{2}$ $\mathrm{J}_{1}\ =\ \mathrm{J}_{2}$
+
+### EB3-U4-4.3-Q2 choice C
+  OLD: $v_{1}\ >\ v_{2}\ \mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+  NEW: $v_{1}\ >\ v_{2}$ $\mathrm{J}_{1}\ >\ \mathrm{J}_{2}$
+
+### EB3-U4-4.3-Q2 choice D
+  OLD: $v_{1}\ >\ v_{2}\ \mathrm{J}_{1}\ =\ \mathrm{J}_{2}$ \includegraphics[width=0.6\linewidth]{media/u4_43_q2_112.png}
+  NEW: $v_{1}\ >\ v_{2}$ $\mathrm{J}_{1}\ =\ \mathrm{J}_{2}$ \includegraphics[width=0.6\linewidth]{media/u4_43_q2_112.png}
+
+### EB3-U4-4.3-Q3 STEM
+  OLD: A block of mass $\mathrm{m}_{1}$ moves with initial speed $v_{1\ i}$ on a horizontal surface toward a stationary block of mass $\mathrm{m}_{2}$ , as shown in the figure labeled ``Before Collision.'' Friction between the blocks and the horizontal surface is negligible. Three possible outcomes labeled
+  NEW: A block of mass $\mathrm{m}_{1}$ moves with initial speed $v_{1\ i}$ on a horizontal surface toward a stationary block of mass $\mathrm{m}_{2}$ , as shown in the figure labeled ``Before Collision.'' Friction between the blocks and the horizontal surface is negligible. Three possible outcomes labeled
+
+### EB3-U4-4.3-Q3 choice A
+  OLD: $v_{\mathrm{Pcm}}\ =\ v_{\mathrm{Qcm}}\ =\ v_{\mathrm{Rcm}}$
+  NEW: $v_{Pcm}\ =\ v_{Qcm}\ =\ v_{Rcm}$
+
+### EB3-U4-4.3-Q3 choice B
+  OLD: $v_{\mathrm{Qcm}}\ <\ v_{\mathrm{Rcm}}\ <\ v_{\mathrm{Pcm}}$
+  NEW: $v_{Qcm}\ <\ v_{Rcm}\ <\ v_{Pcm}$
+
+### EB3-U4-4.3-Q3 choice C
+  OLD: $v_{\mathrm{Rcm}}\ <\ v_{\mathrm{Pcm}}\ <\ v_{\mathrm{Qcm}}$
+  NEW: $v_{Rcm}\ <\ v_{Pcm}\ <\ v_{Qcm}$
+
+### EB3-U4-4.3-Q3 choice D
+  OLD: $v_{\mathrm{Pcm}}\ <\ v_{\mathrm{Qcm}}\ <\ v_{\mathrm{Rcm}}$
+  NEW: $v_{Pcm}\ <\ v_{Qcm}\ <\ v_{Rcm}$
+
+### EB3-U4-4.3-Q8 choice C
+  OLD: $D\ +\ \frac{2}{3}\ v(t\ -\ t^{1})$
+  NEW: D + $\frac{2}{3}$ $^{v}^{(}^{t}\ ^{-}\ ^{t}^{1}^{)}$
+
+### EB3-U4-4.3-Q8 choice D
+  OLD: $D\ +\ \frac{4}{3}\ v(t\ -\ t^{1})$
+  NEW: D + $\frac{4}{3}$ $^{v}^{(}^{t}\ ^{-}\ ^{t}^{1}^{)}$
+
+### EB3-U4-4.3-Q9 STEM
+  OLD: Two objects, both of mass $\mathrm{m}$, are free to slide with negligible friction on a horizontal surface that lies in the plane of an $xy$-coordinate system. Initially one of the objects moves with a velocity $v_{0}$ in the +$x$-direction and toward the second object, which is at rest. The two obj
+  NEW: Two objects, both of mass $\mathrm{m}$, are free to slide with negligible friction on a horizontal surface that lies in the plane of an $xy$-coordinate system. Initially one of the objects moves with a velocity $v_{0}$ in the +$x$-direction and toward the second object, which is at rest. The two obj
+
+### EB3-U4-4.3-Q9 choice A
+  OLD: $v_{0}(1\ - \cos \theta) -v_{0} \sin \theta$
+  NEW: $v_{0}(1\ -$$\cos \theta)$ $-v_{0} \sin \theta$
+
+### EB3-U4-4.3-Q9 choice B
+  OLD: $-v_{0} \cos \theta -v_{0} \sin \theta$
+  NEW: $-v_{0} \cos \theta$ $-v_{0} \sin \theta$
+
+### EB3-U4-4.3-Q9 choice C
+  OLD: $v_{0} -v_{0}$
+  NEW: $v_{0}$ $-v_{0}$
+
+### EB3-U4-4.3-Q9 choice D
+  OLD: $0 0$
+  NEW: $0$ $0$
+
+### EB3-U4-4.4-Q1 STEM
+  OLD: Two pucks are free to slide on a horizontal surface with negligible friction. The figure shows a top view of the pucks, one of mass $4.0\ \mathrm{kg}$ and one of mass $3.0\ \mathrm{kg}$, before and after they undergo an elastic collision with each other. Before the collision, the 4.0-kg puck slides 
+  NEW: Two pucks are free to slide on a horizontal surface with negligible friction. The figure shows a top view of the pucks, one of mass $4.0$ kg and one of mass $3.0$ kg, before and after they undergo an elastic collision with each other. Before the collision, the 4.0-kg puck slides at $6.0\ \mathrm{m/s
+
+### EB3-U4-4.4-Q4 STEM
+  OLD: Two carts, Cart $1$ of mass $0.25\ \mathrm{kg}$ and Cart $2$ of mass $0.50\ \mathrm{kg}$, are free to move along a straight, horizontal track, as shown in the figure. There is negligible friction in the axles of the carts' wheels, and Cart $1$ is initially moving to the right at $4\ \mathrm{m/s}$ be
+  NEW: Two carts, Cart $1$ of mass $0.25$ kg and Cart $2$ of mass $0.50$ kg, are free to move along a straight, horizontal track, as shown in the figure. There is negligible friction in the axles of the carts' wheels, and Cart $1$ is initially moving to the right at $4\ \mathrm{m/s}$ before colliding with 
+
+### EB3-U5-5.1-Q2 choice C
+  OLD: Evaluate the derivative $d\omega dt^{at t = 2. Multiply the result by \Delta t = 2\ \mathrm{s}.}$
+  NEW: Evaluate the derivative $\frac{d\omega}{dt}$ $^{at}^{t}^{= 2. Multiply the result by}^{\Delta t}^{= 2\ \mathrm{s}.}$
+
+### EB3-U5-5.1-Q2 choice D
+  OLD: $\frac{3}{Evaluate the $\int}\ \omega(t) 1 dt$. Divide the result by \Delta t = 2\ \mathrm{s}.$
+  NEW: Evaluate the $\int\omega(t)$ $3$ $dt$. Divide the result by $\Delta t = 2\ \mathrm{s}.$ $1$
+
+### EB3-U5-5.2-Q1 choice B
+  OLD: $r^{\sqrt{}}B^{2}\ +\ C^{4}$
+  NEW: r\textbackslash{}sqrt\{\}$\sqrt{B^{2} + C^{4}}$
+
+### EB3-U5-5.2-Q1 choice C
+  OLD: $r^{\sqrt{}}B^{2}\ + (B\ +\ C)4$
+  NEW: r$\sqrt{B^{2} + (B + C)^{4}}$
+
+### EB3-U5-5.2-Q1 choice D
+  OLD: $r^{\sqrt{}}(B\ +\ C)2\ +\ C^{4}$
+  NEW: $r(B\ +\ C)^{2}\ +\ C^{4}$
+
+### EB3-U5-5.2-Q2 choice C
+  OLD: It has magnitude $R_{0}\sqrt{}\omega^{4}\ +\ \alpha_{0} ^{2}$ . It is initially directed toward the center of the platform, with an increasing component tangent to the coin's circular path.
+  NEW: It has magnitude R0$\sqrt{\omega^{4} + \alpha_{0}^{2}}$ . It is initially directed toward the center of the platform, with an increasing component tangent to the coin's circular path.
+
+### EB3-U5-5.2-Q2 choice D
+  OLD: It has magnitude $R_{0}\sqrt{}\omega^{4}\ +\ \alpha_{0} ^{2}$. It is initially tangent to the coin's circular path, with an increasing component directed toward the center of the platform.
+  NEW: It has magnitude R0$\sqrt{\omega^{4} + \alpha_{0}^{2}}$ . It is initially tangent to the coin's circular path, with an increasing component directed toward the center of the platform.
+
+### EB3-U5-5.2-Q5 choice A
+  OLD: Multiply the given rotation rate by 2\pi and then multiply by the given radius.
+  NEW: Multiply the given rotation rate by 2\textbackslash{}pi and then multiply by the given radius.
+
+### EB3-U5-5.2-Q5 choice B
+  OLD: Multiply the given rotation rate by 2\pi and then divide by the given radius.
+  NEW: Multiply the given rotation rate by 2\textbackslash{}pi and then divide by the given radius.
+
+### EB3-U5-5.2-Q6 STEM
+  OLD: A car with tires of radius $r_{0}$ is moving along a straight road. Each tire's angular displacement is given by the equation $\theta\ =$ At$4\ +\ Bt$, where $t$ is time and A and $B$ are constants with appropriate units. The tires do not slip on the road's surface. What is the car's acceleration as
+  NEW: A car with tires of radius $r_{0}$ is moving along a straight road. Each tire's angular displacement is given by the equation $\theta\ =$ At$^{4}\ +\ Bt$, where $t$ is time and A and $B$ are constants with appropriate units. The tires do not slip on the road's surface. What is the car's acceleration
+
+### EB3-U5-5.2-Q6 choice A
+  OLD: $12$At$2$
+  NEW: $12$At$^{2}$
+
+### EB3-U5-5.2-Q6 choice B
+  OLD: $12\ r_{0}$At$2$
+  NEW: $12\ r_{0}$At$^{2}$
+
+### EB3-U5-5.2-Q6 choice C
+  OLD: $4$At$3\ +\ B$
+  NEW: $4$At$^{3}\ +\ B$
+
+### EB3-U5-5.2-Q6 choice D
+  OLD: \includegraphics[width=0.42\linewidth]{media/u5_52_q6_126.png}
+  NEW: $r_{0}(4$At$^{3}\ +\ B)$ $^{2}$ \includegraphics[width=0.42\linewidth]{media/u5_52_q6_126.png}
+
+### EB3-U5-5.3-Q2 STEM
+  OLD: A long bar of length $5$ meters can rotate about a pivot at one end, as shown in the figure. The pivot is located at the origin of a coordinate plane. A force of $5$ newtons is exerted on the other end of the bar, which is located at coordinates $(4\ \mathrm{m}$, $3\ \mathrm{m}).$ With respect to th
+  NEW: A long bar of length $5$ meters can rotate about a pivot at one end, as shown in the figure. The pivot is located at the origin of a coordinate plane. A force of $5$ newtons is exerted on the other end of the bar, which is located at coordinates $(4$ m, $3\ \mathrm{m}).$ With respect to the pivot at
+
+### EB3-U5-5.3-Q6 STEM
+  OLD: A force $\vec{F}_{0}\ = (4.0\hat{i} +\ 3.0\hat{j})\ \mathrm{N}$ is exerted on an object at a point located at $\vec{r}_{0}\ =\ 5.0\hat{i}\ \mathrm{m}$ relative to the origin of the axes shown in the figure. For a rotation axis that is along the $z$-axis, what is the magnitude of the torque resulting
+  NEW: A force $\vec{F}_{0}\ = (4.0\hat{i} +\ 3.0\hat{j})$ N is exerted on an object at a point located at $\vec{r}_{0}\ =\ 5.0\hat{i}$ m relative to the origin of the axes shown in the figure. For a rotation axis that is along the $z$-axis, what is the magnitude of the torque resulting from $\vec{F}_{0}$?
+
+### EB3-U5-5.3-Q9 STEM
+  OLD: A bar of length $1.0\ \mathrm{m}$ sits on a pivot located at its center. At the instant shown in the figure, the bar is horizontal and two forces, $F_{1}$ and $F_{2}$, are exerted on its ends as indicated. With respect to the pivot point, what are the magnitudes $\tau_{1}$ and $\tau_{2}$ of the torq
+  NEW: A bar of length $1.0$ m sits on a pivot located at its center. At the instant shown in the figure, the bar is horizontal and two forces, $F_{1}$ and $F_{2}$, are exerted on its ends as indicated. With respect to the pivot point, what are the magnitudes $\tau_{1}$ and $\tau_{2}$ of the torques due to
+
+### EB3-U5-5.4-Q2 STEM
+  OLD: The figure shows a thin rod that can rotate about an axis that is perpendicular to the plane of the figure and located at the left end of the rod. Consider three such rods A, B, and C, all of the same length $\mathrm{L}_{0}$ and having the same mass, where the linear mass density $\lambda$ varies wi
+  NEW: The figure shows a thin rod that can rotate about an axis that is perpendicular to the plane of the figure and located at the left end of the rod. Consider three such rods A, B, and C, all of the same length $\mathrm{L}_{0}$ and having the same mass, where the linear mass density $\lambda$ varies wi
+
+### EB3-U5-5.4-Q3 choice B
+  OLD: \includegraphics[width=0.12\linewidth]{media/u5_54_q3_133.png}
+  NEW: $\mathrm{m}\ 0\ \mathrm{s}\ 0$ $^{2}$
+
+### EB3-U5-5.4-Q3 choice C
+  OLD: 
+  NEW: $2\ \mathrm{m}_{0}\mathrm{s}_{0}$ $^{2}$
+
+### EB3-U5-5.4-Q3 choice D
+  OLD: 
+  NEW: $4\ \mathrm{m}_{0}\mathrm{s}_{0}$ $^{2}$ \includegraphics[width=0.12\linewidth]{media/u5_54_q3_133.png}
+
+### EB3-U5-5.4-Q4 choice A
+  OLD: $\beta \mathrm{h}\ 0 ^{2}/3$
+  NEW: $\beta \mathrm{h}\ 0$ $^{2}/3$
+
+### EB3-U5-5.4-Q4 choice B
+  OLD: $\beta \mathrm{h}\ 0 ^{3}/3$
+  NEW: $\beta \mathrm{h}\ 0$ $^{3}/3$
+
+### EB3-U5-5.4-Q4 choice C
+  OLD: $\beta \mathrm{h}\ 0 ^{4}/4$
+  NEW: $\beta \mathrm{h}\ 0$ $^{4}/4$
+
+### EB3-U5-5.4-Q4 choice D
+  OLD: $\beta \mathrm{h}\ 0 ^{5}/5$ \includegraphics[width=0.37\linewidth]{media/u5_54_q4_134.png}
+  NEW: $\beta \mathrm{h}\ 0$ $^{5}/5$ \includegraphics[width=0.37\linewidth]{media/u5_54_q4_134.png}
+
+### EB3-U5-5.4-Q5 STEM
+  OLD: The figure shows a narrow, uniform rectangular plate. The plate can rotate about any of three axes that are each perpendicular to the plane of the figure and pass through one of the points $P_{1}$, $P_{2}$, or $P_{3}$. Which of the following correctly compares the rotational inertias $I_{1}$, $I_{2}
+  NEW: The figure shows a narrow, uniform rectangular plate. The plate can rotate about any of three axes that are each perpendicular to the plane of the figure and pass through one of the points P$_{1}$, P$_{2}$, or P$_{3}$. Which of the following correctly compares the rotational inertias $I_{1}$, $I_{2}
+
+### EB3-U5-5.4-Q7 STEM
+  OLD: The figures show three different systems, each consisting of two massive spheres connected by rods of negligible mass and a rotation axis that is perpendicular to the plane of the figure. In System $1,$ each sphere has mass 2$M_{0}$ and is a distance $D_{0}$ from the axis of rotation at Point $P_{1}
+  NEW: The figures show three different systems, each consisting of two massive spheres connected by rods of negligible mass and a rotation axis that is perpendicular to the plane of the figure. In System $1,$ each sphere has mass 2$M_{0}$ and is a distance $D_{0}$ from the axis of rotation at Point P$_{1}
+
+### EB3-U5-5.4-Q9 STEM
+  OLD: Figure $1$ shows a uniform rod of mass $M_{0}$ and length $D_{0}$. Its rotational inertia when rotated about its end at Point P is given by $I_{0}\ =\ M_{0}D_{0} ^{2}/3.$ A second uniform rod with twice the length and the same width is made of the same material, and the two rods are connected at the
+  NEW: Figure $1$ shows a uniform rod of mass $M_{0}$ and length $D_{0}$. Its rotational inertia when rotated about its end at Point P is given by $I_{0}\ =\ M_{0}D_{0}$ $^{2}/3.$ A second uniform rod with twice the length and the same width is made of the same material, and the two rods are connected at t
+
+### EB3-U5-5.5-Q1 choice A
+  OLD: $M_{1}\mathrm{g}\ (\frac{1}{3}\ \mathrm{L}B)-\ M^{2\ \mathrm{g}}(\frac{2}{3}\ \mathrm{L}B)=\ 0$
+  NEW: M1g ($\frac{1}{3}$ LB) - M2g ($\frac{2}{3}$ $^{\mathrm{L}}^{B}^{)}^{=}\ ^{0}$
+
+### EB3-U5-5.5-Q1 choice B
+  OLD: $M_{1}\mathrm{g}\ (\frac{1}{3}\ \mathrm{L}B)-\ M^{B \mathrm{g}}(\frac{1}{2}\ \mathrm{L}B)-\ M^{2\ \mathrm{g}}(\frac{2}{3}\ \mathrm{L}B)=\ 0$
+  NEW: M1g ($\frac{1}{3}$ LB) - MBg ($\frac{1}{2}$ LB) - M2g ($\frac{2}{3}$ $^{\mathrm{L}}^{B}^{)}^{=}\ ^{0}$
+
+### EB3-U5-5.5-Q1 choice C
+  OLD: $M_{1}\mathrm{g}\ (\frac{1}{3}\ \mathrm{L}B)+\ M^{B \mathrm{g}}(\frac{1}{6}\ \mathrm{L}B)-\ M^{2\ \mathrm{g}}(\frac{2}{3}\ \mathrm{L}B)=\ 0$
+  NEW: M1g ($\frac{1}{3}$ LB) + MBg ($\frac{1}{6}$ LB) - M2g ($\frac{2}{3}$ $^{\mathrm{L}}^{B}^{)}^{=}\ ^{0}$
+
+### EB3-U5-5.5-Q1 choice D
+  OLD: $M_{1}\mathrm{g}\ (\frac{1}{3}\ \mathrm{L}B)-\ M^{B \mathrm{g}}(\frac{1}{6}\ \mathrm{L}B)-\ M^{2\ \mathrm{g}}(\frac{2}{3}\ \mathrm{L}B)=\ 0$ \includegraphics[width=0.37\linewidth]{media/u5_55_q1_137.png}
+  NEW: M1g ($\frac{1}{3}$ LB) - MBg ($\frac{1}{6}$ LB) - M2g ($\frac{2}{3}$ $^{\mathrm{L}}^{B}^{)}^{=}\ ^{0}$ \includegraphics[width=0.37\linewidth]{media/u5_55_q1_137.png}
+
+### EB3-U5-5.5-Q2 choice A
+  OLD: 3M0g L0 $2\ -\ M^{0 gx}\ =\ 0$
+  NEW: 3M0g $\frac{\mathrm{L}_{0}}{2}$ $^{-}\ ^{M}^{0}^{gx}\ ^{=}\ ^{0}$
+
+### EB3-U5-5.5-Q2 choice B
+  OLD: $3\ M_{0}\mathrm{g} ^{\mathrm{L}\ 0} 4\ -\ M^{0\ \mathrm{g}}(x\ +\ \mathrm{L}\frac{0}{4})= 0$
+  NEW: 3M0g $\frac{L_{0}}{4}$ - M0g (x + $\frac{L_{0}}{4}$ $^{)}^{= 0}$
+
+### EB3-U5-5.5-Q2 choice C
+  OLD: 3M0g L0 $2\ -\ M^{0\ \mathrm{g}\ \mathrm{L}\ 0} 2\ -\ M^{0 gx = 0}$
+  NEW: 3M0g $\frac{\mathrm{L}_{0}}{2}$ $^{-}\ ^{M}^{0}^{\mathrm{g} \mathrm{L}}$ $\frac{0}{2}$ - M0gx = 0
+
+### EB3-U5-5.5-Q2 choice D
+  OLD: $3\ M_{0}\mathrm{g} ^{\mathrm{L}\ 0} 4\ -\ M^{0\ \mathrm{g}\ \mathrm{L}\ 0} 4\ -\ M^{0\ \mathrm{g}}(x\ +\ \mathrm{L}\frac{0}{4})=0$
+  NEW: 3M0g $\frac{L_{0}}{4}$ $^{-}\ ^{M}^{0}^{\mathrm{g} \mathrm{L}}$ $\frac{0}{4}$ - M0g (x + $\frac{L_{0}}{4}$ $^{)}^{=0}$
+
+### EB3-U5-5.5-Q7 choice B
+  OLD: Between $t$ = 2 s and $t\ =\ 3\ \mathrm{s}$, and between $t$ = 4 s and $t = 5\ \mathrm{s}$
+  NEW: Between $t$ = 2 s and $t\ =\ 3$ s, and between $t$ = 4 s and $t = 5\ \mathrm{s}$
+
+### EB3-U5-5.5-Q9 STEM
+  OLD: A teacher and student sit on a uniform, horizontal board that rests on a pivot. The board can rotate about the pivot with negligible friction. The teacher weighs $800\ \mathrm{N}$ and sits $1.0\ \mathrm{m}$ to the left of the pivot. The student weighs $400\ \mathrm{N}$ and sits $2.0\ \mathrm{m}$ to 
+  NEW: A teacher and student sit on a uniform, horizontal board that rests on a pivot. The board can rotate about the pivot with negligible friction. The teacher weighs $800$ N and sits $1.0$ m to the left of the pivot. The student weighs $400$ N and sits $2.0$ m to the right of the pivot, as shown. At tim
+
+### EB3-U5-5.6-Q2 choice A
+  OLD: $\frac{5}{4}\ \mathrm{L}\ 0\ \mathrm{g}$
+  NEW: $\frac{5}{4}$ $\frac{g}{L_{0}}$
+
+### EB3-U5-5.6-Q2 choice B
+  OLD: $\frac{3}{2}\ \mathrm{L}\ 0\ \mathrm{g}$
+  NEW: $\frac{3}{2}$ $\frac{g}{L_{0}}$
+
+### EB3-U5-5.6-Q2 choice C
+  OLD: $2\ ^{\mathrm{g}}\ \mathrm{L}\ 0$
+  NEW: $2$ $\frac{g}{L_{0}}$
+
+### EB3-U5-5.6-Q2 choice D
+  OLD: $\frac{5}{2}\ \mathrm{L}\ 0\ \mathrm{g}$ \includegraphics[width=0.3\linewidth]{media/u5_56_q2_147.png}
+  NEW: $\frac{5}{2}$ $\frac{g}{L_{0}}$ \includegraphics[width=0.3\linewidth]{media/u5_56_q2_147.png}
+
+### EB3-U5-5.6-Q3 STEM
+  OLD: Two blocks, one of mass $\mathrm{m}_{0}$ and one of mass $3\ \mathrm{m}_{0}$, are attached to the ends of a thin rod of negligible rotational inertia, as shown in the figure. The rod is free to pivot with negligible friction about an axis that is perpendicular to the plane of the figure and passes t
+  NEW: Two blocks, one of mass $\mathrm{m}_{0}$ and one of mass $3\ \mathrm{m}_{0}$, are attached to the ends of a thin rod of negligible rotational inertia, as shown in the figure. The rod is free to pivot with negligible friction about an axis that is perpendicular to the plane of the figure and passes t
+
+### EB3-U5-5.6-Q6 STEM
+  OLD: A horizontal disk is free to rotate about a vertical axis through its center. The disk is rotating with a constant angular velocity in the positive direction when, starting at time zero, a torque is exerted on the disk, resulting in the motion shown in the graph of angular velocity as a function of 
+  NEW: A horizontal disk is free to rotate about a vertical axis through its center. The disk is rotating with a constant angular velocity in the positive direction when, starting at time zero, a torque is exerted on the disk, resulting in the motion shown in the graph of angular velocity as a function of 
+
+### EB3-U5-5.6-Q7 STEM
+  OLD: Two pulleys are in contact at their outer edges, as shown in the figure. Each pulley rotates about an axle located at its center, and the pulleys do not slip against each other when they rotate. Pulley $1$ on the left has a radius $r_{1}$ and rotational inertia $I_{1}$ , and Pulley $2$ on the right 
+  NEW: Two pulleys are in contact at their outer edges, as shown in the figure. Each pulley rotates about an axle located at its center, and the pulleys do not slip against each other when they rotate. Pulley $1$ on the left has a radius $r_{1}$ and rotational inertia $I_{1}$ , and Pulley $2$ on the right 
+
+### EB3-U5-5.6-Q7 choice A
+  OLD: $I1$
+  NEW: $\frac{F_{1}r_{1}}{I_{1}}$
+
+### EB3-U5-5.6-Q7 choice B
+  OLD: $\frac{F1r1}{[I_{1}\ +\ I_{2}}\ ]$
+  NEW: $\frac{F_{1}r_{1}}{[I_{1} + I_{2}]}$
+
+### EB3-U5-5.6-Q7 choice C
+  OLD: $[I_{1}\ +\ I_{2} (r^{1} r_{2}^{)]}$
+  NEW: $\frac{F_{1}r_{1}}{^{[}I1^{}+^{}I2 (^{1}^{)]}}$$\frac{r}{2}$
+
+### EB3-U5-5.6-Q7 choice D
+  OLD: $[I_{1}\ +\ I_{2} (r^{1} r_{2}) 2 ]$
+  NEW: $r$ $\frac{F_{1}r_{1}}{[I + Ir^{1})^{2}]}$12 ( $r2$
+
+### EB3-U5-5.6-Q9 choice A
+  OLD: $1\ \mathrm{g}$
+  NEW: 
+
+### EB3-U5-5.6-Q9 choice B
+  OLD: $1\ \mathrm{g}$
+  NEW: $\frac{1}{7}$
+
+### EB3-U5-5.6-Q9 choice C
+  OLD: $1\ \mathrm{g}$
+  NEW: $\frac{1}{3}$
+
+### EB3-U5-5.6-Q9 choice D
+  OLD: $5\ \mathrm{g}\ 11 D0 7 D0 3 D0 11 D0$
+  NEW: $\frac{1}{11}$ $\frac{g}{D_{0}}$ $\frac{g}{D_{0}}$ $\frac{g}{D_{0}}$ $\frac{5}{11}$ $\frac{g}{D_{0}}$
+
+### EB3-U6-6.1-Q5 STEM
+  OLD: A uniform solid disk can rotate about a fixed pivot point located on its edge, as shown in the figure. The $2\ /2$ . The disk's center disk has mass $m_{D}$ , radius $r_{D}$ , and a rotational inertia about its center of $I_{C}\ =\ \mathrm{m}_{D}r_{D}$ travels in a circle, also of radius $r_{D}$, as
+  NEW: A uniform solid disk can rotate about a fixed pivot point located on its edge, as shown in the figure. The $^{2}\ /2$ . The disk's center disk has mass m$_{D}$ , radius $r_{D}$ , and a rotational inertia about its center of $I_{C}\ =\ \mathrm{m}_{D}r_{D}$ travels in a circle, also of radius $r_{D}$,
+
+### EB3-U6-6.1-Q7 choice D
+  OLD: It cannot be determined which disk has the most total kinetic energy without more information on $\omega_{A}$, $v_{B}$, and the radius of the disks. \includegraphics[width=0.41\linewidth]{media/u6_61_q7_153.png} Object Name Radius Rotational Inertia Translational Speed Angular Speed Hoop $r_{0} I_{0} v_{0} \omega_{0}$ Disk 1 $r_{0} \frac{1}{2}\ I^{0} v_{0} \omega_{0}$ Disk 2 $\frac{1}{2}\ r^{0} \frac{1}{8}\ I^{0} 2\ v_{0} \omega_{0}$
+  NEW: It cannot be determined which disk has the most total kinetic energy without more information on $\omega_{A}$, $v_{B}$, and the radius of the disks. \includegraphics[width=0.41\linewidth]{media/u6_61_q7_153.png} Object Name Radius Rotational Inertia Translational Speed Angular Speed Hoop $r_{0}$ $I_{0}$ $v_{0}$ $\omega_{0}$ Disk 1 $r_{0}$ $\frac{1}{2}$ $^{I}^{0}$ $v_{0}$ $\omega_{0}$ Disk 2 $\frac{1}{2}$ $^{r}^{0}$ $\frac{1}{8}$ $^{I}^{0}$ $2\ v_{0}$ $\omega_{0}$
+
+### EB3-U6-6.1-Q8 STEM
+  OLD: A circular hoop and two solid disks are placed on a horizontal surface where they can move with negligible friction. The hoop and disks are set into motion such that each moves forward and rotates about its center of mass, as shown in the Top View figure. The hoop and disks have the same mass and an
+  NEW: A circular hoop and two solid disks are placed on a horizontal surface where they can move with negligible friction. The hoop and disks are set into motion such that each moves forward and rotates about its center of mass, as shown in the Top View figure. The hoop and disks have the same mass and an
+
+### EB3-U6-6.1-Q8 choice A
+  OLD: $K_{\mathrm{Disk 2}}\ >\ K_{\mathrm{Disk 1}}\ =\ K_{\mathrm{hoop}}$
+  NEW: $K_{Disk 2}\ >\ K_{Disk 1}\ =\ K_{hoop}$
+
+### EB3-U6-6.1-Q8 choice B
+  OLD: $K_{\mathrm{Disk 2}}\ >\ K_{\mathrm{hoop}}\ >\ K_{\mathrm{Disk 1}}$
+  NEW: $K_{Disk 2}\ >\ K_{hoop}\ >\ K_{Disk 1}$
+
+### EB3-U6-6.1-Q8 choice C
+  OLD: $K_{\mathrm{hoop}}\ >\ K_{\mathrm{Disk 1}}\ >\ K_{\mathrm{Disk 2}}$
+  NEW: $K_{hoop}\ >\ K_{Disk 1}\ >\ K_{Disk 2}$
+
+### EB3-U6-6.1-Q8 choice D
+  OLD: $K_{\mathrm{hoop}}\ >\ K_{\mathrm{Disk 1}}$, but it cannot be determined how $K_{\mathrm{Disk 2}}$ compares without more information about $v_{0}$ and $\omega_{0}$.
+  NEW: $K_{hoop}\ >\ K_{Disk 1}$, but it cannot be determined how $K_{Disk 2}$ compares without more information about $v_{0}$ and $\omega_{0}$.
+
+### EB3-U6-6.2-Q4 STEM
+  OLD: A varying net torque is exerted on a disk that is rotating about a fixed axis. The disk's rotational kinetic energy as a function of angular position $\theta$ is shown in the graph. Which of the following options correctly ranks the magnitudes $\tau_{01}$ , $\tau_{12}$ , and $\tau_{23}$ of the torqu
+  NEW: A varying net torque is exerted on a disk that is rotating about a fixed axis. The disk's rotational kinetic energy as a function of angular position $\theta$ is shown in the graph. Which of the following options correctly ranks the magnitudes $\tau_{01}$ , $\tau_{12}$ , and $\tau_{23}$ of the torqu
+
+### EB3-U6-6.2-Q5 choice B
+  OLD: 
+  NEW: $\frac{K_{0}}{\pi}$
+
+### EB3-U6-6.2-Q5 choice C
+  OLD: 
+  NEW: $\frac{K_{0}}{2\pi}$
+
+### EB3-U6-6.2-Q5 choice D
+  OLD: 
+  NEW: $\frac{K_{0}}{3\pi}$
+
+### EB3-U6-6.2-Q7 STEM
+  OLD: An object can rotate about an axis passing through its center of mass. At $t\ =\ 0,$ the object is spinning in the positive direction and has an initial angular position of zero. The graph represents the net torque $\tau_{\mathrm{net}}$ exerted on the object as a function of angular position $\theta
+  NEW: An object can rotate about an axis passing through its center of mass. At $t\ =\ 0,$ the object is spinning in the positive direction and has an initial angular position of zero. The graph represents the net torque $\tau_{net}$ exerted on the object as a function of angular position $\theta$. Which 
+
+### EB3-U6-6.2-Q9 STEM
+  OLD: A wheel can rotate about an axis that passes through its center and is perpendicular to the page. The edge of the wheel is attached to one end of a wire that is connected to a motor, which is fixed in place. The motor exerts a force on the wire such that the wire exerts a counterclockwise torque of 
+  NEW: A wheel can rotate about an axis that passes through its center and is perpendicular to the page. The edge of the wheel is attached to one end of a wire that is connected to a motor, which is fixed in place. The motor exerts a force on the wire such that the wire exerts a counterclockwise torque of 
+
+### EB3-U6-6.2-Q9 choice B
+  OLD: $\tau 0\theta$fe$-\theta^{f}/k$
+  NEW: $\tau 0\theta$fe$^{-}^{\theta}^{f}^{/}^{k}$
+
+### EB3-U6-6.2-Q9 choice C
+  OLD: $\tau 0\ k$e$-\theta^{f}/k$
+  NEW: $\tau0\ k$e$^{-}^{\theta}^{f}^{/}^{k}$
+
+### EB3-U6-6.2-Q9 choice D
+  OLD: $\tau_{0}k(1\ -$ e$-\theta^{f}/k)$
+  NEW: $\tau_{0}k(1\ -$ e$^{-}^{\theta}^{f}^{/}^{k})$
+
+### EB3-U6-6.3-Q5 STEM
+  OLD: A mallet rotates about a pivot near one end of its handle and is moving clockwise with an angular speed $\omega_{0}$ as it strikes a small, stationary rubber bumper, as shown in the figure. Immediately after the impact, the mallet is rotating counterclockwise about the pivot with an angular speed $\
+  NEW: A mallet rotates about a pivot near one end of its handle and is moving clockwise with an angular speed $\omega_{0}$ as it strikes a small, stationary rubber bumper, as shown in the figure. Immediately after the impact, the mallet is rotating counterclockwise about the pivot with an angular speed $\
+
+### EB3-U6-6.3-Q5 choice A
+  OLD: $1\ \mathrm{m}\ 0\ell0\omega 0$
+  NEW: $\frac{1}{2}$ $\frac{m_{0}\ell_{0}\omega_{0}}{\Delta t}$
+
+### EB3-U6-6.3-Q5 choice B
+  OLD: $2\ \mathrm{m}\ 0\ell0\omega 0$
+  NEW: $\frac{2}{3}$ $\frac{m_{0}\ell_{0}\omega_{0}}{\Delta t}$
+
+### EB3-U6-6.3-Q5 choice C
+  OLD: $2\ ^{\mathrm{m}\ 0 \ell 0 \omega 0}$
+  NEW: 2 $\frac{m_{0}\ell_{0}\omega_{0}}{\Delta t}$
+
+### EB3-U6-6.3-Q5 choice D
+  OLD: $2\ ^{\mathrm{m}\ 0 \ell 0 2}\omega \frac{0}{2}\ \Delta t 3 \Delta t \Delta t \Delta t$
+  NEW: 2 $\frac{m_{0}\ell_{0}^{2}\omega_{0}}{\Delta t}$
+
+### EB3-U6-6.3-Q7 choice D
+  OLD: $I$A$\omega 0 ^{2}/2$
+  NEW: $I$A$\omega 0$ $^{2}/2$
+
+### EB3-U6-6.4-Q3 STEM
+  OLD: Four small disks are rigidly attached together by rods of negligible mass, as shown in the figure. The four- disk system rotates counterclockwise on a horizontal tabletop with an angular speed of $10\ \mathrm{rad/s}$ about an axis that is located at the system's center of mass and perpendicular to t
+  NEW: Four small disks are rigidly attached together by rods of negligible mass, as shown in the figure. The four- disk system rotates counterclockwise on a horizontal tabletop with an angular speed of $10\ \mathrm{rad/s}$ about an axis that is located at the system's center of mass and perpendicular to t
+
+### EB3-U6-6.4-Q3 choice A
+  OLD: 0.18 kgm$2/\mathrm{s}$
+  NEW: 0.18 kgm$^{2}/\mathrm{s}$
+
+### EB3-U6-6.4-Q3 choice B
+  OLD: 0.30 kgm$2/\mathrm{s}$
+  NEW: 0.30 kgm$^{2}/\mathrm{s}$
+
+### EB3-U6-6.4-Q3 choice C
+  OLD: 0.50 kgm$2/\mathrm{s}$
+  NEW: 0.50 kgm$^{2}/\mathrm{s}$
+
+### EB3-U6-6.4-Q3 choice D
+  OLD: 0.90 kgm$2/\mathrm{s}$ \includegraphics[width=0.59\linewidth]{media/u6_64_q3_162.png}
+  NEW: 0.90 kgm$^{2}/\mathrm{s}$ \includegraphics[width=0.59\linewidth]{media/u6_64_q3_162.png}
+
+### EB3-U6-6.4-Q5 STEM
+  OLD: A piece of clay is moving horizontally toward a wheel that is initially at rest. The wheel can rotate freely with negligible friction about a central axle that is fixed in place. The clay collides with and sticks to the wheel. Consider the system consisting of the clay and the wheel, but not the fix
+  NEW: A piece of clay is moving horizontally toward a wheel that is initially at rest. The wheel can rotate freely with negligible friction about a central axle that is fixed in place. The clay collides with and sticks to the wheel. Consider the system consisting of the clay and the wheel, but not the fix
+
+### EB3-U6-6.4-Q5 choice A
+  OLD: $\vec{\mathrm{L}}_{\mathrm{sys}}$ is the same because the clay and the wheel do not exert torques on each other. $\vec{p}_{\mathrm{sys}}$ is different because the axle exerts a net force on the system
+  NEW: $\vec{\mathrm{L}}_{sys}$ is the same because the clay and the wheel do not exert torques on each other. $\vec{p}_{sys}$ is different because the axle exerts a net force on the system
+
+### EB3-U6-6.4-Q5 choice B
+  OLD: $\vec{\mathrm{L}}_{\mathrm{sys}}$ is the same because the clay and the wheel do not exert torques on each other. $\vec{p}_{\mathrm{sys}}$ is different because the force exerted by the clay on the wheel is a net force on the system.
+  NEW: $\vec{\mathrm{L}}_{sys}$ is the same because the clay and the wheel do not exert torques on each other. $\vec{p}_{sys}$ is different because the force exerted by the clay on the wheel is a net force on the system.
+
+### EB3-U6-6.4-Q5 choice C
+  OLD: $\vec{\mathrm{L}}_{\mathrm{sys}}$ is the same because the axle does not exert a torque on the system. $\vec{p}_{\mathrm{sys}}$ is different because the axle exerts a net force on the system.
+  NEW: $\vec{\mathrm{L}}_{sys}$ is the same because the axle does not exert a torque on the system. $\vec{p}_{sys}$ is different because the axle exerts a net force on the system.
+
+### EB3-U6-6.4-Q5 choice D
+  OLD: $\vec{\mathrm{L}}_{\mathrm{sys}}$ is the same because the axle does not exert a torque on the system. $\vec{p}_{\mathrm{sys}}$ is different because the force exerted by the clay on the wheel is a net force on the system. \includegraphics[width=0.42\linewidth]{media/u6_64_q5_163.png}
+  NEW: $\vec{\mathrm{L}}_{sys}$ is the same because the axle does not exert a torque on the system. $\vec{p}_{sys}$ is different because the force exerted by the clay on the wheel is a net force on the system. \includegraphics[width=0.42\linewidth]{media/u6_64_q5_163.png}
+
+### EB3-U6-6.4-Q6 STEM
+  OLD: A small disk can move on a horizontal surface with negligible friction. The disk is attached to a string that passes through a small hole in the surface and is held in place at the other end, under the surface. Initially, the disk is moving in a circle of radius $0.10\ \mathrm{m}$ about the hole wit
+  NEW: A small disk can move on a horizontal surface with negligible friction. The disk is attached to a string that passes through a small hole in the surface and is held in place at the other end, under the surface. Initially, the disk is moving in a circle of radius $0.10$ m about the hole with an angul
+
+### EB3-U6-6.4-Q9 STEM
+  OLD: Disk $1$ has rotational inertia $I_{1}\ =$ 6.0 kgm$2$ and rotates clockwise about the perpendicular axis passing through its center at an angular speed of $5.0\ \mathrm{rad/s},$ as shown in the figure. Directly above Disk $1$ is Disk $2,$ which has rotational inertia $I_{2}\ =$ 3.0 kgm$2$ and which 
+  NEW: Disk $1$ has rotational inertia $I_{1}\ =$ 6.0 kgm$^{2}$ and rotates clockwise about the perpendicular axis passing through its center at an angular speed of $5.0\ \mathrm{rad/s},$ as shown in the figure. Directly above Disk $1$ is Disk $2,$ which has rotational inertia $I_{2}\ =$ 3.0 kgm$^{2}$ and 
+
+### EB3-U6-6.5-Q1 STEM
+  OLD: A solid cylinder and hollow cylinder have the same mass $\mathrm{m}_{0}$ and radius $r_{0}$. Both cylinders have a string wrapped around a shallow groove along their circumference so that the string can be pulled without interfering with the cylinder's motion as they roll across the table. The strin
+  NEW: A solid cylinder and hollow cylinder have the same mass $\mathrm{m}_{0}$ and radius $r_{0}$. Both cylinders have a string wrapped around a shallow groove along their circumference so that the string can be pulled without interfering with the cylinder's motion as they roll across the table. The strin
+
+### EB3-U6-6.5-Q3 STEM
+  OLD: A hollow cylinder is initially sliding without rotating up a smooth section of a ramp that makes an angle $\theta_{R}$ with the horizontal, as shown in the figure. The cylinder then reaches a rough section of the ramp where the coefficient of kinetic friction between the cylinder and the ramp is $\m
+  NEW: A hollow cylinder is initially sliding without rotating up a smooth section of a ramp that makes an angle $\theta_{R}$ with the horizontal, as shown in the figure. The cylinder then reaches a rough section of the ramp where the coefficient of kinetic friction between the cylinder and the ramp is $\m
+
+### EB3-U6-6.5-Q3 choice C
+  OLD: $\alpha r$C $\sin \theta_{R}$
+  NEW: $\alpha r$C
+
+### EB3-U6-6.5-Q3 choice D
+  OLD: $\alpha r$C $\sin \theta_{R}\ +\ \mu_{k} \cos \theta_{R} ^{\mu}_{k} \cos^{\theta}$R $\mu_{k} \cos^{\theta}$R \includegraphics[width=0.42\linewidth]{media/u6_65_q3_165.png}
+  NEW: $\alpha r$C $\frac{sin \theta_{R} + \mu_{k} \theta_{R}}{^{\mu}k cos^{\theta}^{R}}$ cos $\frac{sin \theta_{R}}{^{\mu}k cos^{\theta}^{R}}$ \includegraphics[width=0.42\linewidth]{media/u6_65_q3_165.png}
+
+### EB3-U6-6.5-Q6 STEM
+  OLD: At one time, bicycles were commonly made with unequal wheel sizes. The bicycle shown in the figure has wheels with radii $3\ r_{0}$ and $r_{0}$ and is moving along a road with a translational speed $v_{0}$. The rotational inertias of the large and small wheels are $81\ I_{0}$ and $I_{0}$, respective
+  NEW: At one time, bicycles were commonly made with unequal wheel sizes. The bicycle shown in the figure has wheels with radii $3\ r_{0}$ and $r_{0}$ and is moving along a road with a translational speed $v_{0}$. The rotational inertias of the large and small wheels are $81\ I_{0}$ and $I_{0}$, respective
+
+### EB3-U6-6.5-Q6 choice A
+  OLD: $K_{\mathrm{rot,S}}/3$
+  NEW: $K_{rot,S}/3$
+
+### EB3-U6-6.5-Q6 choice B
+  OLD: $3\ K_{\mathrm{rot,S}}$
+  NEW: $3\ K_{rot,S}$
+
+### EB3-U6-6.5-Q6 choice C
+  OLD: $9\ K_{\mathrm{rot,S}}$
+  NEW: $9\ K_{rot,S}$
+
+### EB3-U6-6.5-Q6 choice D
+  OLD: $81\ K_{\mathrm{rot,S}}$ \includegraphics[width=0.42\linewidth]{media/u6_65_q6_166.png}
+  NEW: $81\ K_{rot,S}$ \includegraphics[width=0.42\linewidth]{media/u6_65_q6_166.png}
+
+### EB3-U6-6.5-Q7 STEM
+  OLD: A solid sphere is initially moving at a constant speed $v_{0}$ on a horizontal surface, as shown in the figure. At first, the sphere is sliding without rotating and moves with negligible friction on a smooth section of the surface. The sphere then reaches a rough section of the surface where the coe
+  NEW: A solid sphere is initially moving at a constant speed $v_{0}$ on a horizontal surface, as shown in the figure. At first, the sphere is sliding without rotating and moves with negligible friction on a smooth section of the surface. The sphere then reaches a rough section of the surface where the coe
+
+### EB3-U6-6.5-Q7 choice B
+  OLD: $2 v0$
+  NEW: $\frac{2}{5}$ $\frac{v_{0}}{r_{S}}$
+
+### EB3-U6-6.5-Q7 choice C
+  OLD: $5 v0$
+  NEW: $\frac{5}{7}$ $\frac{v_{0}}{r_{S}}$
+
+### EB3-U6-6.5-Q7 choice D
+  OLD: $v0 5 r$S $7 r$S $r$S
+  NEW: $\frac{v_{0}}{r_{S}}$
+
+### EB3-U6-6.5-Q8 STEM
+  OLD: A solid cylinder of uniform density has mass $\mathrm{m}_{C}$, radius $r_{C}$, and rotational inertia $I_{C}\ =\ \mathrm{m}_{C}r_{C} ^{2}\ /2.$ The cylinder is rolling without slipping along a horizontal surface as the cylinder's center of mass moves with a translational speed $v_{0}$. What is the t
+  NEW: A solid cylinder of uniform density has mass $\mathrm{m}_{C}$, radius $r_{C}$, and rotational inertia $I_{C}\ =\ \mathrm{m}_{C}r_{C}$ $^{2}\ /2.$ The cylinder is rolling without slipping along a horizontal surface as the cylinder's center of mass moves with a translational speed $v_{0}$. What is the
+
+### EB3-U6-6.5-Q8 choice A
+  OLD: $\mathrm{m}$C$v0 ^{2}/4$
+  NEW: $\mathrm{m}$C$v0$ $^{2}/4$
+
+### EB3-U6-6.5-Q8 choice B
+  OLD: $\mathrm{m}$C$v0 ^{2}/2$
+  NEW: $\mathrm{m}$C$v0$ $^{2}/2$
+
+### EB3-U6-6.5-Q8 choice C
+  OLD: $3\ \mathrm{m}_{C}v_{0} ^{2}/4$
+  NEW: $3\ \mathrm{m}_{C}v_{0}$ $^{2}/4$
+
+### EB3-U6-6.5-Q8 choice D
+  OLD: 
+  NEW: $\mathrm{m}$C$v0$ $^{2}$
+
+### EB3-U6-6.6-Q1 STEM
+  OLD: Two small asteroids, Asteroid $1$ and Asteroid $2,$ are in elliptical orbits about the same star, as shown in the figure. The asteroids interact gravitationally with the star, but exert negligible gravitational forces on each other. Points P and Q are where asteroids $1$ and $2,$ respectively, are t
+  NEW: Two small asteroids, Asteroid $1$ and Asteroid $2,$ are in elliptical orbits about the same star, as shown in the figure. The asteroids interact gravitationally with the star, but exert negligible gravitational forces on each other. Points P and Q are where asteroids $1$ and $2,$ respectively, are t
+
+### EB3-U6-6.6-Q1 choice A
+  OLD: $\mathrm{L}_{\mathrm{sys}}$ remains constant. The acceleration of each asteroid is independent of its mass.
+  NEW: $\mathrm{L}_{sys}$ remains constant. The acceleration of each asteroid is independent of its mass.
+
+### EB3-U6-6.6-Q1 choice B
+  OLD: $\mathrm{L}_{\mathrm{sys}}$ remains constant. The gravitational force on each asteroid does not result in a torque about the star.
+  NEW: $\mathrm{L}_{sys}$ remains constant. The gravitational force on each asteroid does not result in a torque about the star.
+
+### EB3-U6-6.6-Q1 choice C
+  OLD: $\mathrm{L}_{\mathrm{sys}}$ has a maximum magnitude when the asteroids are at points P and Q. These are the locations where the asteroids' speeds are greatest.
+  NEW: $\mathrm{L}_{sys}$ has a maximum magnitude when the asteroids are at points P and Q. These are the locations where the asteroids' speeds are greatest.
+
+### EB3-U6-6.6-Q1 choice D
+  OLD: $\mathrm{L}_{\mathrm{sys}}$ has a maximum magnitude when the asteroids are at points P and Q. These locations are where the asteroids are the closest to the star.
+  NEW: $\mathrm{L}_{sys}$ has a maximum magnitude when the asteroids are at points P and Q. These locations are where the asteroids are the closest to the star.
+
+### EB3-U6-6.6-Q2 choice A
+  OLD: $1 Gm$P$\mathrm{m}$S
+  NEW: $\frac{Gm_{P}m_{S}}{a}$
+
+### EB3-U6-6.6-Q2 choice B
+  OLD: $1 Gm$P$\mathrm{m}$S
+  NEW: $\frac{1}{3}$ $\frac{Gm_{P}m_{S}}{a}$
+
+### EB3-U6-6.6-Q2 choice C
+  OLD: $2 Gm$P$\mathrm{m}$S
+  NEW: $\frac{2}{3}$ $\frac{Gm_{P}m_{S}}{a}$
+
+### EB3-U6-6.6-Q2 choice D
+  OLD: $3 Gm$P$\mathrm{m}$S $12$ a $3$ a $3$ a $4$ a
+  NEW: $\frac{3}{4}$ $\frac{Gm_{P}m_{S}}{a}$ $\frac{1}{12}$
+
+### EB3-U6-6.6-Q3 choice A
+  OLD: $\sqrt{\frac{K}{A}} 2\ \mathrm{m}_{0}$
+  NEW: 
+
+### EB3-U6-6.6-Q3 choice B
+  OLD: $\sqrt{\frac{K}{A}}\ \mathrm{m}\ 0$
+  NEW: $\sqrt{\frac{K_{A}}{m_{0}}}$
+
+### EB3-U6-6.6-Q3 choice C
+  OLD: $\sqrt{\frac{2}{K}}^{A}\ \mathrm{m}\ 0$
+  NEW: $\sqrt{\frac{2K_{A}}{m_{0}}}$
+
+### EB3-U6-6.6-Q3 choice D
+  OLD: $\sqrt{\frac{4}{K}}^{A}\ \mathrm{m}\ 0$ \includegraphics[width=0.28\linewidth]{media/u6_66_q3_167.png}
+  NEW: $\sqrt{\frac{4K_{A}}{m_{0}}}$ $\sqrt{\frac{K_{A}}{2m_{0}}}$ \includegraphics[width=0.28\linewidth]{media/u6_66_q3_167.png}
+
+### EB3-U6-6.6-Q6 STEM
+  OLD: Two rocket ships, Ship A and Ship B, are orbiting a planet in identical circular orbits. Ship B has four times the mass of Ship A. What is the ratio $v_{\mathrm{esc,B}}$ : $v_{\mathrm{esc,A}}$ of the escape speeds of the two ships?
+  NEW: Two rocket ships, Ship A and Ship B, are orbiting a planet in identical circular orbits. Ship B has four times the mass of Ship A. What is the ratio $v_{esc,B}$ : $v_{esc,A}$ of the escape speeds of the two ships?
+
+### EB3-U6-6.6-Q8 STEM
+  OLD: A spaceship orbits a distant planet in a circular orbit, as shown in the figure. When the spaceship reaches Point P, it momentarily fires its thrusters directly toward the center of the planet, causing the spaceship's orbit to become elliptical. The two arrows in the figure represent the spaceship's
+  NEW: A spaceship orbits a distant planet in a circular orbit, as shown in the figure. When the spaceship reaches Point P, it momentarily fires its thrusters directly toward the center of the planet, causing the spaceship's orbit to become elliptical. The two arrows in the figure represent the spaceship's
+
+### EB3-U6-6.6-Q8 choice A
+  OLD: $\mathrm{L}_{\mathrm{ship}}$ is the same. There is no torque about the center of the planet when the thrusters are fired.
+  NEW: $\mathrm{L}_{ship}$ is the same. There is no torque about the center of the planet when the thrusters are fired.
+
+### EB3-U6-6.6-Q8 choice B
+  OLD: $\mathrm{L}_{\mathrm{ship}}$ is the same. Angular momentum is constant for all orbits, both circular and elliptical.
+  NEW: $\mathrm{L}_{ship}$ is the same. Angular momentum is constant for all orbits, both circular and elliptical.
+
+### EB3-U6-6.6-Q8 choice C
+  OLD: $E_{\mathrm{sys}}$ is the same. The point where the thrusters are fired is on both the circular and the elliptical orbit.
+  NEW: $E_{sys}$ is the same. The point where the thrusters are fired is on both the circular and the elliptical orbit.
+
+### EB3-U6-6.6-Q8 choice D
+  OLD: $E_{\mathrm{sys}}$ is the same. The thrusters are fired in a direction that does not change the translational speed of the spaceship.
+  NEW: $E_{sys}$ is the same. The thrusters are fired in a direction that does not change the translational speed of the spaceship.
+
+### EB3-U6-6.6-Q9 choice A
+  OLD: $\mathrm{L}$A
+  NEW: $\frac{L_{A}}{Dm_{0}}$
+
+### EB3-U6-6.6-Q9 choice B
+  OLD: $3\ ^{\mathrm{L} A}$
+  NEW: $3$ $\frac{L_{A}}{Dm_{0}}$
+
+### EB3-U6-6.6-Q9 choice C
+  OLD: $9\ ^{\mathrm{L} A}$
+  NEW: $9$ $\frac{L_{A}}{Dm_{0}}$
+
+### EB3-U6-6.6-Q9 choice D
+  OLD: $81\ ^{\mathrm{L} A} Dm0 Dm0 Dm0 Dm0$
+  NEW: $81$ $\frac{L_{A}}{Dm_{0}}$
+
+### EB3-U7-7.1-Q8 STEM
+  OLD: An object of mass $M$ is free to move along a curved track with negligible friction. The shape of the track results in the following equation that expresses Newton's second law for the $x$-coordinate of the object's motion: $M ^{d 2 x} dt^{2}=\beta(x-x^{0}),$ where $t$ is time, $\beta$ is a positive
+  NEW: An object of mass $M$ is free to move along a curved track with negligible friction. The shape of the track results in the following equation that expresses Newton's second law for the $x$-coordinate of the object's motion: M $\frac{d^{2}x}{dt^{2}}$ $^{=}^{\beta}^{(}^{x}^{-}^{x}^{0}^{)}^{,}$ where $
+
+### EB3-U7-7.2-Q1 choice A
+  OLD: $\sqrt{}\ \mathrm{g}$
+  NEW: $\sqrt{\frac{g}{3L_{0}}}$
+
+### EB3-U7-7.2-Q1 choice B
+  OLD: $2\ \mathrm{g}$
+  NEW: $\sqrt{\frac{2g}{3L_{0}}}$
+
+### EB3-U7-7.2-Q1 choice C
+  OLD: $\sqrt{}\ \mathrm{g}$
+  NEW: $\sqrt{\frac{g}{L_{0}}}$
+
+### EB3-U7-7.2-Q1 choice D
+  OLD: $\frac{4\ \mathrm{g}}{3}\ \mathrm{L}_{0} 3\ \mathrm{L}_{0}\ \mathrm{L}\ \frac{0}{3}\ \mathrm{L}_{0}$
+  NEW: $\sqrt{\frac{4g}{3L_{0}}}$
+
+### EB3-U7-7.2-Q6 choice A
+  OLD: $\frac{1}{2} (k^{0\ \mathrm{L}\ 0}\ \mathrm{g})$
+  NEW: $\frac{1}{2}$ ($\frac{k_{0}L_{0}}{g}$ $^{)}$
+
+### EB3-U7-7.2-Q6 choice B
+  OLD: $1 (k^{0\ \mathrm{L}\ 0}\ \mathrm{g})$
+  NEW: $\frac{1}{\sqrt{}2}$ ($\frac{k_{0}L_{0}}{g}$ $^{)}$
+
+### EB3-U7-7.2-Q6 choice C
+  OLD: $\sqrt{2} (k^{0\ \mathrm{L}\ 0}\ \mathrm{g})$
+  NEW: \textbackslash{}sqrt\{\}2 ($\frac{k_{0}L_{0}}{g}$ $^{)}$
+
+### EB3-U7-7.2-Q6 choice D
+  OLD: $2 (k^{0\ \mathrm{L}\ 0}\ \mathrm{g}) \sqrt{2}$
+  NEW: 2 ($\frac{k_{0}L_{0}}{g}$ $^{)}$
+
+### EB3-U7-7.2-Q8 choice A
+  OLD: 2\pi$\frac{2\ \mathrm{L}\ 0}{mathrm}{g}$
+  NEW: 2\textbackslash{}pi$\sqrt{\frac{2L_{0}}{g}}$
+
+### EB3-U7-7.2-Q8 choice B
+  OLD: 2\pi$\frac{4\ \mathrm{L}\ 0}{mathrm}{g}$
+  NEW: 2\textbackslash{}pi$\sqrt{\frac{4L_{0}}{g}}$
+
+### EB3-U7-7.2-Q8 choice C
+  OLD: 2\pi$(\frac{1}{2}\ \sqrt{}\mathrm{L}\frac{0}{mathrm}{g}\ +\ \frac{1}{2}\ \sqrt{}3^{\mathrm{L}\ 0}\ \mathrm{g})$
+  NEW: 2\textbackslash{}pi ($\frac{1}{2}$ $\sqrt{\frac{L_{0}}{g}}$ + $\frac{1}{2}$ $\sqrt{\frac{3L_{0}}{g} }$ $^{)}$
+
+### EB3-U7-7.2-Q8 choice D
+  OLD: 2\pi$({\mathrm{L}\ 0}\ \mathrm{g}\ +\sqrt{}3^{\mathrm{L}\ 0}\ \mathrm{g})$
+  NEW: 2\textbackslash{}pi (\textbackslash{}sqrt\{\}$\frac{L_{0}}{g}$ + \textbackslash{}sqrt\{\}$\frac{3L_{0}}{g}$ $^{)}$
+
+### EB3-U7-7.3-Q3 choice A
+  OLD: $D0 2\ ^{cos (\sqrt{} 2\ \mathrm{g}} t)$
+  NEW: $\frac{D_{0}}{2}$ $^{cos}^{(\sqrt{}}$ $t)$
+
+### EB3-U7-7.3-Q3 choice B
+  OLD: $\frac{D0}{2}\ cos^{(\sqrt{}}\ \mathrm{g} t) D0 D0$
+  NEW: $\frac{D_{0}}{2}$ $^{cos}^{(\sqrt{}}$ $t)$ $\frac{2g}{D_{0}}$ $\frac{g}{D_{0}}$
+
+### EB3-U7-7.3-Q3 choice C
+  OLD: $D_{0} \cos (\sqrt{2}^{\mathrm{g}} D0 t)$
+  NEW: $D0 \cos (\sqrt{}$ $\frac{2g}{D_{0}}$ $t)$
+
+### EB3-U7-7.3-Q3 choice D
+  OLD: $\frac{D}{0} \cos (\sqrt{} D0\ \mathrm{g} t)$
+  NEW: $^{D}0 \cos (\sqrt{}$ $\frac{g}{D_{0}}$ $t)$
+
+### EB3-U7-7.3-Q4 STEM
+  OLD: A sphere is attached to a vertical spring and oscillates in simple harmonic motion. The sphere's displacement $x$ from equilibrium is described by the differential equation $d^{2}x dt^{2}\ =\ -C^{1 x},$ where $t$ is the time and $C_{1}$ is a positive constant. In a second setup with a different sphe
+  NEW: A sphere is attached to a vertical spring and oscillates in simple harmonic motion. The sphere's displacement $x$ from equilibrium is described by the differential equation $\frac{d^{2}x}{dt^{2}}$ $^{=}\ ^{-}^{C}^{1}^{x}^{,}$ where $t$ is the time and $C_{1}$ is a positive constant. In a second setu
+
+### EB3-U7-7.3-Q5 choice A
+  OLD: The angular speed is a maximum at $1\ \mathrm{s}$ and $3\ \mathrm{s}$, and the magnitude of the angular acceleration is a maximum at $0\ \mathrm{s}$, $2\ \mathrm{s}$, and $4\ \mathrm{s}$.
+  NEW: The angular speed is a maximum at $1$ s and $3$ s, and the magnitude of the angular acceleration is a maximum at $0$ s, $2$ s, and $4$ s.
+
+### EB3-U7-7.3-Q5 choice B
+  OLD: The angular speed is a maximum at $0\ \mathrm{s}$, $2\ \mathrm{s}$, and $4\ \mathrm{s}$, and the magnitude of the angular acceleration is a maximum at $1\ \mathrm{s}$ and $3\ \mathrm{s}$.
+  NEW: The angular speed is a maximum at $0$ s, $2$ s, and $4$ s, and the magnitude of the angular acceleration is a maximum at $1$ s and $3$ s.
+
+### EB3-U7-7.3-Q5 choice C
+  OLD: Both the angular speed and the magnitude of the angular acceleration are maximum at $1\ \mathrm{s}$ and $3\ \mathrm{s}$.
+  NEW: Both the angular speed and the magnitude of the angular acceleration are maximum at $1$ s and $3$ s.
+
+### EB3-U7-7.3-Q5 choice D
+  OLD: Both the angular speed and the magnitude of the angular acceleration are maximum at $0\ \mathrm{s}$, $2\ \mathrm{s}$, and $4\ \mathrm{s}$.
+  NEW: Both the angular speed and the magnitude of the angular acceleration are maximum at $0$ s, $2$ s, and $4$ s.
+
+### EB3-U7-7.3-Q6 STEM
+  OLD: A block on a horizontal surface is connected to a horizontal spring, and the other end of the spring is fixed in place. The block is oscillating to the left and to the right as it moves with negligible friction on the surface. The velocity of the block as a function of time is $v(t) =\ v_{\mathrm{ma
+  NEW: A block on a horizontal surface is connected to a horizontal spring, and the other end of the spring is fixed in place. The block is oscillating to the left and to the right as it moves with negligible friction on the surface. The velocity of the block as a function of time is $v(t) =\ v_{max} \cos(
+
+### EB3-U7-7.3-Q8 choice A
+  OLD: $(0.2\pi \mathrm{m/s}) \sin[($0.5\pi s$-1)t]$
+  NEW: $(0.2\pi \mathrm{m/s}) \sin[($0.5\textbackslash{}pi s$^{-1})t]$
+
+### EB3-U7-7.3-Q8 choice B
+  OLD: $-(0.2\pi \mathrm{m/s}) \cos[($0.5\pi s$-1)t]$
+  NEW: $-(0.2\pi \mathrm{m/s}) \cos[($0.5\textbackslash{}pi s$^{-1})t]$
+
+### EB3-U7-7.3-Q8 choice C
+  OLD: $($0.8\pi ms$) \sin[($2\pi s$-1)t]$
+  NEW: $($0.8\textbackslash{}pi ms$) \sin[($2\textbackslash{}pi s$^{-1})t]$
+
+### EB3-U7-7.3-Q8 choice D
+  OLD: $-(0.8\pi \mathrm{m/s}) \cos[($2\pi s$-1)t]$
+  NEW: $-(0.8\pi \mathrm{m/s}) \cos[($2\textbackslash{}pi s$^{-1})t]$
+
+### EB3-U7-7.3-Q9 STEM
+  OLD: A block is attached to the bottom of a vertical spring and oscillates with a frequency $f_{0}$ and a maximum acceleration of magnitude $a_{0}$. What is the block's maximum speed?
+  NEW: A block is attached to the bottom of a vertical spring and oscillates with a frequency $f_{0}$ and a maximum acceleration of magnitude a$_{0}$. What is the block's maximum speed?
+
+### EB3-U7-7.3-Q9 choice A
+  OLD: $f_{0} a_{0}$
+  NEW: $f_{0}$a$_{0}$
+
+### EB3-U7-7.3-Q9 choice B
+  OLD: 2\pi$f_{0} a_{0}$
+  NEW: 2\textbackslash{}pi$f_{0}$a$_{0}$
+
+### EB3-U7-7.3-Q9 choice C
+  OLD: a$0$
+  NEW: $\frac{a_{0}}{f_{0}}$
+
+### EB3-U7-7.3-Q9 choice D
+  OLD: a$0 ^{f}_{0}$ 2\pi$f_{0}$
+  NEW: $\frac{a_{0}}{2\pif_{0}}$
+
+### EB3-U7-7.4-Q1 STEM
+  OLD: The figures show a horizontal spring, a horizontal surface, and two identical blocks, Block $1$ and Block $2.$ Initially, as shown in Figure $1,$ only Block $1$ is attached to the spring and oscillates in simple harmonic motion while Block $2$ is held above the surface. At a later time shown in Figu
+  NEW: The figures show a horizontal spring, a horizontal surface, and two identical blocks, Block $1$ and Block $2.$ Initially, as shown in Figure $1,$ only Block $1$ is attached to the spring and oscillates in simple harmonic motion while Block $2$ is held above the surface. At a later time shown in Figu
+
+### EB3-U7-7.4-Q1 choice A
+  OLD: $v$max,1 $2$
+  NEW: $\frac{A_{1}}{2}$ $\frac{v_{max,1}}{2}$
+
+### EB3-U7-7.4-Q1 choice B
+  OLD: $v$max,1 $\sqrt{2}$
+  NEW: $\frac{A_{1}}{2}$ $\frac{v_{max,1}}{\sqrt{}2}$
+
+### EB3-U7-7.4-Q1 choice C
+  OLD: $A_{1} v$max,1 $2$
+  NEW: A$_{1}$ $\frac{v_{max,1}}{2}$
+
+### EB3-U7-7.4-Q1 choice D
+  OLD: $A_{1} v$max,1 $\sqrt{2}$
+  NEW: A$_{1}$ $\frac{v_{max,1}}{\sqrt{2}}$ $\sqrt{}$
+
+### EB3-U7-7.4-Q2 STEM
+  OLD: A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block is free to move in the $x$-direction along the surface with negligible friction. The block is held in place with the spring stretched some distance from its rel
+  NEW: A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block is free to move in the $x$-direction along the surface with negligible friction. The block is held in place with the spring stretched some distance from its rel
+
+### EB3-U7-7.4-Q3 STEM
+  OLD: A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block, which is free to move in the $x$-direction along the surface with negligible friction, oscillates in simple harmonic motion. The block's mass is $2.0\ \mathrm{
+  NEW: A block on a horizontal surface is attached to one end of a horizontal spring, and the other end of the spring is fixed in place. The block, which is free to move in the $x$-direction along the surface with negligible friction, oscillates in simple harmonic motion. The block's mass is $2.0$ kg, and 
+
+### EB3-U7-7.4-Q4 STEM
+  OLD: A block of mass $M_{1}$ is on a horizontal surface and attached to one end of a spring, while the other end of the spring is fixed in place. The block oscillates on the spring with an amplitude $A_{1}$ as it moves with negligible friction on the horizontal surface, and the block-spring system has to
+  NEW: A block of mass $M_{1}$ is on a horizontal surface and attached to one end of a spring, while the other end of the spring is fixed in place. The block oscillates on the spring with an amplitude A$_{1}$ as it moves with negligible friction on the horizontal surface, and the block-spring system has to
+
+### EB3-U7-7.4-Q4 choice A
+  OLD: $2\ E_{1} K_{1}$
+  NEW: $2\ E_{1}$ $K_{1}$
+
+### EB3-U7-7.4-Q4 choice B
+  OLD: $2\ E_{1} 2\ K_{1}$
+  NEW: $2\ E_{1}$ $2\ K_{1}$
+
+### EB3-U7-7.4-Q4 choice C
+  OLD: $4\ E_{1} 2\ K_{1}$
+  NEW: $4\ E_{1}$ $2\ K_{1}$
+
+### EB3-U7-7.4-Q4 choice D
+  OLD: $4\ E_{1} 4\ K_{1}$
+  NEW: $4\ E_{1}$ $4\ K_{1}$
+
+### EB3-U7-7.4-Q7 STEM
+  OLD: A $2.0\ \mathrm{kg}$ block attached to a horizontal spring oscillates in simple harmonic motion in the horizontal direction. Friction is negligible, so the spring exerts the only horizontal force on the block. The graph shows the spring's potential energy $U$ as a function of the block's position $x
+  NEW: A $2.0$ kg block attached to a horizontal spring oscillates in simple harmonic motion in the horizontal direction. Friction is negligible, so the spring exerts the only horizontal force on the block. The graph shows the spring's potential energy $U$ as a function of the block's position $x$. The blo
+
+### EB3-U7-7.4-Q9 STEM
+  OLD: Two identical blocks are each attached to the bottom end of different ideal springs, X and Y. The top ends of these springs are fixed in place. Each block is held in place with each spring at its relaxed length, and the blocks are then released from rest and oscillate vertically. If the spring const
+  NEW: Two identical blocks are each attached to the bottom end of different ideal springs, X and Y. The top ends of these springs are fixed in place. Each block is held in place with each spring at its relaxed length, and the blocks are then released from rest and oscillate vertically. If the spring const
+
+### EB3-U7-7.4-Q9 choice A
+  OLD: $v_{\mathrm{max,X}}/2$
+  NEW: $v_{max,X}/2$
+
+### EB3-U7-7.4-Q9 choice B
+  OLD: $v_{\mathrm{max,X}}/\sqrt{2}$
+  NEW: $v_{max,X}/\sqrt{2}$
+
+### EB3-U7-7.4-Q9 choice C
+  OLD: $\sqrt{2\ v}_{\mathrm{max,X}}$
+  NEW: $2\ v_{max,X}$
+
+### EB3-U7-7.4-Q9 choice D
+  OLD: $2\ v_{\mathrm{max,X}}$
+  NEW: $2\ v_{max,X}$
+
+### EB3-U7-7.5-Q1 STEM
+  OLD: A simple pendulum has a length of $1.0\ \mathrm{m}$ and takes a time $T_{0}$ to complete one oscillation on Earth. What length would a pendulum have to have on Mars, where the acceleration due to gravity is $3.7\ \mathrm{m/s}^{2}$, in order to have the same period?
+  NEW: A simple pendulum has a length of 1.0 m and takes a time $\sqrt{T}$0 to complete one oscillation on Earth. What length would a pendulum have to have on Mars, where the acceleration due to gravity is $3.7\ \mathrm{m/s}^{2}$, in order to have the same period?
+
+### EB3-U7-7.5-Q3 STEM
+  OLD: A physical pendulum is constructed from a hollow hoop, a small sphere, and a rod of negligible mass, as shown in the figure. The small sphere has mass $5\ M_{0}$ and is attached to the top of the hoop, which has mass $M_{0}$ and radius $R_{0}\ =\ 0.080\ \mathrm{m}$. The rod has length $R_{0}/2$ and 
+  NEW: A physical pendulum is constructed from a hollow hoop, a small sphere, and a rod of negligible mass, as shown in the figure. The small sphere has mass $5\ M_{0}$ and is attached to the top of the hoop, which has mass $M_{0}$ and radius $R_{0}\ =\ 0.080$ m. The rod has length $R_{0}/2$ and connects t
+
+### EB3-U7-7.5-Q3 choice A
+  OLD: 2\pi $\times\ 0.055$ s
+  NEW: 2\textbackslash{}pi $\times\ 0.055$ s
+
+### EB3-U7-7.5-Q3 choice B
+  OLD: 2\pi $\times\ 0.068$ s
+  NEW: 2\textbackslash{}pi $\times\ 0.068$ s
+
+### EB3-U7-7.5-Q3 choice C
+  OLD: 2\pi $\times\ 0.078$ s
+  NEW: 2\textbackslash{}pi $\times\ 0.078$ s
+
+### EB3-U7-7.5-Q3 choice D
+  OLD: 2\pi $\times\ 0.096\ \mathrm{s}$ \includegraphics[width=0.25\linewidth]{media/u7_75_q3_184.png}
+  NEW: 2\textbackslash{}pi $\times\ 0.096$ s \includegraphics[width=0.25\linewidth]{media/u7_75_q3_184.png}
+
+### EB3-U7-7.5-Q4 choice A
+  OLD: $d^{2}\theta dt^{2}\ =\ -\frac{\mathrm{g}}{theta}$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ $^{=}\ ^{-}$ $\theta$
+
+### EB3-U7-7.5-Q4 choice B
+  OLD: $d^{2}\theta dt^{2}=-(\frac{3}{2})\ \frac{\mathrm{g}}{theta}\ \mathrm{L}\ 0\ \mathrm{L}\ 0$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{3}{2}$ $^{)}$ $\theta$ $\frac{g}{L_{0}}$ $\frac{g}{L_{0}}$
+
+### EB3-U7-7.5-Q4 choice C
+  OLD: $d^{2}\theta dt^{2}=-(\frac{4}{3})\ \frac{\mathrm{g}}{theta}$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{4}{3}$ $^{)}$ $\theta$
+
+### EB3-U7-7.5-Q4 choice D
+  OLD: $d^{2}\theta dt^{2}=-(\frac{6}{5})\ \frac{\mathrm{g}}{theta}\ \mathrm{L}\ 0\ \mathrm{L}\ 0$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{6}{5}$ $^{)}$ $\theta$ $\frac{g}{L_{0}}$ $\frac{g}{L_{0}}$
+
+### EB3-U7-7.5-Q5 STEM
+  OLD: A thin hoop undergoes small-angle oscillations about a pivot at its top edge, as shown in the figure. If the oscillation period is $0.70\ \mathrm{s}$, what is the radius of the hoop?
+  NEW: A thin hoop undergoes small-angle oscillations about a pivot at its top edge, as shown in the figure. If the oscillation period is $0.70$ s, what is the radius of the hoop?
+
+### EB3-U7-7.5-Q6 STEM
+  OLD: A torsion pendulum consists of a vertical wire connected to a uniform disk of mass $\mathrm{m}_{D}$, radius $r_{D}$, and $2\ /2,$ as shown in the figure. An applied force of magnitude $F_{0}$ is applied tangentially rotational inertia $\mathrm{m}_{D}r_{D}$ to the disk, holding it in place at an angu
+  NEW: A torsion pendulum consists of a vertical wire connected to a uniform disk of mass $\mathrm{m}_{D}$, radius $r_{D}$, and $^{2}\ /2,$ as shown in the figure. An applied force of magnitude $F_{0}$ is applied tangentially rotational inertia $\mathrm{m}_{D}r_{D}$ to the disk, holding it in place at an a
+
+### EB3-U7-7.5-Q6 choice B
+  OLD: $(\frac{1}{2})\ F^{0}$
+  NEW: ($\frac{1}{2}$ $^{)}$ $\frac{F_{0}}{m_{D}r_{D}}$
+
+### EB3-U7-7.5-Q6 choice C
+  OLD: $F0$
+  NEW: $\frac{F_{0}}{m_{D}r_{D}}$
+
+### EB3-U7-7.5-Q6 choice D
+  OLD: $2\ ^{F 0}\ \mathrm{m}$D$r$D $\mathrm{m}$D$r$D $\mathrm{m}$D$r$D
+  NEW: $2$ $\frac{F_{0}}{m_{D}r_{D}}$
+
+### EB3-U7-7.5-Q7 STEM
+  OLD: A uniform rod of length $\mathrm{L}_{R}$ and mass $M_{R}$ is free to rotate about a pivot located a distance $\ell$, where $\ell \ll \mathrm{L}_{R}$, above the rod's center, as shown in the figure. Which of the following changes could result in a shorter $2 /12.$ period for small-angle oscillations 
+  NEW: A uniform rod of length $\mathrm{L}_{R}$ and mass $M_{R}$ is free to rotate about a pivot located a distance $\ell$, where $\ell \ll \mathrm{L}_{R}$, above the rod's center, as shown in the figure. Which of the following changes could result in a shorter $^{2} /12.$ period for small-angle oscillatio
+
+### EB3-U7-7.5-Q8 STEM
+  OLD: Near the surface of a distant planet, a physical pendulum made from a uniform bar of length $\mathrm{L}_{0}$ exhibits small-angle oscillations about a pivot located at the top end of the bar, as shown in the figure. The planet has $1/40$ the mass and $1/5$ the radius of Earth. The bar has mass $M_{0
+  NEW: Near the surface of a distant planet, a physical pendulum made from a uniform bar of length $\mathrm{L}_{0}$ exhibits small-angle oscillations about a pivot located at the top end of the bar, as shown in the figure. The planet has $1/40$ the mass and $1/5$ the radius of Earth. The bar has mass $M_{0
+
+### EB3-U7-7.5-Q8 choice A
+  OLD: $d^{2}\theta dt^{2}=-(\frac{5}{8})\ \frac{\mathrm{g}}{theta}$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{5}{8}$ $^{)}$ $\theta$
+
+### EB3-U7-7.5-Q8 choice B
+  OLD: $d^{2}\theta dt^{2}=-(\frac{15}{16})\ \frac{\mathrm{g}}{theta}\ \mathrm{L}\ 0\ \mathrm{L}\ 0$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{15}{16}$ $^{)}$ $\theta$ $\frac{g}{L_{0}}$ $\frac{g}{L_{0}}$
+
+### EB3-U7-7.5-Q8 choice C
+  OLD: $d^{2}\theta dt^{2}=-(\frac{3}{2})\ \frac{\mathrm{g}}{theta}$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{3}{2}$ $^{)}$ $\theta$
+
+### EB3-U7-7.5-Q8 choice D
+  OLD: $d^{2}\theta dt^{2}=-(\frac{15}{8})\ \frac{\mathrm{g}}{theta}\ \mathrm{L}\ 0\ \mathrm{L}\ 0$
+  NEW: $\frac{d^{2}\theta}{dt^{2}}$ = -($\frac{15}{8}$ $^{)}$ $\theta$ $\frac{g}{L_{0}}$ $\frac{g}{L_{0}}$
+
+changed stems: 107

@@ -29,10 +29,9 @@ data/banks/*/recycled.json
 web/vendor/katex.tar.gz
 web/vendor/*.tar.gz
 
-# transient artefacts from the PDF comparison passes -- scratch output, not content
-data/_audit_media/
-data/_diff.txt
-data/_new_extract.json
+# Audit snapshots from the PDF comparison passes are kept in the repository on
+# purpose: they are the record of how figures and questions were verified.
+# (data/app.sqlite and the recycle bins above stay excluded.)
 
 # editors / OS
 .vscode/
@@ -43,11 +42,11 @@ Thumbs.db
 # WorkBuddy session data & project memory notes (local only)
 .workbuddy/
 
-# build / verification intermediates and reversible backups
+# build / verification intermediates (kept locally, not archived)
 outputs/
-data/bank.backup-*.json
-data/_media_backup_*/
-data/_media_orphans_*/
 scripts/figure_analysis.json
 scripts/*.bak
 server/*.bak
+
+# data/ backup JSON and figure snapshots are archived in git -- see the audit
+# note above. Only the live application state stays out.
