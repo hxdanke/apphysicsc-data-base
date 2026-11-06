@@ -11,23 +11,23 @@
    "additional_topics": [],
    "number": 1,
    "qtype": "mcq",
-   "stem": "A ball is launched horizontally at $12\\ \\mathrm{m/s}$ from a cliff $45\\ \\mathrm{m}$ above the ground. Air resistance is negligible. How far from the base of the cliff does it land?",
+   "stem": "A ball is launched horizontally at 12 m/s from a cliff 45 m above the ground. Air resistance is negligible. How far from the base of the cliff does it land?",
    "choices": [
     {
      "label": "A",
-     "text": "$18\\ \\mathrm{m}$"
+     "text": "18 m"
     },
     {
      "label": "B",
-     "text": "$36\\ \\mathrm{m}$"
+     "text": "36 m"
     },
     {
      "label": "C",
-     "text": "$54\\ \\mathrm{m}$"
+     "text": "54 m"
     },
     {
      "label": "D",
-     "text": "$90\\ \\mathrm{m}$"
+     "text": "90 m"
     }
    ],
    "answer": "B",

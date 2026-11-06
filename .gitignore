@@ -29,6 +29,11 @@ data/banks/*/recycled.json
 web/vendor/katex.tar.gz
 web/vendor/*.tar.gz
 
+# transient artefacts from the PDF comparison passes -- scratch output, not content
+data/_audit_media/
+data/_diff.txt
+data/_new_extract.json
+
 # editors / OS
 .vscode/
 .idea/
